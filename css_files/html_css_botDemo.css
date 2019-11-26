@@ -1,0 +1,55 @@
+
+
+header{
+    background-color: powderblue;
+    text-align: center;
+    padding: 5px;
+}
+
+footer{
+    color: white;
+    background-color: darkblue;
+    text-align: center;
+    font-family: consolas;
+    font-size: 20px;
+    clear: both;
+    padding: 5px;
+}
+
+code{
+    background-color: limegreen;
+    border-radius: 6px;
+    color: linen;
+    display: block;
+    text-align: center;
+    
+    
+}
+header, section, aside, footer{
+    margin: 0 1.5% 50px 1.5%;
+}
+section{
+    float: left;
+    margin: 5 1.5% ;
+    width: 63%;
+    
+}
+aside{
+    float: right;
+    margin:5 1.5% ;
+    width: 30%;
+}
+.group::before, .group::after{
+content: "";
+display: table;
+}
+
+.group::after{
+    clear: both;
+
+}
+.group{
+    clear: both;
+    *zoom: 1;
+    background-color: paleturquoise;
+}

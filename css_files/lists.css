@@ -1,0 +1,9 @@
+ul{
+    list-style-type: circle;
+}
+ul#menu a :hover{
+    display: inline;
+}
+body{
+    background-color: thistle;
+}

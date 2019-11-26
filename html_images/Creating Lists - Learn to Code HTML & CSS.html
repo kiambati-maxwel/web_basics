@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://learn.shayhowe.com/html-css/creating-lists/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="HTML provides unordered, ordered, and definition lists all of which can be stylized using CSS. Learn how." name="description">
+<meta content="HTML unordered ordered definition lists list-style beginners guide" name="keywords">
+<title>Creating Lists - Learn to Code HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/ga.js.download"></script><script src="./Creating Lists - Learn to Code HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Creating Lists - Learn to Code HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Creating Lists - Learn to Code HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Creating Lists - Learn to Code HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/button.d941c9a422e2e3faf474b82a1f39e936.js.download"></script></head>
+<body class="html-css html-css_creating-lists html-css_creating-lists_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/html-css/">
+<span>Learn to Code</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/html-css/creating-lists/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="building-your-first-web-page">
+<a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">
+<strong>Lesson 1</strong>
+Building Your First Web Page
+</a>
+</li>
+<li class="getting-to-know-html">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-html/">
+<strong>Lesson 2</strong>
+Getting to Know HTML
+</a>
+</li>
+<li class="getting-to-know-css">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">
+<strong>Lesson 3</strong>
+Getting to Know CSS
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="opening-the-box-model">
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">
+<strong>Lesson 4</strong>
+Opening the Box Model
+</a>
+</li>
+<li class="positioning-content">
+<a href="https://learn.shayhowe.com/html-css/positioning-content/">
+<strong>Lesson 5</strong>
+Positioning Content
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="working-with-typography">
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/">
+<strong>Lesson 6</strong>
+Working with Typography
+</a>
+</li>
+<li class="setting-backgrounds-and-gradients">
+<a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/">
+<strong>Lesson 7</strong>
+Setting Backgrounds &amp; Gradients
+</a>
+</li>
+<li class="creating-lists">
+<a href="https://learn.shayhowe.com/html-css/creating-lists/">
+<strong>Lesson 8</strong>
+Creating Lists
+</a>
+</li>
+<li class="adding-media">
+<a href="https://learn.shayhowe.com/html-css/adding-media/">
+<strong>Lesson 9</strong>
+Adding Media
+ </a>
+</li>
+<li class="building-forms">
+<a href="https://learn.shayhowe.com/html-css/building-forms/">
+<strong>Lesson 10</strong>
+Building Forms
+</a>
+</li>
+<li class="organizing-data-with-tables">
+<a href="https://learn.shayhowe.com/html-css/organizing-data-with-tables/">
+<strong>Lesson 11</strong>
+Organizing Data with Tables
+</a>
+</li>
+<li class="writing-your-best-code">
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/">
+<strong>Lesson 12</strong>
+Writing Your Best Code
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/advanced-html-css/">Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS</a> for a deeper look at front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 8</h6>
+<h1>Creating Lists</h1>
+</div>
+<script src="./Creating Lists - Learn to Code HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">8</span>
+</h4>
+<h6>HTML</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/creating-lists/#unorderd-lists">Unordered Lists</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/creating-lists/#ordered-lists">Ordered Lists</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/creating-lists/#description-lists">Description Lists</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/creating-lists/#nested-lists">Nesting Lists</a>
+</li>
+</ul>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/creating-lists/#list-item-styling">List Item Styling</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/creating-lists/#horizontally-displaying-list">Horizontally Displaying List</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/creating-lists/" data-title="Creating Lists">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Creating%20Lists%20-&amp;url=http://learn.shayhowe.com/html-css/creating-lists/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/creating-lists/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/creating-lists/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCYYIVZ3JCWSIVKQUF67DK53KC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Creating Lists - Learn to Code HTML &amp; CSS_files/1573747028-Octopus-CTA.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCYYIVZ3JCWSIVKQUF67DK53KC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">Release management software your engineers will love. Free for small teams.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>Lists are a part of everyday life. To-do lists determine what to get done. Navigational routes provide turn-by-turn lists of directions. Recipes provide lists of ingredients and lists of instructions. With a list for nearly everything, it’s easy to understand why they are also popular online.</p>
+<p>When we want to use a list on a website, HTML provides three different types to choose from: unordered, ordered, and description lists. Choosing which type of list to use—or whether to use a list at all—comes down to the content and the most semantically appropriate option for displaying that content.</p>
+<p>In addition to the three different types of lists available within HTML, there are multiple ways to style these lists with CSS. For example, we can choose what type of marker to use on a list. The marker could be square, round, numeric, alphabetical, or perhaps nonexistent. Also, we can decide if a list should be displayed vertically or horizontally. All of these choices play significant roles in the styling of our web pages.</p>
+<h2 id="unorderd-lists">Unordered Lists<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#unorderd-lists">#unorderd-lists</a></h2>
+<p>An unordered list is simply a list of related items whose order does not matter. Creating an unordered list in HTML is accomplished using the unordered list block-level element, <code>&lt;ul&gt;</code>. Each item within an unordered list is individually marked up using the list item element, <code>&lt;li&gt;</code>.</p>
+<p>By default, most browsers add a vertical <code>margin</code> and left <code>padding</code> to the <code>&lt;ul&gt;</code> element and precede each <code>&lt;li&gt;</code> element with a solid dot. This solid dot is called the list item marker, and it can be changed using CSS.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Orange<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Green<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Blue<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Unordered Lists Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/yEHbn(1).html" scrolling="no" frameborder="0" height="132" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_yEHbn"></iframe></div>
+</div>
+<h2 id="ordered-lists">Ordered Lists<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#ordered-lists">#ordered-lists</a></h2>
+<p>The ordered list element, <code>&lt;ol&gt;</code>, works very much like the unordered list element; individual list items are created in the same manner. The main difference between an ordered list and an unordered list is that with an ordered list, the order in which items are presented is important.</p>
+<p>Because the order matters, instead of using a dot as the default list item marker, an ordered list uses numbers.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Head north on N Halsted St<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Turn right on W Diversey Pkwy<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Turn left on N Orchard St<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Ordered lists also have unique attributes available to them including <code>start</code> and <code>reversed</code>.</p>
+<div class="note">
+<h4 class="demo-title">Ordered Lists Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/pyzhI(1).html" scrolling="no" frameborder="0" height="132" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_pyzhI"></iframe></div>
+</div>
+<h3>Start Attribute</h3>
+<p>The <code>start</code> attribute defines the number from which an ordered list should start. By default, ordered lists start at <code>1</code>. However, there may be cases where a list should start at <code>30</code> or another number. When we use the <code>start</code> attribute on the <code>&lt;ol&gt;</code> element, we can identify exactly which number an ordered list should begin counting from.</p>
+<p>The <code>start</code> attribute accepts only integer values, even though ordered lists may use different numbering systems, such as roman numerals.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ol</span> <span class="na">start=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Head north on N Halsted St<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Turn right on W Diversey Pkwy<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Turn left on N Orchard St<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Start Attribute Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_3" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/KgoBs(1).html" scrolling="no" frameborder="0" height="132" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_KgoBs"></iframe></div>
+</div>
+<h3>Reversed Attribute</h3>
+<p>The <code>reversed</code> attribute, when used on the <code>&lt;ol&gt;</code> element, allows a list to appear in reverse order. An ordered list of five items numbered <code>1</code> to <code>5</code> may be reversed and ordered from <code>5</code> to <code>1</code>.</p>
+<p>The <code>reversed</code> attribute is a Boolean attribute, and as such it doesn’t accept any value. It is either true or false. False is the default value; the value becomes true when the attribute name <code>reversed</code> appears on the <code>&lt;ol&gt;</code> element.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ol</span> <span class="na">reversed</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Head north on N Halsted St<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Turn right on W Diversey Pkwy<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Turn left on N Orchard St<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Reversed Attribute Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_4" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/vHKoG(1).html" scrolling="no" frameborder="0" height="132" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_vHKoG"></iframe></div>
+</div>
+<h3>Value Attribute</h3>
+<p>The <code>value</code> attribute may be used on an individual <code>&lt;li&gt;</code> element within an ordered list to change its value within the list. The number of any list item appearing below a list item with a <code>value</code> attribute will be recalculated accordingly.</p>
+<p>As an example, if the second list item has a <code>value</code> attribute value of <code>9</code>, the number on that list item marker will appear as if it is the ninth item. All subsequent list items will be numbered upwards from <code>9</code>.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Head north on N Halsted St<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">value=</span><span class="s">"9"</span><span class="nt">&gt;</span>Turn right on W Diversey Pkwy<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Turn left on N Orchard St<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Value Attribute Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_5" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/AEkgz(1).html" scrolling="no" frameborder="0" height="132" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_AEkgz"></iframe></div>
+</div>
+<h2 id="description-lists">Description Lists<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#description-lists">#description-lists</a></h2>
+<p>Another type of list seen online (but not as often as unordered or ordered lists) is the description list. Description lists are used to outline multiple terms and their descriptions, as in a glossary, for example.</p>
+<p>Creating a description list in HTML is accomplished using the description list block-level element, <code>&lt;dl&gt;</code>. Instead of using a <code>&lt;li&gt;</code> element to mark up list items, the description list requires two block-level elements: the description term element, <code>&lt;dt&gt;</code>, and the description element, <code>&lt;dd&gt;</code>.</p>
+<p>A description list may contain numerous terms and descriptions, one after the other. Additionally, a description list may have multiple terms per description, as well as multiple descriptions per term. A single term may have multiple meanings and warrant multiple descriptions. Conversely, a single description may be suitable for multiple terms.</p>
+<p>When adding a description list, the <code>&lt;dt&gt;</code> element must come before the <code>&lt;dd&gt;</code> element. The definition term and the description that directly follows it correspond to one another; thus, the order of these elements is important.</p>
+<p>By default, the <code>&lt;dl&gt;</code> element will include vertical margins, just like the <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> elements. Additionally, the <code>&lt;dd&gt;</code> element includes a left <code>margin</code> by default.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nt">&lt;dl&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>study<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>design<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>business<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>work<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>A person's regular occupation, profession, or trade<span class="nt">&lt;/dd&gt;</span>
+<span class="nt">&lt;/dl&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Description Lists Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_6" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/Bnujl(1).html" scrolling="no" frameborder="0" height="258" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Bnujl"></iframe></div>
+</div>
+<h2 id="nested-lists">Nesting Lists<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#nested-lists">#nested-lists</a></h2>
+<p>One feature that makes lists extremely powerful is their ability to be nested. Every list may be placed within another list; they can be nested continually. But the potential to nest lists indefinitely doesn’t provide free rein to do so. Lists should still be reserved specifically for where they hold the most semantic value.</p>
+<p>One trick with nesting lists is to know where to begin and end each list and list item. Speaking specifically about unordered and ordered lists, as that is where most nesting will occur, the only element that may reside directly within the <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> elements is the <code>&lt;li&gt;</code> element. To repeat, the only element we can place as a direct child of the <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> elements is the <code>&lt;li&gt;</code> element.</p>
+<p>That said, once inside the <code>&lt;li&gt;</code> element, the standard set of elements may be added, including any <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> elements.</p>
+<p>To nest a list rather than closing a list item, begin a new list. Once the nested list is complete and closed, close the wrapping list item and continue on with the original list.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Walk the dog<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Fold laundry<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    Go to the grocery and buy:
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Milk<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Bread<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Cheese<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Mow the lawn<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Make dinner<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Nesting Lists Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_7" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/hcIua(1).html" scrolling="no" frameborder="0" height="216" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_hcIua"></iframe></div>
+</div>
+<p>Because nesting lists can be a little tricky—and unwanted styles will appear if it’s done incorrectly—let’s quickly review. The <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> elements may contain only <code>&lt;li&gt;</code> elements. The <code>&lt;li&gt;</code> element may contain any normal element as desired; however, the <code>&lt;li&gt;</code> element has to be a direct child of either a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> element.</p>
+<p>It’s also worth noting that as lists are nested inside of other lists, their list item markers will change according to how deeply the list is nested. In the previous example, the unordered list nested within the ordered list uses hollow circles instead of solid discs as the list item marker. This change happens because the unordered list is nested one level into the ordered list.</p>
+<p>Fortunately we have control over how these list item markers appear at any level, which we’ll take a look at next.</p>
+<h2 id="list-item-styling">List Item Styling<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#list-item-styling">#list-item-styling</a></h2>
+<p>Unordered and ordered lists use list item markers by default. For unordered lists these are typically solid dots, while ordered lists typically use numbers. <a href="http://www.smashingmagazine.com/2009/12/11/styling-html-lists-with-css-techniques-and-resources/" rel="nofollow">With CSS</a> the style and position of these list item markers may be adjusted.</p>
+<h3>List Style Type Property</h3>
+<p>The <code>list-style-type</code> property is used to set the content of a list item marker. The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" rel="nofollow">available values</a> range from squares and decimal numbers all the way to Armenian numbering, and the style may be placed on either the <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, or <code>&lt;li&gt;</code> elements within CSS.</p>
+<p>Any <code>list-style-type</code> property value can be added to either unordered or ordered lists. With this in mind, it is possible to use a numeric list item marker on an unordered list and a nonnumeric marker on an ordered list.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Orange<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Green<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Blue<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">square</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">List Style Type Property Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_8" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/IKjow(1).html" scrolling="no" frameborder="0" height="132" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_IKjow"></iframe></div>
+</div>
+<h4>List Style Type Values</h4>
+<p>As previously mentioned, the <code>list-style-type</code> property comes with a handful of different values. The following list outlines these values as well as their corresponding content.</p>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>List Style Type Value</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="List Style Type Value"><code>none</code></td>
+<td data-title="Content">No list item</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>disc</code></td>
+<td data-title="Content">A filled circle</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>circle</code></td>
+<td data-title="Content">A hollow circle</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>square</code></td>
+<td data-title="Content">A filled square</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>decimal</code></td>
+<td data-title="Content">Decimal numbers</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>decimal-leading-zero</code></td>
+<td data-title="Content">Decimal numbers padded by initial zeros</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>lower-roman</code></td>
+<td data-title="Content">Lowercase roman numerals</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>upper-roman</code></td>
+<td data-title="Content">Uppercase roman numerals</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>lower-greek</code></td>
+<td data-title="Content">Lowercase classical Greek</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>lower-alpha / lower-latin</code></td>
+<td data-title="Content">Lowercase ASCII letters</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>upper-alpha / upper-latin</code></td>
+<td data-title="Content">Uppercase ASCII letters</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>armenian</code></td>
+<td data-title="Content">Traditional Armenian numbering</td>
+</tr>
+<tr>
+<td data-title="List Style Type Value"><code>georgian</code></td>
+<td data-title="Content">Traditional Georgian numbering</td>
+</tr>
+</tbody>
+</table>
+<h3>Using an Image as a List Item Marker</h3>
+<p>There may come a time when the default <code>list-style-type</code> property values are not enough, and we want to customize our own list item marker. Doing so is most commonly accomplished by placing a background image on each <code>&lt;li&gt;</code> element within a list.</p>
+<p>The process includes removing any default <code>list-style-type</code> property value and adding a background image and padding to the <code>&lt;li&gt;</code> element.</p>
+<p>In detail, the <code>list-style-type</code> property value of <code>none</code> will remove existing list item markers. The <code>background</code> property will identify a background image, along with its position and repeat value, if necessary. And the <code>padding</code> property will provide space to the left of the text for the background image.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Orange<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Green<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Blue<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("arrow.png")</span> <span class="m">0</span> <span class="m">50%</span> <span class="nb">no-repeat</span><span class="p">;</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Image List Item Marker Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_9" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/CLDas(1).html" scrolling="no" frameborder="0" height="132" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_CLDas"></iframe></div>
+</div>
+<h3>List Style Position Property</h3>
+<p>By default the list item marker is to the left of the content within the <code>&lt;li&gt;</code> element. This list style positioning is described as <code>outside</code>, meaning all of the content will appear directly to the right, outside of the list item marker. Using the <code>list-style-position</code> property, we can change the default value of <code>outside</code> to <code>inside</code> or <code>inherit</code>.</p>
+<p>The outside property value places the list item marker to the left of the <code>&lt;li&gt;</code> element and doesn’t allow any content to wrap below the list item marker. The inside property value (which is rarely seen or used) places the list item marker in line with the first line of the <code>&lt;li&gt;</code> element and allows other content to wrap below it as needed.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Cupcakes...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Sprinkles...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style-position</span><span class="p">:</span> <span class="nb">inside</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">List Style Position Property Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_10" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/tdywn(1).html" scrolling="no" frameborder="0" height="150" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_tdywn"></iframe></div>
+</div>
+<h3>Shorthand List Style Property</h3>
+<p>The list style properties discussed thus far, <code>list-style-type</code> and <code>list-style-position</code>, can be combined into one shorthand <code>list-style</code> property value. When using the <code>list-style</code> property, we can use one or all list style property values at a time. The order of these shorthand values should be <code>list-style-type</code> followed by <code>list-style-position</code>.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">circle</span> <span class="nb">inside</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ol</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">lower-roman</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h2 id="horizontally-displaying-list">Horizontally Displaying List<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#horizontally-displaying-list">#horizontally-displaying-list</a></h2>
+<p>Occasionally we may want to display lists horizontally rather than vertically. Perhaps we want to divide a list into multiple columns, to build a navigational list, or to put a few list items in a single row. Depending on the content and desired appearance, there are a few different ways to display lists as a single line, such as by making the <code>display</code> property value of <code>&lt;li&gt;</code> elements <code>inline</code> or <code>inline-block</code> or by floating them.</p>
+<h3>Displaying List</h3>
+<p>The quickest way to display a list on a single line is to give the <code>&lt;li&gt;</code> elements a <code>display</code> property value of <code>inline</code> or <code>inline-block</code>. Doing so places all the <code>&lt;li&gt;</code> elements within a single line, with a single space between each list item.</p>
+<p>If the spaces between each of the <code>&lt;li&gt;</code> elements are troublesome, they may be removed using the same techniques we discussed in Lesson 5, “<a href="https://learn.shayhowe.com/html-css/positioning-content/">Positioning Content</a>.”</p>
+<p>More often than not, we’ll use the <code>inline-block</code> property value rather than the <code>inline</code> property value. The <code>inline-block</code> property value allows us to easily add vertical margins and other spacing to the <code>&lt;li&gt;</code> elements, whereas the <code>inline</code> property value does not.</p>
+<p>When changing the <code>display</code> property value to <code>inline</code> or <code>inline-block</code>, the list item marker, be it a bullet, number, or other style, is removed.</p>
+ <h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Orange<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Green<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Blue<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Inline-Block Displaying List Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_11" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/fyGqE(1).html" scrolling="no" frameborder="0" height="96" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_fyGqE"></iframe></div>
+</div>
+<h3>Floating List</h3>
+<p>￼Changing the <code>display</code> property value to <code>inline</code> or <code>inline-block</code> is quick; however, it removes the list item marker. If the list item marker is needed, floating each <code>&lt;li&gt;</code> element is a better option than changing the <code>display</code> property.</p>
+<p>Setting all <code>&lt;li&gt;</code> elements’ <code>float</code> property to <code>left</code> will horizontally align all <code>&lt;li&gt;</code> elements directly next to each other without any space between them. When we float each <code>&lt;li&gt;</code> element, the list item marker is displayed by default and will actually sit on top of the <code>&lt;li&gt;</code> element next to it. To prevent the list item marker from being displayed on top of other <code>&lt;li&gt;</code> elements, a horizontal <code>margin</code> or <code>padding</code> should be added.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Orange<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Green<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Blue<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+ <h4 class="demo-title">Floating List Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_12" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/dzgba(1).html" scrolling="no" frameborder="0" height="96" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_dzgba"></iframe></div>
+</div>
+<p>As when floating any element, this breaks the flow of the page. We must remember to clear our floats—most commonly with the clearfix technique—and return the page back to its normal flow.</p>
+<h3>Navigational List Example</h3>
+<p>We’ll often develop, and find, navigation menus using unordered lists. These lists are commonly laid out as horizontal lists, using either of the two techniques previously mentioned. Here is an example of a horizontal navigation menu marked up using an unordered list with <code>&lt;li&gt;</code> elements displayed as <code>inline-block</code> elements.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Settings<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Notifications<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Logout<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></td><td class="rouge-code"><pre><span class="nc">.navigation</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="nb">bold</span> <span class="m">11px</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.navigation</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.navigation</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#395870</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#49708f</span><span class="p">,</span> <span class="m">#293f50</span><span class="p">);</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.3</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">12px</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.navigation</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#314b60</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.3</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.navigation</span> <span class="nt">li</span><span class="nd">:first-child</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.navigation</span> <span class="nt">li</span><span class="nd">:last-child</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">4px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Navigational List Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_13" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/aewJl(1).html" scrolling="no" frameborder="0" height="114" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_aewJl"></iframe></div>
+</div>
+<h2 id="practice-1">In Practice<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#practice-1">#practice-1</a></h2>
+<p>Now that we know how to build lists within HTML and CSS, let’s loop back to our Styles Conference website and see where we might be able to use lists.</p>
+<ol class="practice">
+<li>
+<p>Currently the navigation menus within the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements on our pages consist of a handful of anchor elements. These anchor elements could be better organized in an unordered list.</p>
+<p>Using an unordered list (via the <code>&lt;ul&gt;</code> element) and list items (via the <code>&lt;li&gt;</code> element) will give structure to our navigation menus. These new elements, however, will display our navigation menus vertically.</p>
+<p>We’re going to want to change the <code>display</code> value of our <code>&lt;li&gt;</code> elements to inline-block to get all of them to align in a horizontal row. When we do that, though, we’ll also need to account for the blank space left between each <code>&lt;li&gt;</code> element. Thinking back to Lesson 5, “<a href="https://learn.shayhowe.com/html-css/positioning-content/">Positioning Content</a>,” we know that opening an HTML comment at the end of a <code>&lt;li&gt;</code> element and closing an HTML comment at the beginning of a <code>&lt;li&gt;</code> element will remove this space.</p>
+<p>Keeping this in mind, the markup for the navigation menu within our <code>&lt;header&gt;</code> element will now look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav primary-nav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html"</span><span class="nt">&gt;</span>Speakers<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"schedule.html"</span><span class="nt">&gt;</span>Schedule<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"venue.html"</span><span class="nt">&gt;</span>Venue<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"register.html"</span><span class="nt">&gt;</span>Register<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Along these same lines, the markup for the navigation menu within our <code>&lt;footer&gt;</code> element will now look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html"</span><span class="nt">&gt;</span>Speakers<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"schedule.html"</span><span class="nt">&gt;</span>Schedule<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"venue.html"</span><span class="nt">&gt;</span>Venue<span class="nt">&lt;/a&gt;&lt;/li&gt;</span><span class="c">&lt;!--
+    --&gt;</span><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"register.html"</span><span class="nt">&gt;</span>Register<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Let’s not forget to make these changes in all of our HTML files.</p>
+</li>
+<li>
+<p>With the unordered list in place, let’s make sure the list items align horizontally, and let’s clean up their styles a bit. We’ll use the existing <code>nav</code> class to help target our new styles.</p>
+<p>We’ll begin by setting all of the <code>&lt;li&gt;</code> elements within any element with the <code>class</code> attribute value of <code>nav</code> to be displayed <code>inline-block</code>, to include some horizontal margins, and to be vertically aligned to the <code>top</code> of the element.</p>
+<p>Additionally, we’ll use the <code>:last-child</code> pseudo-class selector to identify the last <code>&lt;li&gt;</code> element and reset its right <code>margin</code> to <code>0</code>. Doing so ensures that any horizontal space between the <code>&lt;li&gt;</code> element and the edge of its parent element is removed.</p>
+<p>Within our <code>main.css</code> file, below our existing navigation styles, let’s add the following CSS:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nc">.nav</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">top</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.nav</span> <span class="nt">li</span><span class="nd">:last-child</span> <span class="p">{</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>You may be wondering why our unordered list didn’t include any list item markers or default styles. These styles were removed by the reset at the top of our style sheet. If we look at the reset, we’ll see our <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, and <code>&lt;li&gt;</code> elements all include a <code>margin</code> and <code>padding</code> of <code>0</code>, and our <code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code> elements have a <code>list-style</code> value of <code>none</code>.</p>
+</li>
+<li>
+<p>Our navigation menus aren’t the only places we’ll be using lists. We’ll also use them on some of our internal pages, including the Speakers page. Let’s add some speakers to our conference.</p>
+<p>Within our <code>speakers.html</code> file just below our lead section, let’s create a new section where we’ll present all of our speakers. Reusing some existing styles, we’ll use a <code>&lt;section&gt;</code> element with a class attribute value of <code>row</code> to wrap all of our speakers and apply a white background and padding behind them. Inside the <code>&lt;section&gt;</code> element, we’ll add a <code>&lt;div&gt;</code> element with a <code>class</code> attribute value of <code>grid</code> to center our speakers on the page and allow us to use multiple columns in doing so.</p>
+<p>So far our HTML below the lead section looks like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Inside the grid every speaker will be marked up with his or her own <code>&lt;section&gt;</code> element, which will include two columns. The first column will span two-thirds of the <code>&lt;section&gt;</code> element and will be marked up using a <code>&lt;div&gt;</code> element. The second column will span the remaining one-third of the <code>&lt;section&gt;</code> element and will be marked up using an <code>&lt;aside&gt;</code> element, as its content is secondary to the speaker and his or her specific talk.</p>
+<p>Using our existing <code>col-2-3</code> and <code>col-1-3</code> classes, the outline for a speaker section will look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"shay-howe"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2-3"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--
+
+  --&gt;</span><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/aside&gt;</span>
+
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>There are a few items to notice here. First, each <code>&lt;section&gt;</code> element for each speaker includes an ID attribute with the speaker’s name as the attribute value. Later, when we create the schedule for our conference, these ID attributes will serve as anchors, allowing us to link from the schedule to a speaker’s profile.</p>
+<p>Additionally, the closing tag of the <code>&lt;div&gt;</code> element is followed by the opening of an HTML comment, and the opening tag of the <code>&lt;aside&gt;</code> element is preceded by the closing of an HTML comment. Because the column-based classes will display these elements as <code>inline-block</code> elements, we are removing the blank space that will appear between them.</p>
+</li>
+<li>
+<p>Inside the two-thirds column, marked up with the <code>&lt;div&gt;</code> element, we’ll use a few headings and paragraphs to show the speaker’s name, the title and abstract of the talk, and a short biography.</p>
+<p>Including this content, a speaker section will look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"shay-howe"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2-3"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Shay Howe<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Less Is More: How Constraints Cultivate Growth<span class="nt">&lt;/h5&gt;</span>
+    
+    <span class="nt">&lt;p&gt;</span>By setting constraints, we force ourselves...<span class="nt">&lt;/p&gt;</span>
+    
+    <span class="nt">&lt;h5&gt;</span>About Shay<span class="nt">&lt;/h5&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>As a designer and front-end developer, Shay...<span class="nt">&lt;/p&gt;</span>
+  
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--
+  --&gt;</span><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/aside&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Within the one-third column, marked up with an <code>&lt;aside&gt;</code> element, we’re going to add a <code>&lt;div&gt;</code> element with a class attribute value of <code>speaker-info</code>. We’ll use a <code>&lt;div&gt;</code> element because we’ll be adding styles to this element soon.</p>
+<p>Before getting into any styles, though, let’s add an unordered list within the <code>&lt;div&gt;</code> element that includes as list items some relevant links for the speaker.</p>
+<p>Now our HTML for a speaker will look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"shay-howe"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2-3"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Shay Howe<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>Less Is More: How Constraints Cultivate Growth<span class="nt">&lt;/h5&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>By setting constraints, we force ourselves...<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;h5&gt;</span>About Shay<span class="nt">&lt;/h5&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>As a designer and front-end developer, Shay...<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--
+
+  --&gt;</span><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"speaker-info"</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://twitter.com/shayhowe"</span><span class="nt">&gt;</span>@shayhowe<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://learn.shayhowe.com/"</span><span class="nt">&gt;</span>learn.shayhowe.com<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/aside&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>With the <code>&lt;div&gt;</code> element with a class attribute value of <code>speaker-info</code> ready, we can add some styles to it.</p>
+<p>We’ll begin by adding a new section within our <code>main.css</code> file for the Speaker page styles. From there, let’s add a <code>1</code>-pixel solid gray <code>border</code> with a <code>5</code>-pixel radius around any element that includes the class attribute value of <code>speaker-info</code>.</p>
+<p>Next, let’s add a top <code>margin</code> of <code>88</code> pixels to position the element on the same vertical line as the first paragraph of the talk description, and let’s also add <code>22</code> pixels of vertical <code>padding</code> inside the element to provide room for the nested unordered list.</p>
+<p>Lastly, let’s center all of the text within the element.</p>
+<p>In all, our CSS for the speaker-info class rule set looks like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Speakers
+  ========================================
+*/</span>
+  
+<span class="nc">.speaker-info</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#dfe2e5</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">88px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Let’s take a minute to review why we’re using a <code>&lt;div&gt;</code> element here and the corresponding styles.</p>
+<p>We’re placing a <code>&lt;div&gt;</code> element inside the <code>&lt;aside&gt;</code> element with the class attribute value of <code>col-1-3</code> because we’ll want the <code>padding</code> inherited from the <code>col-1-3</code> class to be outside of the <code>border</code> on the <code>&lt;div&gt;</code> element. Before long we’ll be including an image within the <code>&lt;div&gt;</code> element, alongside the unordered list; therefore we created a <code>&lt;div&gt;</code> element as opposed to applying these styles directly to the <code>&lt;ul&gt;</code> element.</p>
+</li>
+<li>
+<p>As we add more and more speakers to the page, we’ll want to ensure that they remain an equal distance apart vertically. To do so, we’ll create a <code>speaker</code> class rule set which includes a bottom <code>margin</code> of <code>44</code> pixels, like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.speaker</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>We can then apply this class to the <code>&lt;section&gt;</code> element for each speaker, provided it isn’t the last speaker. We’ll omit this class on the last speaker, as we don’t want to create any unnecessary margins before our <code>&lt;footer&gt;</code> element. With more than one speaker, our layout will look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"speaker"</span> <span class="na">id=</span><span class="s">"chris-mills"</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2-3"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--
+
+      --&gt;</span><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/aside&gt;</span>
+
+    <span class="nt">&lt;/section&gt;</span>
+    
+    <span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"shay-howe"</span><span class="nt">&gt;</span>
+    
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2-3"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--
+    
+      --&gt;</span><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/aside&gt;</span>
+    
+    <span class="nt">&lt;/section&gt;</span>
+    
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Notice how the first speaker <code>&lt;section&gt;</code> element, for Chris Mills, includes the <code>class</code> attribute value of <code>speaker</code>, which vertically separates it from the speaker <code>&lt;section&gt;</code> element for myself, Shay Howe. The last speaker <code>&lt;section&gt;</code> element, again for myself, doesn’t include a <code>class</code> attribute value of <code>speaker</code> in order to keep it a proper distance from the <code>&lt;footer&gt;</code> element.</p>
+</li>
+</ol>
+<p>Our navigation menus are now complete, and the Speakers page is taking shape.</p>
+<figure class="fig">
+<img alt="Styles Conference website" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/practice-1.png" style="margin-bottom: 4px;">
+<figcaption>
+<strong>Fig 8</strong>
+<p>Our Speakers page after updating our navigation menus and adding speakers</p>
+</figcaption>
+</figure>
+<h3>Demo &amp; Source Code</h3>
+<p>Below you may view the Styles Conference website in its current state, as well as download the source code for the website in its current state.</p>
+<p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/practice/creating-lists/index.html">View the Styles Conference Website</a>
+<span class="practice-link-separator">
+or
+<a download="" href="https://learn.shayhowe.com/practice/creating-lists.zip" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Download&#39;, &#39;HTML &amp; CSS - Lesson 8&#39;, &#39;Creating Lists&#39;]);" rel="nofollow">Download the Source Code</a>
+<span class="practice-link-detail">(Zip file)</span>
+</span>
+</p>
+<h2 id="summary">Summary<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#summary">#summary</a></h2>
+<p><a href="http://alistapart.com/article/taminglists" rel="nofollow">Lists</a> are used quite commonly in HTML, often in places that might not be obvious or apparent. The key is to use them as semantically as possible and to leverage them where they best fit.</p>
+<p>Let’s recap. Within this lesson we covered the following:</p>
+<ul>
+<li>How to create unordered, ordered, and description lists</li>
+<li>How to properly nest lists inside of other lists</li>
+<li>How to change the list item marker style and position</li>
+<li>How to use a background image instead of a list item marker</li>
+<li>How to horizontally display or float lists</li>
+</ul>
+<p>Now that we know how to add lists to our pages, let’s add media to our pages, too. In the next chapter we’ll dive into embeddable media such as images, audio, and video.</p>
+<h2 id="resources-and-links">Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/creating-lists/#resources-and-links">#resources-and-links</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="http://www.smashingmagazine.com/2009/12/11/styling-html-lists-with-css-techniques-and-resources/" rel="nofollow">Styling HTML Lists with CSS</a>
+via Smashing Magazine
+</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" rel="nofollow">List Style Type</a>
+via Mozilla Developer Network
+</li>
+<li>
+<a href="http://alistapart.com/article/taminglists" rel="nofollow">CSS Design: Taming Lists</a>
+via A List Apart
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/creating-lists/" data-title="Creating Lists">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Creating%20Lists%20-&amp;url=http://learn.shayhowe.com/html-css/creating-lists/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/creating-lists/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/creating-lists/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/" rel="prev">
+<strong>Lesson 7</strong>
+<span>Setting Backgrounds &amp; Gradients</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/html-css/adding-media/" rel="next">
+<strong>Lesson 9</strong>
+<span>Adding Media</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Creating Lists&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Creating Lists&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Creating Lists&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Creating Lists&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Creating Lists&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Creating Lists&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Creating Lists&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+ <div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Creating Lists&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Creating Lists&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Creating Lists&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Creating Lists&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Creating Lists&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Creating Lists&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/html-css/creating-lists/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Creating Lists&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Creating Lists&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Creating Lists&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/advanced-html-css/">Looking for Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" class="media-circle" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/advanced-html-css/">advanced HTML and CSS lessons</a> to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/advanced-html-css/">View Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+ <div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/follow_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Creating Lists - Learn to Code HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Creating Lists - Learn to Code HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Creating Lists - Learn to Code HTML &amp; CSS_files/widget_iframe.2d991e3dfc9abb2549972ce8b64c5d85.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

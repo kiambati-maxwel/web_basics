@@ -1,0 +1,31 @@
+div.tec{
+padding: 5px;
+
+}
+div.techh{
+  padding: 5px;
+}
+#image_b{
+    float: right;
+}
+#info{
+    float: left;
+}
+h1.tec{
+    float: left;
+}
+p.tec{
+    float: left;
+}
+#tt{
+    float: right;
+}
+body{
+    size: 300%;
+}
+#pp{
+    float: left;
+}
+section{
+clear: both;
+}

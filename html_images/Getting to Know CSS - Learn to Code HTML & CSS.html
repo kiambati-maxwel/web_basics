@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://learn.shayhowe.com/html-css/getting-to-know-css/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Take a look at the backbone of CSS, the cascade and CSS specificity. Also peak into common CSS color and length property values." name="description">
+<meta content="css cascade specificity selectors colors hexadecimals keywords length" name="keywords">
+<title>Getting to Know CSS - Learn to Code HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/ga.js.download"></script><script src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/button.d941c9a422e2e3faf474b82a1f39e936.js.download"></script></head>
+<body class="html-css html-css_getting-to-know-css html-css_getting-to-know-css_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/html-css/">
+<span>Learn to Code</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/html-css/getting-to-know-css/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="building-your-first-web-page">
+<a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">
+<strong>Lesson 1</strong>
+Building Your First Web Page
+</a>
+</li>
+<li class="getting-to-know-html">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-html/">
+<strong>Lesson 2</strong>
+Getting to Know HTML
+</a>
+</li>
+<li class="getting-to-know-css">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">
+<strong>Lesson 3</strong>
+Getting to Know CSS
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="opening-the-box-model">
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">
+<strong>Lesson 4</strong>
+Opening the Box Model
+</a>
+</li>
+<li class="positioning-content">
+<a href="https://learn.shayhowe.com/html-css/positioning-content/">
+<strong>Lesson 5</strong>
+Positioning Content
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="working-with-typography">
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/">
+<strong>Lesson 6</strong>
+Working with Typography
+</a>
+</li>
+<li class="setting-backgrounds-and-gradients">
+<a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/">
+<strong>Lesson 7</strong>
+Setting Backgrounds &amp; Gradients
+</a>
+</li>
+<li class="creating-lists">
+<a href="https://learn.shayhowe.com/html-css/creating-lists/">
+<strong>Lesson 8</strong>
+Creating Lists
+</a>
+</li>
+<li class="adding-media">
+<a href="https://learn.shayhowe.com/html-css/adding-media/">
+<strong>Lesson 9</strong>
+ Adding Media
+</a>
+</li>
+<li class="building-forms">
+<a href="https://learn.shayhowe.com/html-css/building-forms/">
+<strong>Lesson 10</strong>
+Building Forms
+</a>
+</li>
+<li class="organizing-data-with-tables">
+<a href="https://learn.shayhowe.com/html-css/organizing-data-with-tables/">
+<strong>Lesson 11</strong>
+Organizing Data with Tables
+</a>
+</li>
+<li class="writing-your-best-code">
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/">
+<strong>Lesson 12</strong>
+Writing Your Best Code
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/advanced-html-css/">Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS</a> for a deeper look at front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 3</h6>
+<h1>Getting to Know CSS</h1>
+</div>
+<script src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">3</span>
+</h4>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/#cascade">The Cascade</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/#specificity">Calculating Specificity</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/#combining-selectors">Combining Selectors</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/#multiple-classes">Layering Styles with Multiple Classes</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/#css-property-values">Common Property Values</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/getting-to-know-css/" data-title="Getting to Know CSS">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Getting%20to%20Know%20CSS%20-&amp;url=http://learn.shayhowe.com/html-css/getting-to-know-css/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/getting-to-know-css/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/getting-to-know-css/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCYYIVZ3JCWSIVKQYCVSDP2JKC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/1572534249-O1.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCYYIVZ3JCWSIVKQYCVSDP2JKC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">Release, deploy, operate. Octopus Deploy is your DevOps happy place.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>CSS is a complex language that packs quite a bit of power.</p>
+<p>It allows us to add layout and design to our pages, and it allows us to share those styles from element to element and page to page. Before we can unlock all of its features, though, there are a few aspects of the language we must fully understand.</p>
+<p>First, it’s crucial to know exactly how styles are rendered. Specifically, we’ll need to know how different types of selectors work and how the order of those selectors can affect how our styles are rendered. We’ll also want to understand a few common property values that continually appear within CSS, particularly those that deal with color and length.</p>
+<p>Let’s look under the hood of CSS to see exactly what is going on.</p>
+<h2 id="cascade">The Cascade<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/getting-to-know-css/#cascade">#cascade</a></h2>
+<p>We’ll begin breaking down exactly how styles are rendered by looking at what is known as the cascade and studying a few examples of the cascade in action. Within CSS, all styles cascade from the top of a style sheet to the bottom, allowing different styles to be added or overwritten as the style sheet progresses.</p>
+<p>For example, say we select all paragraph elements at the top of our style sheet and set their background color to <code>orange</code> and their font size to <code>24</code> pixels. Then towards the bottom of our style sheet, we select all paragraph elements again and set their background color to <code>green</code>, as seen here.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Because the paragraph selector that sets the background color to <code>green</code> comes after the paragraph selector that sets the background color to <code>orange</code>, it will take precedence in the cascade. All of the paragraphs will appear with a <code>green</code> background. The font size will remain <code>24</code> pixels because the second paragraph selector didn’t identify a new font size.</p>
+<h3>Cascading Properties</h3>
+<p>The cascade also works with properties inside individual selectors. Again, for example, say we select all the paragraph elements and set their background color to <code>orange</code>. Then directly below the <code>orange</code> background property and value declaration, we add another property and value declaration setting the background color to <code>green</code>, as seen here.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Because the <code>green</code> background color declaration comes after the <code>orange</code> background color declaration, it will overrule the <code>orange</code> background, and, as before, our paragraphs will appear with a <code>green</code> background.</p>
+<p>All styles will cascade from the top of our style sheet to the bottom of our style sheet. There are, however, times where the cascade doesn’t play so nicely. Those times occur when different types of selectors are used and the specificity of those selectors breaks the cascade. Let’s take a look.</p>
+<h2 id="specificity">Calculating Specificity<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/getting-to-know-css/#specificity">#specificity</a></h2>
+<p>Every selector in CSS has a specificity weight. A selector’s specificity weight, along with its placement in the cascade, identifies how its styles will be rendered.</p>
+<p>In Lesson 1, “<a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">Building Your First Web Page</a>,” we talked about three different types of selectors: the type, class, and ID selectors. Each of these selectors has a different specificity weight.</p>
+<p>The type selector has the lowest specificity weight and holds a point value of <code>0-0-1</code>. The class selector has a medium specificity weight and holds a point value of <code>0-1-0</code>. Lastly, the ID selector has a high specificity weight and holds a point value of <code>1-0-0</code>. As we can see, specificity points are calculated using three columns. The first column counts ID selectors, the second column counts class selectors, and the third column counts type selectors.</p>
+<p>What’s important to note here is that the ID selector has a higher specificity weight than the class selector, and the class selector has a higher specificity weight than the type selector.</p>
+<div class="note note-box">
+<h4>Specificity Points</h4>
+<p>Specificity points are intentionally hyphenated, as their values are not computed from a base of 10. Class selectors do not hold a point value of 10, and ID selectors do not hold a point value of 100. Instead, these points should be read as <code>0-1-0</code> and <code>1-0-0</code> respectively. We’ll take a closer look at why these point values are hyphenated shortly, when we combine selectors.</p>
+</div>
+<p>The higher the specificity weight of a selector, the more superiority the selector is given when a styling conflict occurs. For example, if a paragraph element is selected using a type selector in one place and an ID selector in another, the ID selector will take precedence over the type selector regardless of where the ID selector appears in the cascade.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"food"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nf">#food</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">orange</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Here we have a paragraph element with an <code>id</code> attribute value of <code>food</code>. Within our CSS, that paragraph is being selected by two different kinds of selectors: one type selector and one ID selector. Although the type selector comes after the ID selector in the cascade, the ID selector takes precedence over the type selector because it has a higher specificity weight; consequently the paragraph will appear with a <code>green</code> background.</p>
+<p>The specificity weights of different types of selectors are incredibly important to remember. At times styles may not appear on elements as intended, and chances are the specificity weights of our selectors are breaking the cascade, therefore our styles are not appearing properly.</p>
+<p>Understanding how the cascade and specificity work is a huge hurdle, and we’ll continue to cover this topic. For now, let’s look at how to be a little more particular and intentional with our selectors by combining them. Keep in mind that as we combine selectors, we’ll also be changing their specificity.</p>
+<h2 id="combining-selectors">Combining Selectors<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/getting-to-know-css/#combining-selectors">#combining-selectors</a></h2>
+<p>So far we’ve looked at how to use different types of selectors individually, but we also need to know how to use these selectors together. By combining selectors we can be more specific about which element or group of elements we’d like to select.</p>
+<p>For example, say we want to select all paragraph elements that reside within an element with a class attribute value of <code>hotdog</code> and set their background color to <code>brown</code>. However, if one of those paragraphs happens to have the class attribute value of <code>mustard</code>, we want to set its background color to <code>yellow</code>. Our HTML and CSS may look like the following:</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hotdog"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mustard"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.hotdog</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">brown</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.hotdog</span> <span class="nt">p</span><span class="nc">.mustard</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>When selectors are combined they should be read from right to left. The selector farthest to the right, directly before the opening curly bracket, is known as the <em>key selector</em>. The key selector identifies exactly which element the styles will be applied to. Any selector to the left of the key selector will serve as a prequalifier.</p>
+<p>The first combined selector above, <code>.hotdog p</code>, includes two selectors: a class and a type selector. These two selectors are separated by a single space. The key selector is a type selector targeting paragraph elements. And because this type selector is prequalified with a class selector of <code>hotdog</code>, the full combined selector will only select paragraph elements that reside within an element with a class attribute value of <code>hotdog</code>.</p>
+<p>The second selector above, <code>.hotdog p.mustard</code>, includes three selectors: two class selectors and one type selector. The only difference between the second selector and the first selector is the addition of the class selector of <code>mustard</code> to the end of the paragraph type selector. Because the new class selector, <code>mustard</code>, falls all the way to the right of the combined selector, it is the key selector, and all of the individual selectors coming before it are now prequalifiers.</p>
+<div class="note note-box">
+<h4>Spaces Within Selectors</h4>
+<p>Within the previous combined selector, <code>.hotdog p.mustard</code>, there is a space between the <code>hotdog</code> class selector and the paragraph type selector but not between the paragraph type selector and the <code>mustard</code> class selector. The use, and omission, of spaces makes a large difference in selectors.</p>
+<p>Since there isn’t a space between the paragraph type selector and the <code>mustard</code> class selector that means the selector will only select paragraph elements with the class of <code>mustard</code>. If the paragraph type selector was removed, and the <code>mustard</code> class selector had spaces on both sides of it, it would select any element with the class of <code>mustard</code>, not just paragraphs.</p>
+<p>The best practice is to not prefix a class selector with a type selector. Generally we want to select any element with a given class, not just one type of element. And following this best practice, our new combined selector would be better as <code>.hotdog .mustard</code>.</p>
+</div>
+<p>Reading the combined selector from right to left, it is targeting paragraphs with a class attribute value of <code>mustard</code> that reside within an element with the class attribute value of <code>hotdog</code>.</p>
+<p>Different types of selectors can be combined to target any given element on a page. As we continue to write different combined selectors, we’ll see their powers come to life. Before we do that, though, let’s take a look at how combining selectors changes a selector’s specificity weight.</p>
+<h3>Specificity Within Combined Selectors</h3>
+<p>When selectors are combined, so are the specificity weights of the individual selectors. These combined specificity weights can be calculated by counting each different type of selector within a combined selector.</p>
+<p>Looking at our combined selectors from before, the first selector, <code>.hotdog p</code>, had both a class selector and a type selector. Knowing that the point value of a class selector is <code>0-1-0</code> and the point value of a type selector is <code>0-0-1</code>, the total combined point value would be <code>0-1-1</code>, found by adding up each kind of selector.</p>
+<p>The second selector, <code>.hotdog p.mustard</code>, had two class selectors and one type selector. Combined, the selector has a specificity point value of <code>0-2-1</code>. The <code>0</code> in the first column is for zero ID selectors, the <code>2</code> in the second column is for two class selectors, and the <code>1</code> in the last column is for one type selector.</p>
+ <p>Comparing the two selectors, the second selector, with its two classes, has a noticeably higher specificity weight and point value. As such it will take precedence within the cascade. If we were to flip the order of these selectors within our style sheet, placing the higher-weighted selector above the lower-weighted selector as shown here, the appearance of their styles would not be affected due to each selector’s specificity weight.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.hotdog</span> <span class="nt">p</span><span class="nc">.mustard</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.hotdog</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">brown</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In general we want to always keep an eye on the specificity weights of our selectors. The higher our specificity weights rise, the more likely our cascade is to break.</p>
+<h2 id="multiple-classes">Layering Styles with Multiple Classes<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/getting-to-know-css/#multiple-classes">#multiple-classes</a></h2>
+<p>One way to keep the specificity weights of our selectors low is to be as modular as possible, sharing similar styles from element to element. And one way to be as modular as possible is to layer on different styles by using multiple classes.</p>
+<p>Elements within HTML can have more than one class attribute value so long as each value is space separated. With that, we can place certain styles on all elements of one sort while placing other styles only on specific elements of that sort.</p>
+<p>We can tie styles we want to continually reuse to one class and layer on additional styles from another class.</p>
+<p>Let’s take a look at buttons, for example. Say we want all of our buttons to have a font size of <code>16</code> pixels, but we want the background color of our buttons to vary depending on where the buttons are used. We can create a few classes and layer them on an element as necessary to apply the desired styles.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nc">.btn</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.btn-danger</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.btn-success</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Here you can see two anchor elements, both with multiple class attribute values. The first class, <code>btn</code>, is used to apply a font size of <code>16</code> pixels to each of the elements. Then, the first anchor element uses an additional class of <code>btn-danger</code> to apply a <code>red</code> background color while the second anchor element uses an additional class of <code>btn-success</code> to apply a <code>green</code> background color. Our styles here are clean and modular.</p>
+<p>Using multiple classes, we can layer on as many styles as we wish, keeping our code lean and our specificity weights low. Much like understanding the cascade and calculating specificity, this is a practice that will take time to fully absorb, but we’ll get better with each lesson.</p>
+<h2 id="css-property-values">Common CSS Property Values<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/getting-to-know-css/#css-property-values">#css-property-values</a></h2>
+<p>We’ve used a handful of common CSS property values already, such as the keyword color values of <code>red</code> and <code>green</code>. You may not have thought too much about them; that’s okay. We’re going to take time now to go over some previously used property values as well as to explore some of the more common property values that we’ll soon be using.</p>
+<p>Specifically, we’ll look at property values that relate to colors and length measurements.</p>
+<h3>Colors</h3>
+<p>All color values within CSS are defined on an sRGB (or standard red, green, and blue) color space. Colors within this space are formed by mixing red, green, and blue color channels together, mirroring the way that televisions and monitors generate all the different colors they display. By mixing different levels of red, green, and blue, we can create millions of colors—and find nearly any color we’d like.</p>
+<p>Currently there are four primary ways to represent sRGB colors within CSS: keywords, hexadecimal notation, and RGB and HSL values.</p>
+<h4>Keyword Colors</h4>
+<p>Keyword color values are names (such as <code>red</code>, <code>green</code>, or <code>blue</code>) that map to a given color. These keyword names and their corresponding colors are determined by the CSS specification. Most common colors, along with a few oddities, have keyword names.</p>
+<p>A complete list of these keyword names can be found within the <a href="https://www.w3.org/TR/css3-color/" rel="nofollow">CSS specification</a>.</p>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>Color</th>
+<th>Name</th>
+<th>Hex Values</th>
+<th>RGB Values</th>
+<th>HSL Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="color-sample" style="background: black;"></div></td>
+<td data-title="Name"><code>black</code></td>
+<td data-title="Hex Value"><code>#000000</code></td>
+<td data-title="RGB Value"><code>rgb(0, 0, 0)</code></td>
+<td data-title="HSL Value"><code>hsl(0, 0%, 0%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: silver;"></div></td>
+<td data-title="Name"><code>silver</code></td>
+<td data-title="Hex Value"><code>#c0c0c0</code></td>
+<td data-title="RGB Value"><code>rgb(192, 192, 192)</code></td>
+<td data-title="HSL Value"><code>hsl(0, 0%, 75%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: gray;"></div></td>
+<td data-title="Name"><code>gray</code></td>
+<td data-title="Hex Value"><code>#808080</code></td>
+<td data-title="RGB Value"><code>rgb(128, 128, 128)</code></td>
+<td data-title="HSL Value"><code>hsl(0, 0%, 50%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: white; border: 1px solid #cecfd5;"></div></td>
+<td data-title="Name"><code>white</code></td>
+<td data-title="Hex Value"><code>#ffffff</code></td>
+<td data-title="RGB Value"><code>rgb(255, 255, 255)</code></td>
+<td data-title="HSL Value"><code>hsl(0, 100%, 100%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: maroon;"></div></td>
+<td data-title="Name"><code>maroon</code></td>
+<td data-title="Hex Value"><code>#800000</code></td>
+<td data-title="RGB Value"><code>rgb(128, 0, 0)</code></td>
+<td data-title="HSL Value"><code>hsl(0, 100%, 25%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: red;"></div></td>
+<td data-title="Name"><code>red</code></td>
+<td data-title="Hex Value"><code>#ff0000</code></td>
+<td data-title="RGB Value"><code>rgb(255, 0, 0)</code></td>
+<td data-title="HSL Value"><code>hsl(0, 100%, 50%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: purple;"></div></td>
+<td data-title="Name"><code>purple</code></td>
+<td data-title="Hex Value"><code>#800080</code></td>
+<td data-title="RGB Value"><code>rgb(128, 0, 128)</code></td>
+<td data-title="HSL Value"><code>hsl(300, 100%, 25%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: fuchsia;"></div></td>
+<td data-title="Name"><code>fuchsia</code></td>
+<td data-title="Hex Value"><code>#ff00ff</code></td>
+<td data-title="RGB Value"><code>rgb(255, 0, 255)</code></td>
+<td data-title="HSL Value"><code>hsl(300, 100%, 50%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: green;"></div></td>
+<td data-title="Name"><code>green</code></td>
+<td data-title="Hex Value"><code>#008000</code></td>
+<td data-title="RGB Value"><code>rgb(0, 128, 0)</code></td>
+<td data-title="HSL Value"><code>hsl(120, 100%, 25%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: olive;"></div></td>
+<td data-title="Name"><code>olive</code></td>
+<td data-title="Hex Value"><code>#808000</code></td>
+<td data-title="RGB Value"><code>rgb(128, 128, 0)</code></td>
+<td data-title="HSL Value"><code>hsl(60, 100%, 25%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: lime;"></div></td>
+<td data-title="Name"><code>lime</code></td>
+<td data-title="Hex Value"><code>#00ff00</code></td>
+<td data-title="RGB Value"><code>rgb(0, 255, 0)</code></td>
+<td data-title="HSL Value"><code>hsl(120, 100%, 50%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: yellow;"></div></td>
+<td data-title="Name"><code>yellow</code></td>
+<td data-title="Hex Value"><code>#ffff00</code></td>
+<td data-title="RGB Value"><code>rgb(255, 255, 0)</code></td>
+ <td data-title="HSL Value"><code>hsl(60, 100%, 50%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: navy;"></div></td>
+<td data-title="Name"><code>navy</code></td>
+<td data-title="Hex Value"><code>#000080</code></td>
+<td data-title="RGB Value"><code>rgb(0, 0, 128)</code></td>
+<td data-title="HSL Value"><code>hsl(240, 100%, 25%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: blue;"></div></td>
+<td data-title="Name"><code>blue</code></td>
+<td data-title="Hex Value"><code>#0000ff</code></td>
+<td data-title="RGB Value"><code>rgb(0, 0, 255)</code></td>
+<td data-title="HSL Value"><code>hsl(240, 100%, 50%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: teal;"></div></td>
+<td data-title="Name"><code>teal</code></td>
+<td data-title="Hex Value"><code>#008080</code></td>
+<td data-title="RGB Value"><code>rgb(0, 128, 128)</code></td>
+<td data-title="HSL Value"><code>hsl(180, 100%, 25%)</code></td>
+</tr>
+<tr>
+<td><div class="color-sample" style="background: aqua;"></div></td>
+<td data-title="Name"><code>aqua</code></td>
+<td data-title="Hex Value"><code>#00ffff</code></td>
+<td data-title="RGB Value"><code>rgb(0, 255, 255)</code></td>
+<td data-title="HSL Value"><code>hsl(180, 100%, 50%)</code></td>
+</tr>
+</tbody>
+</table>
+<style>
+                /* line 1, (__TEMPLATE__) */
+                .color-sample {
+                  border-radius: 6px;
+                  min-height: 36px;
+                  min-width: 36px; }
+                
+                @media (max-width: 560px) {
+                  /* line 7, (__TEMPLATE__) */
+                  .color-sample {
+                    margin-bottom: 6px; } }
+              </style>
+<p>Here we are applying a <code>maroon</code> background to any element with the <code>task</code> class attribute value and a <code>yellow</code> background to any element with the <code>count</code> class attribute value.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.task</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">maroon</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.count</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>While keyword color values are simple in nature, they provide limited options and thus are not the most popular color value choice.</p>
+<h4>Hexadecimal Colors</h4>
+<p>Hexadecimal color values consist of a pound, or hash, <code>#</code>, followed by a three- or six- character figure. The figures use the numbers <code>0</code> through <code>9</code> and the letters <code>a</code> through <code>f</code>, upper or lower case. These values map to the red, green, and blue color channels.</p>
+<p>In six-character notation, the first two characters represent the red channel, the third and fourth characters represent the green channel, and the last two characters represent the blue channel. In three-character notation, the first character represents the red channel, the second character represents the green channel, and the last character represents the blue channel.</p>
+<p>If in six-character notation the first two characters are a matching pair, the third and fourth characters are a matching pair, and the last two characters are a matching pair, the six-character figure may be shortened to a three-character figure. To do this the repeated character from each pair should be used once. For example, a shade of orange represented by the hexadecimal color <code>#ff6600</code> could also be written as <code>#f60</code>.</p>
+<figure class="fig fig-row">
+<img alt="Hexadecimal Color Syntax" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/hexadecimal-syntax.png" style="margin-bottom: 3px;">
+<figcaption>
+<strong>Fig 3</strong>
+<p>Six-character hexadecimal values may be written as three-character hexadecimal values when the red, green, and blue color channels each contain a repeating character</p>
+</figcaption>
+</figure>
+<p>The character pairs are obtained by converting <code>0</code> through <code>255</code> into a base-16, or hexadecimal, format. The math is a little tricky—and worthy of its own book—but it helps to know that <code>0</code> equals black and <code>f</code> equals white.</p>
+<div class="note note-box">
+<h4>The Millions of Hexadecimal Colors</h4>
+<p>There are millions of hexadecimal colors, over 16.7 million to be exact. Here’s how…</p>
+<p>There are 16 options for every character in a hexadecimal color, <code>0</code> through <code>9</code> and <code>a</code> through <code>f</code>. With the characters grouped in pairs, there are 256 color options per pair (16 multiplied by 16, or 16 squared).</p>
+<p>And with three groups of 256 color options we have a total of over 16.7 million colors (256 multiplied by 256 multiplied by 256, or 256 cubed).</p>
+</div>
+<p>To create the same <code>maroon</code> and <code>yellow</code> background colors from before, we could replace the keyword color values with hexadecimal color values, as seen here.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.task</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#800000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.count</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Hexadecimal color values have been around for a while, and they have become fairly popular because they offer a large number of color options. They are, however, a little difficult to work with, especially if you’re not too familiar with them. Fortunately Adobe has created <a href="https://kuler.adobe.com/" rel="nofollow">Adobe Kuler</a>, a free application that provides a color wheel to help us find any color we want and its corresponding hexadecimal value.</p>
+<p>Additionally, most image editing applications, such as Adobe Photoshop, provide the capability to locate hexadecimal color values.</p>
+<figure class="fig fig-row">
+<img alt="Adobe Photoshop Color Picker" class="media-shrink" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/photoshop-color-picker.png" style="margin-bottom: 6px;">
+<figcaption>
+<strong>Fig 3</strong>
+<p>The color picker tool within Adobe Photoshop displays the hexadecimal and RGB color values</p>
+</figcaption>
+</figure>
+ <h4>RGB &amp; RGBa Colors</h4>
+<p>RGB color values are stated using the <code>rgb()</code> function, which stands for red, green, and blue. The function accepts three comma-separated values, each of which is an integer from <code>0</code> to <code>255</code>. A value of <code>0</code> would be pure black; a value of <code>255</code> would be pure white.</p>
+<p>As we might expect, the first value within the <code>rgb()</code> function represents the red channel, the second value represents the green channel, and the third value represents the blue channel.</p>
+<p>If we were to recreate the shade of orange from before as an RGB color value, it would be represented as <code>rgb(255, 102, 0)</code>.</p>
+<p>Also, using the same <code>maroon</code> and <code>yellow</code> background colors from before, we could replace the keyword or hexadecimal color values with RGB color values.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.task</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">128</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.count</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>RGB color values may also include an alpha, or transparency, channel by using the <code>rgba()</code> function. The <code>rgba()</code> function requires a fourth value, which must be a number between <code>0</code> and <code>1</code>, including decimals. A value of <code>0</code> creates a fully transparent color, meaning it would be invisible, and a value of <code>1</code> creates a fully opaque color. Any decimal value in between <code>0</code> and <code>1</code> would create a semi-transparent color.</p>
+<p>If we wanted our shade of orange to appear 50% opaque, we would use an RGBa color value of <code>rgba(255, 102, 0, .5)</code>.</p>
+<p>We can also change the opacity of our <code>maroon</code> and <code>yellow</code> background colors. The following code sets the <code>maroon</code> background color to 25% opaque and leaves the <code>yellow</code> background color 100% opaque.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.task</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">128</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.25</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.count</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>RGB color values are becoming more popular, especially due to the ability to create semi-transparent colors using RGBa.</p>
+<h4>HSL &amp; HSLa Colors</h4>
+<p>HSL color values are stated using the <code>hsl()</code> function, which stands for hue, saturation, and lightness. Within the parentheses, the function accepts three comma-separated values, much like <code>rgb()</code>.</p>
+<p>The first value, the hue, is a unitless number from <code>0</code> to <code>360</code>. The numbers <code>0</code> through <code>360</code> represent the color wheel, and the value identifies the degree of a color on the color wheel.</p>
+<p>The second and third values, the saturation and lightness, are percentage values from <code>0</code> to <code>100%</code>. The saturation value identifies how saturated with color the hue is, with <code>0</code> being grayscale and <code>100%</code> being fully saturated. The lightness identifies how dark or light the hue value is, with <code>0</code> being completely black and <code>100%</code> being completely white.</p>
+<p>Returning to our shade of orange, as an HSL color value it would be written as <code>hsl(24, 100%, 50%)</code>.</p>
+<p>Our <code>maroon</code> and <code>yellow</code> background colors can also be stated as HSL color values, as shown here.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.task</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">hsl</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">25%</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.count</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">hsl</span><span class="p">(</span><span class="m">60</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">50%</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>HSL color values, like RGBa, may also include an alpha, or transparency, channel with the use of the <code>hsla()</code> function. The behavior of the alpha channel is just like that of the <code>rgba()</code> function. A fourth value between <code>0</code> and <code>1</code>, including decimals, must be added to the function to identify the degree of opacity.</p>
+<p>Our shade of orange as an HSLa color set to 50% opaque would be represented as <code>hsla(24, 100%, 50%, .5)</code>.</p>
+<p>The same 25% opaque <code>maroon</code> background color and 100% opaque <code>yellow</code> background color from before would look like the following as HSLa color values.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.task</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">hsla</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">25%</span><span class="p">,</span> <span class="m">.25</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.count</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">hsla</span><span class="p">(</span><span class="m">60</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">50%</span><span class="p">,</span> <span class="m">1</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>The HSL color value is the newest color value available within CSS. Due to its age and support within browsers, though, it isn’t as widely used as the other values.</p>
+<p>For the time being, hexadecimal color values remain the most popular as they are widely supported; though when an alpha channel for transparency is needed, RGBa color values are preferred. These preferences may change in the future, but for now we’ll use hexadecimal and RGBa color values.</p>
+<h3>Lengths</h3>
+<p>Length values within CSS are similar to colors in that there are a handful of different types of values for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" rel="nofollow">length</a>, all of which serve distinct purposes. Length values come in two different forms, absolute and relative, each of which uses different units of measurement.</p>
+<p>We’re going to stick to the more common—and more straightforward—values at the moment, as more complex values will provide much more power than we need for now.</p>
+<h4>Absolute Lengths</h4>
+<p>Absolute length values are the simplest length values, as they are fixed to a physical measurement, such as inches, centimeters, or millimeters. The most popular absolute unit of measurement is known as the pixel and is represented by the <code>px</code> unit notation.</p>
+<h5>Pixels</h5>
+<p>The pixel is equal to 1/96th of an inch; thus there are 96 pixels in an inch. The exact measurement of a pixel, however, may vary slightly between high-density and low-density viewing devices.</p>
+<p>Pixels have been around for quite some time and are commonly used with a handful of different properties. The code here is using pixels to set the font size of all paragraphs to <code>14</code> pixels.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>With the changing landscape of viewing devices and their varying screen sizes, pixels have lost some of their popularity. As an absolute unit of measurement, they don’t provide too much flexibility. Pixels are, however, trustworthy and great for getting started. We’re going to lean on them quite a bit as we’re learning the ropes of HTML and CSS.</p>
+<h4>Relative Lengths</h4>
+<p>In addition to absolute length values, there are also relative length values. Relative length values are a little more complicated, as they are not fixed units of measurement; they rely on the length of another measurement.</p>
+<h5>Percentages</h5>
+<p>Percentages, represented by the <code>%</code> unit notation, are one of the most popular relative values. Percentage lengths are defined in relation to the length of another object. For example, to set the <code>width</code> of an element to <code>50%</code>, we have to know the width of its parent element, the element it is nested within, and then identify <code>50%</code> of the parent element’s width.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.col</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Here we’ve set the width of the element with the class attribute value of <code>col</code> to <code>50%</code>. That <code>50%</code> will be calculated relative to the width of the element’s parent.</p>
+<p>Percentages are extremely helpful for setting the height and width of elements and building out a web page’s layout. We’re going to rely on them often to help us out in these areas.</p>
+<h5>Em</h5>
+<p>The em unit is also a very popular relative value. The em unit is represented by the <code>em</code> unit notation, and its length is calculated based on an element’s font size.</p>
+<p>A single em unit is equivalent to an element’s font size. So, for example, if an element has a font size of <code>14</code> pixels and a <code>width</code> set to <code>5em</code>, the width would equal <code>70</code> pixels (<code>14</code> pixels multiplied by 5).</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.banner</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">5em</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>When a font size is not explicitly stated for an element, the em unit will be relative to the font size of the closest parent element with a stated font size.</p>
+<p>The em unit is often used for styling text, including font sizes, as well as spacing around text, including margins and paddings. We’ll explore text a bit more in Lesson 6, “<a href="https://learn.shayhowe.com/html-css/working-with-typography/">Working with Typography</a>.”</p>
+<p>There are a lot more absolute and relative units of measurement than those mentioned here. However, these three—pixels, percentages, and em units—are the most popular and the ones we’re going to primarily use.</p>
+<h2 id="summary">Summary<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/getting-to-know-css/#summary">#summary</a></h2>
+<p>Sadly our Styles Conference website lay dormant this lesson. We focused on the foundations of CSS, covering exactly how it works and some common values we’re sure to use.</p>
+<p>To briefly recap, within this lesson we’ve discussed the following:</p>
+<ul>
+<li>How style sheets cascade from the top to the bottom of a file</li>
+<li>What specificity is and how we can calculate it</li>
+<li>How to combine selectors to target specific elements or groups of elements</li>
+<li>How to use multiple classes on a single element to layer on different styles for more modular code</li>
+<li>The different color values available to use within CSS, including keyword, hexadecimal, RGB, and HSL values</li>
+<li>The different length values available to use within CSS, including pixels, percentages, and em units</li>
+</ul>
+<p>We still have a lot to cover, but the fundamentals are starting to fall into place. Within the next few lessons we’ll continue to dive in to CSS, and our website will really begin to take shape.</p>
+<h2 id="resources-and-links">Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/getting-to-know-css/#resources-and-links">#resources-and-links</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="https://www.w3.org/TR/css3-color/" rel="nofollow">CSS Color Module</a>
+via W3C
+</li>
+<li>
+<a href="https://kuler.adobe.com/create/color-wheel/" rel="nofollow">Adobe Kuler</a>
+</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length" rel="nofollow">CSS Length Values</a>
+via Mozilla Developer Network
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/getting-to-know-css/" data-title="Getting to Know CSS">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Getting%20to%20Know%20CSS%20-&amp;url=http://learn.shayhowe.com/html-css/getting-to-know-css/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/getting-to-know-css/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/getting-to-know-css/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-html/" rel="prev">
+<strong>Lesson 2</strong>
+<span>Getting to Know HTML</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/" rel="next">
+<strong>Lesson 4</strong>
+<span>Opening the Box Model</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Getting to Know CSS&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Getting to Know CSS&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Getting to Know CSS&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Getting to Know CSS&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Getting to Know CSS&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Getting to Know CSS&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Getting to Know CSS&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+ <div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Getting to Know CSS&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Getting to Know CSS&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Getting to Know CSS&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Getting to Know CSS&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Getting to Know CSS&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Getting to Know CSS&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/advanced-html-css/">Looking for Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" class="media-circle" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/advanced-html-css/">advanced HTML and CSS lessons</a> to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/advanced-html-css/">View Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/follow_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Getting to Know CSS - Learn to Code HTML &amp; CSS_files/widget_iframe.2d991e3dfc9abb2549972ce8b64c5d85.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

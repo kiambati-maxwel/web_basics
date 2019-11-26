@@ -1,0 +1,34 @@
+.embed-nav {
+  box-shadow: none;
+}
+.embed-nav .code-types a,
+.embed-nav .result-button-list a {
+  font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+.embed-nav .code-types a:hover,
+.embed-nav .result-button-list a:hover {
+  color: #2db34a;
+  opacity: 1;
+}
+
+.action-button {
+  cursor: pointer;
+}
+.action-button:hover {
+  color: #2db34a;
+  opacity: 1;
+}
+.action-button:focus {
+  outline: none;
+}
+
+#result-box {
+  padding: 18px 30px;
+}
+
+#output {
+  border-radius: 6px;
+}

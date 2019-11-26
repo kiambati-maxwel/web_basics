@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://learn.shayhowe.com/html-css/opening-the-box-model/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Learn the HTML and CSS box model concept, outlining that every element on a page is a rectangular box, of which may include margins, padding, and borders." name="description">
+<meta content="html css box model margin border padding content box-sizing" name="keywords">
+<title>Opening the Box Model - Learn to Code HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/ga.js.download"></script><script src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/button.d941c9a422e2e3faf474b82a1f39e936.js.download"></script></head>
+<body class="html-css html-css_opening-the-box-model html-css_opening-the-box-model_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/html-css/">
+<span>Learn to Code</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/html-css/opening-the-box-model/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="building-your-first-web-page">
+<a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">
+<strong>Lesson 1</strong>
+Building Your First Web Page
+</a>
+</li>
+<li class="getting-to-know-html">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-html/">
+<strong>Lesson 2</strong>
+Getting to Know HTML
+</a>
+</li>
+<li class="getting-to-know-css">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">
+<strong>Lesson 3</strong>
+Getting to Know CSS
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="opening-the-box-model">
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">
+<strong>Lesson 4</strong>
+Opening the Box Model
+</a>
+</li>
+<li class="positioning-content">
+<a href="https://learn.shayhowe.com/html-css/positioning-content/">
+<strong>Lesson 5</strong>
+Positioning Content
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="working-with-typography">
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/">
+<strong>Lesson 6</strong>
+Working with Typography
+</a>
+</li>
+<li class="setting-backgrounds-and-gradients">
+<a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/">
+<strong>Lesson 7</strong>
+Setting Backgrounds &amp; Gradients
+</a>
+</li>
+<li class="creating-lists">
+<a href="https://learn.shayhowe.com/html-css/creating-lists/">
+<strong>Lesson 8</strong>
+Creating Lists
+</a>
+</li>
+<li class="adding-media">
+<a href="https://learn.shayhowe.com/html-css/adding-media/">
+<strong>Lesson 9</strong>
+Adding Media
+</a>
+</li>
+<li class="building-forms">
+<a href="https://learn.shayhowe.com/html-css/building-forms/">
+<strong>Lesson 10</strong>
+Building Forms
+</a>
+</li>
+<li class="organizing-data-with-tables">
+<a href="https://learn.shayhowe.com/html-css/organizing-data-with-tables/">
+<strong>Lesson 11</strong>
+Organizing Data with Tables
+</a>
+</li>
+<li class="writing-your-best-code">
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/">
+<strong>Lesson 12</strong>
+Writing Your Best Code
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/advanced-html-css/">Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS</a> for a deeper look at front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 4</h6>
+<h1>Opening the Box Model</h1>
+</div>
+<script src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">4</span>
+</h4>
+<h6>HTML</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/#developer-tools">Developer Tools</a>
+</li>
+</ul>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/#how-are-elements-displayed">Displaying Elements</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/#box-model">The Box Model</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/opening-the-box-model/" data-title="Opening the Box Model">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Opening%20the%20Box%20Model%20-&amp;url=http://learn.shayhowe.com/html-css/opening-the-box-model/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/opening-the-box-model/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+ <li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/opening-the-box-model/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCWADTZ3JCWSIVKQYCVSI6KQKC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/1559075223-slack-carbon-green_2x.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCWADTZ3JCWSIVKQYCVSI6KQKC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">Bring your team together with Slack, the collaboration hub for work.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a><img src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/B21259774.225956528" border="0" height="1" width="1" alt="ads via Carbon" style="display: none;"></span></div>
+</div>
+</div>
+</div>
+<p>We’ve familiarized ourselves with HTML and CSS; we know what they look like and how to accomplish some of the basics. Now we’re going to go a bit deeper and look at exactly how elements are displayed on a page and how they are sized.</p>
+<p>In the process we’ll discuss what is known as the box model and how it works with HTML and CSS. We’re also going to look at a few new CSS properties and use some of the length values we covered in Lesson 3. Let’s begin.</p>
+<h2 id="how-are-elements-displayed">How Are Elements Displayed?<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/opening-the-box-model/#how-are-elements-displayed" style="display: inline-block; opacity: 1;">#how-are-elements-displayed</a></h2>
+<p>Before jumping into the box model, it helps to understand how elements are displayed. In Lesson 2 we covered the difference between block-level and inline-level elements. To quickly recap, block-level elements occupy any available width, regardless of their content, and begin on a new line. Inline-level elements occupy only the width their content requires and line up on the same line, one after the other. Block-level elements are generally used for larger pieces of content, such as headings and structural elements. Inline-level elements are generally used for smaller pieces of content, such as a few words selected to be bold or italicized.</p>
+<h3>Display</h3>
+<p>Exactly how elements are displayed—as block-level elements, inline elements, or something else—is determined by the display property. Every element has a default <code>display</code> property value; however, as with all other property values, that value may be overwritten. There are quite a few values for the <code>display</code> property, but the most common are <code>block</code>, <code>inline</code>, <code>inline-block</code>, and <code>none</code>.</p>
+<p>We can change an element’s <code>display</code> property value by selecting that element within CSS and declaring a new <code>display</code> property value. A value of <code>block</code> will make that element a block-level element.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>A value of <code>inline</code> will make that element an inline-level element.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">inline</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Things get interesting with the <code>inline-block</code> value. Using this value will allow an element to behave as a block-level element, accepting all box model properties (which we’ll cover soon). However, the element will be displayed in line with other elements, and it will not begin on a new line by default.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Display Inline-Block Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/eFwom(1).html" scrolling="no" frameborder="0" height="96" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_eFwom"></iframe></div>
+</div>
+<div class="note note-box">
+<h4>The Space Between Inline-Block Elements</h4>
+<p>One important distinction with inline-block elements is that they are not always touching, or displayed directly against one another. Usually a small space will exist between two inline-block elements. This space, though perhaps annoying, is normal. We’ll discuss why this space exists and how to remove it in the next lesson.</p>
+</div>
+<p>Lastly, using a value of <code>none</code> will completely hide an element and render the page as if that element doesn’t exist. Any elements nested within this element will also be hidden.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Knowing how elements are displayed and how to change their <code>display</code> is fairly important, as the <code>display</code> of an element has implications on how the box model is rendered. As we discuss the box model, we’ll be sure to look at these different implications and how they can affect the presentation of an element.</p>
+<h2 id="what-is-the-box-model">What Is the Box Model?<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/opening-the-box-model/#what-is-the-box-model">#what-is-the-box-model</a></h2>
+<p>According to the <a href="https://css-tricks.com/the-css-box-model/" rel="nofollow">box model</a> concept, every element on a page is a rectangular box and may have width, height, padding, borders, and margins.</p>
+<p>That’s worth repeating: <strong>Every element on a page is a rectangular box.</strong></p>
+<figure class="fig fig-row">
+<img alt="Outline of DOM Element Boxes" class="media-shrink" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/boxes.png" style="margin-bottom: 1px;">
+<figcaption>
+<strong>Fig 4</strong>
+<p>When we look at each element individually, we can see how they are all rectangular, regardless of their presented shapes</p>
+</figcaption>
+</figure>
+<p>Every element on every page conforms to the box model, so it’s incredibly important. Let’s take a look at it, along with a few new CSS properties, to better understand what we are working with.</p>
+<h2 id="box-model">Working with the Box Model<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/opening-the-box-model/#box-model">#box-model</a></h2>
+<p>Every element is a rectangular box, and there are several properties that determine the size of that box. The core of the box is defined by the width and height of an element, which may be determined by the <code>display</code> property, by the contents of the element, or by specified <code>width</code> and <code>height</code> properties. <code>padding</code> and then <code>border</code> expand the dimensions of the box outward from the element’s width and height. Lastly, any <code>margin</code> we have specified will follow the border.</p>
+<p>Each part of the box model corresponds to a CSS property: <code>width</code>, <code>height</code>, <code>padding</code>, <code>border</code>, and <code>margin</code>.</p>
+<p>Let’s look these properties inside some code:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">6px</span> <span class="nb">solid</span> <span class="m">#949599</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>According to the box model, the total width of an element can be calculated using the following formula:</p>
+<pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre>margin-right + border-right + padding-right + width + padding-left + border-left + margin-left
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In comparison, according to the box model, the total height of an element can be calculated using the following formula:</p>
+<pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre>margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom
+</pre></td></tr></tbody></table>
+              </code></pre>
+<figure class="fig">
+<img alt="The Box Model" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/box-model.png" style="margin-bottom: 6px;">
+<figcaption>
+<strong>Fig 4</strong>
+<p>The box model broken down, including a base height and width plus paddings, borders, and margins</p>
+</figcaption>
+</figure>
+<p>Using the formulas, we can find the total height and width of our example code.</p>
+<ul>
+<li>
+<strong>Width:</strong> <code>492px = 20px + 6px + 20px + 400px + 20px + 6px + 20px</code>
+</li>
+<li>
+<strong>Height:</strong> <code>192px = 20px + 6px + 20px + 100px + 20px + 6px + 20px</code>
+</li>
+</ul>
+<p>The box model is without question one of the more confusing parts of HTML and CSS. We set a <code>width</code> property value of <code>400</code> pixels, but the actual width of our element is <code>492</code> pixels. By default the box model is additive; thus to determine the actual size of a box we need to take into account padding, borders, and margins for all four sides of the box. Our width not only includes the <code>width</code> property value, but also the size of the left and right padding, left and right borders, and left and right margins.</p>
+<p>So far a lot of these properties might not make a whole lot of sense, and that’s all right. To clarify things, let’s take a close look at all of the properties—<code>width</code>, <code>height</code>, <code>padding</code>, <code>border</code>, and <code>margin</code>—that go into forming the box model.</p>
+<h3>Width &amp; Height</h3>
+ <p>Every element has default width and height. That width and height may be <code>0</code> pixels, but browsers, by default, will render every element with size. Depending on how an element is displayed, the default width and height may be adequate. If an element is key to the layout of a page, it may require specified <code>width</code> and <code>height</code> property values. In this case, the property values for non-inline elements may be specified.</p>
+<h4>Width</h4>
+<p>The default width of an element depends on its display value. Block-level elements have a default width of <code>100%</code>, consuming the entire horizontal space available. Inline and inline-block elements expand and contract horizontally to accommodate their content. Inline-level elements cannot have a fixed size, thus the <code>width</code> and <code>height</code> properties are only relevant to non-inline elements. To set a specific width for a non-inline element, use the width property:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Height</h4>
+<p>The default height of an element is determined by its content. An element will expand and contract vertically as necessary to accommodate its content. To set a specific height for a non-inline element, use the <code>height</code> property:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Sizing Inline-Level Elements</h4>
+<p>Please keep in mind that inline-level elements will not accept the <code>width</code> and <code>height</code> properties or any values tied to them. Block and inline-block elements will, however, accept the <code>width</code> and <code>height</code> properties and their corresponding values.</p>
+</div>
+<h3>Margin &amp; Padding</h3>
+<p>Depending on the element, browsers may apply default margins and padding to an element to help with legibility and clarity. We will generally see this with text-based elements. The default margins and padding for these elements may differ from browser to browser and element to element. In Lesson 1 we discussed using a <a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/#using-css-resets">CSS reset</a> to tone all of these default values down to zero. Doing so allows us to work from the ground up and to specify our own values.</p>
+<h4>Margin</h4>
+<p>The <code>margin</code> property allows us to set the amount of space that surrounds an element. Margins for an element fall outside of any border and are completely transparent in color. Margins can be used to help position elements in a particular place on a page or to provide breathing room, keeping all other elements a safe distance away. Here’s the <code>margin</code> property in action:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>One oddity with the <code>margin</code> property is that vertical margins, <code>top</code> and <code>bottom</code>, are not accepted by inline-level elements. These vertical margins are, however, accepted by block-level and inline-block elements.</p>
+<h4>Padding</h4>
+<p>The <code>padding</code> property is very similar to the <code>margin</code> property; however, it falls inside of an element’s border, should an element have a border. The <code>padding</code> property is used to provide spacing directly within an element. Here’s the code:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>The <code>padding</code> property, unlike the <code>margin</code> property, works vertically on inline-level elements. This vertical <code>padding</code> may blend into the line above or below the given element, but it will be displayed.</p>
+<div class="note note-box">
+<h4>Margin &amp; Padding on Inline-Level Elements</h4>
+<p>Inline-level elements are affected a bit differently than block and inline-block elements when it comes to margins and padding. Margins only work horizontally—<code>left</code> and <code>right</code>—on inline-level elements. Padding works on all four sides of inline-level elements; however, the vertical <code>padding</code>—the <code>top</code> and <code>bottom</code>—may bleed into the lines above and below an element.</p>
+<p>Margins and padding work like normal for block and inline-block elements.</p>
+</div>
+<h4>Margin &amp; Padding Declarations</h4>
+<p>In CSS, there is more than one way to declare values for certain properties. We can use longhand, listing multiple properties and values one after the other, in which each value has its own property. Or we can use shorthand, listing multiple values with one property. Not all properties have a shorthand alternative, so we must make sure we are using the correct property and value structure.</p>
+<p>The <code>margin</code> and <code>padding</code> properties come in both longhand and shorthand form. When using the shorthand <code>margin</code> property to set the same value for all four sides of an element, we specify one value:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>To set one value for the <code>top</code> and <code>bottom</code> and another value for the <code>left</code> and <code>right</code> sides of an element, specify two values: <code>top</code> and <code>bottom</code> first, then <code>left</code> and <code>right</code>. Here we are placing margins of <code>10</code> pixels on the <code>top</code> and <code>bottom</code> of a <code>&lt;div&gt;</code> and margins of <code>20</code> pixels on the <code>left</code> and <code>right</code>:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>To set unique values for all four sides of an element, specify those values in the order of <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>, moving clockwise. Here we are placing margins of <code>10</code> pixels on the <code>top</code> of a <code>&lt;div&gt;</code>, <code>20</code> pixels on the <code>right</code>, <code>0</code> pixels on the <code>bottom</code>, and <code>15</code> pixels on the <code>left</code>.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span> <span class="m">0</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Using the <code>margin</code> or <code>padding</code> property alone, with any number of values, is considered shorthand. With longhand, we can set the value for one side at a time using unique properties. Each property name (in this case margin or padding) is followed by a dash and the side of the box to which the value is to be applied: <code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code>. For example, the <code>padding-left</code> property accepts only one value and will set the <code>left</code> padding for that element; the <code>margin-top</code> property accepts only one value and will set the <code>top</code> margin for that element.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>When we wish to identify only one <code>margin</code> or <code>padding</code> value, it is best to use the longhand properties. Doing so keeps our code explicit and helps us to avoid any confusion down the road. For example, did we really want to set the <code>top</code>, <code>right</code>, and <code>left</code> sides of the element to have margins of <code>0</code> pixels, or did we really only want to set the <code>bottom</code> margin to <code>10</code> pixels? Using longhand properties and values here helps to make our intentions clear. When dealing with three or more values, though, shorthand is incredibly helpful.</p>
+<div class="note note-box">
+<h4>Margin &amp; Padding Colors</h4>
+<p>The <code>margin</code> and <code>padding</code> properties are completely transparent and do not accept any color values. Being transparent, though, they show the background colors of relative elements. For margins, we see the background color of the parent element, and for padding, we see the background color of the element the <code>padding</code> is applied to.</p>
+</div>
+<h3>Borders</h3>
+<p>Borders fall between the padding and margin, providing an outline around an element. The <code>border</code> property requires three values: <code>width</code>, <code>style</code>, and <code>color</code>. Shorthand values for the border property are stated in that order—<code>width</code>, <code>style</code>, <code>color</code>. In longhand, these three values can be broken up into the <code>border-width</code>, <code>border-style</code>, and <code>border-color</code> properties. These longhand properties are useful for changing, or overwriting, a single border value.</p>
+<p>The <code>width</code> and <code>color</code> of borders can be defined using common CSS units of length and color, as discussed in Lesson 3.</p>
+<p>Borders can have <a href="http://www.quackit.com/html/codes/html_borders.cfm" rel="nofollow">different appearances</a>. The most common style values are <code>solid</code>, <code>double</code>, <code>dashed</code>, <code>dotted</code>, and <code>none</code>, but there are several others to choose from.</p>
+<p>Here is the code for a <code>6</code>-pixel-wide, solid, gray border that wraps around all four sides of a <code>&lt;div&gt;</code>:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">6px</span> <span class="nb">solid</span> <span class="m">#949599</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Borders Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/JmtqC(1).html" scrolling="no" frameborder="0" height="192" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_JmtqC"></iframe></div>
+</div>
+<h4>Individual Border Sides</h4>
+<p>As with the <code>margin</code> and <code>padding</code> properties, borders can be placed on one side of an element at a time if we’d like. Doing so requires new properties: <code>border-top</code>, <code>border-right</code>, <code>border-bottom</code>, and <code>border-left</code>. The values for these properties are the same as those of the <code>border</code> property alone: <code>width</code>, <code>style</code>, and <code>color</code>. If we want, we can make a border appear only on the bottom of an element:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">6px</span> <span class="nb">solid</span> <span class="m">#949599</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Additionally, styles for individual border sides may be controlled at an even finer level. For example, if we wish to change only the <code>width</code> of the bottom border we can use the following code:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">border-bottom-width</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>These highly specific longhand border properties include a series of hyphen-separated words starting with the border base, followed by the selected side—<code>top</code>, <code>right</code>, <code>bottom</code>, or <code>left</code>—and then <code>width</code>, <code>style</code>, or <code>color</code>, depending on the desired property.</p>
+<h4>Border Radius</h4>
+<p>While we’re looking at borders and their different properties, we need to examine the <code>border-radius</code> property, which enables us to round the corners of an element.</p>
+<p>The <code>border-radius</code> property accepts length units, including percentages and pixels, that identify the radius by which the corners of an element are to be rounded. A single value will round all four corners of an element equally; two values will round the <code>top-left</code>/<code>bottom-right</code> and <code>top-right</code>/<code>bottom-left</code> corners in that order; four values will round the <code>top-left</code>, <code>top-right</code>, <code>bottom-right</code>, and <code>bottom-left</code> corners in that order.</p>
+<p>When considering the order in which multiple values are applied to the <code>border-radius</code> property (as well as the <code>margin</code> and <code>padding</code> properties), remember that they move in a clockwise fashion starting at the top left of an element.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Border Radius Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_3" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/Ghawe(1).html" scrolling="no" frameborder="0" height="174" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Ghawe"></iframe></div>
+</div>
+<p>￼The <code>border-radius</code> property may also be broken out into longhand properties that allow us to change the radii of individual corners of an element. These longhand properties begin with <code>border</code>, continue with the corner’s vertical location (<code>top</code> or <code>bottom</code>) and the corner’s horizontal location (<code>left</code> or <code>right</code>), and then end with radius. For example, to change the top-right corner radius of a <code>&lt;div&gt;</code>, the <code>border-top-right-radius</code> property can be used.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">border-top-right-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Box Sizing</h3>
+<p>Until now the box model has been an additive design. If you set the <code>width</code> of an element to <code>400</code> pixels and then add <code>20</code> pixels of <code>padding</code> and a <code>border</code> of <code>10</code> pixels on every side, the actual full width of the element becomes <code>460</code> pixels. Remember, we need to add the <code>width</code>, <code>padding</code>, and <code>border</code> property values together to get the actual, full width of an element.</p>
+<p>The box model may, however, be changed to support different calculations. CSS3 introduced the <code>box-sizing</code> property, which allows us to change exactly how the box model works and how an element’s size is calculated. The property accepts three primary values—<code>content-box</code>, <code>padding-box</code>, and <code>border-box</code>—each of which has a slightly different impact on how the box size is calculated.</p>
+<h4>Content Box</h4>
+<p>The <code>content-box</code> value is the default value, leaving the box model as an additive design. If we don’t use the <code>box-sizing</code> property, this will be the default value for all elements. The size of an element begins with the <code>width</code> and <code>height</code> properties, and then any <code>padding</code>, <code>border</code>, or <code>margin</code> property values are added on from there.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">-webkit-box-sizing</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span>
+     <span class="nl">-moz-box-sizing</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span>
+          <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">content-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Browser-Specific Properties &amp; Values</h4>
+<p>What are all those hyphens and letters on the <code>box-sizing</code> property?</p>
+<p>As CSS3 was introduced, browsers gradually began to support different properties and values, including the <code>box-sizing</code> property, by way of vendor prefixes. As parts of the CSS3 specification are finalized and new browser versions are released, these vendor prefixes become less and less relevant. As time goes on, vendor prefixes are unlikely to be a problem; however, they still provide support for some of the older browsers that leveraged them. We may run across them from time to time, and we may even want to use them should we wish to support older browsers.</p>
+<p>Vendor prefixes may be seen on both properties and values, all depending on the CSS specification. Here they are shown on the <code>box-sizing</code> property. Browser vendors were free to chose when to use a prefix and when not to. Thus, some properties and values require vendor prefixes for certain browser vendors but not for others.</p>
+<p>Moving forward, when a property or value needs a vendor prefix, the prefix will only be used in the introduction of that property or value (in the interest of keeping our code digestible and concise). Do not forget to add the necessary vendor prefixes when you’re actually writing the code.</p>
+<p>For reference, the most common vendor prefixes are outlined here:</p>
+<ul>
+<li>
+Mozilla Firefox: <code>-moz-</code>
+</li>
+<li>
+Microsoft Internet Explorer: <code>-ms-</code>
+</li>
+<li>
+Webkit (Google Chrome and Apple Safari): <code>-webkit-</code>
+</li>
+</ul>
+</div>
+<h4>Padding Box</h4>
+<p>The <code>padding-box</code> value alters the box model by including any <code>padding</code> property values within the <code>width</code> and <code>height</code> of an element. When using the <code>padding-box</code> value, if an element has a <code>width</code> of <code>400</code> pixels and a <code>padding</code> of <code>20</code> pixels around every side, the actual width will remain <code>400</code> pixels. As any <code>padding</code> values increase, the content size within an element shrinks proportionately.</p>
+<p>If we add a <code>border</code> or <code>margin</code>, those values will be added to the <code>width</code> or <code>height</code> properties to calculate the full box size. For example, if we add a <code>border</code> of <code>10</code> pixels and a <code>padding</code> of <code>20</code> pixels around every side of the element with a <code>width</code> of <code>400</code> pixels, the actual full width will become <code>420</code> pixels.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">padding-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>The padding-box Value Has Been Deprecated</h4>
+<p>As the CSS specification has evolved, the <code>padding-box</code> value for the <code>box-sizing</code> property has been deprecated and should not be used.</p>
+</div>
+<h4>Border Box</h4>
+<p>Lastly, the <code>border-box</code> value alters the box model so that any <code>border</code> or <code>padding</code> property values are included within the <code>width</code> and <code>height</code> of an element. When using the <code>border-box</code> value, if an element has a <code>width</code> of <code>400</code> pixels, a <code>padding</code> of <code>20</code> pixels around every side, and a <code>border</code> of <code>10</code> pixels around every side, the actual width will remain <code>400</code> pixels.</p>
+<p>If we add a <code>margin</code>, those values will need to be added to calculate the full box size. No matter which <code>box-sizing</code> property value is used, any <code>margin</code> values will need to be added to calculate the full size of the element.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<figure class="fig">
+<img alt="CSS3 Box Sizing" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/box-sizing.png" style="margin-bottom: 6px;">
+<figcaption>
+<strong>Fig 4</strong>
+<p>Different box-sizing values allow the width of an element—and its box—to be calculated from different areas</p>
+</figcaption>
+</figure>
+<h4>Picking a Box Size</h4>
+<p>Generally speaking, the best <code>box-sizing</code> value to use is <code>border-box</code>. The <code>border-box</code> value makes our math much, much easier. If we want an element to be <code>400</code> pixels wide, it is, and it will remain <code>400</code> pixels wide no matter what padding or border values we add to it.</p>
+<p>Additionally, we can easily mix length values. Say we want our box to be <code>40%</code> wide. Adding a <code>padding</code> of <code>20</code> pixels and a <code>border</code> of <code>10</code> pixels around every side of an element isn’t difficult, and we can still guarantee that the actual <code>width</code> of our box will remain <code>40%</code> despite using pixel values elsewhere.</p>
+<p>The only drawback to using the <code>box-sizing</code> property is that as part of the CSS3 specification, it isn’t supported in every browser; it especially lacks support in older browsers. Fortunately this is becoming less and less relevant as new browsers are released. Chances are we’re safe to use the <code>box-sizing</code> property, but should we notice any issues, it’s worth looking into which browser those issues are occurring with.</p>
+<h2 id="developer-tools">Developer Tools<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/opening-the-box-model/#developer-tools">#developer-tools</a></h2>
+<p>Most browsers have what are known as <em>Developer Tools</em>. These tools allow us to inspect an element on a page, see where that element lives within the HTML document, and see what CSS properties and values are being applied to it. Most of these tools also include a box model diagram to show the computed size of an element.</p>
+<p>To see the Developer Tools in Google Chrome, click “View” within the menu bar and navigate to “Developer” and then “Developer Tools.” This loads a drawer at the bottom of the browser window that provides a handful of tools for inspecting our code.</p>
+<p>Clicking the magnifying glass at the bottom of this drawer enables us to hover over and then click on different elements on the page to review more information about them.</p>
+<p>After selecting an element, we’ll see a handful of tabs on the right-hand side of the Elements panel within our Developer Tools. Selecting the “Computed” tab will show us a breakdown of the box model for our selected element.</p>
+<p>Play around with the Developer Tools, be it in Google Chrome, Mozilla Firefox, Apple Safari, or other browsers; there is much to learn from looking at our code. I generally leave the Developer Tools open at all times when writing HTML and CSS. And I frequently inspect the code of other websites to see how they are built, too.</p>
+<figure class="fig">
+<img alt="Google Chrome Developer Tools" class="media-frame" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/developer-tools.png" style="margin-bottom: 2px;">
+<figcaption>
+<strong>Fig 4</strong>
+<p>The Google Chrome Developer Tools, which help us to inspect the HTML and CSS on any page</p>
+</figcaption>
+</figure>
+<p>The box model is one of the most confusing parts of learning how to write HTML and CSS. It is also one of the most powerful parts of HTML and CSS, and once we have it mastered, most everything else—like positioning content—will come to us fairly easily.</p>
+<h2 id="practice-1">In Practice<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/opening-the-box-model/#practice-1">#practice-1</a></h2>
+<p>Let’s jump back into our Styles Conference website to center it on the page and add some more content.</p>
+<ol class="practice">
+<li>
+<p>Let’s start by adjusting our box size to use the <code>border-box</code> version of the box model, which will make sizing all of our elements much easier. Within our <code>main.css</code> file, just below our reset, let’s add a comment to identify the code for what will become our grid and help determine the layout of our website. We’re putting this below our reset so that it falls in the proper position within the cascade.</p>
+<p>From there, we can use the universal selector, <code>*</code>, along with universal pseudo-elements, <code>*:before</code> and <code>*:after</code>, to select every imaginable element and change the <code>box-sizing</code> to <code>border-box</code>. Remember, we’re going to want to include the necessary vendor prefixes for the <code>box-sizing</code> property, as it is a relatively new property.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Grid
+  ========================================
+*/</span>
+
+<span class="o">*,</span>
+<span class="o">*</span><span class="nd">:before</span><span class="o">,</span>
+<span class="o">*</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="nl">-webkit-box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+     <span class="nl">-moz-box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+          <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Next we’ll want to create a class that will serve as a container for our elements. We can use this container class on different elements to set a common <code>width</code>, center the elements on the page, and apply some common horizontal <code>padding</code>.</p>
+<p>Just below our universal selector rule set, let’s create a selector with a class of <code>container</code>. Within this selector let’s set our <code>width</code> to <code>960</code> pixels, our <code>left</code> and <code>right</code> padding to <code>30</code> pixels, our <code>top</code> and <code>bottom</code> margins to <code>0</code>, and our <code>left</code> and <code>right</code> margins to <code>auto</code>.</p>
+<p>Setting a <code>width</code> tells the browser definitively how wide any element with the class of <code>container</code> should be. Using a <code>left</code> and <code>right</code> margin of <code>auto</code> in conjunction with this <code>width</code> lets the browser automatically figure out equal <code>left</code> and <code>right</code> margins for the element, thus centering it on the page. Lastly, the <code>left</code> and <code>right</code> padding ensures that our content isn’t sitting directly on the edge of the element and provides a little breathing room for the content.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">960px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Now that we have a container class available to use, let’s go ahead and apply the class of <code>container</code> throughout our HTML to the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements on each page, including the <code>index.html</code>, <code>speakers.html</code>, <code>schedule.html</code>, <code>venue.html</code>, and <code>register.html</code> files.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/header&gt;</span>
+
+<span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/footer&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>While we’re at it, let’s go ahead and center the rest of the content on our pages. On the home page, our <code>index.html</code> file, let’s add the class of <code>container</code> to each <code>&lt;section&gt;</code> element on the page, one for our hero section (the section that introduces our conference) and one for our teasers section.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Additionally, let’s wrap all of the <code>&lt;h1&gt;</code> elements on each page with a <code>&lt;section&gt;</code> element with the class of <code>container</code>.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>...<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>We’ll come back and adjust these elements and classes later, but for now we’re headed in the right direction.</p>
+</li>
+<li>
+<p>Now that all of our content is centered, let’s create some vertical spacing between elements. For starters let’s place a <code>22</code>-pixel <code>bottom</code> margin on a few of our heading and paragraph elements. We’ll place and comment on these typography styles below our grid styles.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Typography
+  ========================================
+*/</span>
+
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>We intentionally skipped <code>&lt;h2&gt;</code> and <code>&lt;h6&gt;</code> elements, as the design does not call for margins on <code>&lt;h2&gt;</code> elements and as we won’t be using any <code>&lt;h6&gt;</code> elements at this time.</p>
+</li>
+<li>
+<p>Let’s also try our hand at creating a border and some rounded corners. We’ll start by placing a button within the top <code>&lt;section&gt;</code> element on our home page, just below the header.</p>
+<p>Previously we added an <code>&lt;a&gt;</code> element within this <code>&lt;section&gt;</code> element. Let’s add the classes of <code>btn</code> and <code>btn-alt</code> to this anchor.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-alt"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Now let’s create some styles for those classes within our CSS. Below our typography rule set, let’s create a new section of the CSS file for buttons.</p>
+<p>To begin let’s add the <code>btn</code> class and apply some common styles that can be shared across all buttons. We’ll want all of our buttons to have a <code>5</code>-pixel <code>border-radius</code>. They should be displayed as <code>inline-block</code> elements so we can add <code>padding</code> around all four sides without issue; we’ll remove any <code>margin</code>.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Buttons
+  ========================================
+*/</span>
+
+<span class="nc">.btn</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>We’ll also want to include styles specific to this button, which we’ll do by using the <code>btn-alt</code> class. Here we’ll add a <code>1</code>-pixel, solid, gray <code>border</code> with <code>10</code> pixels of <code>padding</code> on the <code>top</code> and <code>bottom</code> of the button and <code>30</code> pixels of <code>padding</code> on the <code>left</code> and <code>right</code> of the button.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.btn-alt</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#dfe2e5</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Using both the <code>btn</code> and <code>btn-alt</code> classes on the same <code>&lt;a&gt;</code> element allows these styles to be layered on, rendering all of the styles on a single element.</p>
+</li>
+<li>
+<p>Because we’re working on the home page, let’s also add a bit of <code>padding</code> to the <code>&lt;section&gt;</code> element that contains our <code>&lt;a&gt;</code> element with the classes of <code>btn</code> and <code>btn-alt</code>. We’ll do so by adding a class attribute value of <code>hero</code> to the <code>&lt;section&gt;</code> element, alongside the <code>container</code> class attribute value, as this will be the leading section of our website.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"hero container"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Next we’ll want to create a new section within our CSS file for home page styles, and, once we’re ready, we’ll use the class of <code>hero</code> to apply <code>padding</code> around all four sides of the <code>&lt;section&gt;</code> element.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Home
+  ========================================
+*/</span>
+
+<span class="nc">.hero</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">22px</span> <span class="m">80px</span> <span class="m">66px</span> <span class="m">80px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+</ol>
+<p>Our website is starting to come together, especially the home page.</p>
+<figure class="fig">
+<img alt="Styles Conference website" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/practice-1.png" style="margin-bottom: 5px;">
+<figcaption>
+<strong>Fig 4</strong>
+<p>Our Styles Conference home page, taking shape after a few updates</p>
+</figcaption>
+</figure>
+<h3>Demo &amp; Source Code</h3>
+<p>Below you may view the Styles Conference website in its current state, as well as download the source code for the website in its current state.</p>
+<p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/practice/opening-the-box-model/index.html">View the Styles Conference Website</a>
+<span class="practice-link-separator">
+or
+<a download="" href="https://learn.shayhowe.com/practice/opening-the-box-model.zip" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Download&#39;, &#39;HTML &amp; CSS - Lesson 4&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow">Download the Source Code</a>
+<span class="practice-link-detail">(Zip file)</span>
+</span>
+</p>
+<div class="note note-box">
+<h4>The Universal Selector</h4>
+<p>In the first step of this exercise we were introduced to the <code>universal selector</code>. In CSS the asterisk, <code>*</code>, is the universal selector, which selects every element. Rather than listing every single element imaginable, we can use the asterisk as a catch-all to select all elements for us.</p>
+<p>The <code>:before</code> and <code>:after</code> pseudo-elements also mentioned in this step are elements that can be dynamically generated with CSS. We’re not going to be using these elements within our project; however, when using the universal selector it’s a good practice to also include these pseudo-elements in case they should ever appear.</p>
+</div>
+<h2 id="summary">Summary<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/opening-the-box-model/#summary">#summary</a></h2>
+<p>Take a second and pat yourself on the back. I’ll wait.</p>
+<p>Learning all the different parts of the box model is no small feat. These concepts, although briefly introduced, take quite a bit of time to fully master, and we’re on the right path toward doing so.</p>
+<p>In brief, within this lesson we talked about the following:</p>
+<ul>
+<li>How different elements are displayed</li>
+<li>What the box model is and why it’s important</li>
+<li>How to change the size, including the height and width, of elements</li>
+<li>How to add margin, padding, and borders to elements</li>
+<li>How to change the box sizing of elements and the effects this has on the box model</li>
+</ul>
+<p>Now that we have a better understanding of how elements are displayed and sized, it’s time to move into positioning these elements.</p>
+<h2 id="resources-and-links">Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/opening-the-box-model/#resources-and-links">#resources-and-links</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="https://css-tricks.com/the-css-box-model/" rel="nofollow">The CSS Box Model</a>
+via CSS-Tricks
+</li>
+<li>
+<a href="http://www.quackit.com/html/codes/html_borders.cfm" rel="nofollow">HTML Borders</a>
+via Quackit.com
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/opening-the-box-model/" data-title="Opening the Box Model">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Opening%20the%20Box%20Model%20-&amp;url=http://learn.shayhowe.com/html-css/opening-the-box-model/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/opening-the-box-model/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/opening-the-box-model/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/" rel="prev">
+<strong>Lesson 3</strong>
+<span>Getting to Know CSS</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/html-css/positioning-content/" rel="next">
+<strong>Lesson 5</strong>
+<span>Positioning Content</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Opening the Box Model&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Opening the Box Model&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Opening the Box Model&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Opening the Box Model&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Opening the Box Model&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Opening the Box Model&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Opening the Box Model&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Opening the Box Model&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Opening the Box Model&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+ </li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Opening the Box Model&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Opening the Box Model&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Opening the Box Model&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Opening the Box Model&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/advanced-html-css/">Looking for Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" class="media-circle" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/advanced-html-css/">advanced HTML and CSS lessons</a> to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/advanced-html-css/">View Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+ <div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/follow_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Opening the Box Model - Learn to Code HTML &amp; CSS_files/widget_iframe.2d991e3dfc9abb2549972ce8b64c5d85.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

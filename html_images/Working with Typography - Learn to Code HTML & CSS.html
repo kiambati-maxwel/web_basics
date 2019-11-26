@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://learn.shayhowe.com/html-css/working-with-typography/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Online typography has risen in popularity thanks to HTML and CSS, as well as CSS3, capabilities. Learn the latest text and font properties." name="description">
+<meta content="online typography text font css3 html blockquotes cite quote type introduction" name="keywords">
+<title>Working with Typography - Learn to Code HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/ga.js.download"></script><script src="./Working with Typography - Learn to Code HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Working with Typography - Learn to Code HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Working with Typography - Learn to Code HTML &amp; CSS_files/css(1)" rel="stylesheet">
+<link href="./Working with Typography - Learn to Code HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/button.d941c9a422e2e3faf474b82a1f39e936.js.download"></script></head>
+<body class="html-css html-css_working-with-typography html-css_working-with-typography_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/html-css/">
+<span>Learn to Code</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/html-css/working-with-typography/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="building-your-first-web-page">
+<a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">
+<strong>Lesson 1</strong>
+Building Your First Web Page
+</a>
+</li>
+<li class="getting-to-know-html">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-html/">
+<strong>Lesson 2</strong>
+Getting to Know HTML
+</a>
+</li>
+<li class="getting-to-know-css">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">
+<strong>Lesson 3</strong>
+Getting to Know CSS
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="opening-the-box-model">
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">
+<strong>Lesson 4</strong>
+Opening the Box Model
+</a>
+</li>
+<li class="positioning-content">
+<a href="https://learn.shayhowe.com/html-css/positioning-content/">
+<strong>Lesson 5</strong>
+Positioning Content
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="working-with-typography">
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/">
+<strong>Lesson 6</strong>
+Working with Typography
+</a>
+</li>
+<li class="setting-backgrounds-and-gradients">
+<a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/">
+<strong>Lesson 7</strong>
+Setting Backgrounds &amp; Gradients
+</a>
+</li>
+<li class="creating-lists">
+<a href="https://learn.shayhowe.com/html-css/creating-lists/">
+<strong>Lesson 8</strong>
+Creating Lists
+</a>
+</li>
+<li class="adding-media">
+<a href="https://learn.shayhowe.com/html-css/adding-media/">
+ <strong>Lesson 9</strong>
+Adding Media
+</a>
+</li>
+<li class="building-forms">
+<a href="https://learn.shayhowe.com/html-css/building-forms/">
+<strong>Lesson 10</strong>
+Building Forms
+</a>
+</li>
+<li class="organizing-data-with-tables">
+<a href="https://learn.shayhowe.com/html-css/organizing-data-with-tables/">
+<strong>Lesson 11</strong>
+Organizing Data with Tables
+</a>
+</li>
+<li class="writing-your-best-code">
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/">
+<strong>Lesson 12</strong>
+Writing Your Best Code
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/advanced-html-css/">Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS</a> for a deeper look at front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 6</h6>
+<h1>Working with Typography</h1>
+</div>
+<script src="./Working with Typography - Learn to Code HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">6</span>
+</h4>
+<h6>HTML</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/#citations-quotes">Citations &amp; Quote</a>
+</li>
+</ul>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/#color">Text Color</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/#font-properties">Font Properties</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/#text-properties">Text Properties</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/#web-safe-fonts">Web-Safe Fonts</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/#embedding-web-fonts">Embedding Web Fonts</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/working-with-typography/" data-title="Working with Typography">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Working%20with%20Typography%20-&amp;url=http://learn.shayhowe.com/html-css/working-with-typography/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/working-with-typography/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/working-with-typography/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCYYIVZ3JCWSIVKQYCVSDP53KC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Working with Typography - Learn to Code HTML &amp; CSS_files/1572534297-O1.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCYYIVZ3JCWSIVKQYCVSDP53KC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">Release management software your engineers will love. Free for small teams.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>The field of <a href="http://webtypography.net/" rel="nofollow">web typography</a> has grown substantially over time. There are a couple of different reasons for its rise in popularity; one widely acknowledged reason is the development of a system for embedding our own web fonts on a website.</p>
+<p>In the past we were limited to a small number of typefaces that we could use on a website. These typefaces were the most commonly installed fonts on computers, so they were the most likely to render properly on-screen. If a font wasn’t installed on a computer, it wouldn’t render on the website either. Now, with the ability to embed fonts, we have a much larger palette of typefaces to choose from, including those that we add to a website.</p>
+<p>While the ability to embed fonts gives us access to countless new typefaces, it’s also important for us to know the basic principles of typography. In this lesson we’re going to take a look at some of these basic principles and how to apply them to our web pages using HTML and CSS.</p>
+<div class="note note-box">
+<h4>Typeface vs. Font</h4>
+<p>The terms “typeface” and “font” are often interchanged, causing confusion. Here is a breakdown of exactly what each term means.</p>
+<p>A <em>typeface</em> is what we see. It is the artistic impression of how text looks, feels, and reads.</p>
+<p>A <em>font</em> is a file that contains a typeface. Using a font on a computer allows the computer to access the typeface.</p>
+<p>One way to help clarify the difference between a typeface and a font is to compare them to a <a href="http://fontfeed.com/archives/font-or-typeface/" rel="nofollow">song and an MP3</a>. A typeface is very similar to a song in that it is a work of art. It is created by an artist or artists and is open to public interpretation. A font, on the other hand, is very similar to an MP3 in that it is not the artistic impression itself, but only a method of delivering the artistic value.</p>
+</div>
+<h2 id="color">Adding Color to Text<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#color">#color</a></h2>
+<p>Typically one of the first decisions we’ll make when building a website is choosing the primary typeface and text color to be used. While there are a number of other properties that can be changed—size, weight, and so on—the typeface and text color generally have the largest impact on the look and legibility of a page. Getting rid of the browser defaults and using our own typeface and text color immediately begins setting the tone of our page.</p>
+<p>The only property we need to set the color of text is the <code>color</code> property. The <code>color</code> property accepts one color value, but in many different formats. These formats, as we discussed in Lesson 3, “<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">Getting to Know CSS</a>,” include keywords, hexadecimal values, and RGB, RGBa, HSL, and HSLa values. Hexadecimal values are the most prevalent, as they provide the most control with the least amount of effort.</p>
+<p>Let’s take a look at the CSS required to change the color of all the text within the <code>&lt;html&gt;</code> element on a page:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">html</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#555</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h2 id="font-properties">Changing Font Properties<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#font-properties">#font-properties</a></h2>
+<p>CSS offers a lot of different properties for editing the look and feel of text on a page. These properties fit into two categories: font-based properties and text-based properties. Most of these properties will be prefaced with either <code>font-*</code> or <code>text-*</code>. To begin we’ll discuss the font-based properties.</p>
+<h3>Font Family</h3>
+<p>The <code>font-family</code> property is used to declare which font—as well as which fallback or substitute fonts—should be used to display text. The value of the <code>font-family</code> property contains multiple font names, all comma separated.</p>
+<p>The first declared font, starting from the left, is the primary font choice. Should the first font be unavailable, alternative fonts are declared after it in order of preference from left to right.</p>
+<p>Font names consisting of two or more words need to be wrapped in quotation marks. Additionally, the last font should be a keyword value, which will use the system default font for the specified type, most commonly either <code>sans-serif</code> or <code>serif</code>.</p>
+<p>The <code>font-family</code> property in action looks like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In this case, <code>Helvetica Neue</code> is the preferred font to display. If this font is unavailable or not installed on a given device, the next font in the list—Helvetica—will be used, and so on.</p>
+<h3>Font Size</h3>
+<p>The <code>font-size</code> property provides the ability to set the size of text using common length values, including pixels, em units, percentages, points, or <code>font-size</code> keywords.</p>
+<p>Here the CSS is setting a <code>font-size</code> of <code>14</code> pixels on the <code>&lt;body&gt;</code> element:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Font Style</h3>
+<p>To change text to italics, or to prevent text from being italicized, we’ll use the <code>font-style</code> property. The <code>font-style</code> property accepts four keyword values: <code>normal</code>, <code>italic</code>, <code>oblique</code>, and <code>inherit</code>. Of these four, the most commonly used are <code>italic</code> (sets text to italic) and <code>normal</code> (returns text to its normal style).</p>
+<p>The following CSS sets all elements with a class of <code>special</code> to include a <code>font-style</code> of <code>italic</code>:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.special</span> <span class="p">{</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Font Variant</h3>
+<p>It doesn’t happen often, but occasionally text will need to be set in small capitals, also known as small caps. For this specific case we’ll use the <code>font-variant</code> property. The <code>font-variant</code> property accepts three values: <code>normal</code>, <code>small-caps</code>, and <code>inherit</code>. The most typically seen values are <code>normal</code> and <code>small-caps</code>, which are used to switch typefaces between normal and small caps variants.</p>
+<p>To switch all elements with a class of <code>firm</code>, we’ll use a <code>font-variant</code> of <code>small-caps</code>:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.firm</span> <span class="p">{</span>
+  <span class="nl">font-variant</span><span class="p">:</span> <span class="nb">small-caps</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Font Weight</h3>
+<p>Occasionally, we’ll want to style text as bold or to change the specific weight of a typeface. For these cases we’ll use the <code>font-weight</code> property. The <code>font-weight</code> property accepts either keyword or numeric values.</p>
+<p>Keyword values include <code>normal</code>, <code>bold</code>, <code>bolder</code>, <code>lighter</code>, and <code>inherit</code>. Of these keyword values, it is recommended to primarily use <code>normal</code> and <code>bold</code> to change text from normal to bold and vice versa. Rather than using the keyword values <code>bolder</code> or <code>lighter</code>, it’s better to use a numeric value for more specific control.</p>
+<p>In practice, here’s the CSS to set the <code>font-weight</code> to <code>bold</code> for any element with the class of <code>daring</code>:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.daring</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>The numeric values <code>100</code>, <code>200</code>, <code>300</code>, <code>400</code>, <code>500</code>, <code>600</code>, <code>700</code>, <code>800</code>, and <code>900</code> pertain specifically to typefaces that have multiple weights. The order of these weights starts with the thinnest weight, <code>100</code>, and scales up to the thickest weight, <code>900</code>. For reference, the keyword value of <code>normal</code> maps to <code>400</code> and the keyword <code>bold</code> maps to <code>700</code>; thus, any numeric value below <code>400</code> will be fairly thin, and any value above <code>700</code> will be fairly thick.</p>
+<p>Changing the <code>font-weight</code> to <code>600</code> for any element with the class of <code>daring</code> now renders that text as semibold—not quite as thick as the <code>bold</code> keyword value from before:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.daring</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Typeface Weights</h4>
+<p>Before using a numeric value, we need to check and see whether the typeface we are using comes in the weight we’d like to use. Attempting to use a weight that’s not available for a given typeface will cause those styles to default to the closest value.</p>
+<p>For example, the Times New Roman typeface comes in two weights: <code>normal</code>, or <code>400</code>, and <code>bold</code>, or <code>700</code>. Attempting to use a weight of <code>900</code> will default the typeface to the closest related weight, <code>700</code> in this case.</p>
+</div>
+<h3>Line Height</h3>
+<p>Line height, the distance between two lines of text (often referred to as leading) is declared using the <code>line-height</code> property. The <code>line-height</code> property accepts all general length values, which we covered in Lesson 3, “<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">Getting to Know CSS</a>.”</p>
+<p>The best practice for legibility is to set the <code>line-height</code> to around one and a half times our <code>font-size</code> property value. This could be quickly accomplished by setting the <code>line-height</code> to <code>150%</code>, or just <code>1.5</code>. However, if we’re working with a baseline grid, having a little more control over our <code>line-height</code> using pixels may be preferable.</p>
+<p>Looking at the CSS, we’re setting a <code>line-height</code> of <code>22</code> pixels within the  element, thus placing <code>22</code> pixels between each line of text:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Line height may also be used to vertically center a single line of text within an element. Using the same property value for the <code>line-height</code> and <code>height</code> properties will vertically center the text:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.btn</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>This technique may be seen with buttons, alert messages, and other single-line text blocks.</p>
+<h3>Shorthand Font Properties</h3>
+<p>All of the <code>font</code>-based properties listed earlier may be combined and rolled into one <code>font</code> property and <a href="http://www.impressivewebs.com/css-font-shorthand-property-cheat-sheet/" rel="nofollow">shorthand value</a>. The <code>font</code> property can accept multiple <code>font</code>-based property values. The order of these property values should be as follows, from left to right: <code>font-style</code>, <code>font-variant</code>, <code>font-weight</code>, <code>font-size</code>, <code>line-height</code>, and <code>font-family</code>.</p>
+<p>As a shorthand value, these property values are listed from left to right without the use of commas (except for font names, as the <code>font-family</code> property value uses commas). A forward slash, <code>/</code>, separator is needed between the <code>font-size</code> and <code>line-height</code> property values.</p>
+<p>When using this shorthand value, every property value is optional <em>except</em> the <code>font-size</code> and <code>font-family</code> property values. That said, we can include only the <code>font-size</code> and <code>font-family</code> property values in the shorthand value if we wish.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">html</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="nb">italic</span> <span class="nb">small-caps</span> <span class="nb">bold</span> <span class="m">14px</span><span class="p">/</span><span class="m">22px</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Font Properties All Together</h3>
+<p>Let’s take a look at an example that uses all these <code>font</code>-based properties together. The following HTML and CSS demonstrates the different possibilities when styling text.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>I Am a Builder<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"byline"</span><span class="nt">&gt;</span>Posted by Shay Howe<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Every day I see designers and developers working alongside one another. They work intelligently in pursuit of business objectives. They work diligently making exceptional products. They solve real problems and take pride in their work. They are builders. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Continue<span class="ni">&amp;#8230;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></td><td class="rouge-code"><pre><span class="nt">h2</span><span class="o">,</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#555</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">13px</span><span class="p">/</span><span class="m">20px</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.byline</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#9799a7</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Georgia</span><span class="p">,</span> <span class="n">Times</span><span class="p">,</span> <span class="s1">"Times New Roman"</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Font Properties Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/KfmBz(1).html" scrolling="no" frameborder="0" height="228" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_KfmBz"></iframe></div>
+</div>
+<div class="note note-box">
+<h4>CSS Pseudo-Classes</h4>
+<p>The demonstration here uses the <code>:hover</code> CSS pseudo-class, something we’ve never seen before. For reference, pseudo-classes are keywords that may be added to the end of a selector to style an element when it’s in a unique state.</p>
+<p>The <code>:hover</code> pseudo-class styles an element when a user hovers over that element. When used with the <code>&lt;a&gt;</code> element, as shown here, all <code>&lt;a&gt;</code> elements will receive unique styles when they are hovered over. Now our <code>&lt;a&gt;</code> elements will change color upon being hovered over.</p>
+</div>
+<h2 id="practice-1">In Practice<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#practice-1">#practice-1</a></h2>
+<p>Diving back into our Styles Conference website, let’s start adding some font-based properties.</p>
+<ol class="practice">
+<li>
+<p>We’ll begin by updating the font on all of our text. To do this, we’ll apply styles to our <code>&lt;body&gt;</code> element. We’ll start with a <code>color</code>, and we’ll also add in <code>font-weight</code>, <code>font-size</code>, <code>line-height</code>, and <code>font-family</code> values by way of the <code>font</code> property and shorthand values.</p>
+<p>In an attempt to keep our <code>main.css</code> file as organized as possible, let’s create a new section for these custom styles, placing it just below our reset and above our grid styles.</p>
+<p>We need to add the following:</p>
+ <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Custom styles
+  ========================================
+*/</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#888</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">300</span> <span class="m">16px</span><span class="p">/</span><span class="m">22px</span> <span class="s1">"Open Sans"</span><span class="p">,</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>In Lesson 4, “<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">Opening the Box Model</a>,” we began adding some typographic styles, specifically adding a bottom <code>margin</code> to a few different levels of headings and paragraphs. Within the same section of the <code>main.css</code> file, let’s add a color to the level-one through level-four headings.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>While we’re at it, let’s also add in font sizes for these different heading levels. Our <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> elements will use fairly large <code>font-size</code> values; consequently, we’ll also want to increase their <code>line-height</code> values to keep the text within these elements legible. For reference, we’ll make their <code>line-height</code> values <code>44</code> pixels, double the value of the base <code>line-height</code> set within the <code>&lt;body&gt;</code> element rule set.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="rouge-code"><pre><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">36px</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h3</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">21px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h4</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Our <code>&lt;h5&gt;</code> elements are going to be a little more unique than the rest of our headings. Accordingly, we’re going to change their styles a bit.</p>
+<p>We’ll use a different <code>color</code> property value and a slightly smaller <code>font-size</code> for these elements, and we’re going to change the <code>font-weight</code> to <code>400</code>, or <code>normal</code>.</p>
+<p>By default, browsers render headings with a <code>font-weight</code> of bold. Our headings, however, are currently all set to a <code>font-weight</code> of 300. Our reset at the top of our <code>main.css</code> file changed the <code>font-weight</code> to <code>normal</code>, and then our <code>font-weight</code> of <code>300</code> within the <code>&lt;body&gt;</code> element rule set changed all headings to a <code>font-weight</code> of <code>300</code>.</p>
+<p>The <code>font-weight</code> of <code>400</code> on the <code>&lt;h5&gt;</code> element will actually make it slightly thicker than the rest of our other headings and text.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">h5</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Our reset at the beginning of our style sheet also reset the browser default styles for the <code>&lt;strong&gt;</code>, <code>&lt;cite&gt;</code>, and <code>&lt;em&gt;</code> elements, which we’ll want to add back in. For our <code>&lt;strong&gt;</code> elements we’ll want to set a <code>font-weight</code> of <code>400</code>, which actually equates to <code>normal</code>, not <code>bold</code>, as the typeface we’re using is thicker than most typefaces. Then, for our <code>&lt;cite&gt;</code> and <code>&lt;em&gt;</code> elements we’ll want to set a <code>font-style</code> of <code>italic</code>.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">strong</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">cite</span><span class="o">,</span> <span class="nt">em</span> <span class="p">{</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>We’re on a roll, so let’s keep going by adding some styles to our anchor elements. Currently they are the browser default blue. Let’s make them the same <code>color</code> as our <code>&lt;h1&gt;</code> through <code>&lt;h4&gt;</code> heading elements. Additionally, let’s use the <code>:hover</code> pseudo-class to change the <code>color</code> to a light gray when a user hovers over an anchor.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Links
+  ========================================
+*/</span>
+
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Now let’s take a look at our <code>&lt;header&gt;</code> element and update our styles there. We’ll begin updating our logo by adding the <code>font-size</code> and <code>line-height</code> properties within the logo rule set. Adding to the existing <code>border-top</code>, <code>float</code>, and <code>padding</code> properties, the new rule set should look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nc">.logo</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">4px</span> <span class="nb">solid</span> <span class="m">#648880</span><span class="p">;</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">48px</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">40px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Because we’ve bumped up the size of the logo quite a bit, let’s add a <code>margin</code> to the <code>&lt;h3&gt;</code> element within the <code>&lt;header&gt;</code> element to balance it. We’ll do so by placing a class attribute value of <code>tagline</code> on the <code>&lt;h3&gt;</code> element and then using that class within our CSS to apply the proper margins.</p>
+<p>Let’s not forget that the changes to the <code>&lt;h3&gt;</code> element need to happen on every page.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"tagline"</span><span class="nt">&gt;</span>August 24<span class="ni">&amp;ndash;</span>26th <span class="ni">&amp;mdash;</span> Chicago, IL<span class="nt">&lt;/h3&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.tagline</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">66px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>After the <code>&lt;h3&gt;</code> element with the class attribute value of tagline comes the <code>&lt;nav&gt;</code> element. Let’s add a class attribute value of <code>primary-nav</code> to the <code>&lt;nav&gt;</code> element and add <code>font-size</code> and <code>font-weight</code> properties to make the navigation stand out against the rest of the header.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"primary-nav"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.primary-nav</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>With the <code>&lt;header&gt;</code> element in slightly better shape, let’s also take a look at our <code>&lt;footer&gt;</code> element. Using the <code>primary-footer</code> class, let’s change the <code>color</code> and <code>font-size</code> for all the text within the <code>&lt;footer&gt;</code> element. Additionally, let’s bump up the <code>font-weight</code> of the <code>&lt;small&gt;</code> element to <code>400</code>.</p>
+<p>Including the existing styles, the styles for our primary footer section should look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nc">.primary-footer</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.primary-footer</span> <span class="nt">small</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Let’s update our home page a bit, too. We’ll start with the hero section, increasing the overall <code>line-height</code> of the section to <code>44</code> pixels. We’ll also make the text within this section larger, increasing the <code>&lt;h2&gt;</code> element’s <code>font-size</code> to <code>36</code> pixels and the <code>&lt;p&gt;</code> element’s <code>font-size</code> to <code>24</code> pixels.</p>
+<p>We can make all of these changes by using the existing <code>hero</code> class selector and creating new selectors for the <code>&lt;h2&gt;</code> and <code>&lt;p&gt;</code> elements. Our styles for the hero section will now break down in this way:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nc">.hero</span> <span class="p">{</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">22px</span> <span class="m">80px</span> <span class="m">66px</span> <span class="m">80px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.hero</span> <span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">36px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.hero</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Lastly, we have one small issue to fix on our home page. Previously we gave all of our anchor elements a light gray color value when a user hovers over them. This works great, except for within the three teasers on our home page where the anchor element wraps both <code>&lt;h3&gt;</code> and <code>&lt;h5&gt;</code> elements. Because the <code>&lt;h3&gt;</code> and <code>&lt;h5&gt;</code> elements have their own <code>color</code> definition, they are not affected by the <code>:hover</code> pseudo-class styles from before.</p>
+<p>Fortunately we can fix this, although it’s going to require a fairly complicated selector. We’ll begin by adding a <code>class</code> attribute value of <code>teaser</code> to all three columns on the home page. We’ll use this class as a qualifying selector shortly.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+
+  <span class="c">&lt;!-- Speakers --&gt;</span>
+  
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"teaser col-1-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5&gt;</span>Speakers<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>World-Class Speakers<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+
+  ...
+
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>With a qualifying class in place, we’re ready to do some CSS heavy lifting and create a fairly complex selector. We’ll begin our selector with the <code>teaser</code> class, as we only want to target elements within an element with the class of <code>teaser</code>. From there we want to apply styles to elements that reside within anchor elements that are being hovered over; thus we’ll add the a type selector along with the <code>:hover</code> pseudo-class. Lastly, we’ll add the <code>h3</code> type selector to select the actual <code>&lt;h3&gt;</code> elements we wish to apply styles to.</p>
+<p>Altogether, our selector and styles for these <code>&lt;h3&gt;</code> elements will look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.teaser</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="nt">h3</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+</ol>
+<p>Whew, that was quite a bit. The good news is that our Styles Conference home page is starting to look really nice and is showing a bit of personality.</p>
+<figure class="fig">
+<img alt="Styles Conference website" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/practice-1.png" style="margin-bottom: 4px;">
+<figcaption>
+<strong>Fig 6</strong>
+<p>Our Styles Conference website has received quite a bit of love from a handful of font-based properties</p>
+</figcaption>
+</figure>
+<h2 id="text-properties">Applying Text Properties<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#text-properties">#text-properties</a></h2>
+<p>Knowing how to set the family, size, style, variant, weight, and line height of a font is only half the battle. Additionally we can decide how to align, decorate, indent, transform, and space text. Let’s start with text alignment.</p>
+<h3>Text Align</h3>
+<p>Aligning text is an important part of building a rhythm and flow on a page; we do this using the <code>text-align</code> property. The <code>text-align</code> property has five values: <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>, and <code>inherit</code>. All of these values are fairly straightforward; as expected, they align text to the left, right, or center, or they justify text.</p>
+<p>The following CSS sets all paragraph text to be center aligned:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>The <code>text-align</code> property, however, should not be confused with the <code>float</code> property. The <code>text-align</code> values <code>left</code> and <code>right</code> will align text within an element to the left or right, whereas the <code>float</code> values <code>left</code> and <code>right</code> will move the entire element. Sometimes the <code>text-align</code> property will give us the desired outcome, and other times we may need to use the <code>float</code> property.</p>
+<h3>Text Decoration</h3>
+<p>The <code>text-decoration</code> property provides a handful of ways to spruce up text. It accepts the keyword values of <code>none</code>, <code>underline</code>, <code>overline</code>, <code>line-through</code>, and <code>inherit</code>. Use of the <code>text-decoration</code> property varies, but the most popular use is to underline links, which is a default browser style.</p>
+<p>Here the CSS styles any element with the class of <code>note</code> with a <code>text-decoration</code> of underline:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.note</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Multiple text-decoration values may be applied to an element at once by space-separating each keyword within the value.</p>
+<h3>Text Indent</h3>
+<p>The <code>text-indent</code> property can be used to indent the first line of text within an element, as is commonly seen in printed publications. All common length values are available for this property, including pixels, points, percentages, and so on. Positive values will indent text inward, while negative values will indent text outward.</p>
+<p>Here, the CSS indents the text for all <code>&lt;p&gt;</code> elements inward by <code>20</code> pixels:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">text-indent</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Text Shadow</h3>
+<p>The <code>text-shadow</code> property allows us to add a shadow or multiple shadows to text. The property generally takes four values, all listed one after the other from left to right. The first three values are lengths, and the last value is a color.</p>
+<p>Within the three length values, the first value determines the shadow’s horizontal offset, the second value determines the shadow’s vertical offset, and the third value determines the shadow’s blur radius. The fourth, and last, value is the shadow’s color, which can be any of the color values used within the <code>color</code> property.</p>
+<p>The <code>text-shadow</code> property here is casting a <code>30%</code> opaque black shadow <code>3</code> pixels towards the right, <code>6</code> pixels down, and blurred <code>2</code> pixels off all <code>&lt;p&gt;</code> element text:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">3px</span> <span class="m">6px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.3</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Using negative length values for the horizontal and vertical offsets allows us to move shadows toward the left and the top.</p>
+<p>Multiple text shadows can also be chained together using comma-separated values, adding more than one shadow to the text. Using numerous shadows allows us to place them above and below the text, or in any variation we desire.</p>
+<div class="note note-box">
+<h4>Box Shadow</h4>
+<p>The <code>text-shadow</code> property places a shadow specifically on the text of an element. If we’d like to place a shadow on the element as a whole, we can use the <code>box-shadow</code> property.</p>
+<p>The <code>box-shadow</code> property works just like the <code>text-shadow</code> property, accepting values for horizontal and vertical offsets, a blur, and a color.</p>
+<p>The <code>box-shadow</code> property also accepts an optional fourth length value, before the color value, for the spread of a shadow. As a positive length value, the spread will expand the shadow larger than the size of the element it’s applied to, and as a negative length value the spread will shrink the shadow to be smaller than the size of the element it’s applied to.</p>
+<p>Lastly, the <code>box-shadow</code> property may include an optional <code>inset</code> value at the beginning of the value to place the shadow inside an element as opposed to outside the element.</p>
+</div>
+<h3>Text Transform</h3>
+<p>Similar to the <code>font-variant</code> property, there is the <code>text-transform</code> property. While the <code>font-variant</code> property looks for an alternate variant of a typeface, the <code>text-transform</code> property will change the text inline without the need for an alternate typeface. The <code>text-transform</code> property accepts five values: <code>none</code>, <code>capitalize</code>, <code>uppercase</code>, <code>lowercase</code>, and <code>inherit</code>.</p>
+<p>The <code>capitalize</code> value will capitalize the first letter of each word, the <code>uppercase</code> value will capitalize every letter, and the <code>lowercase</code> value will make every letter lowercase. Using <code>none</code> will return any of these inherited values back to the original text style.</p>
+<p>The following CSS sets all <code>&lt;p&gt;</code> element text to appear in all uppercase letters:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Letter Spacing</h3>
+<p>Using the <code>letter-spacing</code> property, we can adjust the space (or tracking) between the letters on a page. A positive length value will push letters farther apart from one another, while a negative length value will pull letters closer together. The keyword value none will return the space between letters back to its normal size.</p>
+<p>Using a relative length value with the <code>letter-spacing</code> property will help ensure that we maintain the correct spacing between letters as the <code>font-size</code> of the text is changed. It is, however, always a good idea to double-check our work.</p>
+<p>With the CSS here, all of the letters within our <code>&lt;p&gt;</code> elements will appear <code>.5</code> em closer together:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">-.5em</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Word Spacing</h3>
+<p>Much like the <code>letter-spacing</code> property, we can also adjust the space between words within an element using the <code>word-spacing</code> property. The <code>word-spacing</code> property accepts the same length values and keywords as the <code>letter-spacing</code> property. Instead of spacing letters apart, though, the <code>word-spacing</code> property applies those values between words.</p>
+<p>Here every word within a <code>&lt;p&gt;</code> element will be spaced <code>.25</code> em apart.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">word-spacing</span><span class="p">:</span> <span class="m">.25em</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Text Properties All Together</h3>
+<p>Let’s revisit our blog teaser demonstration from before, this time adding in a few <code>text</code>-based properties on top of our font-based properties.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>I Am a Builder<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"byline"</span><span class="nt">&gt;</span>Posted by Shay Howe<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"intro"</span><span class="nt">&gt;</span>Every day I see designers and developers working alongside one another. They work intelligently in pursuit of business objectives. They work diligently making exceptional products. They solve real problems and take pride in their work. They are builders. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Continue<span class="ni">&amp;#8230;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre></td><td class="rouge-code"><pre><span class="nt">h2</span><span class="o">,</span>
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#555</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">13px</span><span class="p">/</span><span class="m">20px</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">-.02em</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">2px</span> <span class="m">2px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.2</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.byline</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#9799a7</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Georgia</span><span class="p">,</span> <span class="n">Times</span><span class="p">,</span> <span class="s1">"Times New Roman"</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.intro</span> <span class="p">{</span>
+  <span class="nl">text-indent</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.intro</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">11px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Text Properties Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/tBazc(1).html" scrolling="no" frameborder="0" height="228" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_tBazc"></iframe></div>
+</div>
+<h2 id="practice-2">In Practice<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#practice-2">#practice-2</a></h2>
+<p>With <code>text</code>-based properties under our belts, let’s jump back into our Styles Conference website and put them to work.</p>
+<ol class="practice">
+<li>
+<p>Currently every link on the page is underlined, which is the default style for anchor elements. This style is a little overbearing at times, though, so we’re going to change it up a bit.</p>
+<p>Adding to our links section within our <code>main.css</code> file, we’ll begin by removing the underline from all anchor elements by way of the <code>text-decoration</code> property. Next, we’ll select all anchor elements that appear within a paragraph element and give them a bottom <code>border</code>.</p>
+<p>We could use the <code>text-decoration</code> property instead of the <code>border-bottom</code> property to underline all the links within each paragraph; however, by using the <code>border-bottom</code> property we have more control over the underline’s appearance. Here, for example, the underline will be a different color than the text itself.</p>
+<p>Our links section, which includes our previous hover styles, should look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">p</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#dfe2e5</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Going back to our <code>&lt;h5&gt;</code> elements from before, which have slightly different styles than the rest of the headings, let’s make them all uppercase using the <code>text-transform</code> property. Our new <code>&lt;h5&gt;</code> element styles should look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">h5</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Let’s revisit our <code>&lt;header&gt;</code> element to apply additional styles to our navigation menu (to which we previously added the <code>primary-nav</code> class attribute value). After the existing <code>font-size</code> and <code>font-weight</code> properties, let’s add some slight <code>letter-spacing</code> and change our text to all uppercase via the <code>text-transform</code> property.</p>
+<p>Our styles for the <code>&lt;nav&gt;</code> element with the <code>primary-nav</code> class attribute value should now look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.primary-nav</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">.5px</span><span class="p">;</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Previously, we floated our logo to the <code>left</code> within the <code>&lt;header&gt;</code> element. Now our tagline sits directly to the right of the logo; however, we’d like it to appear all the way to the right of the <code>&lt;header&gt;</code> element, flush right.</p>
+<p>We need to add the <code>text-align</code> property with a value of <code>right</code> to the <code>&lt;h3&gt;</code> element with the class attribute value of <code>tagline</code> to get the tagline to sit all the way to the right.</p>
+<p>When added to the existing <code>margin</code> property, our new styles for the <code>&lt;h3&gt;</code> element with the class attribute value of <code>tagline</code> will look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.tagline</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">66px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>We’d also like our navigation menus, both in the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements, to sit flush right. Because both the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements have child elements that are floated to the <code>left</code>, we can use the same approach as we did with our tagline.</p>
+<p>The floated elements within the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements are taken out of the normal flow of the page, and this causes other elements to wrap around them. In this specific case, our navigation menus are the elements wrapping around the floated elements.</p>
+<p>Because we’ll be sharing the same styles across both navigation menus, we’ll give them each the class of <code>nav</code>. Our <code>&lt;header&gt;</code> element will now look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"container group"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"logo"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h1&gt;</span>
+
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"tagline"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h3&gt;</span>
+
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav primary-nav"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;/header&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>And our <code>&lt;footer&gt;</code> element will now look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"primary-footer container group"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;small&gt;</span>...<span class="nt">&lt;/small&gt;</span>
+
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/nav&gt;</span>
+
+<span class="nt">&lt;/footer&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Let’s not forget, changes to our <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> elements need to be made on every page.</p>
+</li>
+<li>
+<p>With the nav class in place on both navigation menus, let’s create a new section within our <code>main.css</code> file to add shared navigation styles. We’ll begin by adding the <code>text-align</code> property with a value of <code>right</code> to a <code>nav</code> class rule set. We’ll expand these styles later on, but this will serve as a great foundation.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Navigation
+  ========================================
+*/</span>
+
+<span class="nc">.nav</span> <span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>While we’re adding the <code>text-align</code> property to a few different elements, let’s also add the <code>text-align</code> property with a value of <code>center</code> to our <code>hero</code> class selector rule set. For reference, these styles, including our existing <code>line-height</code> and <code>padding</code> properties, are located within the home page section of our <code>main.css</code> file.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nc">.hero</span> <span class="p">{</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">22px</span> <span class="m">80px</span> <span class="m">66px</span> <span class="m">80px</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+</ol>
+<p>Our Styles Conference now has some serious style. (Bad joke, sorry.) Seriously, though, all of our styles are coming along quite well, and our website is progressing.</p>
+<figure class="fig">
+<img alt="Styles Conference website" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/practice-2.png" style="margin-bottom: 5px;">
+<figcaption>
+<strong>Fig 6</strong>
+<p>Our Styles Conference website is coming along quite well after adding a few text-based properties</p>
+</figcaption>
+</figure>
+<h2 id="web-safe-fonts">Using Web-Safe Fonts<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#web-safe-fonts">#web-safe-fonts</a></h2>
+<p>By default there are a few fonts that are pre-installed on every computer, tablet, smart-phone, or other web-browsing-capable device. Because they’ve been installed on every device, we can use these fonts freely within our websites, knowing that no matter what device is browsing our site, the font will render properly. These fonts have become known as “web-safe fonts.” There are only a handful of them, and the safest of the web-safe fonts are listed here:</p>
+<ul class="list-column-2 group">
+<li>Arial</li>
+<li>Courier New, Courier</li>
+<li>Garamond</li>
+<li>Georgia</li>
+<li>Lucida Sans, Lucida Grande, Lucida</li>
+<li>Palatino Linotype</li>
+<li>Tahoma</li>
+<li>Times New Roman, Times</li>
+<li>Trebuchet</li>
+<li>Verdana</li>
+</ul>
+<h2 id="embedding-web-fonts">Embedding Web Fonts<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#embedding-web-fonts">#embedding-web-fonts</a></h2>
+<p>We also have the ability to upload fonts to a server and include them on a website via the CSS <code>@font-face</code> at-rule. This capability has done wonders for online typography. Now, more than ever, typography is coming to life online.</p>
+<p>Embedding our own web fonts looks a bit like the following CSS. First, we use the <code>@font-face</code> at-rule to identify our font’s name, via the <code>font-family</code> property, as well as the source of our font (the path to the font file containing our chosen font), via the <code>src</code> property. From there we are able to use this font by including its name within any <code>font-family</code> property value.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Lobster"</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="n">local</span><span class="p">(</span><span class="s1">"Lobster"</span><span class="p">),</span> <span class="sx">url("lobster.woff")</span> <span class="n">format</span><span class="p">(</span><span class="s1">"woff"</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Lobster"</span><span class="p">,</span> <span class="s1">"Comic Sans"</span><span class="p">,</span> <span class="nb">cursive</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Text Properties Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_3" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/kpiAh(1).html" scrolling="no" frameborder="0" height="210" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_kpiAh"></iframe></div>
+</div>
+<p>Having the ability to embed any typeface on a website does not mean we legally have the authority to do so. Typefaces are works of art, and posting them on our server may allow others to easily steal them. The authority to use a typeface depends on the licensing we’ve been warranted.</p>
+<p>Fortunately, the value of using new typefaces online has been recognized, and companies have begun developing ways to license and include new fonts on websites. Some of these companies, like <a href="https://typekit.com/" rel="nofollow">Typekit</a> and <a href="http://fontdeck.com/" rel="nofollow">Fontdeck</a>, work off a subscription model for licensing fonts, while others, like <a href="https://www.google.com/fonts" rel="nofollow">Google Fonts</a>, license the fonts for free. Before uploading any fonts, let’s make sure we have permission to do so.</p>
+<h2 id="practice-3">In Practice<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#practice-3">#practice-3</a></h2>
+<p>To add a little character to our Styles Conference website, let’s try using a Google Font on our website.</p>
+<ol class="practice">
+<li>
+<p>Let’s head over to the <a href="https://www.google.com/fonts" rel="nofollow">Google Fonts website</a> and search for the font we’d like to use: Lato. Once we’ve found it, let’s proceed with adding it to our collection and following the steps on their website to use the font.</p>
+<p>When the time comes to choose which font weights we’d like to use, let’s make sure to select <code>300</code> and <code>400</code>, as we’ve already been using those within our CSS. Let’s also add <code>100</code> to the collection for another variation, too.</p>
+<p>Google will give us an additional <code>&lt;link&gt;</code> element to include in the <code>&lt;head&gt;</code> element of all of our pages. We’ll place this new <code>&lt;link&gt;</code> element directly below our existing <code>&lt;link&gt;</code> element. The new element will include the proper style sheet reference to Google, which will take care of including a new CSS file with the proper <code>@font-face</code> at-rule necessary for us to use the Lato font.</p>
+<p>With the addition of the new <code>&lt;link&gt;</code> element, our <code>&lt;head&gt;</code> element will look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Styles Conference<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/stylesheets/main.css"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span>
+  <span class="na">href=</span><span class="s">"http://fonts.googleapis.com/css?family=Lato:100,300,400"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Once we have added the new <code>&lt;link&gt;</code> element to all of our pages, we are ready to begin using the Lato font. We’ll do so by adding it to our primary font stack within the <code>font</code> property inside our <code>&lt;body&gt;</code> element styles.</p>
+<p>Let’s add Lato to the beginning of our font stack to make it <code>"Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif</code>.</p>
+<p>Although Lato is a single word, because it is an embedded web font we’ll want to surround it with quotation marks within any CSS reference. Our new <code>&lt;body&gt;</code> element styles will look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#888</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">300</span> <span class="m">16px</span><span class="p">/</span><span class="m">22px</span> <span class="s1">"Lato"</span><span class="p">,</span> <span class="s1">"Open Sans"</span><span class="p">,</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Lato should now be up and running, visible in all of our text across the Styles Conference website. Let’s take a closer look at our logo and update it a bit.</p>
+<p>Within our <code>logo</code> class selector rule set, we’ll begin by adding the <code>font-weight</code> property with a value of <code>100</code> to make the text fairly thin. We’ll also use the <code>text-transform</code> property with a value of <code>uppercase</code> to make all of the letters uppercase, as well as the <code>letter-spacing</code> property with a value of <code>.5</code> pixels to add a tiny bit of space between each letter within the logo.</p>
+<p>Altogether the styles for our logo will look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nc">.logo</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">4px</span> <span class="nb">solid</span> <span class="m">#648880</span><span class="p">;</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">48px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">.5px</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">40px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Because we have a <code>font-weight</code> property value of <code>100</code> available, let’s also set the paragraph element within our hero section to that weight. We can use the existing selector to do so, and the new rule set will look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.hero</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+</ol>
+<p>Our Styles Conference website has taken quite a few large steps this lesson, and the look and feel of our website is starting to really shine.</p>
+<figure class="fig">
+<img alt="Styles Conference website" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/practice-3.png" style="margin-bottom: 5px;">
+<figcaption>
+<strong>Fig 6</strong>
+<p>Our Styles Conference home page after adding the Lato Google web font</p>
+</figcaption>
+</figure>
+<h3>Demo &amp; Source Code</h3>
+<p>Below you may view the Styles Conference website in its current state, as well as download the source code for the website in its current state.</p>
+<p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/practice/working-with-typography/index.html">View the Styles Conference Website</a>
+<span class="practice-link-separator">
+or
+<a download="" href="https://learn.shayhowe.com/practice/working-with-typography.zip" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Download&#39;, &#39;HTML &amp; CSS - Lesson 6&#39;, &#39;Working with Typography&#39;]);" rel="nofollow">Download the Source Code</a>
+<span class="practice-link-detail">(Zip file)</span>
+</span>
+</p>
+<h2 id="citations-quotes">Including Citations &amp; Quotes<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#citations-quotes">#citations-quotes</a></h2>
+<p>Writing online sometimes involves citing different sources or quotations. All of the different citation and quotation cases can be covered semantically in HTML using the <code>&lt;cite&gt;</code>, <code>&lt;q&gt;</code>, and <code>&lt;blockquote&gt;</code> elements. Because they are usually distinguished from regular text in appearance, we’ll discuss them here in the typography lesson.</p>
+<p>Knowing when to use which element and attribute to properly mark up citations and quotes takes a bit of practice. In general, follow these rules:</p>
+<ul>
+<li><code>&lt;cite&gt;</code>: Used to reference a creative work, author, or resource</li>
+<li><code>&lt;q&gt;</code>: Used for short, inline quotations</li>
+<li><code>&lt;blockquote&gt;</code>: Used for longer external quotations</li>
+</ul>
+<h3>Citing a Creative Work</h3>
+<p>The <code>&lt;cite&gt;</code> inline element is used in HTML to specifically cite a creative work; the element must include either the title of the work, the author’s name, or a URL reference to the work. By default, content wrapped within the <code>&lt;cite&gt;</code> element will appear in italics within the browser.</p>
+<p>For additional reference, it helps to include a hyperlink to the original source of the citation when relevant.</p>
+<p>Here the book <cite>Steve Jobs</cite>, by Walter Isaacson, is referenced within the <code>&lt;cite&gt;</code> element. Inside the citation is also a hyperlink to the book.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>The book <span class="nt">&lt;cite&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537"</span><span class="nt">&gt;</span>Steve Jobs<span class="nt">&lt;/a&gt;&lt;/cite&gt;</span> is truly inspirational.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Citing a Creative Work Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_4" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/IHsDx(1).html" scrolling="no" frameborder="0" height="96" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_IHsDx"></iframe></div>
+</div>
+<h3>Dialogue &amp; Prose Quotation</h3>
+<p>Quite often, dialogue or prose is quoted inline, within other text. For this purpose, the <code>&lt;q&gt;</code> (or quote) inline element should be applied. The <code>&lt;q&gt;</code> element semantically indicates quoted dialogue or prose and shouldn’t be used for any other purposes.</p>
+<p>By default, the browser will insert the proper quotation marks for us and will even change the quotation marks based on the language identified within the <code>lang</code> global attribute.</p>
+<p>Here’s an example:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Steve Jobs once said, <span class="nt">&lt;q&gt;</span>One home run is much better than two doubles.<span class="nt">&lt;/q&gt;&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Dialogue &amp; Prose Citation</h3>
+<p>An optional attribute to include on the <code>&lt;q&gt;</code> element is the <code>cite</code> attribute. The <code>cite</code> attribute acts as a citation reference to the quote in the form of a URL. This attribute doesn’t alter the appearance of the element; it simply adds value for screen readers and other devices. Because the attribute isn’t viewable within the browser, it’s also helpful to provide a hyperlink to this source next to the actual quotation.</p>
+<p>Here’s an example:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://www.businessweek.com/magazine/content/06_06/b3970001.htm"</span><span class="nt">&gt;</span>Steve Jobs<span class="nt">&lt;/a&gt;</span> once said, <span class="nt">&lt;q</span> <span class="na">cite=</span><span class="s">"http://www.businessweek.com/magazine/content/06_06/b3970001.htm"</span><span class="nt">&gt;</span>One home run is much better than two doubles.<span class="nt">&lt;/q&gt;&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Dialogue &amp; Prose Citation Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_5" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/yJbej(1).html" scrolling="no" frameborder="0" height="96" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_yJbej"></iframe></div>
+</div>
+<h3>External Quotation</h3>
+<p>To quote a large block of text that comes from an external source and spans several lines, we’ll use the <code>&lt;blockquote&gt;</code> element. The <code>&lt;blockquote&gt;</code> is a block-level element that may have other block-level elements nested inside it, including headings and paragraphs.</p>
+<p>Here’s an example that uses the <code>&lt;blockquote&gt;</code> element:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;blockquote&gt;</span>
+  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;#8220;</span>In most people<span class="ni">&amp;#8217;</span>s vocabularies, design is a veneer. It<span class="ni">&amp;#8217;</span>s interior decorating. It<span class="ni">&amp;#8217;</span>s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.<span class="ni">&amp;#8221;</span><span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/blockquote&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>External Citation</h3>
+<p>Longer quotes used within the <code>&lt;blockquote&gt;</code> element will often include a citation. This citation may comprise both the <code>cite</code> attribute and the <code>&lt;cite&gt;</code> element.</p>
+<p>The <code>cite</code> attribute can be included on the <code>&lt;blockquote&gt;</code> element—in the same way that it was used on the <code>&lt;q&gt;</code> element earlier—to provide a citation reference to the quote in the form of a URL. The <code>&lt;cite&gt;</code> element then can fall after the actual quote itself to specify the original source of the quote, if relevant.</p>
+<p>The HTML here outlines an extended quote from Steve Jobs that originally appeared in <cite>Fortune</cite> magazine. The quotation is marked up using the <code>&lt;blockquote&gt;</code> element with a <code>cite</code> attribute to specify where the quote originally appeared. In the <code>&lt;blockquote&gt;</code> element, the <code>&lt;cite&gt;</code> element, along with an <code>&lt;a&gt;</code> element, provides an additional citation and reference for the quote that is visible to users.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;blockquote</span> <span class="na">cite=</span><span class="s">"http://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/272277/index.htm"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;#8220;</span>In most people<span class="ni">&amp;#8217;</span>s vocabularies, design is a veneer. It<span class="ni">&amp;#8217;</span>s interior decorating. It<span class="ni">&amp;#8217;</span>s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.<span class="ni">&amp;#8221;</span><span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;&lt;cite&gt;</span><span class="ni">&amp;#8212;</span> Steve Jobs in <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://money.cnn.com/ magazines/fortune/fortune_archive/2000/01/24/272277/index.htm"</span><span class="nt">&gt;</span> Fortune Magazine<span class="nt">&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/blockquote&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">External Citation Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_6" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/hnBxl(1).html" scrolling="no" frameborder="0" height="198" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_hnBxl"></iframe></div>
+</div>
+<h2 id="summary">Summary<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#summary">#summary</a></h2>
+<p>Learning how to style text is exciting, as our content can begin to convey some emotion. We can also start to play around with the hierarchy of our content, making our website more legible and digestible.</p>
+<p>To quickly recap, within this lesson we discussed the following:</p>
+<ul>
+<li>Adding color to our text to enhance it</li>
+<li>Applying <code>font</code>-based properties, including <code>font-family</code>, <code>font-size</code>, <code>font-style</code>, <code>font-weight</code>, and more</li>
+<li>Applying <code>text</code>-based properties, including <code>text-align</code>, <code>text-decoration</code>, <code>text-indent</code>, <code>text-shadow</code>, and more</li>
+<li>The history behind web-safe fonts and how to embed our own web fonts</li>
+<li>How to properly mark up citations and quotations</li>
+</ul>
+<p>Sharpening up our text and dabbling a bit with typography has brought our design along quite a way. Next, we’ll bring a little more color to our website by going over backgrounds and gradients.</p>
+<h2 id="resources-and-links">Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/working-with-typography/#resources-and-links">#resources-and-links</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="http://webtypography.net/" rel="nofollow">The Elements of Typographic Style Applied to the Web</a>
+via Richard Rutter
+</li>
+<li>
+<a href="http://www.impressivewebs.com/css-font-shorthand-property-cheat-sheet/" rel="nofollow">CSS Font Shorthand Property Cheat Sheet</a>
+via Impressive Webs
+</li>
+<li>
+<a href="https://www.google.com/fonts" rel="nofollow">Google Fonts</a>
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/working-with-typography/" data-title="Working with Typography">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Working%20with%20Typography%20-&amp;url=http://learn.shayhowe.com/html-css/working-with-typography/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/working-with-typography/" rel="nofollow">
+Share on Facebook
+ </a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/working-with-typography/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/html-css/positioning-content/" rel="prev">
+<strong>Lesson 5</strong>
+<span>Positioning Content</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/" rel="next">
+<strong>Lesson 7</strong>
+<span>Setting Backgrounds &amp; Gradients</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Working with Typography&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Working with Typography&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Working with Typography&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Working with Typography&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Working with Typography&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+ <label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Working with Typography&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Working with Typography&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+ <a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Working with Typography&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Working with Typography&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+ </li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Working with Typography&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Working with Typography&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Working with Typography&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+ <li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Working with Typography&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Working with Typography&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Working with Typography&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Working with Typography&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/advanced-html-css/">Looking for Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" class="media-circle" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/advanced-html-css/">advanced HTML and CSS lessons</a> to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/advanced-html-css/">View Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/follow_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Working with Typography - Learn to Code HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Working with Typography - Learn to Code HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Working with Typography - Learn to Code HTML &amp; CSS_files/widget_iframe.2d991e3dfc9abb2549972ce8b64c5d85.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

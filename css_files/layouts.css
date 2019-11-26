@@ -1,0 +1,32 @@
+body{
+size: 100%;
+}
+#header{
+    background-color: powderblue;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+#nav{
+    line-height: 30px;
+    background-color: beige;
+    height: 300px;
+    width: 100px;
+    border: 2px black solid ;
+    padding: 5px;
+    float: left;
+}
+#section{
+    
+    text-align: center;
+    padding: 10px;
+    border: 2px black solid ;
+    clear: both;
+}
+#footer{
+background-color: black;
+color: white;
+clear: both;
+text-align: center;
+padding: 5px;
+}

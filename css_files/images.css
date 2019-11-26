@@ -1,0 +1,13 @@
+img {
+    width: 726px;
+    height: 526px;
+    border: 0;
+} 
+#img2{
+    float: right;
+    width: 400px;
+    height: 300px;
+}
+p{
+    text-align: center;
+}

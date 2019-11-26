@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://learn.shayhowe.com/html-css/adding-media/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Learn how to add and stylize images, audio, and video on a web page using HTML5 along with alternative fallbacks." name="description">
+<meta content="html5 images audio video fallbacks figure figcaption source" name="keywords">
+<title>Adding Media - Learn to Code HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Adding Media - Learn to Code HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Adding Media - Learn to Code HTML &amp; CSS_files/ga.js.download"></script><script src="./Adding Media - Learn to Code HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Adding Media - Learn to Code HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Adding Media - Learn to Code HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Adding Media - Learn to Code HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Adding Media - Learn to Code HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Adding Media - Learn to Code HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Adding Media - Learn to Code HTML &amp; CSS_files/button.d941c9a422e2e3faf474b82a1f39e936.js.download"></script></head>
+<body class="html-css html-css_adding-media html-css_adding-media_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/html-css/">
+<span>Learn to Code</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/html-css/adding-media/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="building-your-first-web-page">
+<a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">
+<strong>Lesson 1</strong>
+Building Your First Web Page
+</a>
+</li>
+<li class="getting-to-know-html">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-html/">
+<strong>Lesson 2</strong>
+Getting to Know HTML
+</a>
+</li>
+<li class="getting-to-know-css">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">
+<strong>Lesson 3</strong>
+Getting to Know CSS
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="opening-the-box-model">
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">
+<strong>Lesson 4</strong>
+Opening the Box Model
+</a>
+</li>
+<li class="positioning-content">
+<a href="https://learn.shayhowe.com/html-css/positioning-content/">
+<strong>Lesson 5</strong>
+Positioning Content
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="working-with-typography">
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/">
+<strong>Lesson 6</strong>
+Working with Typography
+</a>
+</li>
+<li class="setting-backgrounds-and-gradients">
+<a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/">
+<strong>Lesson 7</strong>
+Setting Backgrounds &amp; Gradients
+</a>
+</li>
+<li class="creating-lists">
+<a href="https://learn.shayhowe.com/html-css/creating-lists/">
+<strong>Lesson 8</strong>
+Creating Lists
+</a>
+</li>
+<li class="adding-media">
+<a href="https://learn.shayhowe.com/html-css/adding-media/">
+<strong>Lesson 9</strong>
+Adding Media
+ </a>
+</li>
+<li class="building-forms">
+<a href="https://learn.shayhowe.com/html-css/building-forms/">
+<strong>Lesson 10</strong>
+Building Forms
+</a>
+</li>
+<li class="organizing-data-with-tables">
+<a href="https://learn.shayhowe.com/html-css/organizing-data-with-tables/">
+<strong>Lesson 11</strong>
+Organizing Data with Tables
+</a>
+</li>
+<li class="writing-your-best-code">
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/">
+<strong>Lesson 12</strong>
+Writing Your Best Code
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/advanced-html-css/">Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS</a> for a deeper look at front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 9</h6>
+<h1>Adding Media</h1>
+</div>
+<script src="./Adding Media - Learn to Code HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">9</span>
+</h4>
+<h6>HTML</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/adding-media/#adding-images">Adding Images</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/adding-media/#adding-audio">Adding Audio</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/adding-media/#adding-video">Adding Video</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/adding-media/#adding-iframes">Adding Inline Frames</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/adding-media/#figures-and-captions">Figures &amp; Captions</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/adding-media/" data-title="Adding Media">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Adding%20Media%20-&amp;url=http://learn.shayhowe.com/html-css/adding-media/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/adding-media/" rel="nofollow">
+Share on Facebook
+ </a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/adding-media/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Adding Media - Learn to Code HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QICAYI4Z3JCWSIVKQYCVYI4KJKC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Adding Media - Learn to Code HTML &amp; CSS_files/1571937253-Drift_Happens_Carbon_Alt.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QICAYI4Z3JCWSIVKQYCVYI4KJKC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">What’s your technical debt?  Keep tabs on your tech drift &amp; code inconsistencies.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>We browse the Internet in search of interesting and informative content, which we usually find in the form of plain text. To accompany this plain text, HTML provides ways to embed rich media in the form of images, audio tracks, and videos, as well as to embed content from another web page in the form of an inline frame.</p>
+<p>The ability to include images, audio tracks, videos, and inline frames within websites has been around for some time. Browser support for images and inline frames has generally been pretty good. And while the ability to add audio tracks and videos to a website has been around for years, the process has been fairly cumbersome. Fortunately, this process has improved and is much easier with support directly from HTML.</p>
+<p>Today, we can freely use images, audio, video, and inline frames knowing that this content is supported across all major browsers.</p>
+<h2 id="adding-images">Adding Images<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#adding-images">#adding-images</a></h2>
+<p>To add images to a page, we use the <code>&lt;img&gt;</code> inline element. The <code>&lt;img&gt;</code> element is a self-containing, or empty, element, which means that it doesn’t wrap any other content and it exists as a single tag. For the <code>&lt;img&gt;</code> element to work, a src attribute and value must be included to specify the source of the image. The <code>src</code> attribute value is a URL, typically relative to the server where a website is hosted.</p>
+<p>In conjunction with the <code>src</code> attribute, the <code>alt</code> (alternative text) attribute, which describes the contents of an image, should be applied. The <code>alt</code> attribute value is picked up by search engines and assistive technologies to help convey the purpose of an image. The <code>alt</code> text will be displayed in place of the image if for some reason the image is not available.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"dog.jpg"</span> <span class="na">alt=</span><span class="s">"A black, brown, and white dog wearing a kerchief"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Adding Images Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./Adding Media - Learn to Code HTML &amp; CSS_files/iBrbe(1).html" scrolling="no" frameborder="0" height="438" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_iBrbe"></iframe></div>
+</div>
+<figure class="fig fig-row">
+<img alt="Image Alternate Text" class="media-shrink-half" src="./Adding Media - Learn to Code HTML &amp; CSS_files/alternate-text.png" style="margin-bottom: 4px;">
+<figcaption>
+<strong>Fig 9</strong>
+<p>The alternate text, “A black, brown, and white dog wearing a kerchief,” shown in place of a missing image</p>
+</figcaption>
+</figure>
+<div class="note note-box">
+<h4>￼Supported Image Formats</h4>
+<p>Images come in a variety of different file formats, and each browser may support (or not support) different formats. By and large, the most commonly supported formats online are <code>gif</code>, <code>jpg</code>, and <code>png</code> images. Of these, the most widely used formats today are <code>jpg</code> and <code>png</code>. The <code>jpg</code> format provides quality images with high color counts while maintaining a decent file size, ideal for faster load times. The <code>png</code> format is great for images with transparencies or low color counts. We most commonly see <code>jpg</code> images used for photographs and <code>png</code> images used for icons or background patterns.</p>
+</div>
+<h3>Sizing Images</h3>
+<p>It is important to identify the size of an image in order to tell the browser how large the image should be before the page even loads; thus the browser can reserve space for the image and render the page faster. There are a few different ways to size images so that they work well on a page. One option is to use the <code>width</code> and <code>height</code> attributes directly within the <code>&lt;img&gt;</code> tag in HTML.</p>
+<p>Additionally, images may be sized using the <code>width</code> and <code>height</code> properties in CSS. When both the HTML attributes and CSS properties are used, the CSS attributes will take precedence over the HTML attributes.</p>
+<p>Specifying either a width or height will cause the other dimension to adjust automatically to maintain the aspect ratio of the image. As an example, if we want an image to be <code>200</code> pixels tall but are less specifically concerned about how wide it is, we can set the <code>height</code> to <code>200</code> pixels, and the width of the image will adjust accordingly. Setting both a <code>width</code> and <code>height</code> will work also; however, doing so may break the aspect ratio of an image, causing it to appear distorted.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Sizing Images Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./Adding Media - Learn to Code HTML &amp; CSS_files/kEdwi(1).html" scrolling="no" frameborder="0" height="282" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_kEdwi"></iframe></div>
+</div>
+<p>While using the <code>width</code> and <code>height</code> attributes directly in HTML provides some semantic value by noting an image’s original size, it can be difficult to manage numerous images that all need to be the same size. In this event, it’s common practice to use CSS to resize the images.</p>
+<h3>Positioning Images</h3>
+<p>We can use a number of different approaches to position images on a web page. By default images are positioned as inline-level elements; however, their positions may be changed using CSS, specifically the <code>float</code>, <code>display</code>, and box model properties, including <code>padding</code>, <code>border</code>, and <code>margin</code>.</p>
+<h4>Inline Positioning Images</h4>
+<p>The <code>&lt;img&gt;</code> element is by default an inline-level element. Adding an image without any styles to a page will position that image within the same line as the content that surrounds it. Additionally, the height of the line in which an image appears will be changed to match the height of the image, which can create large vertical gaps within that line.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Gatsby is a black, brown, and white hound mix puppy who loves howling at fire trucks and collecting belly rubs. <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"dog.jpg"</span> <span class="na">alt=</span><span class="s">"A black, brown, and white dog wearing a kerchief"</span><span class="nt">&gt;</span> Although he spends most of his time sleeping he is also quick to chase any birds who enter his vision.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Inline Images Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_3" src="./Adding Media - Learn to Code HTML &amp; CSS_files/BduLm(1).html" scrolling="no" frameborder="0" height="252" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_BduLm"></iframe></div>
+</div>
+<p>Leaving images untouched in their default positioning isn’t too common. More often than not, images are displayed as block-level elements or are floated flush to one side.</p>
+<h4>Block Positioning Images</h4>
+<p>Adding the <code>display</code> property to an image and setting its value to <code>block</code> forces the image to be a block-level element. This makes the image appear on its own line, allowing the surrounding content to be positioned above and below the image.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Block Images Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_4" src="./Adding Media - Learn to Code HTML &amp; CSS_files/zLKIE(1).html" scrolling="no" frameborder="0" height="282" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_zLKIE"></iframe></div>
+</div>
+<h4>Positioning Images Flush Left or Right</h4>
+<p>Sometimes displaying an image as <code>inline</code> or <code>block</code>, or perhaps even <code>inline-block</code>, isn’t ideal. We may want the image to appear on the left or right side of its containing element, while all of the other content wraps around the image as necessary. To do this, we use the <code>float</code> property with a value of either <code>left</code> or <code>right</code>.</p>
+<p>Remembering back to Lesson 5, “<a href="https://learn.shayhowe.com/html-css/positioning-content/">Positioning Content</a>,” we recall that the <code>float</code> property was originally intended to position images to the left or right of a containing element. Now we’ll use it for that original purpose.</p>
+<p>Floating an image is a start; however, all other content will align directly against it. To provide spacing around an image, we’ll use the <code>margin</code> property. Additionally, we can use the <code>padding</code>, <code>border</code>, and <code>background</code> properties to build a frame for the image, if desired.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eaeaed</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#9799a7</span><span class="p">;</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">8px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Floating Images Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_5" src="./Adding Media - Learn to Code HTML &amp; CSS_files/vjdIe(1).html" scrolling="no" frameborder="0" height="234" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_vjdIe"></iframe></div>
+</div>
+<div class="note note-box">
+<h4>When to Use an Image Element vs. a Background Image</h4>
+<p>There are two primary ways to add images to a web page. One way, as covered here, is to use the <code>&lt;img&gt;</code> element within HTML. Another way is to use the <code>background</code> or <code>background-image</code> property within CSS to assign a background image to an element. Either option will do the job; however, they each have specific use cases.</p>
+<p>The <code>&lt;img&gt;</code> element within HTML is the preferred option when the image being used holds semantic value and its content is relevant to the content of the page.</p>
+<p>The <code>background</code> or <code>background-image</code> property within CSS is the preferred option when the image being used is part of the design or user interface of the page. As such, it’s not directly relevant to the content of the page.</p>
+</div>
+<p>The <code>&lt;img&gt;</code> element is quite popular, and when it was originally added to the HTML specification it forever changed the way websites were built.</p>
+<h2 id="practice-1">In Practice<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#practice-1">#practice-1</a></h2>
+<p>Now that we know how to add and position images on a page, let’s take a look at our Styles Conference website and see where we can add a few images.</p>
+<ol class="practice">
+<li>
+<p>Let’s begin by adding some images to our home page. Specifically, we’ll add an image within each of the teaser sections promoting a few of our pages.</p>
+<p>Before we jump into the code, though, let’s create a new folder named “images” within our “assets” folder. Then, within the “images” folder, let’s create another folder named “home” specifically for our home page images. Within the “home” folder we’ll add three images: <code>speakers.jpg</code>, <code>schedule.jpg</code>, and <code>venue.jpg</code>. (For reference, these images may be <a href="https://learn.shayhowe.com/practice/images.zip" rel="nofollow">downloaded</a> within a zip file.)</p>
+<p>Then, inside our <code>index.html</code> file, each teaser section has an <code>&lt;a&gt;</code> element wrapping both an <code>&lt;h3&gt;</code> and an <code>&lt;h5&gt;</code> element. Let’s move the <code>&lt;h5&gt;</code> element above the <code>&lt;a&gt;</code> element and replace it with an <code>&lt;img&gt;</code> element. The <code>src</code> attribute value for each <code>&lt;img&gt;</code> element will correspond to the folder structure and filename we set up, and the <code>alt</code> attribute value will describe the contents of each image.</p>
+<p>The HTML for our first teaser, for the Speakers page, will look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"teaser col-1-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h5&gt;</span>Speakers<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/images/home/speakers.jpg"</span> <span class="na">alt=</span><span class="s">"Professional Speaker"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>World-Class Speakers<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Let’s continue this pattern for both the Schedule and Venue page teasers, too.</p>
+</li>
+<li>
+<p>Now that we’ve added a few images to our home page, we’ll need to clean up their styles a bit and make sure they properly fit into the layout of our page.</p>
+<p>Since images are inline-level elements by default, let’s change our images within the teaser sections to block-level elements. Let’s also set their maximum <code>width</code> to <code>100%</code> to ensure they don’t exceed the width of their respective columns. Changing this <code>width</code> value is important as it allows our images to adjust with the width of the columns as necessary.</p>
+<p>Lastly, let’s round the corners of the images slightly and apply <code>22</code> pixels of bottom <code>margin</code> to the images, providing a little breathing room.</p>
+<p>Once we add these new styles to our existing home page styles (using the teaser class as a qualifying selector for the <code>&lt;img&gt;</code> elements), our CSS will look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.teaser</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">100%</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Next up, let’s add images of all of the speakers to the Speakers page. We’ll begin by creating a “speakers” folder within our “images” folder and placing images of all of the speakers there.</p>
+<p>Within the <code>speakers.html</code> file, let’s add an <code>&lt;img&gt;</code> element within each of the speaker information <code>&lt;aside&gt;</code> elements. Let’s place each <code>&lt;img&gt;</code> element inside the <code>&lt;div&gt;</code> element with the class attribute value of <code>speaker-info</code>, just above the <code>&lt;ul&gt;</code> element.</p>
+<p>The <code>src</code> attribute value of each image will correspond to the “speakers” folder we set up and the speaker’s name; the <code>alt</code> attribute value will be the speaker’s name.</p>
+<p>The <code>&lt;aside&gt;</code> element for myself, as a speaker, will look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="rouge-code"><pre><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"speaker-info"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/images/speakers/shay-howe.jpg"</span> <span class="na">alt=</span><span class="s">"Shay Howe"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://twitter.com/shayhowe"</span><span class="nt">&gt;</span>@shayhowe<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://learn.shayhowe.com/"</span><span class="nt">&gt;</span>learn.shayhowe.com<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/aside&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>This same pattern for adding an image should then be applied to all other speakers.</p>
+</li>
+<li>
+<p>As we did with the images on our home page, we’ll want to apply some styles to the images on the Speakers page.</p>
+<p>Let’s begin by applying the <code>border-radius</code> property with a value of <code>50%</code>, turning our images into circles. From there, let’s set a fixed <code>height</code> of <code>130</code> pixels to each image and set them to be vertically aligned to the <code>top</code> of the line they reside within.</p>
+<p>With the <code>height</code> and vertical alignment in place, let’s apply vertical margins to the images. Using a negative <code>66</code>-pixel <code>margin</code> on the top of the images, we’ll pull them slightly out of the <code>&lt;aside&gt;</code> element and make them vertically centered with the top <code>border</code> of the <code>&lt;div&gt;</code> element with a <code>class</code> attribute value of <code>speaker-info</code>. Then, applying a <code>22</code>-pixel <code>margin</code> on the bottom of the image provides space between the image and the <code>&lt;ul&gt;</code> element below it.</p>
+<p>When we add these new styles to our existing Speakers page styles (using the <code>speaker-info</code> class as a qualifying selector for the <code>&lt;img&gt;</code> elements), our CSS will look like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.speaker-info</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">130px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">-66px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">top</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Since we are using an aggressive negative <code>margin</code> on the <code>&lt;img&gt;</code> element within the <code>&lt;div&gt;</code> element with a class attribute value of <code>speaker-info</code>, we need to remove the <code>padding</code> on the top of that <code>&lt;div&gt;</code> element.</p>
+<p>Previously we were using the <code>padding</code> property with a value of <code>22px 0</code>, thus placing <code>22</code> pixels of <code>padding</code> on the top and bottom and <code>0</code> pixels of <code>padding</code> on the left and right of the <code>&lt;div&gt;</code> element. Let’s swap this property and value out for the <code>padding-bottom</code> property, as that’s the only <code>padding</code> we need to identify, and use a value of <code>22</code> pixels.</p>
+<p>The new <code>speaker-info</code> class rule set looks like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nc">.speaker-info</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#dfe2e5</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">88px</span><span class="p">;</span>
+  <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+</ol>
+<p>Now both our home and Speaker pages are looking pretty sharp.</p>
+<figure class="fig">
+<img alt="Styles Conference website" src="./Adding Media - Learn to Code HTML &amp; CSS_files/practice-1a.png" style="margin-bottom: 5px;">
+<figcaption>
+<strong>Fig 9</strong>
+<p>Our Styles Conference home page after adding images to each section that teases another page</p>
+</figcaption>
+</figure>
+<figure class="fig">
+<img alt="Styles Conference website" src="./Adding Media - Learn to Code HTML &amp; CSS_files/practice-1b.png" style="margin-bottom: 4px;">
+<figcaption>
+<strong>Fig 9</strong>
+<p>Our Styles Conference Speakers page after adding images for each of the speakers</p>
+</figcaption>
+</figure>
+<h2 id="adding-audio">Adding Audio<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#adding-audio">#adding-audio</a></h2>
+<p>HTML5 provides a quick and easy way to add <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" rel="nofollow">audio files</a> to a website by way of the <code>&lt;audio&gt;</code> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" rel="nofollow">element</a>. As with the <code>&lt;img&gt;</code> element, the <code>&lt;audio&gt;</code> element accepts a source URL specified by the <code>src</code> attribute. Unlike the <code>&lt;img&gt;</code> element, though, the <code>&lt;audio&gt;</code> element requires both opening and closing tags, which we’ll discuss soon.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"jazz.ogg"</span><span class="nt">&gt;&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Audio Attributes</h3>
+<p>Several other attributes may accompany the src attribute on the <code>&lt;audio&gt;</code> element; the most popular include <code>autoplay</code>, <code>controls</code>, <code>loop</code>, and <code>preload</code>.</p>
+<p>The <code>autoplay</code>, <code>controls</code>, and <code>loop</code> attributes are all Boolean attributes. As Boolean attributes, they don’t require a stated value. Instead, when each is present on the <code>&lt;audio&gt;</code> element its value will be set to true, and the <code>&lt;audio&gt;</code> element will behave accordingly.</p>
+<p>By default, the <code>&lt;audio&gt;</code> element isn’t displayed on a page. If the <code>autoplay</code> Boolean attribute is present on the <code>&lt;audio&gt;</code> element, nothing will appear on the page, but the audio file will automatically play upon loading.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"jazz.ogg"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>To display the <code>&lt;audio&gt;</code> element on a page, the <code>controls</code> Boolean attribute is necessary. When it’s applied to the <code>&lt;audio&gt;</code> element, the <code>controls</code> Boolean attribute will display a browser’s default audio controls, including play and pause, seek, and volume controls.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"jazz.ogg"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Adding Audio Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_6" src="./Adding Media - Learn to Code HTML &amp; CSS_files/pLriu(1).html" scrolling="no" frameborder="0" height="108" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_pLriu"></iframe></div>
+</div>
+<p>When present on the <code>&lt;audio&gt;</code> element, the <code>loop</code> Boolean attribute will cause an audio file to repeat continually, from beginning to end.</p>
+<p>Lastly, the <code>preload</code> attribute for the <code>&lt;audio&gt;</code> element helps identify what, if any, information about the audio file should be loaded before the clip is played. It accepts three values: <code>none</code>, <code>auto</code>, and <code>metadata</code>. The <code>none</code> value won’t preload any information about an audio file, while the <code>auto</code> value will preload all information about an audio file. The <code>metadata</code> value sits in between the <code>none</code> and <code>auto</code> values, as it will preload any available metadata information about an audio file, such as the clip’s length, but not all information.</p>
+<p>When the <code>preload</code> attribute isn’t present on the <code>&lt;audio&gt;</code> element, all information about an audio file is loaded, as if the value was set to <code>auto</code>. For this reason, using the <code>preload</code> attribute with a value of <code>metadata</code> or <code>none</code> is a good idea when an audio file is not essential to a page. It’ll help to conserve bandwidth and allow pages to load faster.</p>
+<h3>Audio Fallbacks &amp; Multiple Sources</h3>
+<p>At the moment, different browsers support different audio file formats, the three most popular of which are <code>ogg</code>, <code>mp3</code>, and <code>wav</code>. For the best browser support we’ll need to use a handful of audio fallbacks, which will be included inside an <code>&lt;audio&gt;</code> element’s opening and closing tags.</p>
+<p>To begin, we’ll remove the <code>src</code> attribute from the <code>&lt;audio&gt;</code> element. Instead, we’ll use the <code>&lt;source&gt;</code> element, with a <code>src</code> attribute, nested inside the <code>&lt;audio&gt;</code> element to define a new source.</p>
+<p>Using a <code>&lt;source&gt;</code> element and <code>src</code> attribute for each file format, we can list one audio file format after the other. We’ll use the <code>type</code> attribute to quickly help the browser identify which audio types are available. When a browser recognizes an audio file format it will load that file and ignore all the others.</p>
+<p>Because it was introduced in HTML5, some browsers may not support the <code>&lt;audio&gt;</code> element. In this case, we can provide a link to download the audio file after any <code>&lt;source&gt;</code> elements within the <code>&lt;audio&gt;</code> element.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">&lt;audio</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"jazz.ogg"</span> <span class="na">type=</span><span class="s">"audio/ogg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"jazz.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"jazz.wav"</span> <span class="na">type=</span><span class="s">"audio/wav"</span><span class="nt">&gt;</span>
+  Please <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"jazz.mp3"</span> <span class="na">download</span><span class="nt">&gt;</span>download<span class="nt">&lt;/a&gt;</span> the audio file.
+<span class="nt">&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>To review the previous code, the <code>&lt;audio&gt;</code> element includes the <code>controls</code> Boolean attribute to ensure the audio player is displayed within browsers that support the element. The <code>&lt;audio&gt;</code> element does not include a <code>src</code> attribute and instead wraps three different <code>&lt;source&gt;</code> elements. Each <code>&lt;source&gt;</code> element includes a <code>src</code> attribute that references a different audio file format and a <code>type</code> attribute to identify the format of the audio file. As a last fallback, if a browser doesn’t recognize any of the audio file formats, the anchor link to download the element will be displayed.</p>
+<p>In addition to the <code>&lt;audio&gt;</code> element, HTML5 also introduced the <code>&lt;video&gt;</code> element, which shares quite a few similarities with the <code>&lt;audio&gt;</code> element.</p>
+ <h2 id="adding-video">Adding Video<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#adding-video">#adding-video</a></h2>
+<p>Adding <a href="https://dev.opera.com/articles/introduction-html5-video/" rel="nofollow">video in HTML5</a> is very similar to adding audio. We use the <code>&lt;video&gt;</code> element in place of the <code>&lt;audio&gt;</code> element. All of the same attributes (<code>src</code>, <code>autoplay</code>, <code>controls</code>, <code>loop</code>, and <code>preload</code>) and fallbacks apply here, too.</p>
+<p>With the <code>&lt;audio&gt;</code> element, if the <code>controls</code> Boolean attribute isn’t specified the audio clip isn’t displayed. With videos, if the <code>controls</code> Boolean attribute is not specified the video will display. However, it is fairly difficult to view unless the <code>autoplay</code> Boolean attribute is also applied. In general, the best practice here is to include the <code>controls</code> Boolean attribute unless there is a good reason not to allow users to start, stop, or replay the video.</p>
+<p>Since videos take up space on the page, it doesn’t hurt to specify their dimensions, which is most commonly done with <code>width</code> and <code>height</code> properties in CSS. This helps ensure that the video isn’t too large and stays within the implied layout of a page. Additionally, specifying a size, as with images, helps the browser render videos faster and allows it to allocate the proper space needed for the video to be displayed.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"earth.ogv"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Adding Video Demo</h4>
+<p>For performance reasons this video demo is hosted locally, however you may still <a href="https://codepen.io/shayhowe/pen/pKHrg" rel="nofollow&quot;">review and edit this code</a> on CodePen.</p>
+<video controls="">
+<source src="https://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.ogv" type="video/ogg">
+<source src="https://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" type="video/mp4">
+Please <a href="https://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" download="">download</a> the video.
+</video>
+<style>
+                  /* line 1, (__TEMPLATE__) */
+                  video {
+                    margin-bottom: 26px; }
+                </style>
+</div>
+<div class="note note-box">
+<h4>Customizing Audio &amp; Video Controls</h4>
+<p>By default, the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> element controls are determined by each browser independently. Depending on the design of a website, more authority over the look and feel of the media player may be needed. If this is the case, a customized player can be built, but it will require a little JavaScript to work.</p>
+<p>Additionally, if a customized player uses the <code>&lt;img&gt;</code> element as a control the value of the <code>alt</code> attribute should explictly state that the image is a control and requires the proper interaction to work.</p>
+</div>
+<h3>Poster Attribute</h3>
+<p>One additional attribute available for the <code>&lt;video&gt;</code> element is the <code>poster</code> attribute. The <code>poster</code> attribute allows us to specify an image, in the form of a URL, to be shown before a video is played. The example below uses a screen capture from the video as the poster for the Earth video.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"earth.ogv"</span> <span class="na">controls</span> <span class="na">poster=</span><span class="s">"earth-video-screenshot.jpg"</span><span class="nt">&gt;&lt;/video&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Poster Attribute Demo</h4>
+<p>For performance reasons this video demo is hosted locally, however you may still <a href="https://codepen.io/shayhowe/pen/xmcnr/" rel="nofollow&quot;">review and edit this code</a> on CodePen.</p>
+<video controls="" poster="/assets/images/courses/html-css/adding-media/earth-video-screenshot.jpg">
+<source src="https://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.ogv" type="video/ogg">
+<source src="https://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" type="video/mp4">
+Please <a href="https://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" download="">download</a> the video.
+</video>
+</div>
+<h3>Video Fallbacks</h3>
+<p>As with the <code>&lt;audio&gt;</code> element, video fallbacks are also necessary. The same markup format, with multiple <code>&lt;source&gt;</code> elements for each file type and a plain text fallback, also applies within the <code>&lt;video&gt;</code> element.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"earth.ogv"</span> <span class="na">type=</span><span class="s">"video/ogg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"earth.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;</span>
+  Please <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"earth.mp4"</span> <span class="na">download</span><span class="nt">&gt;</span>download<span class="nt">&lt;/a&gt;</span> the video.
+<span class="nt">&lt;/video&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>One additional fallback option that could be used in place of a plain text fallback is to use a <a href="https://www.youtube.com/" rel="nofollow">YouTube</a> or <a href="https://vimeo.com/" rel="nofollow">Vimeo</a> embedded video. These video hosting websites allow us to upload our videos, provide a standard video player, and enable us to embed our videos onto a page using an inline frame.</p>
+<div class="note note-box">
+<h4>HTML5 Audio &amp; Video File Formats</h4>
+<p>Browser support for the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements varies, as do the file formats required with these elements. Each browser has its own <a href="https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats" rel="nofollow">preferred</a> audio and video file formats.</p>
+<p>There are a few tools that help to convert an <a href="http://media.io/" rel="nofollow">audio</a> or <a href="http://www.mirovideoconverter.com/" rel="nofollow">video</a> file into different formats, and a quick search will provide an abundance of options.</p>
+</div>
+<h2 id="adding-iframes">Adding Inline Frames<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#adding-iframes">#adding-iframes</a></h2>
+<p>Another way to add content to a page is to embed another HTML page within the current page. This is done using an inline frame, or <code>&lt;iframe&gt;</code> element. The <code>&lt;iframe&gt;</code> element accepts the URL of another HTML page within the <code>src</code> attribute value; this causes the content from the embedded HTML page to be displayed on the current page. The value of the <code>src</code> attribute may be a URL relative to the page the <code>&lt;iframe&gt;</code> element appears on or an absolute URL for an entirely external page.</p>
+<p>Many pages use the <code>&lt;iframe&gt;</code> element to embed media onto a page from an external website such as Google Maps, YouTube, and others.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"https://www.google.com/maps/embed?..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Adding Inline Frames Demo</h4>
+<p>For security reasons CodePen doesn’t allow <code>iframe</code>s within embedded code samples, however you may <a href="https://codepen.io/shayhowe/pen/zounc" rel="nofollow&quot;">review and edit this code</a> on their website.</p>
+<iframe class="iframes-demo" src="./Adding Media - Learn to Code HTML &amp; CSS_files/embed.html"></iframe>
+<style>
+                  /* line 1, (__TEMPLATE__) */
+                  .iframes-demo {
+                    height: 299px;
+                    margin-bottom: 24px; }
+                </style>
+</div>
+<p>The <code>&lt;iframe&gt;</code> element has a few default styles, including an inset <code>border</code> and a <code>width</code> and <code>height</code>. These styles can be adjusted using the <code>frameborder</code>, <code>width</code>, and <code>height</code> HTML attributes or by using the <code>border</code>, <code>width</code>, and <code>height</code> CSS properties.</p>
+<p>Pages referenced within the <code>src</code> attribute of an <code>&lt;iframe&gt;</code> element play by their own rules, as they do not inherit any styles or behaviors from the page they are referenced on. Any styles applied to a page that includes an <code>&lt;iframe&gt;</code> element will not be inherited by the page referenced within the <code>&lt;iframe&gt;</code> element. Additionally, links within the page referenced within the <code>&lt;iframe&gt;</code> element will open inside that frame, leaving the page that contains the <code>&lt;iframe&gt;</code> element unchanged.</p>
+<h2 id="practice-2">In Practice<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#practice-2">#practice-2</a></h2>
+<p>Inline frames provide a great way to add dynamic content to a page. Let’s give this a shot by updating our Venue page with some maps.</p>
+<ol class="practice">
+<li>
+<p>Before adding any maps or inline frames, let’s first prepare our Venue page for a two-column grid. Below the leading section of the page we’ll add a <code>&lt;section&gt;</code> element with the <code>class</code> attribute value of <code>row</code> to identify a new section of the page, and we’ll include some general styles, such as a white <code>background</code> and some vertical <code>padding</code>.</p>
+<p>Directly inside this <code>&lt;section&gt;</code> element let’s add a <code>&lt;div&gt;</code> element with the <code>class</code> attribute value of <code>grid</code>. The class of <code>grid</code> centers our content on the page and prepares for the one-third and two-thirds columns to follow.</p>
+<p>So far the main section of our <code>venue.html</code> file looks like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Within the <code>&lt;div&gt;</code> element with the class attribute value of <code>grid</code> we’ll have two new sections, one for the conference venue and one for the conference hotel. Let’s add two new <code>&lt;section&gt;</code> elements and give each of these <code>&lt;section&gt;</code> elements a unique class that corresponds to its content. We’ll use these classes to add margins to the bottom of each section.</p>
+<p>Our HTML should now look like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"venue-theatre"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/section&gt;</span>
+
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"venue-hotel"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/section&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Now that we have a few classes to work with, let’s create a new section within our <code>main.css</code> file for Venue page styles. We’ll add a <code>66</code>-pixel <code>margin</code> to the bottom of the <code>&lt;section&gt;</code> element with the class attribute value of <code>venue-theatre</code> to insert some space between it and the <code>&lt;section&gt;</code> element below it.</p>
+<p>Then, we’ll add a <code>22</code>-pixel <code>margin</code> to the bottom of the <code>&lt;section&gt;</code> element with the class attribute value of <code>venue-hotel</code> to provide some space between it and the <code>&lt;footer&gt;</code> element below it.</p>
+<p>The new venue section within the <code>main.css</code> file looks like the following:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="rouge-code"><pre><span class="c">/*
+  ========================================
+  Venue
+  ========================================
+*/</span>
+
+<span class="nc">.venue-theatre</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">66px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.venue-hotel</span> <span class="p">{</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>The <code>&lt;section&gt;</code> element with the class attribute value of <code>venue-hotel</code> has a smaller bottom <code>margin</code> than the <code>&lt;section&gt;</code> element with the class attribute value of <code>venue-theatre</code> because it sits next to the <code>padding</code> from the bottom of the <code>&lt;section&gt;</code> element with the class attribute of <code>row</code>. Adding that <code>margin</code> and <code>padding</code> together gives us the same value as the bottom <code>margin</code> on the <code>&lt;section&gt;</code> element with the class attribute value of <code>venue-theatre</code>.</p>
+</li>
+<li>
+<p>Now it’s time to create the two columns within each of the new <code>&lt;section&gt;</code> elements. We’ll start by adding a <code>&lt;div&gt;</code> element with a <code>class</code> attribute value of <code>col-1-3</code> to establish a one-third column. After it we’ll add an <code>&lt;iframe&gt;</code> element with a <code>class</code> attribute value of <code>col-2-3</code> to establish a two-thirds column.</p>
+<p>Keeping in mind that the column classes make both the <code>&lt;div&gt;</code> and <code>&lt;iframe&gt;</code> elements inline-block elements, we need to remove the empty space that will appear between them. To do so we’ll open an HTML comment directly after the closing <code>&lt;div&gt;</code> tag, and we’ll close the HTML comment immediately before the opening <code>&lt;iframe&gt;</code> tag.</p>
+<p>In all, our HTML for the columns looks like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"venue-theatre"</span><span class="nt">&gt;</span>
+    
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;&lt;/div&gt;</span><span class="c">&lt;!--
+
+      --&gt;</span><span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"col-2-3"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+    
+    <span class="nt">&lt;/section&gt;</span>
+    
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"venue-hotel"</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;&lt;/div&gt;</span><span class="c">&lt;!--
+      --&gt;</span><span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"col-2-3"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+    
+    <span class="nt">&lt;/section&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Within each of the <code>&lt;div&gt;</code> elements with a <code>class</code> attribute value of <code>col-1-3</code> let’s add the venue’s name within an <code>&lt;h2&gt;</code> element, followed by two <code>&lt;p&gt;</code> elements. In the first <code>&lt;p&gt;</code> element let’s include the venue’s address, and in the second <code>&lt;p&gt;</code> element let’s include the venue’s website (within an anchor link) and phone number.</p>
+<p>Within each of the paragraphs, let’s use the line-break element, <code>&lt;br&gt;</code>, to place breaks within the address and in between the website and phone number.</p>
+<p>For the <code>&lt;section&gt;</code> element with the <code>class</code> attribute value of <code>venue-theatre</code>, the HTML looks like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"venue-theatre"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Chicago Theatre<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>175 N State St <span class="nt">&lt;br&gt;</span> Chicago, IL 60601<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://www.thechicagotheatre.com/"</span><span class="nt">&gt;</span>thechicagotheatre.com<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;br&gt;</span> (312) 462-6300<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--
+
+  --&gt;</span><span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"col-2-3"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>The same pattern shown here for the theatre should also be applied to the hotel (using, of course, the proper address, website, and phone number).</p>
+</li>
+<li>
+<p>We can search for these addresses in <a href="https://www.google.com/maps/" rel="nofollow">Google Maps</a>. Once we locate an address and create a customized map, we have the ability to embed that map into our page. Following the instructions on Google Maps for how to share and embed a map will provide us with the HTML for an <code>&lt;iframe&gt;</code> element.</p>
+<p>Let’s copy the HTML—<code>&lt;iframe&gt;</code> element, <code>src</code> attribute, and all—onto our page where our existing <code>&lt;iframe&gt;</code> element resides. We’ll do this for each location, using two different <code>&lt;iframe&gt;</code> elements.</p>
+<p>In copying over the <code>&lt;iframe&gt;</code> element from Google Maps we need to make sure we preserve the <code>class</code> attribute and value, <code>col-2-3</code>, from our existing <code>&lt;iframe&gt;</code> element. We also need to be careful not to harm the HTML comment that closes directly before our opening <code>&lt;iframe&gt;</code> tag.</p>
+<p>Looking directly at the <code>&lt;section&gt;</code> element with the <code>class</code> attribute value of <code>venue-theatre</code> again, the HTML looks like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"venue-theatre"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Chicago Theatre<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>175 N State St <span class="nt">&lt;br&gt;</span> Chicago, IL 60601<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://www.thechicagotheatre.com/"</span><span class="nt">&gt;</span>thechicagotheatre.com<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;br&gt;</span> (312) 462-6300<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--
+
+  --&gt;</span><span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"col-2-3"</span> <span class="na">src=</span><span class="s">"https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+<li>
+<p>Lastly, we’ll want to make sure that both <code>&lt;iframe&gt;</code> elements that reference Google Maps share the same height. To do this, we’ll create a new class, <code>venue-map</code>, and apply it to each of the <code>&lt;iframe&gt;</code> elements alongside the existing <code>col-2-3</code> <code>class</code> attribute value.</p>
+<p>The HTML for the <code>&lt;section&gt;</code> element with the <code>class</code> attribute value of <code>venue-theatre</code> now looks like this:</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"venue-theatre"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Chicago Theatre<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>175 N State St <span class="nt">&lt;br&gt;</span> Chicago, IL 60601<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://www.thechicagotheatre.com/"</span><span class="nt">&gt;</span>thechicagotheatre.com<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;br&gt;</span> (312) 462-6300<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--
+
+  --&gt;</span><span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"venue-map col-2-3"</span> <span class="na">src=</span><span class="s">"https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+<p>Once the <code>venue-map</code> class is applied to each <code>&lt;iframe&gt;</code> element, let’s create the <code>venue-map</code> class rule set within our <code>main.css</code> file. It includes the <code>height</code> property with a value of <code>264</code> pixels.</p>
+<p>The <code>venue-map</code> class rule set looks like this:</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.venue-map</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">264px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                  </code></pre>
+</li>
+</ol>
+ <p>We now have a Venue page, complete with maps for the different locations of our conference.</p>
+<figure class="fig">
+<img alt="Styles Conference website" src="./Adding Media - Learn to Code HTML &amp; CSS_files/practice-2.png" style="margin-bottom: 4px;">
+<figcaption>
+<strong>Fig 9</strong>
+<p>Our Styles Conference Venue page, which now includes inline frames</p>
+</figcaption>
+</figure>
+<h3>Demo &amp; Source Code</h3>
+<p>Below you may view the Styles Conference website in its current state, as well as download the source code for the website in its current state.</p>
+<p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/practice/adding-media/index.html">View the Styles Conference Website</a>
+<span class="practice-link-separator">
+or
+<a download="" href="https://learn.shayhowe.com/practice/adding-media.zip" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Download&#39;, &#39;HTML &amp; CSS - Lesson 9&#39;, &#39;Adding Media&#39;]);" rel="nofollow">Download the Source Code</a>
+<span class="practice-link-detail">(Zip file)</span>
+</span>
+</p>
+<h2 id="figures-and-captions">Semantically Identifying Figures &amp; Captions<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#figures-and-captions">#figures-and-captions</a></h2>
+<p>With HTML5 also came the introduction of the <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements. These <a href="http://html5doctor.com/the-figure-figcaption-elements/" rel="nofollow">elements</a> were created to semantically mark up self-contained content or media, commonly with a caption. Before HTML5 this was frequently done using an ordered list. While an ordered list worked, the markup was not semantically correct.</p>
+<h3>Figure</h3>
+<p>The <code>&lt;figure&gt;</code> block-level element is used to identify and wrap self-contained content, often in the form of media. It may surround images, audio clips, videos, blocks of code, diagrams, illustrations, or other self-contained media. More than one item of self-contained content, such as multiple images or videos, may be contained within the <code>&lt;figure&gt;</code> element at a time. If the <code>&lt;figure&gt;</code> element is moved from the main portion of a page to another location (for example, the bottom of the page), it should not disrupt the content or legibility of the page.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;figure&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"dog.jpg"</span> <span class="na">alt=</span><span class="s">"A black, brown, and white dog wearing a kerchief"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Figure Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_7" src="./Adding Media - Learn to Code HTML &amp; CSS_files/gtGpj(1).html" scrolling="no" frameborder="0" height="438" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_gtGpj"></iframe></div>
+</div>
+<h3>Figure Caption</h3>
+<p>To add a caption or legend to the <code>&lt;figure&gt;</code> element, the <code>&lt;figcaption&gt;</code> element is used. The <code>&lt;figcaption&gt;</code> may appear at the top of, bottom of, or anywhere within the <code>&lt;figure&gt;</code> element; however, it may only appear once. When it’s used, the <code>&lt;figcaption&gt;</code> element will serve as the caption for all content within the <code>&lt;figure&gt;</code> element.</p>
+<p>Additionally, the <code>&lt;figcaption&gt;</code> element may replace an <code>&lt;img&gt;</code> element’s <code>alt</code> attribute if the content of the <code>&lt;figcaption&gt;</code> element provides a useful description of the visual content of the image.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;figure&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"dog.jpg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;figcaption&gt;</span>A beautiful black, brown, and white hound dog wearing kerchief.<span class="nt">&lt;/figcaption&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Figure Caption Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_8" src="./Adding Media - Learn to Code HTML &amp; CSS_files/KsItj(1).html" scrolling="no" frameborder="0" height="456" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_KsItj"></iframe></div>
+</div>
+<p>Not all forms of media need to be included within a <code>&lt;figure&gt;</code> element or include a <code>&lt;figcaption&gt;</code> element; only those that are self-contained and belong together as a group.</p>
+<h2 id="summary">Summary<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#summary">#summary</a></h2>
+<p>Alongside text, media is one of the largest parts of the web. Use of images, audio, and video has only grown over recent years, and it isn’t likely to slow down. Now we know how to incorporate these forms of media into our designs and how we can use them to enrich the content on our websites.</p>
+<p>Within this lesson we covered the following:</p>
+<ul>
+<li>The best ways to add images, audio clips, videos, and inline frames to a page</li>
+<li>Different ways to position images in different situations</li>
+<li>How to provide audio and video fallbacks for older browsers</li>
+<li>Common attributes available to audio clips and videos</li>
+<li>The semantic way to mark up self-contained content, including media</li>
+</ul>
+<p>We’re coming into the homestretch of learning HTML and CSS, with only a few more components left to introduce. Next on the list are forms.</p>
+<h2 id="resources-and-links">Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/adding-media/#resources-and-links">#resources-and-links</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" rel="nofollow">Using HTML5 audio and video</a>
+via Mozilla Developer Network
+</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" rel="nofollow">Audio HTML5 Element</a>
+via Mozilla Developer Network
+</li>
+<li>
+<a href="https://dev.opera.com/articles/introduction-html5-video/" rel="nofollow">Introduction to HTML5 Video</a>
+via Dev.Opera
+</li>
+<li>
+<a href="http://html5doctor.com/the-figure-figcaption-elements/" rel="nofollow">The figure &amp; figcaption elements</a>
+via HTML5 Doctor
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/adding-media/" data-title="Adding Media">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Adding%20Media%20-&amp;url=http://learn.shayhowe.com/html-css/adding-media/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/adding-media/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/adding-media/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/html-css/creating-lists/" rel="prev">
+<strong>Lesson 8</strong>
+<span>Creating Lists</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/html-css/building-forms/" rel="next">
+<strong>Lesson 10</strong>
+<span>Building Forms</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Adding Media&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Adding Media&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Adding Media&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Adding Media&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Adding Media&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+ <label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Adding Media&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Adding Media&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Adding Media&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+ </li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Adding Media&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Adding Media&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Adding Media&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Adding Media&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+ <a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Adding Media&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/html-css/adding-media/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Adding Media - Learn to Code HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Adding Media&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Adding Media&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Adding Media&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/advanced-html-css/">Looking for Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" class="media-circle" src="./Adding Media - Learn to Code HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/advanced-html-css/">advanced HTML and CSS lessons</a> to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/advanced-html-css/">View Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Adding Media - Learn to Code HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Adding Media - Learn to Code HTML &amp; CSS_files/follow_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Adding Media - Learn to Code HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Adding Media - Learn to Code HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Adding Media - Learn to Code HTML &amp; CSS_files/widget_iframe.2d991e3dfc9abb2549972ce8b64c5d85.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

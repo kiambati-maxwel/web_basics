@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://learn.shayhowe.com/html-css/writing-your-best-code/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Take a look at a few overarching themes of HTML and CSS, including some of the best coding practices. Also browse some additional resources for learning HTML and CSS." name="description">
+<meta content="html css front-end coding best practices web design resources" name="keywords">
+<title>Writing Your Best Code - Learn to Code HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/ga.js.download"></script><script src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/button.d941c9a422e2e3faf474b82a1f39e936.js.download"></script></head>
+<body class="html-css html-css_writing-your-best-code html-css_writing-your-best-code_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/html-css/">
+<span>Learn to Code</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/html-css/writing-your-best-code/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="building-your-first-web-page">
+<a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">
+<strong>Lesson 1</strong>
+Building Your First Web Page
+</a>
+</li>
+<li class="getting-to-know-html">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-html/">
+<strong>Lesson 2</strong>
+Getting to Know HTML
+</a>
+</li>
+<li class="getting-to-know-css">
+<a href="https://learn.shayhowe.com/html-css/getting-to-know-css/">
+<strong>Lesson 3</strong>
+Getting to Know CSS
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="opening-the-box-model">
+<a href="https://learn.shayhowe.com/html-css/opening-the-box-model/">
+<strong>Lesson 4</strong>
+Opening the Box Model
+</a>
+</li>
+<li class="positioning-content">
+<a href="https://learn.shayhowe.com/html-css/positioning-content/">
+<strong>Lesson 5</strong>
+Positioning Content
+<span class="label-new">New</span>
+</a>
+</li>
+<li class="working-with-typography">
+<a href="https://learn.shayhowe.com/html-css/working-with-typography/">
+<strong>Lesson 6</strong>
+Working with Typography
+</a>
+</li>
+<li class="setting-backgrounds-and-gradients">
+<a href="https://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/">
+<strong>Lesson 7</strong>
+Setting Backgrounds &amp; Gradients
+</a>
+</li>
+<li class="creating-lists">
+<a href="https://learn.shayhowe.com/html-css/creating-lists/">
+<strong>Lesson 8</strong>
+Creating Lists
+</a>
+</li>
+<li class="adding-media">
+<a href="https://learn.shayhowe.com/html-css/adding-media/">
+ <strong>Lesson 9</strong>
+Adding Media
+</a>
+</li>
+<li class="building-forms">
+<a href="https://learn.shayhowe.com/html-css/building-forms/">
+<strong>Lesson 10</strong>
+Building Forms
+</a>
+</li>
+<li class="organizing-data-with-tables">
+<a href="https://learn.shayhowe.com/html-css/organizing-data-with-tables/">
+<strong>Lesson 11</strong>
+Organizing Data with Tables
+</a>
+</li>
+<li class="writing-your-best-code">
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/">
+<strong>Lesson 12</strong>
+Writing Your Best Code
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/advanced-html-css/">Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS</a> for a deeper look at front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 12</h6>
+<h1>Writing Your Best Code</h1>
+</div>
+<script src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">12</span>
+</h4>
+<h6>HTML</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/#html-coding-practices">HTML Coding Practices</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/#additional-resources">Additional Resources</a>
+</li>
+</ul>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/#css-coding-practices">CSS Coding Practices</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/writing-your-best-code/" data-title="Writing Your Best Code">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Writing%20Your%20Best%20Code%20-&amp;url=http://learn.shayhowe.com/html-css/writing-your-best-code/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/writing-your-best-code/" rel="nofollow">
+Share on Facebook
+</a>
+ </li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/writing-your-best-code/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCYSIKZ3JCWSIVKQYCVSDCK7KC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/1549064465-Icon.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCEYDV237CKY4YKQMCABD45QWCYSIKZ3JCWSIVKQYCVSDCK7KC6BI523ECABDEK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">Start your journey to DevOps with CircleCI.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>There’s a lot to learn—different elements, attributes, properties, values, and more—in order to write HTML and CSS. Every lesson until this point has had the primary objective of explaining these various components of HTML and CSS, in hopes of helping you to understand the core fundamentals of both languages. This lesson takes a step back and looks at a more abstract picture of HTML and CSS.</p>
+<p>More specifically, this lesson focuses on the best coding practices for both HTML and CSS. These coding practices serve as an overarching framework for writing HTML and CSS. They apply to every lesson and should always be kept in mind when programming.</p>
+<p>When you’re reviewing these best practices think about how they may be used in other areas or programming languages, too. For example, the use of comments to organize code (as we cover in this lesson) is beneficial in all programming languages. Keep an open mindset and consider how you can fully utilize each practice.</p>
+<h2 id="html-coding-practices">HTML Coding Practices<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/writing-your-best-code/#html-coding-practices">#html-coding-practices</a></h2>
+<p>A lot of coding best practices emphasize keeping code lean and well organized. The general practices within HTML are no different. The goal is to write well-structured and standards-compliant markup. The guidelines described here provide a brief introduction to HTML coding practices; this is by no means an exhaustive list.</p>
+<h3>Write Standards-Compliant Markup</h3>
+<p>HTML, by nature, is a forgiving language that allows poor code to execute and render to varying levels of accuracy. Successful rendering, however, does not mean that our code is semantically correct or guarantee that it will validate as standards compliant. In addition, poor code is unpredictable, and you can’t be certain what you’re going to get when it renders. We have to pay close attention when writing HTML and be sure to nest and close all elements correctly, to use IDs and classes appropriately, and to always validate our code.</p>
+<p>The code that follows has multiple errors, including using the <code>intro</code> ID attribute value multiple times when it should be a unique value, closing the <code>&lt;p&gt;</code> and <code>&lt;strong&gt;</code> elements in the wrong order within the first paragraph, and not closing the <code>&lt;p&gt;</code> element at all in the second paragraph.</p>
+<h6>Bad Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"intro"</span><span class="nt">&gt;</span>New items on the menu today include <span class="nt">&lt;strong&gt;</span>caramel apple cider and breakfast crepes<span class="nt">&lt;/p&gt;</span>.<span class="nt">&lt;/strong&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"intro"</span><span class="nt">&gt;</span>The caramel apple cider is delicious.
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"intro"</span><span class="nt">&gt;</span>New items on the menu today include <span class="nt">&lt;strong&gt;</span>caramel apple cider and breakfast crepes<span class="nt">&lt;/strong&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"intro"</span><span class="nt">&gt;</span>The caramel apple cider is delicious.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Make Use of Semantic Elements</h3>
+<p>The library of elements in HTML is fairly large, with well over 100 elements available for use. Deciding which elements to use to describe different content may be difficult, but these elements are the backbone of semantics. We need to research and double-check our code to ensure we are using the proper semantic elements. Users will thank us in the long run for building a more accessible website, and your HTML will arguably be easier to style. If you are ever unsure of your code, find a friend to help out and perform routine code reviews.</p>
+<p>Here the HTML doesn’t use the proper heading and paragraph elements; instead, it uses meaningless elements to style and group content.</p>
+<h6>Bad Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"heading"</span><span class="nt">&gt;&lt;strong&gt;</span>Welcome Back<span class="nt">&lt;/span&gt;&lt;/strong&gt;</span>
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+It has been a while. What have you been up to lately?
+<span class="nt">&lt;br&gt;&lt;br&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h1&gt;</span>Welcome Back<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>It has been a while. What have you been up to lately?<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Use the Proper Document Structure</h3>
+<p>As previously mentioned, HTML is a forgiving language and, therefore, pages will render without the use of the <code>&lt;!DOCTYPE html&gt;</code> doctype or <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> elements. Without a doctype and these structural elements, pages will not render properly in every browser.</p>
+<p>We must always be sure to the use proper document structure, including the <code>&lt;!DOCTYPE html&gt;</code> doctype, and the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> elements. Doing so keeps our pages standards compliant and fully semantic, and helps guarantee they will be rendered as we wish.</p>
+<h6>Bad Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a web page.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello World<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This is a web page.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Keep the Syntax Organized</h3>
+<p>As pages grow, managing HTML can become quite a task. Thankfully there are a few quick rules that can help us keep our syntax clean and organized. These include the following:</p>
+<ul>
+<li>Use lowercase letters within element names, attributes, and values</li>
+<li>Indent nested elements</li>
+<li>Strictly use double quotes, not single or completely omitted quotes</li>
+<li>Remove the forward slash at the end of self-closing elements</li>
+<li>Omit the values on Boolean attributes</li>
+</ul>
+<p>Observing these rules will help keep our code neat and legible. Looking at the two sets of HTML here, the good code is easier to digest and understand.</p>
+<h6>Bad Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Aside&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Chicago<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;H5</span> <span class="na">HIDDEN=</span><span class="s">'HIDDEN'</span><span class="nt">&gt;</span>City in Illinois<span class="nt">&lt;/H5&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">chicago.jpg</span> <span class="na">alt=</span><span class="s">"Chicago, the third most populous city in the United States"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+<span class="nt">&lt;li&gt;</span>234 square miles<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>2.715 million residents<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/ASIDE&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nt">&lt;aside&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Chicago<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;h5</span> <span class="na">hidden</span><span class="nt">&gt;</span>City in Illinois<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"chicago.jpg"</span> <span class="na">alt=</span><span class="s">"Chicago, the third most populous city in the United States"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>234 square miles<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>2.715 million residents<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/aside&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Use Practical ID &amp; Class Values</h3>
+ <p>Creating ID and class values can be one of the more difficult parts of writing HTML. These values need to be practical, relating to the content itself, not the style of the content. Using a value of <code>red</code> to describe red text isn’t ideal, as it describes the presentation of the content. Should the style of the text ever need to be changed to blue, not only does the CSS have to be changed, but so does the HTML in every instance where the class <code>red</code> exists.</p>
+<p>The HTML here assumes that the alert message will be red. However, should the style of the alert change to orange the class name of <code>red</code> will no longer make sense and will likely cause confusion.</p>
+<h6>Bad Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"red"</span><span class="nt">&gt;</span>Error! Please try again.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert"</span><span class="nt">&gt;</span>Error! Please try again.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Use the Alternative Text Attribute on Images</h3>
+<p>Images should always include the <code>alt</code> attribute. Screen readers and other accessibility software rely on the <code>alt</code> attribute to provide context for images.</p>
+<p>The <code>alt</code> attribute value should be very descriptive of what the image contains. If the image doesn’t contain anything of relevance, the <code>alt</code> attribute should still be included; however, the value should be left blank so that screen readers will ignore it rather than read the name of the image file.</p>
+<p>Additionally, if an image doesn’t have a meaningful value—perhaps it is part of the user interface, for example—it should be included as a CSS background image if at all possible, not as an <code>&lt;img&gt;</code> element.</p>
+<h6>Bad Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"puppy.jpg"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"puppy.jpg"</span> <span class="na">alt=</span><span class="s">"A beautiful, two-year-old hound mix puppy"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Separate Content from Style</h3>
+<p>Never, ever, use inline styles within HTML. Doing so creates pages that take longer to load, are difficult to maintain, and cause headaches for designers and developers. Instead, use external style sheets, using classes to target elements and apply styles as necessary.</p>
+<p>Here, any desired changes to styles within the bad code must be made in the HTML. Consequently, these styles cannot be reused, and the consistency of the styles will likely suffer.</p>
+<h6>Bad Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"color: #393; font-size: 24px;"</span><span class="nt">&gt;</span>Thank you!<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert-success"</span><span class="nt">&gt;</span>Thank you!<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Avoid a Case of “Divitis”</h3>
+<p>When writing HTML, it is easy to get carried away adding a <code>&lt;div&gt;</code> element here and a <code>&lt;div&gt;</code> element there to build out any necessary styles. While this works, it can add quite a bit of bloat to a page, and before too long we’re not sure what each <code>&lt;div&gt;</code> element does.</p>
+<p>We need to do our best to keep our code lean and to reduce markup, tying multiple styles to a single element where possible. Additionally, we should use the HTML5 structural elements where suitable.</p>
+<h6>Bad Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"headline"</span><span class="nt">&gt;</span>Headlines Across the World<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;article&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Headlines Across the World<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Continually Refactor Code</h3>
+<p>Over time websites and code bases continue to evolve and grow, leaving behind quite a bit of cruft. Remember to remove old code and styles as necessary when editing a page. Let’s also take the time to evaluate and refactor our code after we write it, looking for ways to condense it and make it more manageable.</p>
+<h2 id="css-coding-practices">CSS Coding Practices<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/writing-your-best-code/#css-coding-practices">#css-coding-practices</a></h2>
+<p>Similar to those for HTML, the coding practices for CSS focus on keeping code lean and well organized. CSS also has some additional principles regarding how to work with some of the intricacies of the language.</p>
+<h3>Organize Code with Comments</h3>
+<p>CSS files can become quite extensive, spanning hundreds of lines. These large files can make finding and editing our styles nearly impossible. Let’s keep our styles organized in logical groups. Then, before each group, let’s provide a comment noting what the following styles pertain to.</p>
+<p>Should we wish, we can also use comments to build a table of contents at the top of our file. Doing so reminds us—and others—exactly what is contained within the file and where the styles are located.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">header</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nt">article</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nc">.btn</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="c">/* Primary header */</span>
+<span class="nt">header</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+
+<span class="c">/* Featured article */</span>
+<span class="nt">article</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+
+<span class="c">/* Buttons */</span>
+<span class="nc">.btn</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Write CSS Using Multiple Lines &amp; Spaces</h3>
+<p>When writing CSS, it is important to place each selector and declaration on a new line. Then, within each selector we’ll want to indent our declarations.</p>
+<p>After a selector and before the first declaration comes the opening curly bracket, <code>{</code>, which should have a space before it. Within a declaration, we need to put a space after the colon, <code>:</code>, that follows a property and end each declaration with a semicolon, <code>;</code>.</p>
+<p>Doing so makes the code easy to read as well as edit. When all of the code is piled into a single line without spaces, it’s hard to scan and to make changes.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">,</span><span class="nc">.btn</span><span class="p">{</span><span class="nl">background</span><span class="p">:</span><span class="m">#aaa</span><span class="p">;</span><span class="nl">color</span><span class="p">:</span><span class="m">#f60</span><span class="p">;</span><span class="nl">font-size</span><span class="p">:</span><span class="m">18px</span><span class="p">;</span><span class="nl">padding</span><span class="p">:</span><span class="m">6px</span><span class="p">;}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>GOOD CODE</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">,</span>
+<span class="nc">.btn</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#aaa</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#f60</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Comments &amp; Spacing</h4>
+<p>These two recommendations, organizing code with comments and using multiple lines and spaces, are not only applicable to CSS, but also to HTML or any other language. Overall we need to keep our code organized and well documented. If a specific part of our code is more complex, let’s explain how it works and what it applies to within comments. Doing so helps others working on the same code base, as well as ourselves when we revisit our own code down the road.</p>
+</div>
+<h3>Use Proper Class Names</h3>
+<p>Class names (or values) should be modular and should pertain to content within an element, not appearance, as much as possible. These values should be written in such a way that they resemble the syntax of the CSS language. Accordingly, class names should be all lowercase and should use hyphen delimiters.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nc">.Red_Box</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nc">.alert-message</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Build Proficient Selectors</h3>
+<p>CSS selectors can get out of control if they are not carefully maintained. They can easily become too long and too location specific.</p>
+<p>The longer a selector is and the more prequalifiers it includes, the higher specificity it will contain. And the higher the specificity the more likely a selector is to break the CSS cascade and cause undesirable issues.</p>
+<p>Also in line with keeping the specificity of our selectors as low as possible, let’s not use IDs within our selectors. IDs are overly specific, quickly raise the specificity of a selector, and quite often break the cascade within our CSS files. The cons far outweigh the pros with IDs, and we are wise to avoid them.</p>
+<p>Let’s use shorter and primarily direct selectors. Nest them only two to three levels deep, and remove as many location-based qualifying selectors as possible.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nf">#aside</span> <span class="nf">#featured</span> <span class="nt">ul</span><span class="nc">.news</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nf">#aside</span> <span class="nf">#featured</span> <span class="nt">ul</span><span class="nc">.news</span> <span class="nt">li</span> <span class="nt">a</span> <span class="nt">em</span><span class="nc">.special</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nc">.news</span> <span class="nt">a</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+<span class="nc">.news</span> <span class="nc">.special</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Use Specific Classes When Necessary</h3>
+<p>There are times when a CSS selector is so long and specific that it no longer makes sense. It creates a performance lag and is strenuous to manage. In this case, using a class alone is advised. While applying a class to the targeted element may create more code within HTML, it will allow the code to render faster and will remove any managing obstacles.</p>
+<p>For example, if an <code>&lt;em&gt;</code> element is nested within an <code>&lt;h1&gt;</code> element inside of an <code>&lt;aside&gt;</code> element, and all of that is nested within a <code>&lt;section&gt;</code> element, the selector might look something like aside h1 em. Should the <code>&lt;em&gt;</code> element ever be moved out of the <code>&lt;h1&gt;</code> element the styles will no longer apply. A better, more flexible selector would use a class, such as text-offset, to target the <code>&lt;em&gt;</code> element.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">section</span> <span class="nt">aside</span> <span class="nt">h1</span> <span class="nt">em</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nc">.text-offset</span> <span class="p">{</span> <span class="err">...</span> <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Use Shorthand Properties &amp; Values</h3>
+<p>One feature of CSS is the ability to use shorthand properties and values. Most properties and values have acceptable shorthand alternatives. As an example, rather than using four different <code>margin</code>-based property and value declarations to set the margins around all four sides of an element, use one single <code>margin</code> property and value declaration that sets the values for all four sides at once. Using the shorthand alternative allows us to quickly set and identify styles.</p>
+<p>When we’re only setting one value, though, shorthand alternatives should not be used. If a box only needs a bottom <code>margin</code>, use the <code>margin-bottom</code> property alone. Doing so ensures that other margin values will not be overwritten, and we can easily identify which side the <code>margin</code> is being applied to without much cognitive effort.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">5px</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Use Shorthand Hexadecimal Color Values</h3>
+<p>When available, use the three-character shorthand hexadecimal color value, and always use lowercase characters within any hexadecimal color value. The idea, again, is to remain consistent, prevent confusion, and embrace the syntax of the language the code is being written in.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.module</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#DDDDDD</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#FF6600</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.module</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ddd</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#f60</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Drop Units from Zero Values</h3>
+<p>One way to easily cut down on the amount of CSS we write is to remove the unit from any zero value. No matter which length unit is being used—pixels, percentages, em, and so forth—zero is always zero. Adding the unit is unnecessary and provides no additional value.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="m">0px</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">0%</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0px</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Group &amp; Align Vendor Prefixes</h3>
+<p>With CSS3, vendor prefixes gained some popularity, adding quite a bit of code to CSS files. The added work of using vendor prefixes is often worth the generated styles; however, they have to be kept organized. In keeping with the goal of writing code that is easy to read and modify, it’s best to group and indent individual vendor prefixes so that the property names stack vertically, as do their values.</p>
+<p>Depending on where the vendor prefix is placed, on the property or the value, the alignment may vary. For example, the following good code keeps the <code>background</code> property aligned to the left, while the prefixed <code>linear-gradient()</code> functions are indented to keep their values vertically stacked. Then, the prefixed <code>box-sizing</code> property is indented as necessary to keep the <code>box-sizing</code> properties and values vertically stacked.</p>
+<p>As always, the objective is to make the styles easier to read and to edit.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">-webkit-linear-gradient</span><span class="p">(</span><span class="m">#a1d3b0</span><span class="p">,</span> <span class="m">#f6f1d3</span><span class="p">);</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">-moz-linear-gradient</span><span class="p">(</span><span class="m">#a1d3b0</span><span class="p">,</span> <span class="m">#f6f1d3</span><span class="p">);</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#a1d3b0</span><span class="p">,</span> <span class="m">#f6f1d3</span><span class="p">);</span>
+  <span class="nl">-webkit-box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+  <span class="nl">-moz-box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+<span class="nl">background</span><span class="p">:</span> <span class="n">-webkit-linear-gradient</span><span class="p">(</span><span class="m">#a1d3b0</span><span class="p">,</span> <span class="m">#f6f1d3</span><span class="p">);</span>
+<span class="nl">background</span><span class="p">:</span>    <span class="n">-moz-linear-gradient</span><span class="p">(</span><span class="m">#a1d3b0</span><span class="p">,</span> <span class="m">#f6f1d3</span><span class="p">);</span>
+<span class="nl">background</span><span class="p">:</span>         <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#a1d3b0</span><span class="p">,</span> <span class="m">#f6f1d3</span><span class="p">);</span>
+<span class="nl">-webkit-box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+   <span class="nl">-moz-box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+        <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Vendor Prefixes</h4>
+<p>When using vendor prefixes we need to make sure to place an unprefixed version of our property and value last, after any prefixed versions. Doing so ensures that browsers that support the unprefixed version will render that style according to its placement within the cascade, reading styles from the top of the file to the bottom.</p>
+<p>The good news is that browsers are largely moving away from using vendor prefixes. Over time this will become less of a concern; however, for now we’re well advised to double-check which styles require a vendor prefix and to keep those prefixes organized.</p>
+</div>
+<h3>Modularize Styles for Reuse</h3>
+<p>CSS is built to allow styles to be reused, specifically with the use of classes. For this reason, styles assigned to a class should be modular and available to share across elements as necessary.</p>
+<p>If a section of news is presented within a box that includes a border, background color, and other styles, the class of <code>news</code> might seem like a good option. However, those same styles may also need to be applied to a section of upcoming events. The class of <code>news</code> doesn’t fit in this case. A class of <code>feat-box</code> would make more sense and may be widely used across the entire website.</p>
+<h6>Bad Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nc">.news</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.events</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Good Code</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nc">.feat-box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h2 id="additional-resources">Additional Resources &amp; Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/writing-your-best-code/#additional-resources">#additional-resources</a></h2>
+<p>Every lesson has come with a few resources for additional learning and discovery. Outlined below is a longer list of resources, as well as beneficial links.</p>
+<h3>HTML &amp; CSS</h3>
+<ul class="list-column-2 group">
+<li>
+<a href="https://developer.mozilla.org/en-US/" rel="nofollow">Mozilla Developer Network</a>
+via Mozilla
+</li>
+<li>
+<a href="https://dev.opera.com/" rel="nofollow">Opera.Dev</a>
+via Opera
+</li>
+<li>
+<a href="http://www.htmldog.com/" rel="nofollow">HTML and CSS Tutorials</a>
+via HTML Dog
+</li>
+<li>
+<a href="https://devdocs.io/" rel="nofollow">DevDocs</a>
+— Instant documentation search
+</li>
+</ul>
+<h3>Design Inspiration</h3>
+<ul class="list-column-2 group">
+<li>
+<a href="https://dribbble.com/" rel="nofollow">Dribbble</a>
+</li>
+<li>
+<a href="http://patterntap.com/" rel="nofollow">Pattern Tap</a>
+</li>
+<li>
+<a href="http://www.premiumpixels.com/" rel="nofollow">Premium Pixels</a>
+</li>
+</ul>
+<h3>Frameworks &amp; Style Guides</h3>
+<ul class="list-column-2 group">
+<li>
+<a href="http://webstyleguide.com/wsg3/index.html" rel="nofollow">Web Style Guide</a>
+</li>
+<li>
+<a href="https://getbootstrap.com/" rel="nofollow">Bootstrap</a>
+</li>
+<li>
+<a href="http://foundation.zurb.com/" rel="nofollow">Foundation</a>
+</li>
+<li>
+<a href="http://getskeleton.com/" rel="nofollow">Skeleton Framework</a>
+</li>
+<li>
+<a href="https://google.github.io/styleguide/htmlcssguide.xml" rel="nofollow">Google HTML/CSS Style Guide</a>
+</li>
+<li>
+<a href="https://github.com/styleguide/" rel="nofollow">GitHub Styleguide</a>
+</li>
+</ul>
+<h3>Icons</h3>
+<ul class="list-column-2 group">
+<li>
+<a href="http://hlvticons.ch/" rel="nofollow">Helveticons</a>
+via Goodbye Horses
+</li>
+<li>
+<a href="http://ionicons.com/" rel="nofollow">Ion Icons</a>
+via Ben Sperry
+</li>
+<li>
+<a href="http://p.yusukekamiyamane.com/" rel="nofollow">Fugue Icons</a>
+via Yusuke Kamiyamane
+</li>
+<li>
+<a href="http://www.famfamfam.com/lab/icons/silk/" rel="nofollow">famfamfam Silk Icons</a>
+via Mark James
+</li>
+<li>
+<a href="http://pictos.cc/" rel="nofollow">Pictos</a>
+via Drew Wilson
+</li>
+<li>
+<a href="http://picons.me/" rel="nofollow">Picons</a>
+</li>
+<li>
+<a href="http://thenounproject.com/" rel="nofollow">The Noun Project</a>
+</li>
+</ul>
+<h3>Miscellaneous</h3>
+<ul class="list-column-2 group">
+<li>
+<a href="http://www.colourlovers.com/" rel="nofollow">COLOURlovers</a>
+— Color trends and palettes
+</li>
+<li>
+<a href="https://www.colorhexa.com/" rel="nofollow">ColorHexa</a>
+— Color encyclopedia
+</li>
+<li>
+<a href="http://modernizr.com/" rel="nofollow">Modernizr</a>
+— JavaScript feature detection library
+</li>
+<li>
+<a href="https://jquery.com/" rel="nofollow">jQuery</a>
+— Feature-rich JavaScript library
+</li>
+<li>
+<a href="https://developers.google.com/speed/libraries/devguide" rel="nofollow">Google Hosted Libraries</a>
+— Content distribution network for JavaScript libraries
+ </li>
+<li>
+<a href="http://copypastecharacter.com/" rel="nofollow">Copy Paste Character</a>
+— Copying the “hidden” characters
+</li>
+</ul>
+<h2 id="summary">Summary<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/html-css/writing-your-best-code/#summary">#summary</a></h2>
+<p>Hopefully the principles of writing beautiful HTML and CSS are starting to become clear here. While each language does have its own intricacies, the majority of these practices can be shared across the two languages—and many other computer languages.</p>
+<p>Individually we need to do our best to uphold these practices, and when working on a team we need to do our best to help educate the team on these practices, too. Likewise, our teams may have valuable suggestions and practices that we should work together to follow.</p>
+<p>To highlight some of the overarching themes of this lesson, our HTML and CSS should always</p>
+<ul>
+<li>Be well organized, so that it is easy to read, edit, and maintain</li>
+<li>Be modular and flexible, allowing us to reuse code and patterns as necessary</li>
+<li>Look as if one person wrote it, even if several people contributed</li>
+</ul>
+<p>These practices are only the beginning, and as the languages evolve and we write more and more HTML and CSS, we’ll develop new ones. It’s all part of the beauty of knowing HTML and CSS.</p>
+<p>You’re now equipped with some very powerful knowledge about how to build websites with HTML and CSS, and I’m excited to see what you do with it. Keep me posted on how it goes, and happy building!</p>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/html-css/writing-your-best-code/" data-title="Writing Your Best Code">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Writing%20Your%20Best%20Code%20-&amp;url=http://learn.shayhowe.com/html-css/writing-your-best-code/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/html-css/writing-your-best-code/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/html-css/writing-your-best-code/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/html-css/organizing-data-with-tables/" rel="prev">
+<strong>Lesson 11</strong>
+<span>Organizing Data with Tables</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Writing Your Best Code&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Writing Your Best Code&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Writing Your Best Code&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Writing Your Best Code&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Writing Your Best Code&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Writing Your Best Code&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Writing Your Best Code&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Writing Your Best Code&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Writing Your Best Code&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Writing Your Best Code&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Writing Your Best Code&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+ <div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Writing Your Best Code&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/html-css/writing-your-best-code/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Writing Your Best Code&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/advanced-html-css/">Looking for Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" class="media-circle" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/advanced-html-css/">advanced HTML and CSS lessons</a> to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/advanced-html-css/">View Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+ </div>
+</section>
+<script async="" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/follow_button.2d991e3dfc9abb2549972ce8b64c5d85.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Writing Your Best Code - Learn to Code HTML &amp; CSS_files/widget_iframe.2d991e3dfc9abb2549972ce8b64c5d85.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

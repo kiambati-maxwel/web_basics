@@ -1,0 +1,16 @@
+body {
+background-color: powderblue;
+text-align: center;
+size: 300%;
+font-family: fantasy;
+}
+
+a:link{
+    color: royalblue;
+    background-color: seashell;
+    text-decoration: solid;
+}
+
+a:hover {
+    color: rgb(0, 255, 55);
+}
