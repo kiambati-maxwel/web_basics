@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,81 @@
     <title>containg floats</title>
 
     <style>
-    .group::before, .group::after{
-        content: "";
-        display: table;
-    }
-    .group::after{
-        clear:both;
-    }
-    .group{
-        clear: both;
-        zoom: 1;
-    }
-    section{
-        float: left;
-        margin: 0 0.15%;
-        width: 63%;
-        border: solid black 1px ;
-        border-radius: 1rem;
-        text-align: center;
+        .group::before,
+        .group::after {
+            content: "";
+            display: table;
+        }
 
-    }
-    aside{
-        float: right;
-        margin: 0px 0.15%;
-        width: 30%;
-        
-    }
-    footer{
-        text-align: center;
-        color: black;
-        background-color: cornsilk;
-        border: 1px black solid;
-        clear: both;
-    }
-    aside{
-        background-color: cornsilk;
-        border: 1px black solid;
-    }
-    
-    
+        .group::after {
+            clear: both;
+        }
+
+        .group {
+            clear: both;
+            zoom: 1;
+        }
+
+        section {
+            float: left;
+            margin: 20px 0.15%;
+            width: 63%;
+            border: solid black 1px;
+            border-radius: 1rem;
+            text-align: center;
+
+        }
+
+        aside {
+            float: right;
+            margin: 0px 0.15%;
+            width: 30%;
+            background-color: cornsilk;
+            border: 1px black solid;
+        }
+
+        footer {
+            text-align: center;
+            color: black;
+            background-color: cornsilk;
+            border: 1px black solid;
+            clear: both;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>this is a header</h1>
     </header>
     <!--  the divarent block element acts as a container -->
-    <div class="group"> 
+    <div class="group">
         <section>
             <h2>this is a section</h2>
+            <h2>this is another section in the div class</h2>
         </section>
+        <section>
+            <h2>this is a section</h2>
+            <h2>this is another section in the div class</h2>
+        </section>
+
 
         <aside>
             this ia an aside element in html 5
         </aside>
     </div>
-    <section><p>hhhhhhhhhhh</p></section>
-    <footer><p>&copy;netbot.prog</p></footer>
+    <section>
+        <p>hhhhhhhhhhh</p>
+    </section>
+    <section>
+        <p>hhhhhhhhhhh</p>
+    </section>
+    <section>
+        <p>hhhhhhhhhhh</p>
+    </section>
+    <footer>
+        <p>&copy;netbot.prog</p>
+    </footer>
 </body>
+
 </html>
