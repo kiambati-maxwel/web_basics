@@ -3,13 +3,13 @@ function myNewFunction()
 var x, password;
 
 x=document.getElementById("password").value;
-if(x=="xYss455")
+if( x=="1234")
 {
-    text="wrong password dude!!";
+    text="heads up!! you in winky...";
 }
 else
 {
-    text="youre in hands up";
+    text="wrong password dude!!";
 }
 
 document.getElementById("pass_it").innerHTML=text;
