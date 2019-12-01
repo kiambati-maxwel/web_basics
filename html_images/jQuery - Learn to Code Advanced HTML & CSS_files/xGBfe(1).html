@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://cdpn.io/shayhowe/fullembedgrid/xGBfe?type=embed&animations=run -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - Slide</title>
+<link rel="stylesheet" href="./reset.min.css">
+<style>
+  body {
+  font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+.panel {
+  border-top: 2px solid #9799a7;
+}
+.panel-stage {
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  display: none;
+  height: 80px;
+  margin: 0 auto;
+  width: 80%;
+}
+.panel-tab {
+  background: linear-gradient(#fff, #f4f5f4);
+  border: 1px solid #dedede;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  color: #0087cc;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 5px 0;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80px;
+}
+.panel-tab:hover {
+  color: #ff7b29;
+}
+.panel-tab span {
+  font-size: 9px;
+  padding-left: 2px;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="panel">
+<div class="panel-stage"></div>
+<a href="https://cdpn.io/shayhowe/fullembedgrid/xGBfe?type=embed&amp;animations=run#" class="panel-tab">Open <span>▼</span></a>
+</div>
+<script src="./stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js.download"></script>
+<script src="./jquery.min.js.download"></script>
+<script id="rendered-js">
+      $('.panel-tab').on('click', function (event) {
+  event.preventDefault();
+  $('.panel-stage').slideToggle('slow', function (event) {
+    if ($(this).is(':visible')) {
+      $('.panel-tab').html('Close <span>&#9650;</span>');
+    } else {
+      $('.panel-tab').html('Open <span>&#9660;</span>');
+    }
+  });
+});
+      //# sourceURL=pen.js
+    </script>
+<script src="./css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js.download"></script>
+
+
+</body></html>

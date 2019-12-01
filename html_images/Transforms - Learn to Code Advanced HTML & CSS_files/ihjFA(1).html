@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://cdpn.io/shayhowe/fullembedgrid/ihjFA?type=embed&animations=run -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - Perspective Depth Value</title>
+<link rel="stylesheet" href="./reset.min.css">
+<style>
+  body {
+  color: #fff;
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 15px;
+}
+.original,
+.box {
+  border-radius: 6px;
+}
+.original {
+  background: #eaeaed;
+  border: 1px dashed #cecfd5;
+  float: left;
+  margin: 12px 15px;
+}
+.box {
+  background: #2db34a;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  width: 95px;
+}
+.spin {
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.spin:hover {
+    -webkit-animation: spin 5s linear infinite;
+            animation: spin 5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+.box-1 {
+  -webkit-transform: perspective(100px) rotateX(45deg);
+          transform: perspective(100px) rotateX(45deg);
+}
+.box-2 {
+  -webkit-transform: perspective(1000px) rotateX(45deg);
+          transform: perspective(1000px) rotateX(45deg);
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="original">
+<div class="spin">
+<figure class="box box-1">Box 1</figure>
+</div>
+</div>
+<div class="original">
+<div class="spin">
+<figure class="box box-2">Box 2</figure>
+</div>
+</div>
+<script src="./css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js.download"></script>
+
+
+</body></html>

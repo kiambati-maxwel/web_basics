@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://learn.shayhowe.com/advanced-html-css/transitions-animations/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Transitions and animations have worked there way into CSS3, providing extensive control for appearance and behavior. Learn how to leverage these new features." name="description">
+<meta content="css tutorial transitions animations 3d css3" name="keywords">
+<title>Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/ga.js.download"></script><script src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/button.9a57558490548c2dde66afe19af6c010.js.download"></script></head>
+<body class="advanced-html-css advanced-html-css_transitions-animations advanced-html-css_transitions-animations_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/advanced-html-css/">
+<span>Learn to Code Advanced</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="performance-organization">
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/">
+<strong>Lesson 1</strong>
+Performance &amp; Organization
+</a>
+</li>
+<li class="detailed-css-positioning">
+<a href="https://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/">
+<strong>Lesson 2</strong>
+Detailed Positioning
+</a>
+</li>
+<li class="complex-selectors">
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/">
+<strong>Lesson 3</strong>
+Complex Selectors
+</a>
+</li>
+<li class="responsive-web-design">
+<a href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/">
+<strong>Lesson 4</strong>
+Responsive Web Design
+</a>
+</li>
+<li class="preprocessors">
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/">
+<strong>Lesson 5</strong>
+Preprocessors
+</a>
+</li>
+<li class="jquery">
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/">
+<strong>Lesson 6</strong>
+jQuery
+</a>
+</li>
+<li class="css-transforms">
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/">
+<strong>Lesson 7</strong>
+Transforms
+</a>
+</li>
+<li class="transitions-animations">
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/">
+<strong>Lesson 8</strong>
+Transitions &amp; Animations
+</a>
+</li>
+<li class="feature-support-polyfills">
+<a href="https://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/">
+<strong>Lesson 9</strong>
+Feature Support &amp; Polyfills
+</a>
+</li>
+<li class="semantics-accessibility">
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/">
+<strong>Lesson 10</strong>
+Extending Semantics &amp; Accessibility
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a> for a beginner’s guide front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 8</h6>
+<h1>Transitions <abbr title="and">&amp;</abbr> Animations</h1>
+</div>
+<script src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">8</span>
+</h4>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#transitions">Transitions</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#shorthand-transitions">Shorthand Transitions</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#animations">Animations</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#customizing-animations">Customizing Animations</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#shorthand-animations">Shorthand Animations</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/transitions-animations/" data-title="Transitions &amp;amp; Animations">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Transitions%20%26amp%3B%20Animations%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/transitions-animations/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/transitions-animations/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/transitions-animations/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLCAAIKZ3JCWSIPKQJCYYDV2JKC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/1564610849-Atlas_Carbon_Ad_1.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLCAAIKZ3JCWSIPKQJCYYDV2JKC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">MongoDB Atlas is the most reliable cloud database service available. Try now!</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>One evolution with CSS3 was the ability to write behaviors for transitions and animations. Front end developers have been asking for the ability to design these interactions within HTML and CSS, without the use of JavaScript or Flash, for years. Now their wish has come true.</p>
+<p>With CSS3 transitions you have the potential to alter the appearance and behavior of an element whenever a state change occurs, such as when it is hovered over, focused on, active, or targeted.</p>
+<p>Animations within CSS3 allow the appearance and behavior of an element to be altered in multiple keyframes. Transitions provide a change from one state to another, while animations can set multiple points of transition upon different keyframes.</p>
+<h2 id="transitions">Transitions<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#transitions">#transitions</a></h2>
+<p>As mentioned, for a <a href="http://www.alistapart.com/articles/understanding-css3-transitions/" rel="nofollow">transition</a> to take place, an element must have a change in state, and different styles must be identified for each state. The easiest way for determining styles for different states is by using the <code>:hover</code>, <code>:focus</code>, <code>:active</code>, and <code>:target</code> pseudo-classes.</p>
+<p>There are four transition related properties in total, including <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and <code>transition-delay</code>. Not all of these are required to build a transition, with the first three are the most popular.</p>
+<p>In the example below the box will change its <code>background</code> color over the course of <code>1</code> second in a <code>linear</code> fashion.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>
+  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>
+  <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Transition Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/aCwcK(1).html" scrolling="no" frameborder="0" height="180" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_aCwcK"></iframe></div>
+</div>
+<div class="note note-box">
+<h4>Vendor Prefixes</h4>
+<p>The code above, as with the rest of the code samples in this lesson, are not vendor prefixed. This is intentionally un-prefixed in the interest of keeping the code snippet small and comprehensible. For the best support across all browsers, use vendor prefixes.</p>
+<p>For reference, the prefixed version of the code above would look like the following.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>
+    <span class="nl">-webkit-transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>
+       <span class="nl">-moz-transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>
+         <span class="nl">-o-transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>
+            <span class="nl">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>
+    <span class="nl">-webkit-transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>
+       <span class="nl">-moz-transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>
+         <span class="nl">-o-transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>
+            <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>
+    <span class="nl">-webkit-transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>
+       <span class="nl">-moz-transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>
+         <span class="nl">-o-transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>
+            <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+</div>
+<h3>Transitional Property</h3>
+<p>The <code>transition-property</code> property determines exactly what properties will be altered in conjunction with the other transitional properties. By default, all of the properties within an element’s different states will be altered upon change. However, only the properties identified within the <code>transition-property</code> value will be affected by any transitions.</p>
+<p>In the example above, the <code>background</code> property is identified in the <code>transition-property</code> value. Here the <code>background</code> property is the only property that will change over the duration of <code>1</code> second in a <code>linear</code> fashion. Any other properties included when changing an element’s state, but not included within the <code>transition-property</code> value, will not receive the transition behaviors as set by the <code>transition-duration</code> or <code>transition-timing-function</code> properties.</p>
+<p>If multiple properties need to be transitioned they may be comma separated within the <code>transition-property</code> value. Additionally, the keyword value <code>all</code> may be used to transition all properties of an element.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span>
+    <span class="n">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">,</span> <span class="n">border-radius</span><span class="p">;</span>
+    <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>
+    <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Transition Property Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/HlgxF(1).html" scrolling="no" frameborder="0" height="180" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_HlgxF"></iframe></div>
+</div>
+<h4>Transitional Properties</h4>
+<p>It is important to note, <strong>not all properties may be transitioned</strong>, only properties that have an identifiable halfway point. Colors, font sizes, and the alike may be transitioned from one value to another as they have recognizable values in-between one another. The <code>display</code> property, for example, may not be transitioned as it does not have any midpoint. A handful of the more popular transitional properties include the following.</p>
+<ul class="list-column-3 group">
+<li>
+<code>background-color</code>
+</li>
+<li>
+<code>background-position</code>
+</li>
+<li>
+<code>border-color</code>
+</li>
+<li>
+<code>border-width</code>
+</li>
+<li>
+<code>border-spacing</code>
+</li>
+<li>
+<code>bottom</code>
+</li>
+<li>
+<code>clip</code>
+</li>
+<li>
+<code>color</code>
+</li>
+<li>
+<code>crop</code>
+</li>
+<li>
+<code>font-size</code>
+</li>
+<li>
+<code>font-weight</code>
+</li>
+<li>
+<code>height</code>
+</li>
+<li>
+<code>left</code>
+</li>
+<li>
+<code>letter-spacing</code>
+</li>
+<li>
+<code>line-height</code>
+</li>
+<li>
+<code>margin</code>
+</li>
+<li>
+<code>max-height</code>
+</li>
+<li>
+<code>max-width</code>
+</li>
+<li>
+<code>min-height</code>
+</li>
+<li>
+<code>min-width</code>
+</li>
+<li>
+ <code>opacity</code>
+</li>
+<li>
+<code>outline-color</code>
+</li>
+<li>
+<code>outline-offset</code>
+</li>
+<li>
+<code>outline-width</code>
+</li>
+<li>
+<code>padding</code>
+</li>
+<li>
+<code>right</code>
+</li>
+<li>
+<code>text-indent</code>
+</li>
+<li>
+<code>text-shadow</code>
+</li>
+<li>
+<code>top</code>
+</li>
+<li>
+<code>vertical-align</code>
+</li>
+<li>
+<code>visibility</code>
+</li>
+<li>
+<code>width</code>
+</li>
+<li>
+<code>word-spacing</code>
+</li>
+<li>
+<code>z-index</code>
+</li>
+</ul>
+<h3>Transition Duration</h3>
+<p>The duration in which a transition takes place is set using the <code>transition-duration</code> property. The value of this property can be set using general timing values, including seconds (<code>s</code>) and milliseconds (<code>ms</code>). These timing values may also come in fractional measurements, <code>.2s</code> for example.</p>
+<p>When transitioning multiple properties you can set multiple durations, one for each property. As with the <code>transition-property</code> property value, multiple durations can be declared using comma separated values. The order of these values when identifying individual properties and durations does matter. For example, the first property identified within the <code>transition-property</code> property will match up with the first time identified within the <code>transition-duration</code> property, and so forth.</p>
+<p>If multiple properties are being transitioned with only one duration value declared, that one value will be the duration of all the transitioned properties.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+  <span class="nl">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">,</span> <span class="n">border-radius</span><span class="p">;</span>
+  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">.2s</span><span class="p">,</span> <span class="m">1s</span><span class="p">;</span>
+  <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Transition Duration Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_3" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/BGmdv(1).html" scrolling="no" frameborder="0" height="180" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_BGmdv"></iframe></div>
+</div>
+<h3>Transition Timing</h3>
+<p>The <code>transition-timing-function</code> property is used to set the speed in which a transition will move. Knowing the duration from the <code>transition-duration</code> property a transition can have multiple speeds within a single duration. A few of the more popular keyword values for the <code>transition-timing-function</code> property include <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, and <code>ease-in-out</code>.</p>
+<p>The <code>linear</code> keyword value identifies a transition moving in a constant speed from one state to another. The <code>ease-in</code> value identifies a transition that starts slowly and speeds up throughout the transition, while the <code>ease-out</code> value identifies a transition that starts quickly and slows down throughout the transition. The <code>ease-in-out</code> value identifies a transition that starts slowly, speeds up in the middle, then slows down again before ending.</p>
+<p>Each timing function has a <a href="http://www.roblaplaca.com/examples/bezierBuilder/" rel="nofollow">cubic-bezier curve</a> behind it, which can be specifically set using the <code>cubic-bezier(x1, y1, x2, y2)</code> value. Additional values include <code>step-start</code>, <code>step-stop</code>, and a uniquely identified <code>steps(number_of_steps, direction)</code> value.</p>
+<p>When transitioning multiple properties, you can identify multiple timing functions. These timing function values, as with other transition property values, may be declared as comma separated values.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+  <span class="nl">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">,</span> <span class="n">border-radius</span><span class="p">;</span>
+  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">.2s</span><span class="p">,</span> <span class="m">1s</span><span class="p">;</span>
+  <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">,</span> <span class="n">ease-in</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Transition Timing Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_4" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/qzGpr(1).html" scrolling="no" frameborder="0" height="180" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_qzGpr"></iframe></div>
+</div>
+<h3>Transition Delay</h3>
+<p>On top of declaring the transition property, duration, and timing function, you can also set a delay with the <code>transition-delay</code> property. The delay sets a time value, seconds or milliseconds, that determines how long a transition should be stalled before executing. As with all other transition properties, to delay numerous transitions, each delay can be declared as comma separated values.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span>
+  <span class="n">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">,</span> <span class="n">border-radius</span><span class="p">;</span>
+  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">.2s</span><span class="p">,</span> <span class="m">1s</span><span class="p">;</span>
+  <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">,</span> <span class="n">ease-in</span><span class="p">;</span>
+  <span class="nl">transition-delay</span><span class="p">:</span> <span class="m">0s</span><span class="p">,</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Transition Delay Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_5" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/naDEp(1).html" scrolling="no" frameborder="0" height="180" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_naDEp"></iframe></div>
+</div>
+<h2 id="shorthand-transitions">Shorthand Transitions<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#shorthand-transitions">#shorthand-transitions</a></h2>
+<p>Declaring every transition property individually can become quite intensive, especially with vendor prefixes. Fortunately there is a shorthand property, <code>transition</code>, capable of supporting all of these different properties and values. Using the <code>transition</code> value alone, you can set every transition value in the order of <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and lastly <code>transition-delay</code>. Do not use commas with these values unless you are identifying numerous transitions.</p>
+<p>To set numerous transitions at once, set each individual group of transition values, then use a comma to separate each additional group of transition values.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">background</span> <span class="m">.2s</span> <span class="n">linear</span><span class="p">,</span> <span class="n">border-radius</span> <span class="m">1s</span> <span class="n">ease-in</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Shorthand Transitions Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_6" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/bFDyh(1).html" scrolling="no" frameborder="0" height="180" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_bFDyh"></iframe></div>
+</div>
+<div class="note note-box">
+<h3>Transitional Button</h3>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;button&gt;</span>Awesome Button<span class="nt">&lt;/button&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></td><td class="rouge-code"><pre><span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">0</span> <span class="m">#006599</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">12px</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">.1s</span> <span class="n">linear</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">button</span><span class="nd">:active</span> <span class="p">{</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">2px</span> <span class="m">0</span> <span class="m">#006599</span><span class="p">;</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">3px</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_7" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/Bocnt(1).html" scrolling="no" frameborder="0" height="138" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Bocnt"></iframe></div>
+</div>
+</div>
+<div class="note note-box">
+<h3>Card Flip</h3>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"side"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"side back"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></td><td class="rouge-code"><pre><span class="nc">.card-container</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+  <span class="nl">perspective</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.card</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">transform-style</span><span class="p">:</span> <span class="n">preserve-3d</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">1s</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.card</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180deg</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.card</span> <span class="nc">.side</span> <span class="p">{</span>
+  <span class="nl">backface-visibility</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.card</span> <span class="nc">.back</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180deg</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_8" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/Fvjnf(1).html" scrolling="no" frameborder="0" height="258" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Fvjnf"></iframe></div>
+</div>
+</div>
+<h2 id="animations">Animations<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#animations">#animations</a></h2>
+<p>Transitions do a great job of building out visual interactions from one state to another, and are perfect for these kinds of single state changes. However, when more control is required, transitions need to have multiple states. In return, this is where <a href="http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/" rel="nofollow">animations</a> pick up where transitions leave off.</p>
+<h3>Animations Keyframes</h3>
+<p>To set multiple points at which an element should undergo a transition, use the <code>@keyframes</code> rule. The <code>@keyframes</code> rule includes the animation name, any animation breakpoints, and the properties intended to be animated.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="rouge-code"><pre><span class="k">@keyframes</span> <span class="n">slide</span> <span class="p">{</span>
+  <span class="nt">0</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">244px</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">488px</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Vendor Prefixing the Keyframe Rule</h4>
+<p>The <code>@keyframes</code> rule must be vendor prefixed, just like all of the other <code>transition</code> and <code>animation</code> properties. The vendor prefixes for the <code>@keyframes</code> rule look like the following:</p>
+<ul class="list-column-2 group">
+<li>
+<code>@-moz-keyframes</code>
+</li>
+<li>
+<code>@-o-keyframes</code>
+</li>
+<li>
+<code>@-webkit-keyframes</code>
+</li>
+</ul>
+</div>
+<p>The animation above is named <code>slide</code>, stated directly after the opening <code>@keyframes</code> rule. The different keyframe breakpoints are set using percentages, starting at <code>0%</code> and working to <code>100%</code> with an intermediate breakpoint at <code>50%</code>. The keywords <code>from</code> and <code>to</code> could be used in place of <code>0%</code> and <code>100%</code> if wished. Additional breakpoints, besides <code>50%</code>, may also be stated. The element properties to be animated are listed inside each of the breakpoints, <code>left</code> and <code>top</code> in the example above.</p>
+<p>It is important to note, as with transitions only individual properties may be animated. Consider how you might move an element from top to bottom for example. Trying to animate from <code>top: 0;</code> to <code>bottom: 0;</code> will not work, because animations can only apply a transition within a single property, not from one property to another. In this case, the element will need to be animated from <code>top: 0;</code> to <code>top: 100%;</code>.</p>
+<div class="note">
+<div class="note-box">
+<h4>Animations Keyframes Demo</h4>
+<p>Hover over the ball below to see the animation in action.</p>
+</div>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_9" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/hIpFr(1).html" scrolling="no" frameborder="0" height="234" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_hIpFr"></iframe></div>
+</div>
+<h3>Animation Name</h3>
+<p>Once the keyframes for an animation have been declared they need to be assigned to an element. To do so, the <code>animation-name</code> property is used with the animation name, identified from the <code>@keyframes</code> rule, as the property value. The <code>animation-name</code> declaration is applied to the element in which the animation is to be applied to.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Using the <code>animation-name</code> property alone isn’t enough though. You also need to declare an <code>animation-duration</code> property and value so that the browser knows how long an animation should take to complete.</p>
+<h3>Animation Duration, Timing Function, <abbr title="and">&amp;</abbr> Delay</h3>
+<p>Once you have declared the <code>animation-name</code> property on an element, animations behave similarly to transitions. They include a duration, timing function, and delay if desired. To start, animations need a duration declared using the <code>animation-duration</code> property. As with transitions, the duration may be set in seconds or milliseconds.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>
+  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>A timing function and delay can be declared using the <code>animation-timing-function</code> and <code>animation-delay</code> properties respectively. The values for these properties mimic and behave just as they do with transitions.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>
+  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>
+  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>The animation below should cause the <code>ball</code> to bounce once while moving to the left, however only when hovering over the <code>stage</code>.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stage"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"ball"</span><span class="nt">&gt;&lt;/figure&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></td><td class="rouge-code"><pre><span class="k">@keyframes</span> <span class="n">slide</span> <span class="p">{</span>
+  <span class="nt">0</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">244px</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">488px</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="nc">.stage</span> <span class="p">{</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.ball</span> <span class="p">{</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>
+  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>
+  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<div class="note-box">
+<h4>Animation Demo</h4>
+<p>Hover over the ball below to see the animation in action.</p>
+</div>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_10" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/fochl(1).html" scrolling="no" frameborder="0" height="234" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_fochl"></iframe></div>
+</div>
+<h2 id="customizing-animations">Customizing Animations<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#customizing-animations">#customizing-animations</a></h2>
+<p>Animations also provide the ability to further customize an element’s behavior, including the ability to declare the number of times an animation runs, as well as the direction in which an animation completes.</p>
+<h3>Animation Iteration</h3>
+<p>By default, animations run their cycle once from beginning to end and then stop. To have an animation repeat itself numerous times the <code>animation-iteration-count</code> property may be used. Values for the <code>animation-iteration-count</code> property include either an integer or the <code>infinite</code> keyword. Using an integer will repeat the animation as many times as specified, while the <code>infinite</code> keyword will repeat the animation indefinitely in a never ending fashion.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>
+  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>
+  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>
+  <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="n">infinite</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<div class="note-box">
+<h4>Animation Iteration Demo</h4>
+<p>Hover over the ball below to see the animation in action.</p>
+</div>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_11" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/xvbqF(1).html" scrolling="no" frameborder="0" height="234" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_xvbqF"></iframe></div>
+</div>
+<h3>Animation Direction</h3>
+<p>On top of being able to set the number of times an animation repeats, you may also declare the direction an animation completes using the <code>animation-direction</code> property. Values for the <code>animation-direction</code> property include <code>normal</code>, <code>reverse</code>, <code>alternate</code>, and <code>alternate-reverse</code>.</p>
+<p>The <code>normal</code> value plays an animation as intended from beginning to end. The <code>reverse</code> value will play the animation exactly opposite as identified within the <code>@keyframes</code> rule, thus starting at <code>100%</code> and working backwards to <code>0%</code>.</p>
+<p>The <code>alternate</code> value will play an animation forwards then backwards. Within the keyframes that includes running forward from <code>0%</code> to <code>100%</code> and then backwards from <code>100%</code> to <code>0%</code>. Using the <code>animation-iteration-count</code> property may limit the number of times an animation runs both forwards and backwards. The count starts at <code>1</code> running an animation forwards from <code>0%</code> to <code>100%</code>, then adds <code>1</code> running an animation backwards from <code>100%</code> to <code>0%</code>. Combining for a total of <code>2</code> iterations. The <code>alternate</code> value also inverses any timing functions when playing in reverse. If an animation uses the <code>ease-in</code> value going from <code>0%</code> to <code>100%</code>, it then uses the <code>ease-out</code> value going from <code>100%</code> to <code>0%</code>.</p>
+<p>Lastly, the <code>alternate-reverse</code> value combines both the <code>alternate</code> and <code>reverse</code> values, running an animation backwards then forwards. The <code>alternate-reverse</code> value starts at <code>100%</code> running to <code>0%</code> and then back to <code>100%</code> again.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>
+  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>
+  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>
+  <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="n">infinite</span><span class="p">;</span>
+  <span class="nl">animation-direction</span><span class="p">:</span> <span class="n">alternate</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<div class="note-box">
+<h4>Animation Direction Demo</h4>
+<p>Hover over the ball below to see the animation in action.</p>
+</div>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_12" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/xpigK.html" scrolling="no" frameborder="0" height="234" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_xpigK"></iframe></div>
+</div>
+<h3>Animation Play State</h3>
+<p>The <code>animation-play-state</code> property allows an animation to be played or paused using the <code>running</code> and <code>paused</code> keyword values respectively. When you play a paused animation, it will resume running from its current state rather than starting from the very beginning again.</p>
+<p>In the example below the <code>animation-play-state</code> property is set to <code>paused</code> when making the <code>stage</code> active by clicking on it. Notice how the animation will temporarily pause until you let up on the mouse.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>
+  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>
+  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>
+  <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="n">infinite</span><span class="p">;</span>
+  <span class="nl">animation-direction</span><span class="p">:</span> <span class="n">alternate</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.stage</span><span class="nd">:active</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-play-state</span><span class="p">:</span> <span class="n">paused</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<div class="note-box">
+<h4>Animation Play State Demo</h4>
+<p>Hover over the ball below to see the animation in action. Click to pause the animation.</p>
+</div>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_13" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/ogJjm.html" scrolling="no" frameborder="0" height="234" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_ogJjm"></iframe></div>
+</div>
+<h3>Animation Fill Mode</h3>
+<p>The <code>animation-fill-mode</code> property identifies how an element should be styled either before, after, or before and after an animation is run. The <code>animation-fill-mode</code> property accepts four keyword values, including <code>none</code>, <code>forwards</code>, <code>backwards</code>, and <code>both</code>.</p>
+<p>The <code>none</code> value will not apply any styles to an element before or after an animation has been run.</p>
+<p>The <code>forwards</code> value will keep the styles declared within the last specified keyframe. These styles may, however, be affected by the <code>animation-direction</code> and <code>animation-iteration-count</code> property values, changing exactly where an animation ends.</p>
+<p>The <code>backwards</code> value will apply the styles within the first specified keyframe as soon as being identified, before the animation has been run. This does include applying those styles during any time that may be set within an animation delay. The <code>backwards</code> value may also be affected by the <code>animation-direction</code> property value.</p>
+<p>Lastly, the <code>both</code> value will apply the behaviors from both the <code>forwards</code> and <code>backwards</code> values.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>
+  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>
+  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>
+  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>
+  <span class="nl">animation-fill-mode</span><span class="p">:</span> <span class="n">forwards</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.stage</span><span class="nd">:active</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-play-state</span><span class="p">:</span> <span class="n">paused</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<div class="note-box">
+<h4>Animation Fill Mode Demo</h4>
+<p>Hover over the ball below to see the animation in action. Click to pause the animation.</p>
+</div>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_14" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/xEgoL.html" scrolling="no" frameborder="0" height="234" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_xEgoL"></iframe></div>
+</div>
+<h2 id="shorthand-animations">Shorthand Animations<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#shorthand-animations">#shorthand-animations</a></h2>
+<p>Fortunately <a href="https://developer.mozilla.org/en-US/docs/CSS/Using_CSS_animations" rel="nofollow">animations</a>, just like transitions, can be written out in a shorthand format. This is accomplished with one <code>animation</code> property, rather than multiple declarations. The order of values within the <code>animation</code> property should be <code>animation-name</code>, <code>animation-duration</code>, <code>animation-timing-function</code>, <code>animation-delay</code>, <code>animation-iteration-count</code>, <code>animation-direction</code>, <code>animation-fill-mode</code>, and lastly <code>animation-play-state</code>.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation</span><span class="p">:</span> <span class="n">slide</span> <span class="m">2s</span> <span class="n">ease-in-out</span> <span class="m">.5s</span> <span class="n">infinite</span> <span class="n">alternate</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.stage</span><span class="nd">:active</span> <span class="nc">.ball</span> <span class="p">{</span>
+  <span class="nl">animation-play-state</span><span class="p">:</span> <span class="n">paused</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<div class="note-box">
+<h4>Shorthand Animations Demo</h4>
+<p>Hover over the ball below to see the animation in action. Click to pause the animation.</p>
+</div>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_15" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/gDmka.html" scrolling="no" frameborder="0" height="234" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_gDmka"></iframe></div>
+</div>
+<h2>Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#undefined">#undefined</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="http://www.alistapart.com/articles/understanding-css3-transitions/" rel="nofollow">Understanding CSS3 Transitions</a>
+via A List Apart
+</li>
+<li>
+<a href="http://www.roblaplaca.com/examples/bezierBuilder/" rel="nofollow">CSS Cubic-Bezier Builder</a>
+via Rob LaPlaca
+</li>
+<li>
+<a href="http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/" rel="nofollow">The Guide To CSS Animation: Principles and Examples</a>
+via Smashing Magazine
+</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/CSS/Using_CSS_animations" rel="nofollow">Using CSS Animations</a>
+via Mozilla Developer Network
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/transitions-animations/" data-title="Transitions &amp;amp; Animations">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Transitions%20%26amp%3B%20Animations%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/transitions-animations/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/transitions-animations/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/transitions-animations/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/" rel="prev">
+<strong>Lesson 7</strong>
+<span>Transforms</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/" rel="next">
+<strong>Lesson 9</strong>
+<span>Feature Support &amp; Polyfills</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Transitions &amp;amp; Animations&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Transitions &amp;amp; Animations&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Transitions &amp;amp; Animations&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Transitions &amp;amp; Animations&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Transitions &amp;amp; Animations&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Transitions &amp;amp; Animations&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Transitions &amp; Animations&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Transitions &amp; Animations&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Transitions &amp; Animations&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Transitions &amp; Animations&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Transitions &amp; Animations&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Transitions &amp; Animations&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Transitions &amp;amp; Animations&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/html-css/">Looking for Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/html-css/"><img alt="HTML and CSS" class="media-circle" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/html-css/">beginner focused HTML and CSS lessons</a>, compiled into a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS, working through all common components.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/html-css/">View Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/follow_button.6a44a9d26983bbb5b04ae399f9e496fe.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS_files/widget_iframe.6a44a9d26983bbb5b04ae399f9e496fe.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

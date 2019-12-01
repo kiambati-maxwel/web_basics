@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://cdpn.io/shayhowe/fullembedgrid/klAvu?type=embed&animations=run -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - Tabs</title>
+<link rel="stylesheet" href="./reset.min.css">
+<style>
+  body {
+  color: #666;
+  font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+.tabs {
+  max-width: 538px;
+}
+.tabs-nav li {
+  float: left;
+  width: 50%;
+}
+.tabs-nav li:first-child a {
+  border-right: 0;
+  border-top-left-radius: 6px;
+}
+.tabs-nav li:last-child a {
+  border-top-right-radius: 6px;
+}
+a {
+  background: #eaeaed;
+  border: 1px solid #cecfd5;
+  color: #0087cc;
+  display: block;
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff7b29;
+}
+.tab-active a {
+  background: #fff;
+  border-bottom-color: transparent;
+  color: #2db34a;
+  cursor: default;
+}
+.tabs-stage {
+  border: 1px solid #cecfd5;
+  border-radius: 0 0 6px 6px;
+  border-top: 0;
+  clear: both;
+  padding: 24px 30px;
+  position: relative;
+  top: -1px;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="tabs">
+<ul class="tabs-nav">
+<li class="tab-active"><a href="https://cdpn.io/shayhowe/fullembedgrid/klAvu?type=embed&amp;animations=run#tab-1">Features</a></li>
+<li><a href="https://cdpn.io/shayhowe/fullembedgrid/klAvu?type=embed&amp;animations=run#tab-2">Details</a></li>
+</ul>
+<div class="tabs-stage">
+<div id="tab-1" style="display: block;">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec neque nisi, dictum aliquet lectus.</p>
+</div>
+<div id="tab-2" style="display: none;">
+<p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+</div>
+</div>
+</div>
+<script src="./stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js.download"></script>
+<script src="./jquery.min.js.download"></script>
+<script id="rendered-js">
+      // Show the first tab by default
+$('.tabs-stage div').hide();
+$('.tabs-stage div:first').show();
+$('.tabs-nav li:first').addClass('tab-active');
+
+// Change tab class and display content
+$('.tabs-nav a').on('click', function (event) {
+  event.preventDefault();
+  $('.tabs-nav li').removeClass('tab-active');
+  $(this).parent().addClass('tab-active');
+  $('.tabs-stage div').hide();
+  $($(this).attr('href')).show();
+});
+      //# sourceURL=pen.js
+    </script>
+<script src="./css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js.download"></script>
+
+
+</body></html>

@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://learn.shayhowe.com/advanced-html-css/performance-organization/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Knowing the fundamentals of website performance and organization can go a long way, learn how to write a code base that is optimized for maintainability." name="description">
+<meta content="oocss smacss modular front end development performance css" name="keywords">
+<title>Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/ga.js.download"></script><script src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/button.9a57558490548c2dde66afe19af6c010.js.download"></script></head>
+<body class="advanced-html-css advanced-html-css_performance-organization advanced-html-css_performance-organization_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/advanced-html-css/">
+<span>Learn to Code Advanced</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="performance-organization">
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/">
+<strong>Lesson 1</strong>
+Performance &amp; Organization
+</a>
+</li>
+<li class="detailed-css-positioning">
+<a href="https://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/">
+<strong>Lesson 2</strong>
+Detailed Positioning
+</a>
+</li>
+<li class="complex-selectors">
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/">
+<strong>Lesson 3</strong>
+Complex Selectors
+</a>
+</li>
+<li class="responsive-web-design">
+<a href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/">
+<strong>Lesson 4</strong>
+Responsive Web Design
+</a>
+</li>
+<li class="preprocessors">
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/">
+<strong>Lesson 5</strong>
+Preprocessors
+</a>
+</li>
+<li class="jquery">
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/">
+<strong>Lesson 6</strong>
+jQuery
+</a>
+</li>
+<li class="css-transforms">
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/">
+<strong>Lesson 7</strong>
+Transforms
+</a>
+</li>
+<li class="transitions-animations">
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/">
+<strong>Lesson 8</strong>
+Transitions &amp; Animations
+</a>
+</li>
+<li class="feature-support-polyfills">
+<a href="https://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/">
+<strong>Lesson 9</strong>
+Feature Support &amp; Polyfills
+</a>
+</li>
+<li class="semantics-accessibility">
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/">
+<strong>Lesson 10</strong>
+Extending Semantics &amp; Accessibility
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a> for a beginner’s guide front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 1</h6>
+<h1>Performance <abbr title="and">&amp;</abbr> Organization</h1>
+</div>
+<script src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">1</span>
+</h4>
+<h6>HTML</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#minify-compress-files">Minify <abbr title="and">&amp;</abbr> Compress Files</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#cache-common-files">Cache Common Files</a>
+</li>
+</ul>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#strategy-structure">Strategy <abbr title="and">&amp;</abbr> Structure</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#performance-driven-selectors">Performance Driven Selectors</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#reusable-code">Reusable Code</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#reduce-http-requests">Reduce HTTP Requests</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/performance-organization/" data-title="Performance &amp;amp; Organization">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Performance%20%26amp%3B%20Organization%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/performance-organization/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/performance-organization/" rel="nofollow">
+Share on Facebook
+</a>
+ </li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/performance-organization/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLFTYI6Z3JCWSIPKQJCYYIK27KC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/1568927712-nerd.vision.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLFTYI6Z3JCWSIPKQJCYYIK27KC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">Get nerd.vision and see bugs quicker. Use our non-blocking debugger for free.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>Having the ability to <a href="https://learn.shayhowe.com/html-css/writing-your-best-code/">write HTML and CSS</a> with a solid understanding is a great expertise to have. As a website’s code base and traffic grows, a new skill set comes into play, one that is extremely important to both development time and user experience. Knowing the fundamentals of website <a href="https://developer.yahoo.com/performance/rules.html" rel="nofollow">performance</a> and organization can go a long way.</p>
+<p>The organization and architecture of a code base can greatly affect not only the speed of development, but also the speed at which pages render. Both of which can be sizeable concerns not only for developers but also users. Taking the time to design the right structure for a code base, and identify how all of the different components will work together, can speed up production and make for a better experience all around.</p>
+<p>Additionally, taking a few small steps to improve the performance of a website can pay off in dividends. <a href="http://stevesouders.com/hpws/rules.php" rel="nofollow">Website performance</a> greatly resembles the 80/20 rule, where 20% of the optimizations will speed up roughly 80% of the website.</p>
+<h2 id="strategy-structure">Strategy <abbr title="and">&amp;</abbr> Structure<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#strategy-structure">#strategy-structure</a></h2>
+<p>The first part to improving a website’s performance and organization revolves around identifying a good strategy and structure for developing the code base. Specifically, building a strong directory architecture, outlining design patterns, and finding ways to reuse common code.</p>
+<h3>Style Architecture</h3>
+<p>Exactly how to organize styles boils down to personal preference and what is best for a given website but generally speaking there are best practices to follow. One practice includes separating styles based on intent, which includes creating directories for common base styles, user interface components, and business logic modules.</p>
+<pre class="highlight plaintext"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></td><td class="rouge-code"><pre># Base
+  – normalize.css
+  – layout.css
+  – typography.css
+
+# Components
+  – alerts.css
+  – buttons.css
+  – forms.css
+  – list.css
+  – nav.css
+  – tables.css
+
+# Modules
+  – aside.css
+  – footer.css
+  – header.css
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>The architecture outlined above includes three directories, all with individual groups of styles. The goal here is to <strong>start thinking of websites as systems</strong> rather than individual pages, and the code architecture should reflect this mindset. Notice how there aren’t any page specific styles here.</p>
+<p>The <code>base</code> directory includes common styles and variables to be used across the entire website, layout and typography styles for example. The <code>components</code> directory includes styles for specific user interface elements which are broken down into different component files such as alerts and buttons. Lastly, the <code>modules</code> directory includes styles for different sections of a page, which are determined by business needs.</p>
+<p>The component styles are purely interface driven and have nothing to do with the core business logic of the website. Modules then include styles specific to the business logic. When marking up a module in HTML it is common to use different user interface components within it. For example, the sidebar of a page may have list and button styles that are defined within component styles while other styles needed for the sidebar are inherited from the module style. The separation of style encourages well thought out presets and the ability for styles to be widely shared and reused.</p>
+<p>The strategy of organizing styles this way isn’t exactly new, and has been previously mentioned in different CSS methodologies including Object Oriented CSS, <abbr title="Object Oriented CSS">OOCSS</abbr>, and the Scalable and Modular Architecture for CSS, <abbr title="Scalable and Modular Architecture for CSS">SMACSS</abbr>. These methodologies have their own opinions on structure, as well as on how to use styles.</p>
+<h3>Object Oriented CSS</h3>
+<p>The <a href="http://oocss.org/" rel="nofollow">Object Oriented CSS</a> methodology was pioneered by Nicole Sullivan in her work with writing styles for larger websites. Object Oriented CSS identifies two principles that will help build scalable websites with a strong architecture and a reasonable amount of code. These two principles include:</p>
+<ul>
+<li>Separate structure from skin</li>
+<li>Separate content from container</li>
+</ul>
+<p>Overall <strong>separating structure from skin</strong> includes abstracting the layout of an element away from the theme of a website. The structure of a module should be transparent, allowing other styles to be inherited and displayed without conflict. Most commonly this requires a solid grid and layout structure, along with well crafted modules.</p>
+<p><strong>Separating content from the container</strong> involves removing the dependency of a parent element nesting children elements. A heading should look the same regardless of its parent container. To accomplish this, elements need to inherit default styles, then be extended with multiple classes as necessary.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-error"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"msg"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.alert</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nc">.alert-error</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nc">.msg</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Object Oriented CSS advocates building a component library, staying flexible, and utilizing a grid. These are good ground rules, and they can help you avoid the need to add additional styles every time you add a new page or feature to a website.</p>
+<h3>Scalable <abbr title="and">&amp;</abbr> Modular Architecture for CSS</h3>
+<p>Along the same line of Object Oriented CSS is the <a href="http://smacss.com/" rel="nofollow">Scalable and Modular Architecture for CSS</a> methodology developed by Jonathan Snook. The Scalable and Modular Architecture for CSS promotes breaking up styles into five core categories, including:</p>
+<ul>
+<li>Base</li>
+<li>Layout</li>
+<li>Module</li>
+<li>State</li>
+<li>Theme</li>
+</ul>
+<p>The <strong>base</strong> category includes core element styles, covering the general defaults. The <strong>layout</strong> category then identifies the sizing and grid styles of different elements, determining their layout. <strong>Module</strong> styles are more specific styles targeting individual parts of the page, such as navigation or feature styles. The <strong>state</strong> styles are then used to augment or override other styles in the event that a module includes an alternate state, an active tab for example. Lastly, the <strong>theme</strong> category may be added which could include styles based around the skin, or look and feel, of different modules.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert is-error"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.alert</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nc">.alert.is-error</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nc">.alert</span> <span class="nt">p</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nc">.alert.is-error</span> <span class="nt">p</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In the example above the <code>alert</code> class falls into the module category while the <code>is-error</code> class falls into the state category. Styles from each of these categories are then inherited as necessary.</p>
+<h3>Choosing a Methodology</h3>
+<p>Choosing which methodology to use, if any, is completely <a href="http://viget.com/inspire/css-squareoff" rel="nofollow">up to you</a> and what you feel is best for a given website. Generally speaking, a solid mix of both OOCSS and SMACSS works well, borrowing principles from each methodology as you prefer.</p>
+<h2 id="performance-driven-selectors">Performance Driven Selectors<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#performance-driven-selectors">#performance-driven-selectors</a></h2>
+<p>One functionality of CSS often abused without awareness are <a href="http://csswizardry.com/2011/09/writing-efficient-css-selectors/" rel="nofollow">selectors</a>. Much of the attention within CSS is given to properties and values. So long as these styles are applied to the correct element, everything looks to be fine. This is a very poor assumption. How elements are selected within CSS affects performance, including how fast a page renders as well as how practical and modular the styles are in the overall site architecture.</p>
+<h3>Keep Selectors Short</h3>
+<p>There are a handful of benefits to keeping CSS selectors as short as possible. These include minimizing specificity, allowing for better inheritance and portability, and improving efficiency. Long, over qualified selectors reduce performance because they force the browser to render each individual selector type from right to left. They also put a burden on all other selectors to be more specific.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td><td class="rouge-code"><pre><span class="c">/* Bad */</span>
+<span class="nt">header</span> <span class="nt">nav</span> <span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+
+<span class="c">/* Good */</span>
+<span class="nc">.primary-link</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nt">button</span> <span class="nt">strong</span> <span class="nt">span</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">button</span> <span class="nt">strong</span> <span class="nt">span</span> <span class="nc">.callout</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+
+<span class="c">/* Good */</span>
+<span class="nt">button</span> <span class="nt">span</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">button</span> <span class="nc">.callout</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In the code above, the first selector is extremely specific and could be identified, and rendered, much quicker with the use of a class. Additionally, using a class in this case greatly reduces the need to identify an element’s parent, allowing that elements location to change over time without breaking any styles.</p>
+<p>The second example includes selectors shorter than the first example but it can be improved by providing the same level of specificity to each selector. Avoid using overly specific selectors, in return they are less likely to break should the order of elements change. Cutting out some of the individual selector units, and giving all of the selectors the same strength, allows them to better cooperate.</p>
+<p>The overall goal with short selectors is to decrease specificity, creating cleaner, more charitable code.</p>
+<h3>Favor Classes</h3>
+<p>Classes are great, they render quickly, allow for styles to be reused, and are already commonly used in building a website. When using classes though, there are common practices to observe in order to see that they are leveraged properly.</p>
+<p>Since selectors are rendered from right to left it is important to keep an eye on the <strong>key selector</strong>. The key selector is the selector unit at the end, furthest to the right. The key selector is crucial as it identifies the first element a browser is going to find. Having a poor key selector can send the browser on a wild goose hunt. Don’t be afraid to use a class to be more unique simply for the benefit of performance.</p>
+<p>Additionally, do not prefix class selectors with an element. Doing so prohibits those styles from easily being applied to a different element and increases the overall specificity of the selector.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="c">/* Bad */</span>
+<span class="nf">#container</span> <span class="nt">header</span> <span class="nt">nav</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+
+<span class="c">/* Good */</span>
+<span class="nc">.primary-nav</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+
+<span class="c">/* Bad */</span>
+<span class="nt">article</span><span class="nc">.feat-post</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+
+<span class="c">/* Good */</span>
+<span class="nc">.feat-post</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>It is also worth noting, stay away from ID selectors where possible as they are overly specific and do not allow for any repetition. At the end of the day using an ID isn’t a whole lot different than using <code>!important</code>.</p>
+<h2 id="reusable-code">Reusable Code<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#reusable-code">#reusable-code</a></h2>
+<p>One of the largest performance drawbacks comes with bloated file sizes and unnecessary browser rendering. One quick way to help largely cut down on CSS file sizes is to reuse styles as much as possible. Any repeating styles or interface patterns should be combined, allowing code to be shared. If two modules share a background, rounded corners, and a box shadow there is no reason to explicitly state those same styles twice. Instead they can be combined, within a single class, allowing the styles to be written once and then shared.</p>
+<p>Reusing code doesn’t have to come at the cost of semantics either. One technique would be to pair selectors together, separating them with a comma, allowing the same styles to be inherited across two selectors. Another approach, often seen within the OOCSS and SMACSS methodologies previously mentioned, includes binding styles to one class, then using multiple classes on the same element.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></td><td class="rouge-code"><pre><span class="c">/* Bad */</span>
+<span class="nc">.news</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.25</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.social</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.25</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* Good */</span>
+<span class="nc">.news</span><span class="o">,</span>
+<span class="nc">.social</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.25</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* Even Better */</span>
+<span class="nc">.modal</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eee</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.25</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Which approach you take doesn’t make a huge difference, so long as code is being shared and reused, and the overall file size is reduced.</p>
+<h2 id="minify-compress-files">Minify <abbr title="and">&amp;</abbr> Compress Files<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#minify-compress-files">#minify-compress-files</a></h2>
+<p>Simply removing duplicate and unnecessary code is the best way to cut down on file size, however there are additional ways. One way includes <a href="https://www.hanselman.com/blog/TheImportanceAndEaseOfMinifyingYourCSSAndJavaScriptAndOptimizingPNGsForYourBlogOrWebsite.aspx" rel="nofollow">minifying</a> and compressing files, such as HTML, CSS, and JavaScript files. Additionally, images may be compressed, removing any unnecessary comments and color profiles.</p>
+<h3>gzip Compression</h3>
+<p>One of the more popular types of file compression is called gzip. gzip compression takes common files, including HTML, CSS, JavaScript, and so forth, and identifies similar strings to compress down. The more matching strings identified, the smaller the file can be compressed, thus sending a smaller file from the server to the browser.</p>
+<p>Setting up gzip is fairly painless, and the <a href="http://html5boilerplate.com/" rel="nofollow">HTML5 Boilerplate</a> team has done a great job of getting this going. To gzip files an <code>.htaccess</code> file needs to be added to the root directory of the web server, labeling the specific files to be gzipped. The dot at the beginning of the file name is correct, as the <code>.htaccess</code> file is a hidden file.</p>
+<p>Within the HTML5 Boilerplate Apache Server Configs, they instruct which files <a href="https://github.com/h5bp/server-configs-apache/blob/master/src/web_performance/compression.conf" rel="nofollow">gzip compression</a> should be applied to. Keep in mind, the code for this compression should live within a <code>.htaccess</code> file in the root directory of the web server. Additionally, it is worth noting that <code>.htaccess</code> files only work on Apache web servers, which need to have the following modules enabled.</p>
+<ul class="list-column-3 group">
+<li>
+<code>mod_setenvif.c</code>
+</li>
+<li>
+<code>mod_headers.c</code>
+</li>
+<li>
+<code>mod_deflate.c</code>
+</li>
+<li>
+<code>mod_filter.c</code>
+</li>
+<li>
+<code>mod_expires.c</code>
+</li>
+<li>
+<code>mod_rewrite.c</code>
+</li>
+</ul>
+<p>Generally speaking this isn’t an issue, and some web servers may even set up compression for you. After all, it is in the web server’s best interest to compress files too.</p>
+<h4>Measuring Compression</h4>
+<p>Within the Google Chrome web browser the web inspector gives a plethora of data around performance, particularly within the Network tab. Additionally, there are a few websites that help identify if gzip compression is enabled.</p>
+<figure class="fig fig-row">
+<img alt="gzip Overview Screenshot" class="media-frame" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/gzip-overview.png" style="margin-bottom: 1px;">
+<figcaption>
+<strong>Fig. 1</strong>
+<p>The Network tab identifies each file loaded within the browser and displays the file size and load time. Notice how gzipping has reduced the file sizes by around 60%.</p>
+</figcaption>
+</figure>
+<figure class="fig fig-row">
+<img alt="gzip Detail Screenshot" class="media-frame" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/gzip-detail.png" style="margin-bottom: 1px;">
+<figcaption>
+<strong>Fig. 1</strong>
+<p>Looking at a file specifically identifies what type of compression encoding the browser supports. In this case gzip, deflate, and sdch are all supported as noted within the request headers.</p>
+<p>Looking at the response headers identifies that the file was sent using the gzip compression encoding.</p>
+</figcaption>
+</figure>
+<h3>Image Compression</h3>
+<p>Cutting down the size of a text file helps, but you get even better results by compressing the file size of images. The total file size of all the images across a website can quickly add up, and compressing images will greatly help keep the file size under control.</p>
+<p>Many people steer away from compressing images in fear that compression involves reducing the quality of the image itself. For the most part this is incorrect, and images can be compressed in a lossless fashion, allowing unnecessary color profiles and comments to be removed from the image without changing the quality of the image at all.</p>
+<p>There are a handful of tools to help compress images, two of the best are <a href="https://imageoptim.com/" rel="nofollow">ImageOptim</a> for Mac and <a href="http://pnggauntlet.com/" rel="nofollow">PNGGauntlet</a> for Windows. Both of these services compress the most commonly used image formats, specifically JPG and PNG files.</p>
+<div class="note note-box">
+<h4>Image Compression Demo</h4>
+<h6>Uncompressed, 455kb</h6>
+<figure><img alt="Uncompressed Ocean Picture" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/ocean-uncompressed.jpg" style="margin-bottom: 6px;"></figure>
+<h6>Compressed, 401kb</h6>
+<figure><img alt="Compressed Ocean Picture" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/ocean-compressed.jpg" style="margin-bottom: 6px;"></figure>
+</div>
+<figure class="fig fig-row">
+<img alt="ImageOptim Screenshot" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/imageoptim.png" style="margin-bottom: 4px;">
+<figcaption>
+<strong>Fig. 1</strong>
+<p>Using ImageOptim the above image was reduced over 14% without any reduction or loss in quality.</p>
+</figcaption>
+</figure>
+<p>It should also be noted, setting an image’s dimensions in HTML by way of the <code>height</code> and <code>width</code> attributes <strong>does help</strong> render the page quicker, setting aside the appropriate space for the image. Understand, these attributes are to only be used to identify the exact image dimensions and not to shrink an image. Using a larger image, then scaling it down with the <code>height</code> and <code>width</code> attributes is bad practice as it loads more data than necessary.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"ocean.jpg"</span> <span class="na">height=</span><span class="s">"440"</span> <span class="na">width=</span><span class="s">"660"</span> <span class="na">alt=</span><span class="s">"Oceanview"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h2 id="reduce-http-requests">Reduce HTTP Requests<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#reduce-http-requests">#reduce-http-requests</a></h2>
+<p>Next to file size, the number of HTTP requests a website makes is one of the largest performance pitfalls. Each time a request is made to the server the page load time increases. Some request have to finish before others can start, and too many request can bloat the server.</p>
+<h3>Combine Like Files</h3>
+<p>One way, and perhaps the easiest way, to reduce the number of HTTP requests is to combine like files. Specifically, combine all of the CSS files into one and all of the JavaScript files into one. Combining these files then compressing them creates one, hopefully small, HTTP request.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Bad --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/reset.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/base.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/site.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/styles.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In general, the CSS for a web page should be loaded at the <strong>beginning</strong> of the document within the <code>head</code>, while the JavaScript for a web page should be loaded at the <strong>end</strong>, just before the closing <code>body</code> tag. The reason for these unique placements is because CSS can be loaded while the rest of the website is being loaded as well. JavaScript, on the other hand, can only render one file at a time, thus prohibiting anything else from loading. One caveat here is when JavaScript files are asynchronously loaded after the page itself is done rendering. Another caveat is when JavaScript is needed in helping render the page, as such the case with the HTML5 shiv.</p>
+<h3>Image Sprites</h3>
+<p>The practice of <i>spriting</i> images within CSS includes using one background image across multiple elements. The goal here is to cut down the number of HTTP requests made by using multiple background images.</p>
+<p>To create a sprite take a handful of background images, ones that are commonly used, and arrange them into one single image. Then using CSS add the sprite as a background image to an element, and use the <code>background-position</code> property to display the correct background image.</p>
+<p>Think of the background image sliding around behind elements, only to expose the proper background image on a given element. For example, if an element is <code>16</code> pixels wide by <code>16</code> pixels tall it can only expose a background image of <code>16</code> pixels by <code>16</code> pixels, with the rest of the background image being hidden.</p>
+<figure class="fig fig-row">
+<img alt="Menu Sprite" class="media-frame" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/sprite-outline.png" style="margin-bottom: 1px;">
+<figcaption>
+<strong>Fig. 1</strong>
+<p>Here is a sprite for a text editor menu, outlined with guides for reference of how the images background position will change.</p>
+</figcaption>
+</figure>
+<p>Using the image sprite above, a menu can be created by using the image sprite as a background on the <code>span</code> element. Then, using classes to change the background position of the image sprite, different icons can be shown accordingly.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"bold"</span><span class="nt">&gt;</span>Bold Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"italic"</span><span class="nt">&gt;</span>Italicize Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"underline"</span><span class="nt">&gt;</span>Underline Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"size"</span><span class="nt">&gt;</span>Size Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"bullet"</span><span class="nt">&gt;</span>Bullet Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"number"</span><span class="nt">&gt;</span>Number Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"quote"</span><span class="nt">&gt;</span>Quote Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"left"</span><span class="nt">&gt;</span>Left Align Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"center"</span><span class="nt">&gt;</span>Center Align Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"right"</span><span class="nt">&gt;</span>Right Align Text<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre></td><td class="rouge-code"><pre><span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#fff</span><span class="p">,</span> <span class="m">#eee</span><span class="p">);</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#ccc</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">border-color</span><span class="p">:</span> <span class="m">#999</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="nt">span</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("sprite.png")</span> <span class="m">0</span> <span class="m">0</span> <span class="nb">no-repeat</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">0</span><span class="p">/</span><span class="m">0</span> <span class="n">a</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.italic</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-16px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.underline</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-32px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.size</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-48px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.bullet</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-64px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.number</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-80px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.quote</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-96px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.left</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-112px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.center</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-128px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.right</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">-144px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Image Sprites Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/gblxy(1).html" scrolling="no" frameborder="0" height="108" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_gblxy"></iframe></div>
+</div>
+<h3>Image Data URI</h3>
+<p>Additionally, instead of spriting images, the encoded data for an image can be included within HTML and CSS directly by way of the <a href="https://css-tricks.com/data-uris/" rel="nofollow">data URI</a>, removing the need for a HTTP request all together. Using the image data URI works great for small images, likely to never change, and where the HTML and CSS can be heavily cached. There are, however, a couple of problems with data URIs. They can be difficult to change and maintain, leading to having to generate another encoding. And, they don’t work in older browsers, specifically Internet Explorer 7 and below.</p>
+<p>If using data URIs helps cut down a few HTTP requests, and the HTML or CSS can be heavily cached, the benefits tend to outweigh the risk. A few tools to help generate data URIs include <a href="http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/" rel="nofollow">converters</a> and <a href="http://www.patternify.com/" rel="nofollow">pattern generators</a>. Be careful though, and always double check to see that the actual data URI is less weight than the actual image.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">height=</span><span class="s">"100"</span> <span class="na">width=</span><span class="s">"660"</span> <span class="na">alt=</span><span class="s">"Rigged Pattern"</span> <span class="na">src=</span><span class="s">"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAO6m73+X/bdxogujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQAyIyYy0nBAGgAAAABJRU5ErkJggg=="</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPUlEQVQYV2NkQAO6m73+X/bdxogujiIAU4RNMVwhuiQ6H6wQl3XI4oy4FMHcCJPHcDS6J2A2EqUQpJhohQAyIyYy0nBAGgAAAABJRU5ErkJggg==")</span> <span class="nb">repeat</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Image Data URI Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/znciu(1).html" scrolling="no" frameborder="0" height="186" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_znciu"></iframe></div>
+</div>
+<h2 id="cache-common-files">Cache Common Files<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#cache-common-files">#cache-common-files</a></h2>
+<p>Another way to help cut down HTTP requests, and to serve up pages faster, is to cache common files. When a page loads for the first time specific files may then be cached. Now the browser doesn’t have to request the same files again on repeating visits for quite some time. How long a period of time is up to you, all depending on how long you would like users to hold on to specific file types.</p>
+<p>As with gzipping files, setting the expires headers for caching files can be set within the <code>.htaccess</code> file. And again, the HTML5 Boilerplate team is one step ahead of us. In their Apache Server Configs there is a file specifically for setting up <a href="https://github.com/h5bp/server-configs-apache/blob/master/src/web_performance/expires_headers.conf" rel="nofollow">expires headers</a>.</p>
+<p>Images, videos, web fonts, and common media types are often cached for a month, while CSS and JavaScript files are often cached for a year. Should the CSS, or any other file, change more often than once each year the file name will need to be changed, preferably versioned, in order to be loaded. Alternatively, the expires headers can be changed to a smaller period of time.</p>
+<pre class="highlight ruby"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="no">ExpiresByType</span> <span class="n">text</span><span class="o">/</span><span class="n">css</span> <span class="s2">"access plus 1 year"</span>
+<span class="no">ExpiresByType</span> <span class="n">application</span><span class="o">/</span><span class="n">javascript</span> <span class="s2">"access plus 1 year"</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Changing the <code>"access plus 1 year"</code> value to <code>"access plus 1 week"</code> is better suited for CSS and JavaScript files that are changing weekly but are not version controlled with separate file names. For accepted expires header values reference the <code>mod_expires</code> <a href="https://httpd.apache.org/docs/current/mod/mod_expires.html" rel="nofollow">syntax</a>.</p>
+<h2>Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#undefined">#undefined</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="https://developer.yahoo.com/performance/rules.html" rel="nofollow">Best Practices for Speeding Up Your Web Site</a>
+via Yahoo! Developer Network
+</li>
+<li>
+<a href="http://stevesouders.com/hpws/rules.php" rel="nofollow">Rules for Faster-Loading Web Sites</a>
+via Steve Sounders
+</li>
+<li>
+<a href="http://viget.com/inspire/css-squareoff" rel="nofollow">CSS Strategy Square-off</a>
+via Viget Labs
+</li>
+<li>
+<a href="http://csswizardry.com/2011/09/writing-efficient-css-selectors/" rel="nofollow">Writing Efficient CSS Selectors</a>
+via Harry Roberts
+</li>
+<li>
+<a href="https://www.hanselman.com/blog/TheImportanceAndEaseOfMinifyingYourCSSAndJavaScriptAndOptimizingPNGsForYourBlogOrWebsite.aspx" rel="nofollow">Minifying and Optimizing Files</a>
+via Scott Hanselman
+</li>
+<li>
+<a href="http://html5boilerplate.com/" rel="nofollow">HTML5 Boilerplate</a>
+</li>
+<li>
+<a href="https://css-tricks.com/data-uris/" rel="nofollow">Data URIs</a>
+via CSS-Tricks
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/performance-organization/" data-title="Performance &amp;amp; Organization">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Performance%20%26amp%3B%20Organization%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/performance-organization/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/performance-organization/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/performance-organization/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/" rel="next">
+<strong>Lesson 2</strong>
+<span>Detailed Positioning</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Performance &amp;amp; Organization&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Performance &amp;amp; Organization&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Performance &amp;amp; Organization&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Performance &amp;amp; Organization&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Performance &amp;amp; Organization&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Performance &amp;amp; Organization&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Performance &amp; Organization&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+ <a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Performance &amp; Organization&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Performance &amp; Organization&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Performance &amp; Organization&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+ <div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Performance &amp; Organization&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Performance &amp; Organization&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+ <a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Performance &amp;amp; Organization&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/html-css/">Looking for Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/html-css/"><img alt="HTML and CSS" class="media-circle" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/html-css/">beginner focused HTML and CSS lessons</a>, compiled into a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS, working through all common components.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/html-css/">View Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/follow_button.6a44a9d26983bbb5b04ae399f9e496fe.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Performance &amp; Organization - Learn to Code Advanced HTML &amp; CSS_files/widget_iframe.6a44a9d26983bbb5b04ae399f9e496fe.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://learn.shayhowe.com/advanced-html-css/jquery/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Dive in and take a look at how behaviors work within web design, including the ability to modify elements with jQuery and the fundamentals of JavaScript." name="description">
+<meta content="javascript jquery js events selectors DOM manipulation" name="keywords">
+<title>jQuery - Learn to Code Advanced HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/ga.js.download"></script><script src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/button.9a57558490548c2dde66afe19af6c010.js.download"></script></head>
+<body class="advanced-html-css advanced-html-css_jquery advanced-html-css_jquery_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/advanced-html-css/">
+<span>Learn to Code Advanced</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/advanced-html-css/jquery/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="performance-organization">
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/">
+<strong>Lesson 1</strong>
+Performance &amp; Organization
+</a>
+</li>
+<li class="detailed-css-positioning">
+<a href="https://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/">
+<strong>Lesson 2</strong>
+Detailed Positioning
+</a>
+</li>
+<li class="complex-selectors">
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/">
+<strong>Lesson 3</strong>
+Complex Selectors
+</a>
+</li>
+<li class="responsive-web-design">
+<a href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/">
+<strong>Lesson 4</strong>
+Responsive Web Design
+</a>
+</li>
+<li class="preprocessors">
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/">
+<strong>Lesson 5</strong>
+Preprocessors
+</a>
+</li>
+<li class="jquery">
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/">
+<strong>Lesson 6</strong>
+jQuery
+</a>
+</li>
+<li class="css-transforms">
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/">
+<strong>Lesson 7</strong>
+Transforms
+</a>
+</li>
+<li class="transitions-animations">
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/">
+<strong>Lesson 8</strong>
+Transitions &amp; Animations
+</a>
+</li>
+<li class="feature-support-polyfills">
+<a href="https://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/">
+<strong>Lesson 9</strong>
+Feature Support &amp; Polyfills
+</a>
+ </li>
+<li class="semantics-accessibility">
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/">
+<strong>Lesson 10</strong>
+Extending Semantics &amp; Accessibility
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a> for a beginner’s guide front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 6</h6>
+<h1>jQuery</h1>
+</div>
+<script src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">6</span>
+</h4>
+<h6>JavaScript</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/#javascript">JavaScript Intro</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/#jquery">jQuery Intro</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/#selectors">Selectors</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/#traversing">Traversing</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/#manipulation">Manipulation</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/#events">Events</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/#effects">Effects</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/jquery/" data-title="jQuery">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=jQuery%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/jquery/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/jquery/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/jquery/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLCAADVZ3JCWSIPKQJCYYD5KJKC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/1559076039-slack-carbon-yellow_2x.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLCAADVZ3JCWSIPKQJCYYD5KJKC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">Bring your team together with Slack, the collaboration hub for work.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a><img src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/B21259774.239130596" border="0" height="1" width="1" alt="ads via Carbon" style="display: none;"></span></div>
+</div>
+</div>
+</div>
+<p>In part of being a web designer or front end developer you will commonly run into JavaScript, often referred to as <abbr title="JavaScript">JS</abbr>, and jQuery. Within the top 10,000 websites JavaScript is used within <a href="https://trends.builtwith.com/docinfo/Javascript" rel="nofollow">over 92%</a> of them, and jQuery is used within in <a href="https://trends.builtwith.com/javascript/jQuery" rel="nofollow">over 63%</a> of them. Needless to say, they are fairly popular. You may even aspire to <a href="http://jsforcats.com/" rel="nofollow">write</a> JavaScript or jQuery to build your own behaviors at one point or another.</p>
+<p>If you are asking what exactly are JavaScript and jQuery fear not, this lesson gives a brief overview of JavaScript and then takes a look at jQuery.</p>
+<h2 id="javascript">JavaScript Intro<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/jquery/#javascript">#javascript</a></h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/JavaScript/A_re-introduction_to_JavaScript" rel="nofollow">JavaScript</a> provides the ability to add interactivity to a website, and help enrich the user experience. HTML provides a page with <strong>structure</strong> and CSS provides a page with <strong>appearance</strong>, JavaScript provide a page with <strong>behavior</strong>.</p>
+<p>Like CSS, JavaScript should be saved in an external file with the <code>.js</code> file extension, and then referenced within an HTML document using the <code>script</code> element. Where the JavaScript reference is placed with HTML depends on when it should be executed. Generally speaking, the best place to reference JavaScript files is right before the closing <code>&lt;/body&gt;</code> tag so that the JavaScript file is loaded after all of the HTML has been parsed. However, at times, JavaScript is needed to help render HTML and determine it’s behavior, thus may be referenced within a documents <code>head</code>.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Values <abbr title="and">&amp;</abbr> Variables</h3>
+<p>Part of the fundamentals of JavaScript include values and variables. Values, in general, are the different types of values that JavaScript will recognize, while variables are used to store and share these values.</p>
+<p>Values may include strings of text, true or false Booleans, numbers, <code>undefined</code>, <code>null</code>, or other values such as functions or objects.</p>
+<p>One popular way variables are defined is with the <code>var</code> keyword, followed by the variable name, an equal sign (<code>=</code>), then the value, ending with a semicolon (<code>;</code>). The variable name must begin with a letter, underscore (<code>_</code>), or dollar sign (<code>$</code>). Variables cannot begin with numbers, although they may be used subsequently, and they cannot use hyphens whatsoever. Additionally, JavaScript is case sensitive so letters include <code>a</code> through <code>z</code> in both lower and uppercase.</p>
+<p>The common convention around naming variables is to use <a href="https://en.wikipedia.org/wiki/CamelCase" rel="nofollow">camelCase</a>, without the use of any dashes or underscores. camelCase consist of combining words while removing spaces, capitalizing the beginning of each new word except for the initial word. For example, <code>shay_is_awesome</code> would more commonly named <code>shayIsAwesome</code>.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="kd">var</span> <span class="nx">theStarterLeague</span> <span class="o">=</span> <span class="mi">125</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">food_truck</span> <span class="o">=</span> <span class="s1">'Coffee'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">mixtape01</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">vinyl</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Miles Davis'</span><span class="p">,</span> <span class="s1">'Frank Sinatra'</span><span class="p">,</span> <span class="s1">'Ray Charles'</span><span class="p">];</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Statements</h3>
+<p>As a whole, JavaScript is a set of statements, of which are executed by the browser in the sequence they are written. These statements provide commands which determine the different behaviors to be taken. Statements come in all different shapes and sizes, with multiple statements separated with semicolons, <code>;</code>. New statements should begin on a new line, and indentation should be used when nesting statements for better legibility, but is not required.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">log</span><span class="p">(</span><span class="nx">polaroid</span><span class="p">);</span>
+<span class="k">return</span><span class="p">(</span><span class="s1">'bicycle lane'</span><span class="p">);</span>
+<span class="nx">alert</span><span class="p">(</span><span class="s1">'Congratulations, you '</span> <span class="o">+</span> <span class="nx">outcome</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Functions</h3>
+<p>Adding to the fundamentals of JavaScript, it is important to take a look at functions. Functions provide a way to perform a set of scripted behaviors now, or saved for later, and depending on the function they may even accept different arguments.</p>
+<p>A function is defined by using the <code>function</code> keyword followed by the function name, a list of commas separated arguments wrapped in parentheses, if necessary, and then the JavaScript statement, or statements, that defines the function enclosed in curly braces, <code>{}</code>.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">sayHello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span><span class="p">(</span><span class="s1">'Hello '</span> <span class="o">+</span> <span class="nx">name</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Arrays</h3>
+<p>As you may have recognized, some values may be returned as an array. Arrays include a way to store a list of items, or values. Arrays are helpful for many reasons, one being the ability to be traversed with different methods and operators. Additionally, depending on the situation, arrays can be used to store, and return, a variety of different values.</p>
+<p>Generally speaking arrays are identified within square brackets, <code>[]</code>, with comma separated items. The items start at <code>0</code> and increase from there. When identifying the third item in a list it is actually identified as <code>[2]</code>.</p>
+<h3>Objects</h3>
+<p>JavaScript is also built on the foundation of objects, which are a collection of key and value pairs. For example, there may be an object named <code>school</code> which includes the keys, also known as properties, <code>name</code>, <code>location</code>, <code>students</code>, and <code>teachers</code>, and their values.</p>
+<p>In the example below the variable <code>school</code> is set up as an object to hold multiple properties. Each property has a key and value. The entire object is wrapped inside of curly braces, <code>{}</code>, with comma separated properties, each having a key followed by a colon and value.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="c1">// Object</span>
+<span class="kd">var</span> <span class="nx">school</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="s1">'The Starter League'</span><span class="p">,</span>
+  <span class="na">location</span><span class="p">:</span> <span class="s1">'Merchandise Mart'</span><span class="p">,</span>
+  <span class="na">students</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+  <span class="na">teachers</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Jeff'</span><span class="p">,</span> <span class="s1">'Raghu'</span><span class="p">,</span> <span class="s1">'Carolyn'</span><span class="p">,</span> <span class="s1">'Shay'</span><span class="p">]</span>
+<span class="p">};</span>
+
+<span class="c1">// Array</span>
+<span class="kd">var</span> <span class="nx">school</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Austin'</span><span class="p">,</span> <span class="s1">'Chicago'</span><span class="p">,</span> <span class="s1">'Portland'</span><span class="p">];</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<figure class="fig">
+<img alt="Web Inspector Console" class="media-frame" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/console.png" style="margin-bottom: 6px;">
+<figcaption>
+<strong>Fig. 6</strong>
+<p>Using the developer tools built into the Chrome web browser, JavaScript may be run from within the console.</p>
+</figcaption>
+</figure>
+<h2 id="jquery">jQuery Intro<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/jquery/#jquery">#jquery</a></h2>
+<p>With a basic understanding of JavaScript and some of it’s foundations, it is time to take a look at jQuery. jQuery is an open source JavaScript library written by John Resig that simplifies the interaction between HTML, CSS, and JavaScript. Since 2006, when jQuery was released, it has taken off, being used by websites and companies large and small.</p>
+<p>What has made jQuery so popular is it’s <a href="https://tutsplus.com/course/30-days-to-learn-jquery/" rel="nofollow">ease of use</a>, with selections resembling CSS and a comprehensible separation of behavior. The benefits of jQuery are massive, however for our purpose we will only be considered about the ability to find elements and perform actions with them.</p>
+<h3>Getting Started with jQuery</h3>
+<p>The first step to using jQuery is to reference it from within a HTML document. As previously mentioned with JavaScript, this is done using the <code>script</code> element just before the closing <code>&lt;/body&gt;</code> tag. Since jQuery is it’s own library it is best to keep it separate from all the other JavaScript being written.</p>
+<p>When referencing jQuery there are a few options, specifically as whether to use the minified or uncompressed version, and as whether to use a content delivery network, <abbr title="Content Delivery Network">CDN</abbr>, such as <a href="https://developers.google.com/speed/libraries/devguide" rel="nofollow">Google hosted libraries</a>. If the code being written is for a live, production environment it is encouraged to use the minified version for better loading times. Additionally, using a CDN like Google also helps with loading time, and potential caching benefits.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In the code sample above, notice the second <code>script</code> element referencing a second JavaScript file. All of the custom, handwritten JavaScript and jQuery should be written in this file. Additionally, this file is specifically placed after the jQuery file so that it may reference jQuery functions already defined.</p>
+<div class="note note-box">
+<h4>Where is the leading http?</h4>
+<p>You may have noticed that there isn’t a leading <code>http</code> within Google CDN reference example above. The <code>http</code> has been omitted intentionally to allow for both <code>http</code> and <code>https</code> connections. When working locally, without the benefit of a web server, the leading <code>http</code> will need to be included to prevent attempting to locate the file on the systems local disk drive.</p>
+</div>
+<h3>jQuery Object</h3>
+<p>jQuery comes with it’s own object, the dollar sign, <code>$</code>, also known as <code>jQuery</code>. The <code>$</code> object is specifically made for selecting an element and then returning that element node to perform an action on it. These selections and actions should be written in a new file, referenced outside of the actual jQuery library.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">();</span>
+<span class="nx">jQuery</span><span class="p">();</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Document Ready</h3>
+<p>Before trigging any jQuery to traverse and manipulate a page it is best to wait until the DOM is finished loading. Fortunately jQuery has a ready event, <code>.ready()</code>, which can be called when the HTML document is ready to be altered. By placing all of our other custom written jQuery inside of this function we can guarantee that it will not be executed until the page has loaded and the DOM is ready.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span> 
+  <span class="c1">// jQuery code </span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h2 id="selectors">Selectors<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/jquery/#selectors">#selectors</a></h2>
+<p>As previously mentioned, one of the core concepts of jQuery is to <a href="https://api.jquery.com/category/selectors/" rel="nofollow">select elements</a> and perform an action. jQuery has done a great job of making the task of selecting an element, or elements, extremely easy by mimicking that of CSS. On top of the general CSS selectors, jQuery has support for all of the unique CSS3 selectors, which work regardless of which browser is being used.</p>
+<p>Invoking the jQuery object, <code>$()</code>, containing a selector will return that DOM node to manipulate it. The selector falls within the parentheses, <code>('...')</code>, and may select elements just like that of CSS.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.feature'</span><span class="p">);</span>           <span class="c1">// Class selector</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'li strong'</span><span class="p">);</span>          <span class="c1">// Descendant selector</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'em, i'</span><span class="p">);</span>              <span class="c1">// Multiple selector</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'a[target="_blank"]'</span><span class="p">);</span> <span class="c1">// Attribute selector</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'p:nth-child(2)'</span><span class="p">);</span>     <span class="c1">// Pseudo-class selector</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>This Selection Keyword</h3>
+<p>When working inside of a jQuery function you may want to select the element in which was referenced inside of the original selector. In this event the <code>this</code> keyword may be used to refer to the element selected in the current handler.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'div'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span> 
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>jQuery Selection Filters</h4>
+<p>Should CSS selectors not be enough there are also custom <a href="https://api.jquery.com/category/selectors/jquery-selector-extensions/" rel="nofollow">filters</a> built into jQuery to help out. These filters are an extension to CSS3 and provide more control over selecting an element or its relatives.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'div:has(strong)'</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<p>As they stand these filters may be used inside of the selector, however not being native to the DOM they are a bit slow. The best results with using these filters is accomplished by using the <code>:filter()</code> method, which is part of the traversing feature in jQuery.</p>
+</div>
+<h2 id="traversing">Traversing<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/jquery/#traversing">#traversing</a></h2>
+<p>At times the general CSS selectors alone don’t cut it and a little more detailed control is desired. Fortunately jQuery provides a handful of methods for traversing up and down the DOM tree, filtering and selecting elements as necessary.</p>
+<p>To get started with filtering elements inside the DOM a general selection needs to be made, from which will be traversed from relatively. In the example below the original selection finds all of the <code>div</code> elements in the DOM, which are then filtered using the <code>.not()</code> method. With this specific method all of the <code>div</code> elements without a class of <code>type</code> or <code>collection</code> will be selected.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'div'</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="s1">'.type, .collection'</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Chaining Methods</h3>
+<p>For even more control as to which elements are selected different traversing methods may be chained together simply by using a dot in-between them.</p>
+<p>The code sample below uses both the <code>.not()</code> method and the <code>.parent()</code> method. Combined together this will only select the parent elements of <code>div</code> elements without a class of <code>type</code> or <code>collection</code>.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'div'</span><span class="p">).</span><span class="nx">not</span><span class="p">(</span><span class="s1">'.type, .collection'</span><span class="p">).</span><span class="nx">parent</span><span class="p">();</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Traversing Methods</h3>
+<p>jQuery has quite a few <a href="https://api.jquery.com/category/traversing/" rel="nofollow">traversing</a> methods available to use. In general, they all fall into three categories, filtering, miscellaneous traversing, and DOM tree traversing. The specific methods within each category may be seen below.</p>
+<h4>Filtering</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.eq()</code>
+</li>
+<li>
+<code>.filter()</code>
+</li>
+<li>
+<code>.first()</code>
+</li>
+<li>
+<code>.has()</code>
+</li>
+<li>
+<code>.is()</code>
+</li>
+<li>
+<code>.last()</code>
+</li>
+<li>
+<code>.map()</code>
+</li>
+<li>
+<code>.not()</code>
+</li>
+<li>
+<code>.slice()</code>
+</li>
+</ul>
+<h4>Miscellaneous Traversing</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.add()</code>
+</li>
+<li>
+<code>.andSelf()</code>
+</li>
+<li>
+<code>.contents()</code>
+</li>
+<li>
+<code>.end()</code>
+</li>
+</ul>
+<h4>DOM Tree Traversal</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.children()</code>
+</li>
+<li>
+<code>.closest()</code>
+</li>
+<li>
+<code>.find()</code>
+</li>
+<li>
+<code>.next()</code>
+</li>
+<li>
+<code>.nextAll()</code>
+</li>
+<li>
+<code>.nextUntil()</code>
+</li>
+<li>
+<code>.offsetParent()</code>
+</li>
+<li>
+<code>.parent()</code>
+</li>
+<li>
+<code>.parents()</code>
+</li>
+<li>
+<code>.parentsUntil()</code>
+</li>
+<li>
+<code>.prev()</code>
+</li>
+<li>
+<code>.prevAll()</code>
+</li>
+<li>
+<code>.prevUntil()</code>
+</li>
+<li>
+<code>.siblings()</code>
+</li>
+</ul>
+<h2 id="manipulation">Manipulation<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/jquery/#manipulation">#manipulation</a></h2>
+<p>Selecting and traversing elements in the DOM is only part of what jQuery offers, one other major part is what is possible with those elements once found. One possibility is to <a href="https://api.jquery.com/category/manipulation/" rel="nofollow">manipulate</a> these elements, by either reading, adding, or changing attributes or styles. Additionally, elements may be altered in the DOM, changing their placement, removing them, adding new elements, and so forth. Overall the options to manipulate elements are fairly vast.</p>
+<h3>Getting <abbr title="and">&amp;</abbr> Setting</h3>
+<p>The manipulation methods to follow are most commonly used in one of two directives, that being <em>getting</em> or <em>setting</em> information. Getting information revolves around using a selector in addition with a method to determine what piece of information is to be retrieved. Additionally, the same selector and method may also be used to set a piece of information.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="c1">// Gets the value of the alt attribute</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'img'</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'alt'</span><span class="p">);</span>
+
+<span class="c1">// Sets the value of the alt attribute</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'img'</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'alt'</span><span class="p">,</span> <span class="s1">'Wild kangaroo'</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In the examples and snippets to follow methods will primarily be used in a setting mode, however they may also be able to be used in a getting mode as well.</p>
+<h3>Attribute Manipulation</h3>
+<p>One part of elements able to be inspected and manipulated are attributes. A few options include the ability to add, remove, or change an attribute or its value. In the examples below the <code>.addClass()</code> method is used to add a class to all even list items, the <code>.removeClass()</code> method is used to remove all classes from any paragraphs, and lastly the <code>.attr()</code> method is used to find the value of the <code>title</code> attribute of any <code>abbr</code> element and set it to <code>Hello World</code>.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'li:even'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'even-item'</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'p'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'abbr'</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'title'</span><span class="p">,</span> <span class="s1">'Hello World'</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Attribute Manipulation Methods</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.addClass()</code>
+</li>
+<li>
+<code>.attr()</code>
+</li>
+<li>
+<code>.hasClass()</code>
+</li>
+<li>
+<code>.prop()</code>
+</li>
+<li>
+<code>.removeAttr()</code>
+</li>
+<li>
+<code>.removeClass()</code>
+</li>
+<li>
+<code>.removeProp()</code>
+</li>
+<li>
+<code>.toggleClass()</code>
+</li>
+<li>
+<code>.val()</code>
+</li>
+</ul>
+<h3>Style Manipulation</h3>
+<p>On top of manipulating attributes, the style of an element may also be manipulated using a variety of methods. When reading or setting the height, width, or position of an element there are a handful of special methods available, and for all other style manipulations the <code>.css()</code> method can handle any CSS alterations.</p>
+<p>The <code>.css()</code> method in particular may be used to set one property, or many, and the syntax for each varies. To set one property, the property name and value should each be in quotations and comma separated. To set multiple properties, the properties should be nested inside of curly brackets with the property name in camel case, removing any hyphens where necessary, followed by a colon and then the quoted value. Each of the property and value pairs need to be comma separated.</p>
+<p>The height, width, or position methods all default to using pixel values, however other units of measurement may be used. As seen below, to change the unit of measurement identify the value then use a plus sign followed by the quoted unit of measurement.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'h1 span'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'font-size'</span><span class="p">,</span> <span class="s1">'normal'</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'div'</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span>
+  <span class="na">fontSize</span><span class="p">:</span> <span class="s1">'13px'</span><span class="p">,</span> 
+  <span class="na">background</span><span class="p">:</span> <span class="s1">'#f60'</span>
+<span class="p">});</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'header'</span><span class="p">).</span><span class="nx">height</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.extend'</span><span class="p">).</span><span class="nx">height</span><span class="p">(</span><span class="mi">30</span> <span class="o">+</span> <span class="s1">'em'</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Style Manipulation Methods</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.css()</code>
+</li>
+<li>
+<code>.height()</code>
+</li>
+<li>
+<code>.innerHeight()</code>
+</li>
+<li>
+<code>.innerWidth()</code>
+</li>
+<li>
+<code>.offset()</code>
+</li>
+<li>
+<code>.outerHeight()</code>
+</li>
+<li>
+<code>.outerWidth()</code>
+</li>
+<li>
+<code>.position()</code>
+</li>
+<li>
+<code>.scrollLeft()</code>
+</li>
+<li>
+<code>.scrollTop()</code>
+</li>
+<li>
+<code>.width()</code>
+</li>
+</ul>
+<h3>DOM Manipulation</h3>
+<p>Lastly, we are able to inspect and manipulate the DOM, changing the placement of elements, adding and removing elements, as well as flat out altering elements. The options here are deep and varied, allowing for any potential changes to be made inside the DOM.</p>
+<p>Each individual DOM manipulation method has it’s own syntax but a few of them are outlined below. The <code>.prepend()</code> method is adding a new <code>h3</code> element just inside any <code>section</code>, the <code>.after()</code> method is adding a new <code>em</code> element just after the link, and the <code>.text()</code> method is replacing the text of any <code>h1</code> elements with the text <code>Hello World</code>.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'section'</span><span class="p">).</span><span class="nx">prepend</span><span class="p">(</span><span class="s1">'&lt;h3&gt;Featured&lt;/h3&gt;'</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'a[target="_blank"]'</span><span class="p">).</span><span class="nx">after</span><span class="p">(</span><span class="s1">'&lt;em&gt;New window.&lt;/em&gt;'</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'h1'</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">'Hello World'</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>DOM Manipulation Methods</h4>
+ <ul class="list-column-3 group">
+<li>
+<code>.after()</code>
+</li>
+<li>
+<code>.append()</code>
+</li>
+<li>
+<code>.appendTo()</code>
+</li>
+<li>
+<code>.before()</code>
+</li>
+<li>
+<code>.clone()</code>
+</li>
+<li>
+<code>.detach()</code>
+</li>
+<li>
+<code>.empty()</code>
+</li>
+<li>
+<code>.html()</code>
+</li>
+<li>
+<code>.insertAfter()</code>
+</li>
+<li>
+<code>.insertBefore()</code>
+</li>
+<li>
+<code>.prepend()</code>
+</li>
+<li>
+<code>.prependTo()</code>
+</li>
+<li>
+<code>.remove()</code>
+</li>
+<li>
+<code>.replaceAll()</code>
+</li>
+<li>
+<code>.replaceWith()</code>
+</li>
+<li>
+<code>.text()</code>
+</li>
+<li>
+<code>.unwrap()</code>
+</li>
+<li>
+<code>.wrap()</code>
+</li>
+<li>
+<code>.wrapAll()</code>
+</li>
+<li>
+<code>.wrapInner()</code>
+</li>
+</ul>
+<h2 id="events">Events<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/jquery/#events">#events</a></h2>
+<p>One of the beauties of jQuery is the ability to easily add <a href="https://api.jquery.com/category/events/" rel="nofollow">event handlers</a>, which are methods that are called only upon a specific event or action taking place. For example, the method of adding a class to an element can be set to only occur upon that element being clicked on.</p>
+<p>Below is a standard selector, grabbing all of the list items. The <code>.click()</code> event method is bound to the list item selector, setting up an action to take place upon clicking any list item. Inside the <code>.click()</code> event method is a function, which ensures any actions inside the event method are to be executed. The parentheses directly after the function are available to pass in parameters for the function, in which the <code>event</code> object is used in this example.</p>
+<p>Inside of the function is another selector with the <code>.addClass()</code> method bound to it. Now, when a list item is clicked on that list item, via the <code>this</code> keyword, receives the class of <code>saved-item</code>.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'li'</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'saved-item'</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Event Flexibility</h3>
+<p>The <code>.click()</code> event method, along with a handful of other event methods, is actually a <a href="http://jqfundamentals.com/chapter/events" rel="nofollow">shorthand method</a> which uses the <code>.on()</code> method introduced in jQuery 1.7. The <code>.on()</code> method provides quite a bit of flexibility, using automatic delegation for elements that get added to the page dynamically.</p>
+<p>Making use of the <code>.on()</code> method the first argument should be the native event name while the second argument should be the event handler function. Looking at the example from before, the <code>.on()</code> method is called in place of the <code>.click()</code> method. Now the <code>click</code> event name is passed in as the first argument inside the <code>.on()</code> method with the event handler function staying the same as before.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'li'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'saved-item'</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Nesting Events</h3>
+<p>It is possible to have multiple event handlers and triggers, nesting one inside another. As an example, below the <code>.on()</code> event method is passed the <code>hover</code> argument, thus being called when hovering over any element with the class of <code>pagination</code>. Upon calling the <code>.on()</code> event the <code>.click()</code> event is called on the anchor with the <code>up</code> ID.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.pagination'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'hover'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'a#up'</span><span class="p">).</span><span class="nx">click</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h3>Event Demo</h3>
+<p>Using an alert message as a demo, the following code snippets show how to create an alert message and then removing that message based upon clicking the close icon.</p>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice-close"</span><span class="nt">&gt;</span><span class="ni">&amp;#215;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> I<span class="ni">&amp;#8217;</span>m about to lose my cool.
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>JavaScript</h6>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.notice-close'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.notice-warning'</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/qnzKC.html" scrolling="no" frameborder="0" height="126" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_qnzKC"></iframe></div>
+</div>
+</div>
+<h3>Event Methods</h3>
+<p>jQuery provides quite a few methods, all of which are based around registering user behaviors as they interact with the browser. These methods register quite a few events, most popularly, but not limited to, browser, form, keyboard, and mouse events. The most popular of these methods include:</p>
+<h4>Browser Events</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.resize()</code>
+</li>
+<li>
+<code>.scroll()</code>
+</li>
+</ul>
+<h4>Document Loading</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.ready()</code>
+</li>
+</ul>
+<h4>Event Handler Attachment</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.off()</code>
+</li>
+<li>
+<code>.on()</code>
+</li>
+<li>
+<code>.one()</code>
+</li>
+<li>
+<code>jQuery.proxy()</code>
+</li>
+<li>
+<code>.trigger()</code>
+</li>
+<li>
+<code>.triggerHandler()</code>
+</li>
+<li>
+<code>.unbind()</code>
+</li>
+<li>
+<code>.undelegate()</code>
+</li>
+</ul>
+<h4>Event Object</h4>
+<ul class="list-column-2 group">
+<li>
+<code>event.currentTarget</code>
+</li>
+<li>
+<code>event.preventDefault()</code>
+</li>
+<li>
+<code>event.stopPropagation()</code>
+</li>
+<li>
+<code>event.target</code>
+</li>
+<li>
+<code>event.type</code>
+</li>
+</ul>
+<h4>Form Events</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.blur()</code>
+</li>
+<li>
+<code>.change()</code>
+</li>
+<li>
+<code>.focus()</code>
+</li>
+<li>
+<code>.select()</code>
+</li>
+<li>
+<code>.submit()</code>
+</li>
+</ul>
+<h4>Keyboard Events</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.focusin()</code>
+</li>
+<li>
+<code>.focusout()</code>
+</li>
+<li>
+<code>.keydown()</code>
+</li>
+<li>
+<code>.keypress()</code>
+</li>
+<li>
+<code>.keyup()</code>
+</li>
+</ul>
+<h4>Mouse Events</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.click()</code>
+</li>
+<li>
+<code>.dblclick()</code>
+</li>
+<li>
+<code>.focusin()</code>
+</li>
+<li>
+<code>.focusout()</code>
+</li>
+<li>
+<code>.hover()</code>
+</li>
+<li>
+<code>.mousedown()</code>
+</li>
+<li>
+<code>.mouseenter()</code>
+</li>
+<li>
+<code>.mouseleave()</code>
+</li>
+<li>
+<code>.mousemove()</code>
+</li>
+<li>
+<code>.mouseout()</code>
+</li>
+<li>
+<code>.mouseover()</code>
+</li>
+<li>
+<code>.mouseup()</code>
+</li>
+</ul>
+<h2 id="effects">Effects<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/jquery/#effects">#effects</a></h2>
+<p>Next to events, jQuery also provides a handful of customizable effects. These effects come by the way of different methods, including event methods for showing and hiding content, fading content in and out, or sliding content up and down. All of these are ready to use methods and may be customized as best see fit.</p>
+<p>Each effect method has it’s own syntax so it is best to reference the jQuery <a href="https://api.jquery.com/category/effects/" rel="nofollow">effects documentation</a> for specific syntax around each method. Most commonly though, effects generally accept a duration, easing, and the ability to specify a callback function.</p>
+<div class="note note-box">
+<h4>jQuery CSS Animations</h4>
+<p>Custom animations of different CSS properties can be accomplished in jQuery, although this is a little less relevant as CSS can now handle animations itself. CSS animations offer better performance from a browser processing standpoint and are preferred where possible. jQuery animation effects, with the help of Modernizr, make for a perfect backup solution to any browser not supporting CSS animations.</p>
+</div>
+<h3>Effect Duration</h3>
+<p>Using the <code>.show()</code> method as an example, the first parameter available to optionally pass in to the method is the duration, which can be accomplished using a keyword or milliseconds value. The keyword <code>slow</code> defaults to <code>600</code> milliseconds, while the keyword <code>fast</code> defaults to <code>200</code> milliseconds. Using a keyword value is fine, but millisecond values may also be passed in directly. Keyword values must be quoted while millisecond values do not.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.error'</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.error'</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">'slow'</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.error'</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Effect Easing</h3>
+<p>In addition to setting the duration in which an effect takes place the easing, or speed at which an animation progresses at during different times within the animation, may also be set. By default jQuery has two keyword values for easing, the default value is <code>swing</code> with the additional value being <code>linear</code>. The default <code>swing</code> value starts the animation at a slow pace, picking up speed during the animation, and then slows down again before completion. The <code>linear</code> value runs the animation at one constant pace for the entire duration.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.error'</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">'slow'</span><span class="p">,</span> <span class="s1">'linear'</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.error'</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s1">'linear'</span><span class="p">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>jQuery UI</h4>
+<p>The two easing values that come with jQuery may be extend with the use of different plug-ins, of which may offer additional values. One of the most popular plug-ins is the <a href="https://jqueryui.com/" rel="nofollow">jQuery UI</a> suite.</p>
+<p>On top of new easing values jQuery UI also provides a handful other interactions, effects, widgets, and other helpful resources worth taking a look at.</p>
+</div>
+<h3>Effect Callback</h3>
+<p>When an animation is completed it is possible to run another function, called a callback function. The callback function should be placed after the duration or easing, if either exist. Inside this function new events or effects may be placed, each following their own required syntax.</p>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.error'</span><span class="p">).</span><span class="nx">show</span><span class="p">(</span><span class="s1">'slow'</span><span class="p">,</span> <span class="s1">'linear'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.error .status'</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">'Continue'</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Effect Syntax</h3>
+<p>As previously mentioned, each effect method has it’s own syntax which can be found in the jQuery <a href="https://api.jquery.com/category/effects/" rel="nofollow">effects documentation</a>. The duration, easing, and callback parameters outlined here are common, but not available on every method. It is best to review the syntax of a method should you have any questions around it.</p>
+<div class="note note-box">
+<h3>Effects Demo</h3>
+<p>Taking the same events demo from above, the <code>.remove()</code> method is now used as part of a callback function on the <code>.fadeOut()</code> method. Using the <code>.fadeOut()</code> method allows for the alert message to gradually fade out rather than quickly disappearing, then be removed from the DOM after the animation is complete.</p>
+ <h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice-warning"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice-close"</span><span class="nt">&gt;</span><span class="ni">&amp;#215;</span><span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Warning!<span class="nt">&lt;/strong&gt;</span> I<span class="ni">&amp;#8217;</span>m about to lose my cool.
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>JavaScript</h6>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.notice-close'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.notice-warning'</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="s1">'slow'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/qciLt.html" scrolling="no" frameborder="0" height="126" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_qciLt"></iframe></div>
+</div>
+</div>
+<h4>Basic Effects</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.hide()</code>
+</li>
+<li>
+<code>.show()</code>
+</li>
+<li>
+<code>.toggle()</code>
+</li>
+</ul>
+<h4>Custom Effects</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.animate()</code>
+</li>
+<li>
+<code>.clearQueue()</code>
+</li>
+<li>
+<code>.delay()</code>
+</li>
+<li>
+<code>.dequeue()</code>
+</li>
+<li>
+<code>jQuery.fx.interval</code>
+</li>
+<li>
+<code>jQuery.fx.off</code>
+</li>
+<li>
+<code>.queue()</code>
+</li>
+<li>
+<code>.stop()</code>
+</li>
+</ul>
+<h4>Fading Effects</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.fadeIn()</code>
+</li>
+<li>
+<code>.fadeOut()</code>
+</li>
+<li>
+<code>.fadeTo()</code>
+</li>
+<li>
+<code>.fadeToggle()</code>
+</li>
+</ul>
+<h4>Sliding Effects</h4>
+<ul class="list-column-3 group">
+<li>
+<code>.slideDown()</code>
+</li>
+<li>
+<code>.slideToggle()</code>
+</li>
+<li>
+<code>.slideUp()</code>
+</li>
+</ul>
+<div class="note note-box">
+<h3>Slide Demo</h3>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-stage"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"panel-tab"</span><span class="nt">&gt;</span>Open <span class="nt">&lt;span&gt;</span><span class="ni">&amp;#9660;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>JavaScript</h6>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.panel-tab'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.panel-stage'</span><span class="p">).</span><span class="nx">slideToggle</span><span class="p">(</span><span class="s1">'slow'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">is</span><span class="p">(</span><span class="s1">':visible'</span><span class="p">)){</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">'.panel-tab'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">'Close &lt;span&gt;&amp;#9650;&lt;/span&gt;'</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">$</span><span class="p">(</span><span class="s1">'.panel-tab'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s1">'Open &lt;span&gt;&amp;#9660;&lt;/span&gt;'</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_3" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/xGBfe.html" scrolling="no" frameborder="0" height="204" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_xGBfe"></iframe></div>
+</div>
+ </div>
+<div class="note note-box">
+<h3>Tabs Demo</h3>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"tabs-nav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#tab-1"</span><span class="nt">&gt;</span>Features<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#tab-2"</span><span class="nt">&gt;</span>Details<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-stage"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab-1"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"tab-2"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>JavaScript</h6>
+<pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td><td class="rouge-code"><pre><span class="c1">// Show the first tab by default</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.tabs-stage div'</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.tabs-stage div:first'</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.tabs-nav li:first'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'tab-active'</span><span class="p">);</span>
+
+<span class="c1">// Change tab class and display content</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.tabs-nav a'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.tabs-nav li'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'tab-active'</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">parent</span><span class="p">().</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'tab-active'</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'.tabs-stage div'</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'href'</span><span class="p">)).</span><span class="nx">show</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_4" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/klAvu.html" scrolling="no" frameborder="0" height="228" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_klAvu"></iframe></div>
+</div>
+</div>
+<h2>Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/jquery/#undefined">#undefined</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="http://jsforcats.com/" rel="nofollow">JavaScript For Cats</a>
+</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/JavaScript/A_re-introduction_to_JavaScript" rel="nofollow">A Re-introduction to JavaScript</a>
+via Mozilla Developer Network
+</li>
+<li>
+<a href="https://tutsplus.com/course/30-days-to-learn-jquery/" rel="nofollow">30 Days to Learn jQuery</a>
+via Tuts+ Premium
+</li>
+<li>
+<a href="https://developers.google.com/speed/libraries/devguide" rel="nofollow">Google Hosted Libraries</a>
+</li>
+<li>
+<a href="http://docs.jquery.com/" rel="nofollow">jQuery Documentation</a>
+</li>
+<li>
+<a href="http://jqfundamentals.com/" rel="nofollow">jQuery Fundamentals</a>
+via Bocoup
+</li>
+<li>
+<a href="https://jqueryui.com/" rel="nofollow">jQuery UI</a>
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/jquery/" data-title="jQuery">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=jQuery%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/jquery/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/jquery/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/jquery/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/" rel="prev">
+<strong>Lesson 5</strong>
+<span>Preprocessors</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/" rel="next">
+<strong>Lesson 7</strong>
+<span>Transforms</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+ <div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;jQuery&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;jQuery&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;jQuery&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;jQuery&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;jQuery&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;jQuery&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;jQuery&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+ <li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;jQuery&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+ <div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;jQuery&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;jQuery&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+ <div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;jQuery&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;jQuery&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;jQuery&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;jQuery&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;jQuery&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;jQuery&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/html-css/">Looking for Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/html-css/"><img alt="HTML and CSS" class="media-circle" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/html-css/">beginner focused HTML and CSS lessons</a>, compiled into a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS, working through all common components.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/html-css/">View Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/follow_button.6a44a9d26983bbb5b04ae399f9e496fe.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/jquery.min.js(1).download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./jQuery - Learn to Code Advanced HTML &amp; CSS_files/widget_iframe.6a44a9d26983bbb5b04ae399f9e496fe.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

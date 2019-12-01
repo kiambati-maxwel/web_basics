@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://learn.shayhowe.com/advanced-html-css/preprocessors/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Learn how to use Haml and Sass, two of the most popular and powerful HTML and CSS preprocessors." name="description">
+<meta content="html css preprocessor haml sass scss compass mixins extends" name="keywords">
+<title>Preprocessors - Learn to Code Advanced HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/ga.js.download"></script><script src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/button.9a57558490548c2dde66afe19af6c010.js.download"></script></head>
+<body class="advanced-html-css advanced-html-css_preprocessors advanced-html-css_preprocessors_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/advanced-html-css/">
+<span>Learn to Code Advanced</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="performance-organization">
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/">
+<strong>Lesson 1</strong>
+Performance &amp; Organization
+</a>
+</li>
+<li class="detailed-css-positioning">
+<a href="https://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/">
+<strong>Lesson 2</strong>
+Detailed Positioning
+</a>
+</li>
+<li class="complex-selectors">
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/">
+<strong>Lesson 3</strong>
+Complex Selectors
+</a>
+</li>
+<li class="responsive-web-design">
+<a href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/">
+<strong>Lesson 4</strong>
+Responsive Web Design
+</a>
+</li>
+<li class="preprocessors">
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/">
+<strong>Lesson 5</strong>
+Preprocessors
+</a>
+</li>
+<li class="jquery">
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/">
+<strong>Lesson 6</strong>
+jQuery
+</a>
+</li>
+<li class="css-transforms">
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/">
+<strong>Lesson 7</strong>
+Transforms
+</a>
+</li>
+<li class="transitions-animations">
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/">
+<strong>Lesson 8</strong>
+Transitions &amp; Animations
+</a>
+</li>
+<li class="feature-support-polyfills">
+<a href="https://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/">
+<strong>Lesson 9</strong>
+Feature Support &amp; Polyfills
+</a>
+</li>
+<li class="semantics-accessibility">
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/">
+<strong>Lesson 10</strong>
+Extending Semantics &amp; Accessibility
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a> for a beginner’s guide front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 5</h6>
+<h1>Preprocessors</h1>
+</div>
+<script src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">5</span>
+</h4>
+<h6>HTML</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#haml">Haml</a>
+</li>
+</ul>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#scss-sass">SCSS <abbr title="and">&amp;</abbr> Sass</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#other-preprocessors">Other Preprocessors</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/preprocessors/" data-title="Preprocessors">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Preprocessors%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/preprocessors/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/preprocessors/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/preprocessors/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLFTYDTZ3JCWSIPKQJCY7DV53KC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/1564611006-Atlas_Carbon_Ad_4.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLFTYDTZ3JCWSIPKQJCY7DV53KC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">MongoDB Atlas is the only true global, multi-cloud database service. Try now!</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>In time writing HTML and CSS may feel a bit taxing, requiring a lot of the same tasks to be completed over and over again. Tasks such as closing tags in HTML or repetitively having to looking up hexadecimal color values in CSS.</p>
+<p>These different tasks, while commonly small, do add up to quite a bit of inefficiency. Fortunately these, and a handful of other inefficiencies, have been recognized and preprocessor solutions have risen to the challenge.</p>
+<p>A preprocessor is a program that takes one type of data and converts it to another type of data. In the case of HTML and CSS, some of the more popular preprocessor languages include <a href="http://haml.info/" rel="nofollow"><abbr title="HTML Abstraction Markup Language">Haml</abbr></a> and <a href="http://sass-lang.com/" rel="nofollow"><abbr title="Syntactically Awesome Stylesheets">Sass</abbr></a>. Haml is processed into HTML and Sass is processed into CSS.</p>
+<p>Upon setting out to solve some of the more common problems, Haml and Sass found many additional ways to empower HTML and CSS, not only by removing the inefficiencies but also in creating ways to make building websites easier and more logical. The popularity of preprocessors have also brought along different frameworks to support them, one of the more popular being Compass.</p>
+<h2 id="haml">Haml<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#haml">#haml</a></h2>
+<p>Haml, known as <a href="http://haml.info/docs/yardoc/file.REFERENCE.html" rel="nofollow">HTML abstraction markup language</a>, is a markup language with the single goal of providing the ability to write beautiful markup. Serving as its own markup language, code written in Haml is later processed to HTML. Haml promotes DRY and well structured markup, providing a pleasing experience for anyone having to write or read it.</p>
+<h3>Installation</h3>
+<p>Haml requires Ruby to be compiled to HTML, so the first step to using it is to ensure that Ruby is installed. Fortunately for those on Mac OS X Ruby comes preinstalled, and those on a Windows machine may visit <a href="http://rubyinstaller.org/" rel="nofollow">Windows Installer</a> for directions. Upon confirming Ruby is installed the <code>gem install haml</code> command needs to be run from the command line, using Terminal or the alike command line program, to install Haml.</p>
+<pre class="highlight shell"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre>gem install haml
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Files written in the Haml markup should be saved with the file extension of <code>.haml</code>. To then convert these files from Haml to HTML the <code>haml</code> command below needs to be run to compile each individual file.</p>
+<pre class="highlight shell"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre>haml index.haml index.html
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>In the example above, the file <code>index.haml</code> is converted to HTML and saved as <code>index.html</code> within the same directory. This command has to be run within the same directory the files reside in. Should the command be run outside this directory the path where the files reside need to be included within the command. At any time the command <code>haml --help</code> may be run to see a list of different available options.</p>
+<div class="note note-box">
+<h4>Watching a File or Directory</h4>
+<p>Unfortunately Haml doesn’t provide a way to watch a file, or directory, for changes without the use of another dependency.</p>
+<p>Inside of a Rails application a Haml dependency may be added in the Gemfile, thus automatically compiling Haml files to HTML upon any changes. There are a few desktop applications available for those not using Rails, one of the more popular being <a href="http://incident57.com/codekit/" rel="nofollow">CodeKit</a>.</p>
+<p>On top of Haml CodeKit also supports other preprocessors, which may also come in handy.</p>
+</div>
+<h3>Doctype</h3>
+<p>The first part to writing a document in Haml is knowing what type of <code>doctype</code> is to be used. When working with HTML documents, the general document type is going to be the HTML5 <code>doctype</code>. In Haml document types are identified with three exclamation points, <code>!!!</code> followed by any specifics if necessary.</p>
+<p>The default <code>doctype</code> in Haml is the HTML 1.0 Transitional document type so in order to make this the HTML5 <code>doctype</code> the number five has to be passed in after the exclamation points, <code>!!! 5</code>.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nn">!!! 5
+</span></pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Declaring Elements</h3>
+<p>One of the defining features of Haml is its syntax, and how to <a href="http://screencasts.org/episodes/introduction-to-haml" rel="nofollow">declare and nest</a> elements. HTML elements generally have opening and closing tags, however within Haml elements only have one tag, the opening. Elements are initialized with a percent sign, <code>%</code>, and then indented to identify nesting. Indentation with Haml can be accomplish with one or more spaces, however what is important is that the indentation remain consistent. Hard tabs or spaces cannot be mixes together, and the same number of tabs or spaces must be the same throughout an entire document.</p>
+<p>Removing the need for both opening and closing tags, as well as mandating the structure with indentation creates an easy to follow outline. At any given time the markup can be scanned and changed without struggle.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">%body</span>
+  <span class="nt">%header</span>
+    <span class="nt">%h1</span> Hello World
+  <span class="nt">%section</span>
+    <span class="nt">%p</span> Lorem ipsum dolor sit amet.
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;section&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Handling Text</h4>
+<p>Text within Haml can be placed on the same line as the declared element, or indented below the element. Text cannot be both on the same line as the declared element and nested below it, it has to be either or. The example from above could be rewritten as the following:</p>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">%body</span>
+  <span class="nt">%header</span>
+    <span class="nt">%h1</span>
+      Hello World
+  <span class="nt">%section</span>
+    <span class="nt">%p</span>
+      Lorem ipsum dolor sit amet.
+</pre></td></tr></tbody></table>
+                </code></pre>
+</div>
+<h3>Attributes</h3>
+<p>Attributes, as with elements, are declared a bit differently in Haml. Attributes are declared directly after the element in either <code>{}</code> or <code>()</code>, all depending if you wish to use Ruby or HTML syntax. Ruby style attributes will use the standard hash syntax inside of <code>{}</code>, while HTML style attributes will use standard HTML syntax inside of <code>()</code>.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">%img</span><span class="p">{</span><span class="ss">:src</span> <span class="o">=&gt;</span> <span class="s2">"shay.jpg"</span><span class="p">,</span> <span class="ss">:alt</span> <span class="o">=&gt;</span> <span class="s2">"Shay Howe"</span><span class="p">}</span>
+<span class="nt">%img</span><span class="p">{</span><span class="ss">src: </span><span class="s2">"shay.jpg"</span><span class="p">,</span> <span class="ss">alt: </span><span class="s2">"Shay Howe"</span><span class="p">}</span>
+<span class="nt">%img</span><span class="p">(</span><span class="na">src=</span><span class="s">"shay.jpg"</span> <span class="na">alt=</span><span class="s">"Shay Howe"</span>)
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"shay.jpg"</span> <span class="na">alt=</span><span class="s">"Shay Howe"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Classes <abbr title="and">&amp;</abbr> IDs</h4>
+<p>If you wish to, Class and ID attributes may be declared the same as all other attributes, however they may also be treated a bit differently. Rather than listing out the class or ID attribute name and value inside <code>{}</code> or <code>()</code> the value can be identified directly after the element. Using either a <code>.</code> for classes or a <code>#</code> for an ID the value can be added directly after the element.</p>
+<p>Additionally, attributes may be mixed and matched, chaining them together in the appropriate format. Classes are to be separated with a <code>.</code> and other attributes may be added using one of the previously outlined formats.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">%section</span><span class="nc">.feature</span>
+<span class="nt">%section</span><span class="nc">.feature.special</span>
+<span class="nt">%section</span><span class="nf">#hello</span>
+<span class="nt">%section</span><span class="nf">#hello</span><span class="nc">.feature</span><span class="p">(</span><span class="na">role=</span><span class="s">"region"</span>)
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+ <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"feature"</span><span class="nt">&gt;&lt;/section&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"feature special"</span><span class="nt">&gt;&lt;/section&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"hello"</span><span class="nt">&gt;&lt;/section&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"feature"</span> <span class="na">id=</span><span class="s">"hello"</span> <span class="na">role=</span><span class="s">"region"</span><span class="nt">&gt;&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Division Classes <abbr title="and">&amp;</abbr> IDs</h4>
+<p>In the event a class or ID is used on a <code>div</code> the <code>%div</code> may be omitted, and the class or ID value can be used outright. Again, classes are to be identified with a <code>.</code> and IDs are to be identified with a <code>#</code>.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.awesome</span>
+<span class="nc">.awesome.lesson</span>
+<span class="nf">#getting-started</span><span class="nc">.lesson</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"awesome"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"awesome lesson"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"lesson"</span> <span class="na">id=</span><span class="s">"getting-started"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Boolean Attributes</h4>
+<p>Boolean attributes are handled just as they would be within Ruby or HTML, all depending on the syntax being used.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">%input</span><span class="p">{</span><span class="ss">:type</span> <span class="o">=&gt;</span> <span class="s2">"checkbox"</span><span class="p">,</span> <span class="ss">:checked</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">}</span>
+<span class="nt">%input</span><span class="p">(</span><span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked=</span><span class="nv">true</span>)
+<span class="nt">%input</span><span class="p">(</span><span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span>)
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Escaping Text</h3>
+<p>One of the benefits of Haml is the ability to evaluate and run Ruby, however this isn’t always the desired action. Text, and lines of code, can be escaped by using a backslash, <code>\</code>, allowing the text to be rendered explicitly without being executed.</p>
+<p>In the example below, the first instance of <code>= @author</code> is executed Ruby, pulling the authors name from the application. The second instance, starting with the backslash, is escaped text, printing it as is, without execution.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.author</span>
+  <span class="p">=</span> <span class="vi">@author</span>
+  \= @author
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"author"</span><span class="nt">&gt;</span>
+  Shay Howe
+  = @author
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Text Escaping Alternatives</h4>
+<p>Occasionally escaping text doesn’t quite do the job and Ruby is needed to generate the desired output. One popular instance of this is when trying to include a period directly after a link, but not as part of the anchor text. Putting the period on a new line isn’t acceptable as it will be treated as an empty class value, causing a compiling error. Adding a backslash before the period will escape the character however it places a blank space between the last word and the period. Again, not producing the desired output.</p>
+<p>In these cases a Ruby helper comes in handy. In the example below, the helper is used to place a period directly after the last word but still outside of the anchor text.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">%p</span>
+  Shay is
+  <span class="p">=</span> <span class="n">succeed</span> <span class="s2">"."</span> <span class="k">do</span>
+    <span class="nt">%a</span><span class="p">{</span><span class="ss">:href</span> <span class="o">=&gt;</span> <span class="s2">"#"</span><span class="p">}</span> awesome
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Shay is <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>awesome<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Comments</h3>
+<p>As with elements and attributes, comments are handled a bit differently in Haml as well. Simply enough, code can be commented out with the use of a single forward slash, <code>/</code>. Individual lines may be commented out with the use of a forward slash at the beginning of the line, and blocks of code can be commented out by being nested underneath a forward slash.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">%div</span>
+  <span class="c">/ Commented line
+</span>  Actual line
+
+<span class="c">/
+</span>  <span class="c">%div</span>
+    <span class="c">Commented block</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="c">&lt;!-- Commented line --&gt;</span>
+  Actual line
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!--
+  &lt;div&gt;
+    Commented block
+  &lt;/div&gt;
+--&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Conditional Comments</h4>
+<p>Conditional comments are also handled differently in Haml. To create a conditional comment use square brackets, <code>[]</code>, around the condition. These square brackets need to be placed directly after the forward slash.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="c">/</span><span class="cs">[if lt IE 9]</span><span class="c">
+</span>  <span class="nt">%script</span><span class="p">{</span><span class="ss">:src</span>  <span class="o">=&gt;</span> <span class="s2">"html5shiv.js"</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="c">&lt;!--[if lt IE 9]&gt;
+  &lt;script src="html5shiv.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Silent Comments</h4>
+<p>Haml also provides the ability to create Haml specific comments, or silent comments. Silent comments differ from general HTML comments in that upon being complied any content within a silent comment is completely removed from the page, and is not displayed in the output. Silent comments are initialized with a dash then the number sign, <code>-#</code>. As with other comments, silent comments may be used to remove one line or multiple lines with the use of nesting.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">%div</span>
+  <span class="c">-# Removed line
+</span>  Actual line
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div&gt;</span>
+  Actual line
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Filters</h3>
+<p>Haml provides a handful of filters, allowing different types of input to be used inside of Haml. Filters are identified with a colon followed by the name of the filter, <code>:markdown</code> for example, with all of the content to be filtered nested underneath.</p>
+<h4>Common Filters</h4>
+<p>Below are some of the more common filters, with the more popular ones of the group being <code>:css</code> and <code>:javascript</code>.</p>
+<ul class="list-column-3 group">
+<li>
+<code>:cdata</code>
+</li>
+<li>
+<code>:coffee</code>
+</li>
+<li>
+<code>:css</code>
+</li>
+<li>
+<code>:erb</code>
+</li>
+<li>
+<code>:escaped</code>
+</li>
+<li>
+<code>:javascript</code>
+</li>
+<li>
+<code>:less</code>
+</li>
+<li>
+<code>:markdown</code>
+</li>
+<li>
+<code>:maruku</code>
+</li>
+<li>
+<code>:plain</code>
+</li>
+<li>
+<code>:preserve</code>
+</li>
+<li>
+<code>:ruby</code>
+</li>
+<li>
+<code>:sass</code>
+</li>
+<li>
+<code>:scss</code>
+</li>
+<li>
+<code>:textile</code>
+</li>
+</ul>
+<h4>Javascript Filter</h4>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nd">:javascript
+</span>  <span class="nx">$</span><span class="p">(</span><span class="s1">'button'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'p'</span><span class="p">).</span><span class="nx">hide</span><span class="p">(</span><span class="s1">'slow'</span><span class="p">);</span>
+  <span class="p">});</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;script&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">'button'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'p'</span><span class="p">).</span><span class="nx">hide</span><span class="p">(</span><span class="s1">'slow'</span><span class="p">);</span>
+  <span class="p">});</span> 
+<span class="nt">&lt;/script&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>CSS <abbr title="and">&amp;</abbr> Sass Filters</h4>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nd">:css
+</span>  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">960px</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="nd">:sass
+</span>  <span class="nd">.container</span>
+    <span class="nd">margin: 0 auto</span>
+    <span class="nd">width: 960px</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">&lt;style&gt;</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">960px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Ruby Interpolation</h3>
+<p>As previously mentioned Haml can evaluate Ruby, and there may occasionally be times where Ruby needs to be evaluated inside of plain text. In this event Ruby needs to be interpolated, accomplished by wrapping the necessary Ruby code inside <code></code>.</p>
+<p>Below is an example of Ruby being interpolated as part of a class name.</p>
+<h6>Haml</h6>
+<pre class="highlight haml"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">%div</span><span class="p">{</span><span class="ss">:class</span> <span class="o">=&gt;</span> <span class="s2">"student-</span><span class="si">#{</span><span class="vi">@student</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span>"}
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"student-shay"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h2 id="scss-sass">SCSS <abbr title="and">&amp;</abbr> Sass<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#scss-sass">#scss-sass</a></h2>
+<p>SCSS and Sass are preprocessing languages which are compiled to CSS, resembling Haml a bit in that they make writing code easier, and provide quite a bit of leverage in doing so. Individually SCSS and Sass come from the same origin however they are technical different syntaxes.</p>
+<p>Sass, <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html" rel="nofollow">Syntactically Awesome Stylesheets</a>, came first and is a strict indented syntax. SCSS, Sassy CSS, followed shortly after providing the same firing power of Sass but with a more flexible syntax, including the ability to write plain CSS.</p>
+<h3>Installation</h3>
+<p>As with Haml, SCSS and Sass are <a href="http://sassmeister.com/" rel="nofollow">compiled</a> using Ruby therefore Ruby needs to be installed to produce CSS files. Please follow the directions from before to install, or ensure Ruby is installed.</p>
+<p>Once Ruby is installed the <code>gem install sass</code> command needs to be run from the command line to install SCSS and Sass.</p>
+<pre class="highlight shell"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre>gem install sass
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Files written in SCSS or Sass need to have the <code>.scss</code> or <code>.sass</code> file extensions respectively. To convert either of these file types to <code>.css</code> the following <code>sass</code> command needs to be run.</p>
+<pre class="highlight shell"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre>sass styles.sass styles.css
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>The command above takes the <code>styles.sass</code> Sass file and compiles it to the <code>styles.css</code> file. As with Haml, these file names are paths and need to be executed respectively. The above command works when those files reside within the directory from which the command is run, should the files reside outside of the directory their path needs to be explicitly stated within the command.</p>
+<p>Should changes to a file be ongoing Sass can watch the file and recompile the CSS every time a change takes place. To watch a Sass file the following <code>sass</code> command may be run.</p>
+<pre class="highlight shell"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre>sass --watch styles.sass:styles.css
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Additionally, instead of compiling or watching individual files, Sass is capable of compiling and watching entire directories of files. For example, to watch an entire directory of Sass files and convert them to CSS the <code>sass</code> command below may be run.</p>
+<pre class="highlight shell"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre>sass --watch assets/sass:public/css
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Converting Files from SCSS to Sass <abbr title="and">&amp;</abbr> Vice Versa</h4>
+<p>On top of being able to convert SCSS and Sass files to CSS you can also convert files from SCSS to Sass and vice versa. To do so the <code>sass</code> commands below may be used to convert a SCSS file to Sass, and then a Sass file to SCSS respectively.</p>
+<pre class="highlight shell"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="c"># Convert Sass to SCSS</span>
+sass-convert styles.sass styles.scss
+
+<span class="c"># Convert SCSS to Sass</span>
+sass-convert styles.scss styles.sass
+</pre></td></tr></tbody></table>
+                </code></pre>
+</div>
+<h3>Syntax</h3>
+<p>As previously mentioned the primary difference between SCSS and Sass is their syntax, and their difference in severity. The syntax of SCSS isn’t much different than that of regular CSS. In fact, standard CSS will run inside of SCSS. Sass on the other hand is fairly strict, and any indenting or character errors will prohibit the styles from compiling. Sass omits all curly brackets, <code>{}</code>, and semicolons, <code>;</code>, relying on indentation and clear line breaks for formatting.</p>
+<h6>SCSS</h6>
+<pre class="highlight scss"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nc">.new</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="mh">#ff7b29</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+  <span class="nt">span</span> <span class="p">{</span>
+    <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nc">.new</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="mh">#ff7b29</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span>
+  <span class="nt">span</span>
+    <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nc">.new</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.new</span> <span class="nt">span</span> <span class="p">{</span>
+  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h4>Using SCSS vs. Sass</h4>
+<p>Deciding on whether to use SCSS or Sass boils down to personal preference, and is a decision to be made based on what is best for a specific team and project. There are pros and cons to each syntax, all of which are fair.</p>
+<p>Personally, I prefer the Sass syntax as it requires less characters and provides, I believe, a cleaner syntax. Sass will not allow straight CSS input as SCSS does, and will not put up with any composition errors. Sass has a bit more of a learning curve, however a learning curve I see well worth the ease of manageable styles.</p>
+<p>Moving forward the examples in this lesson will use Sass, however they may also all be accomplished with SCSS.</p>
+</div>
+<h3>Nesting</h3>
+<p>In the syntax example above you will notice how selectors may be nested inside of one another to create compound selectors. The nesting quickly outlines identifiable selectors, however it is important not to go overboard. Do <strong>not</strong> nest selectors for unapparent reasons or go overboard nesting one selector under the prior one. Using specific selectors without raising specificity is important.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.portfolio</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#9799a7</span>
+  <span class="nt">ul</span>
+    <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span>
+  <span class="nt">li</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nc">.portfolio</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#9799a7</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.portfolio</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.portfolio</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Nesting Properties</h4>
+<p>On top of nesting selectors it is also possible to nest properties. Some of the most popular uses of this may be seen with <code>font</code>, <code>margin</code>, <code>padding</code>, and <code>border</code> properties. As with the decision of SCSS versus Sass, this is very much a personal decision. Many feel that shorthand values are fine and breaking out values in this longer format is unnecessary. Ultimately your decision is up to personal preference.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">div</span>
+  <span class="nl">font</span><span class="p">:</span>
+    <span class="na">family</span><span class="p">:</span> <span class="n">Baskerville</span><span class="o">,</span> <span class="n">Palatino</span><span class="o">,</span> <span class="nb">serif</span>
+    <span class="na">style</span><span class="p">:</span> <span class="nb">italic</span>
+    <span class="na">weight</span><span class="p">:</span> <span class="nb">normal</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Baskerville</span><span class="p">,</span> <span class="n">Palatino</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Nested Media Queries</h4>
+<p>Individual media queries may also be nested inside of a selector, changing property values based off a media condition.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.container</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">960px</span>
+  <span class="k">@media</span> <span class="n">screen</span> <span class="nf">and</span> <span class="p">(</span><span class="n">max-width</span><span class="o">:</span> <span class="m">960px</span><span class="p">)</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">960px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">960px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Parent Selector</h3>
+<p>Sass provides a way to add styles to a previous selector with the use of the parent selector, implemented by using an ampersand, <code>&amp;</code>. Most commonly the parent selector is used in conjunction with a pseudo class, such as <code>:hover</code>, however it doesn’t have to be. Additionally the parent selector could be used to bind additional selectors to its parent, such as <code>&amp;.featured</code>.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">a</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="mh">#0087cc</span>
+  <span class="k">&amp;</span><span class="nd">:hover</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="mh">#ff7b29</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>
+<span class="p">}</span>
+ <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Parent Key Selector</h4>
+<p>The parent selector may also be used as the key selector, adding qualifying selectors to make compound selectors. There are an abundance of ways to use the parent selector as the key selector but perhaps one of the most beneficial is inside of feature detection.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nc">.btn</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nf">linear-gradient</span><span class="p">(</span><span class="mh">#fff</span><span class="o">,</span> <span class="mh">#9799a7</span><span class="p">)</span>
+  <span class="nc">.no-cssgradients</span> <span class="k">&amp;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="sx">url("gradient.png")</span> <span class="m">0</span> <span class="m">0</span> <span class="nb">repeat-x</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.btn</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#fff</span><span class="p">,</span> <span class="m">#9799a7</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.no-cssgradients</span> <span class="nc">.btn</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("gradient.png")</span> <span class="m">0</span> <span class="m">0</span> <span class="nb">repeat-x</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Comments</h3>
+<p>Sass handles comments very similar to that of Haml. The standard CSS syntax, <code>/* ... */</code>, for comments works as intended within Sass however there is also a syntax for silent comments to completely remove a comment or lines of code from being compiled.</p>
+<p>The syntax for silent comments is two forward slashes, <code>//</code>, and any content on that line or nested below it will be omitted from computation. Notice in the example below how the <code>// Omitted comment</code> line is not rendered in the compiled CSS.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="cm">/* Normal comment */
+</span><span class="nt">div</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="mh">#333</span>
+<span class="c1">// Omitted comment
+</span><span class="nt">strong</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="c">/* Normal comment */</span>
+<span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">strong</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Variables</h3>
+<p>Variables are one of the more sought after features of CSS that Sass provides. With Sass you can define variables and then reuse them as necessary.</p>
+<p>Variables are defined with a dollar sign, <code>$</code>, followed by the variable name. Between the variable name and value is a colon followed by an empty space, such as <code>$font-base: 1em</code>. As for the value of the variable, it may be a number, string, color, boolean, null, or a list of values separated by spaces or commas.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nv">$font-base</span><span class="p">:</span> <span class="m">1em</span>
+<span class="nv">$serif</span><span class="p">:</span> <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="s2">"Lucida Grande"</span><span class="o">,</span> <span class="nb">sans-serif</span>
+
+<span class="nt">p</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="nv">$font-base</span> <span class="nv">$serif</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">1em</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="s1">"Lucida Grande"</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Variable Interpolation</h4>
+<p>For the most part variables may be used anywhere inside of a Sass document. However, they may occasionally need to be interpolated using the <code></code> syntax. A few instances of where variables need to be interpolated include when being used in a class name, property name, or inside a string of plain text.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nv">$location</span><span class="p">:</span> <span class="n">chicago</span>
+<span class="nv">$offset</span><span class="p">:</span> <span class="nb">left</span>
+
+<span class="nc">.</span><span class="si">#{</span><span class="nv">$location</span><span class="si">}</span>
+  <span class="si">#{</span><span class="nv">$offset</span><span class="si">}</span><span class="p">:</span> <span class="m">20px</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.chicago</span> <span class="p">{</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Calculations</h3>
+<p>Sass also has the ability to do calculations in a variety of different manners. Calculations can handle most problems, such as addition, subtraction, division, multiplication, and rounding.</p>
+<p>Addition can be done by using the plus sign, <code>+</code>, and may be completed with or without units of measurement. When done with units, the unit tied to the first number in the equation is the unit that will be used in the computed value. For example, ten pixels plus one inch will equal 106 pixels. Subtraction is handled the same way as addition but with the minus sign, <code>-</code>, instead.</p>
+<p>Multiplication is completed with the asterisk sign, <code>*</code>, however only one of the numbers, if any, may include a unit of measurement. Using the percent sign, <code>%</code>, will return the remainder of the two numbers upon being divided, and as with multiplication, only allows one number, if any, to have a unit.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nl">width</span><span class="p">:</span> <span class="m">40px</span> <span class="o">+</span> <span class="m">6</span>
+<span class="nl">width</span><span class="p">:</span> <span class="m">40px</span> <span class="o">-</span> <span class="m">6</span>
+<span class="nl">width</span><span class="p">:</span> <span class="m">40px</span> <span class="o">*</span> <span class="m">6</span>
+<span class="nl">width</span><span class="p">:</span> <span class="m">40px</span> <span class="o">%</span> <span class="m">6</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">width</span><span class="o">:</span> <span class="nt">46px</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">34px</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">240px</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">4px</span><span class="o">;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Division</h4>
+<p>Division is a bit trickier in Sass as the forward slash, <code>/</code>, used to perform division is already used in some CSS property values. Generally speaking, division will take place when any part of the value uses a variable, if the value is wrapped in parentheses, or if the value is used as part of another equation.</p>
+<p>When using one unit of measurement in division the value will reside in that unit. When using two units of measurement, however, the resulting value will be unitless.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nl">width</span><span class="p">:</span> <span class="m">100px</span> <span class="o">/</span> <span class="m">10</span>
+<span class="nl">width</span><span class="p">:</span> <span class="p">(</span><span class="m">100px</span> <span class="o">/</span> <span class="m">10</span><span class="p">)</span>
+<span class="nl">width</span><span class="p">:</span> <span class="p">(</span><span class="m">100px</span> <span class="o">/</span> <span class="m">10px</span><span class="p">)</span>
+<span class="nv">$width</span><span class="p">:</span> <span class="m">100px</span>
+<span class="nl">width</span><span class="p">:</span> <span class="nv">$width</span> <span class="o">/</span> <span class="m">10</span>
+<span class="nl">width</span><span class="p">:</span> <span class="m">5px</span> <span class="o">-</span> <span class="m">100px</span> <span class="o">/</span> <span class="m">10</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">width</span><span class="o">:</span> <span class="nt">100px</span><span class="o">/</span><span class="nt">10</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">10px</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">10</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">10px</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">-5px</span><span class="o">;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Detailed Math</h4>
+<p>As one may expect, Sass is also capable of combining multiple math operations. Sass also recognizes which operations to execute first based on the use of parentheses.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nv">$grid</span><span class="p">:</span> <span class="m">16</span>
+<span class="nv">$column</span><span class="p">:</span> <span class="m">40px</span>
+<span class="nv">$gutter</span><span class="p">:</span> <span class="m">20px</span>
+<span class="nv">$container</span><span class="p">:</span> <span class="p">(</span><span class="nv">$column</span> <span class="o">*</span> <span class="nv">$grid</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="nv">$gutter</span> <span class="o">*</span> <span class="nv">$grid</span><span class="p">)</span>
+
+<span class="nl">width</span><span class="p">:</span> <span class="nv">$container</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">width</span><span class="o">:</span> <span class="nt">960px</span><span class="o">;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Number Functions</h4>
+<p>By default Sass includes a handful of <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html" title="SassScript Function" rel="nofollow">built in functions</a>, many of which are used to manipulate number values as wished.</p>
+<p>The <code>percentage()</code> function turns a value into a percentage. The <code>round()</code> function rounds a value to the closest whole number, defaulting to rounding up where necessary. The <code>ceil()</code> function rounds a value up to the closest whole number, and the <code>floor()</code> function rounds a value down to the closest whole number. Lastly, the <code>abs()</code> function finds the absolute value of a given number.</p>
+<ul class="list-column-3 group">
+<li>
+<code>percentage()</code>
+</li>
+<li>
+<code>round()</code>
+</li>
+<li>
+<code>ceil()</code>
+</li>
+<li>
+<code>floor()</code>
+</li>
+<li>
+<code>abs()</code>
+</li>
+</ul>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nl">width</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">(</span><span class="m">2</span><span class="mi">.5</span><span class="p">)</span>
+<span class="nl">width</span><span class="p">:</span> <span class="nf">round</span><span class="p">(</span><span class="m">2</span><span class="mi">.5px</span><span class="p">)</span>
+<span class="nl">width</span><span class="p">:</span> <span class="nf">ceil</span><span class="p">(</span><span class="m">2</span><span class="mi">.5px</span><span class="p">)</span>
+<span class="nl">width</span><span class="p">:</span> <span class="nf">floor</span><span class="p">(</span><span class="m">2</span><span class="mi">.5px</span><span class="p">)</span>
+<span class="nl">width</span><span class="p">:</span> <span class="nf">abs</span><span class="p">(</span><span class="m">-2</span><span class="mi">.5px</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">width</span><span class="o">:</span> <span class="nt">250</span><span class="o">%;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">3px</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">3px</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">2px</span><span class="o">;</span>
+<span class="nt">width</span><span class="o">:</span> <span class="nt">2</span><span class="nc">.5px</span><span class="o">;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Color</h3>
+<p>Sass provides quite a bit of assistance in working with colors, providing a handful of different features to alter and manipulate colors. One of the more popular color features in Sass is the ability to change a hexadecimal color, or variable, and convert it into an RGBa value.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nl">color</span><span class="p">:</span> <span class="nf">rgba</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="mi">.25</span><span class="p">)</span>
+
+<span class="nv">$green</span><span class="p">:</span> <span class="mh">#8ec63f</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">rgba</span><span class="p">(</span><span class="nv">$green</span><span class="o">,</span> <span class="mi">.25</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">color</span><span class="o">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">142</span><span class="o">,</span> <span class="nt">198</span><span class="o">,</span> <span class="nt">63</span><span class="o">,</span> <span class="nc">.25</span><span class="o">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Color Operations</h4>
+<p>On top of numbers, math may additionally be performed on colors using addition, subtraction, multiplication, and division. These computations are performed on the red, green, and blue components, changing them as intended.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nl">color</span><span class="p">:</span> <span class="mh">#8ec63f</span> <span class="o">+</span> <span class="mh">#666</span>
+<span class="nl">color</span><span class="p">:</span> <span class="mh">#8ec63f</span> <span class="o">*</span> <span class="m">2</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">142</span><span class="o">,</span> <span class="m">198</span><span class="o">,</span> <span class="m">63</span><span class="o">,</span> <span class="mi">.75</span><span class="p">)</span> <span class="o">/</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="m">255</span><span class="o">,</span> <span class="mi">.75</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">color</span><span class="o">:</span> <span class="nf">#f4ffa5</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#ffff7e</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">0</span><span class="o">,</span> <span class="nc">.75</span><span class="o">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Color Alterations</h4>
+<p>Using color operators to perform calculations is helpful but can be a bit challenging as well. In this case color alterations may be a better option. Color alterations provide the ability to inverse colors, find complementary colors, mix colors together, or find the grayscale value of a color.</p>
+<ul class="list-column-3 group">
+<li>
+<code>invert()</code>
+</li>
+<li>
+<code>complement()</code>
+</li>
+<li>
+<code>mix()</code>
+</li>
+<li>
+<code>grayscale()</code>
+</li>
+</ul>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nl">color</span><span class="p">:</span> <span class="nf">invert</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">complement</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">mix</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="mh">#fff</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">mix</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="mh">#fff</span><span class="o">,</span> <span class="m">10%</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">grayscale</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">color</span><span class="o">:</span> <span class="nf">#7139c0</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#773fc6</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#c6e29f</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#f3f9eb</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#838383</span><span class="o">;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>HSLa Color Alterations</h4>
+<p><a href="http://sassme.arc90.com/" rel="nofollow">HSLa color alterations</a> take things a step further, adding in even more alterations. Some of the more popular HSLa color alterations include <code>lighten()</code>, <code>darken()</code>, <code>saturate()</code>, and <code>desaturate()</code>.</p>
+<ul class="list-column-3 group">
+<li>
+<code>lighten()</code>
+</li>
+<li>
+<code>darken()</code>
+</li>
+<li>
+<code>saturate()</code>
+</li>
+<li>
+<code>desaturate()</code>
+</li>
+<li>
+<code>adjust-hue()</code>
+</li>
+<li>
+<code>fade-in()</code>
+</li>
+<li>
+<code>fade-out()</code>
+</li>
+</ul>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nl">color</span><span class="p">:</span> <span class="nf">lighten</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="m">50%</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="m">30%</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">saturate</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="m">75%</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">desaturate</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="m">25%</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">adjust-hue</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="m">30</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">adjust-hue</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="m">-30</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">fade-in</span><span class="p">(</span><span class="nf">rgba</span><span class="p">(</span><span class="m">142</span><span class="o">,</span> <span class="m">198</span><span class="o">,</span> <span class="m">63</span><span class="o">,</span> <span class="m">0</span><span class="p">)</span><span class="o">,</span> <span class="mi">.4</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">fade-out</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="mi">.4</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">color</span><span class="o">:</span> <span class="nt">white</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#3b5319</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#98ff06</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#89a75e</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#4ac63f</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#c6bb3f</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">142</span><span class="o">,</span> <span class="nt">198</span><span class="o">,</span> <span class="nt">63</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.4</span><span class="o">);</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">142</span><span class="o">,</span> <span class="nt">198</span><span class="o">,</span> <span class="nt">63</span><span class="o">,</span> <span class="nt">0</span><span class="nc">.6</span><span class="o">);</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Color Manipulation</h4>
+<p>Outside of altering colors Sass can also directly manipulate colors. Manipulating colors provides the most control over how to finely tune specific color properties. With this control also comes complexity, which is why color manipulations are a bit less common than color alterations.</p>
+<ul class="list-tall">
+<li>
+<code>change-color()</code>
+— Set any property of a color
+<br>
+<code>$color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha]</code>
+</li>
+<li>
+<code>adjust-color()</code>
+— Incrementally manipulate any property of a color
+<br>
+<code>$color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha]</code>
+</li>
+<li>
+<code>scale-color()</code>
+— Fluidly scale any percentage based on property of a color
+<br>
+<code>$color, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha]</code>
+</li>
+</ul>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nl">color</span><span class="p">:</span> <span class="nf">change-color</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="nv">$red</span><span class="o">:</span> <span class="m">60</span><span class="o">,</span> <span class="nv">$green</span><span class="o">:</span> <span class="m">255</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">adjust-color</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="nv">$hue</span><span class="o">:</span> <span class="m">300</span><span class="o">,</span> <span class="nv">$lightness</span><span class="o">:</span> <span class="m">50%</span><span class="p">)</span>
+<span class="nl">color</span><span class="p">:</span> <span class="nf">scale-color</span><span class="p">(</span><span class="mh">#8ec63f</span><span class="o">,</span> <span class="nv">$lightness</span><span class="o">:</span> <span class="m">25%</span><span class="o">,</span> <span class="nv">$alpha</span><span class="o">:</span> <span class="m">30%</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">color</span><span class="o">:</span> <span class="nf">#3cff3f</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nt">white</span><span class="o">;</span>
+<span class="nt">color</span><span class="o">:</span> <span class="nf">#aad46f</span><span class="o">;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Extends</h3>
+<p>Extends provide a way to easily share and reuse styles without having to explicitly repeat code or use additional classes, providing a perfect way to keep code modular. Both elements and class selectors may be used as an extend, and there is even a placeholder selector built just for extends.</p>
+<p>Extends are established by using the <code>@extend</code> rule followed by the selector to extend. Instead of duplicating the property and values, the original selector receives and additional selector, that of which is from the selector calling the extend.</p>
+<p>In all, this provides a way to quickly reuse code without driving up code weight. Additionally, extends parley nicely with OOCSS and SMACSS.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nc">.alert</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span>
+
+<span class="nc">.alert-error</span>
+  <span class="k">@extend</span> <span class="nc">.alert</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="mh">#f2dede</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="mh">#b94a48</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nc">.alert</span><span class="o">,</span>
+<span class="nc">.alert-error</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.alert-error</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#f2dede</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#b94a48</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Placeholder Selector Extend</h4>
+<p>To avoid building a bunch of unused classes purely for extends we can use what is known as a placeholder selector. The placeholder selector is initialized with a percentage sign, <code>%</code>, and is never directly compiled into CSS. Instead, it is used to attach selectors to when it is called with an extend. In the refined example below notice how the <code>.alert</code> selector never makes its way into the CSS.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nv">%alert</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span>
+
+<span class="nc">.alert-error</span>
+  <span class="k">@extend</span> <span class="nv">%alert</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="mh">#f2dede</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="mh">#b94a48</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nc">.alert-error</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.alert-error</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#f2dede</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#b94a48</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Element Selector Extend</h4>
+<p>As with classes, extends also work with standard element selectors too.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">h2</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="mh">#9c6</span>
+  <span class="nt">span</span>
+    <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span>
+
+<span class="nc">.sub-heading</span>
+  <span class="k">@extend</span> <span class="nt">h2</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nt">h2</span><span class="o">,</span> <span class="nc">.sub-heading</span>  <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#9c6</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="nt">span</span><span class="o">,</span> <span class="nc">.sub-heading</span> <span class="nt">span</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Mixins</h3>
+<p>Mixins provide a way to easily template properties and values, then share them amongst different selectors. Mixins differ from extends as mixins allow arguments to be passed in where extends are fixed values.</p>
+<p>Mixins are identified using the <code>@mixin</code> rule followed by any potential arguments, then any styles are outlined below the rule. To call a mixin from within a selector use the plus sign, <code>+</code>, followed by the name of the mixin and any desired argument values if needed.</p>
+<p>It is worth nothing that SCSS handles mixins a bit different. Instead of using a plus sign to call a mixin SCSS use an <code>@include</code> rule.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="k">@mixin</span> <span class="nf">btn</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="nv">$color-hover</span><span class="p">)</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span>
+  <span class="k">&amp;</span><span class="nd">:hover</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$color-hover</span>
+
+<span class="nc">.btn</span>
+  <span class="nd">+btn</span><span class="p">(</span><span class="nv">$color</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span> <span class="nv">$color-hover</span><span class="o">:</span> <span class="mh">#9799a7</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.btn</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.btn</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#9799a7</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Default Arguments</h4>
+<p>Using the same example from above we can also specify default argument values, which may be over written if wished.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="k">@mixin</span> <span class="nf">btn</span><span class="p">(</span><span class="nv">$color</span><span class="o">:</span> <span class="mh">#fff</span><span class="o">,</span> <span class="nv">$color-hover</span><span class="o">:</span> <span class="mh">#9799a7</span><span class="p">)</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$color</span>
+  <span class="k">&amp;</span><span class="nd">:hover</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nv">$color-hover</span>
+
+<span class="nc">.btn</span>
+  <span class="nd">+btn</span><span class="p">(</span><span class="nv">$color-hover</span><span class="o">:</span> <span class="mh">#9799a7</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nc">.btn</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.btn</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#9799a7</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Variable Arguments</h4>
+<p>When one or more values need to be passed to an argument the variable name may end with <code>...</code> inside of the mixin. In the example below with box shadows we can pass in comma separated values to the mixin.</p>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="k">@mixin</span> <span class="nf">box-shadow</span><span class="p">(</span><span class="nv">$shadow</span><span class="o">...</span><span class="p">)</span>
+  <span class="na">-webkit-box-shadow</span><span class="p">:</span> <span class="nv">$shadow</span>
+  <span class="na">-moz-box-shadow</span><span class="p">:</span> <span class="nv">$shadow</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nv">$shadow</span>
+
+<span class="nc">.shadows</span>
+  <span class="nd">+box-shadow</span><span class="p">(</span><span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="mh">#cecfd5</span><span class="o">,</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="mh">#cecfd5</span><span class="p">)</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nc">.shadows</span> <span class="p">{</span>
+  <span class="nl">-moz-box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#cecfd5</span><span class="p">,</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#cecfd5</span><span class="p">;</span>
+  <span class="nl">-webkit-box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#cecfd5</span><span class="p">,</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#cecfd5</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#cecfd5</span><span class="p">,</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#cecfd5</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Imports</h3>
+<p>One of nicest parts of Sass is its ability to import multiple <code>.scss</code> or <code>.sass</code> files and condense them into one single file. Condensing all of the files into one allows for multiple stylesheets to be used for better organization without the worry of numerous HTTP request.</p>
+<p>Instead of referencing all of the different stylesheets within an HTML document only reference the one Sass file importing all of the other stylesheets.</p>
+<p>In the following examples, all three files <code>_normalize.sass</code>, <code>_grid.sass</code>, and <code>_typography.sass</code> are all compiled into one file. In the event that the Sass file importing all the other files is named <code>styles.sass</code>, and it is compiled into <code>styles.css</code>, then only <code>styles.css</code> needs to be referenced within the HTML document.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="k">@import</span> <span class="s">"normalize"</span>
+<span class="k">@import</span> <span class="s">"grid",</span> <span class="s">"typography"</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled HTML</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="o">&lt;</span><span class="nt">link</span> <span class="nt">href</span><span class="o">=</span><span class="s1">"styles.css"</span> <span class="nt">rel</span><span class="o">=</span><span class="s1">"stylesheet"</span><span class="o">&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Loops <abbr title="and">&amp;</abbr> Conditionals</h3>
+<p>For a bit more intricate styling Sass supports different control directives. Its important to understand these directives are not intended for everyday styling but for creating detailed mixins and helpers. Many of these will look familiar as they are borrowed from other programming languages.</p>
+<h4>Operators</h4>
+<p>Some loops and conditionals will require operators to determine their behavior, of which can be broken down into relational and comparison operators. Relational operators looks at the relationship between two entities, while comparison operators determine equality or different between to entities.</p>
+<ul class="list-column-2 group">
+<li>
+<code>&lt;</code>
+<br>
+Less than
+</li>
+<li>
+<code>&gt;</code>
+<br>
+Greater than
+</li>
+<li>
+<code>==</code>
+<br>
+Equal to
+</li>
+<li>
+<code>&lt;=</code>
+<br>
+Less than or equal to
+</li>
+<li>
+<code>&gt;=</code>
+<br>
+Greather than or equal to
+</li>
+<li>
+<code>!=</code>
+<br>
+Not equal to
+</li>
+</ul>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="c1">// Relational Operators
+</span><span class="nt">6</span> <span class="o">&lt;</span> <span class="nt">10</span>   <span class="o">//</span> <span class="nt">true</span>
+<span class="nt">4</span> <span class="o">&lt;=</span> <span class="nt">60</span>  <span class="o">//</span> <span class="nt">true</span>
+<span class="nt">8</span> <span class="o">&gt;</span> <span class="nt">2</span>    <span class="o">//</span> <span class="nt">true</span>
+<span class="nt">10</span> <span class="o">&gt;=</span> <span class="nt">10</span> <span class="o">//</span> <span class="nt">true</span>
+
+<span class="c1">// Comparison Operators
+</span><span class="nn">#fff</span> <span class="o">==</span> <span class="nt">white</span>  <span class="o">//</span> <span class="nt">true</span>
+<span class="nt">10</span> <span class="o">+</span> <span class="nt">30</span> <span class="o">==</span> <span class="nt">40</span>  <span class="o">//</span> <span class="nt">true</span>
+<span class="nt">normal</span> <span class="o">!=</span> <span class="nt">bold</span> <span class="o">//</span> <span class="nt">true</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>If Function</h4>
+<p>The <code>@if</code> rule test an expressions then loads the styles beneath that expression should it return anything other than <code>false</code> or <code>null</code>. The initial <code>if</code> statement may be proceeded by several <code>else if</code> statements and one <code>else</code> statement. Once a statement is successful identified the styles directly tied to it will be applied.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="rouge-code"><pre><span class="nv">$shay</span><span class="p">:</span> <span class="n">awesome</span>
+
+<span class="nc">.shay</span>
+  <span class="k">@if</span> <span class="nv">$shay</span> <span class="o">==</span> <span class="n">awesome</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="mh">#ff7b29</span>
+  <span class="k">@else</span> <span class="n">if</span> <span class="nv">$shay</span> <span class="o">==</span> <span class="n">cool</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="mh">#0087cc</span>
+  <span class="k">@else</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="mh">#333</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nc">.shay</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span> 
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>For Loop</h4>
+<p>The <code>@for</code> rule outputs different sets of styles based off of a counter variable. There are two different forms available for <code>for</code> loops, those being <code>to</code> and <code>through</code>. The first, <code>@for $i from 1 to 3</code> for example, will output styles up to, but not including, <code>3</code>. The other form, <code>@for $i from 1 through 3</code>, will output styles up to, and including, <code>3</code>.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="k">@for</span> <span class="nv">$col</span> <span class="ow">from</span> <span class="m">1</span> <span class="ow">to</span> <span class="m">6</span>
+  <span class="nc">.col-</span><span class="si">#{</span><span class="nv">$col</span><span class="si">}</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">40px</span> <span class="o">*</span> <span class="nv">$col</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre></td><td class="rouge-code"><pre><span class="nc">.col-1</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col-2</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">80px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col-3</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">120px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col-4</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">160px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col-5</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Each Loop</h4>
+<p>Simply enough, the <code>@each</code> rule returns styles for each item in a list. List may include multiple comma separated items.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="k">@each</span> <span class="nv">$class</span> <span class="n">in</span> <span class="n">uxd</span><span class="o">,</span> <span class="n">rails</span><span class="o">,</span> <span class="n">html</span><span class="o">,</span> <span class="n">css</span>
+  <span class="nc">.</span><span class="si">#{</span><span class="nv">$class</span><span class="si">}</span><span class="nc">-logo</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="sx">url("/img/</span><span class="si">#{</span><span class="nv">$class</span><span class="si">}</span><span class="sx">.jpg")</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td><td class="rouge-code"><pre><span class="nc">.uxd-logo</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("/img/uxd.jpg")</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.rails-logo</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("/img/rails.jpg")</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.html-logo</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("/img/html.jpg")</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.css-logo</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url("/img/css.jpg")</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>While Loop</h4>
+<p>The <code>@while</code> rule repeatedly returns styles until the statement becomes false. The directive accepts a handful of different operators and the counter variable can be finely controlled allowing for precise looping.</p>
+<h6>Sass</h6>
+<pre class="highlight sass"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nv">$heading</span><span class="p">:</span> <span class="m">1</span>
+<span class="k">@while</span> <span class="nv">$heading</span> <span class="o">&lt;=</span> <span class="m">6</span>
+  <span class="nt">h</span><span class="si">#{</span><span class="nv">$heading</span><span class="si">}</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">2em</span> <span class="nf">-</span> <span class="p">(</span><span class="nv">$heading</span> <span class="o">*</span> <span class="mi">.25em</span><span class="p">)</span>
+  <span class="nv">$heading</span><span class="p">:</span> <span class="nv">$heading</span> <span class="o">+</span> <span class="m">1</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>Compiled CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td><td class="rouge-code"><pre><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.75em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h3</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.25em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h4</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h5</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">0.75em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h6</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">0.5em</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h2 id="other-preprocessors">Other Preprocessors<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#other-preprocessors">#other-preprocessors</a></h2>
+<p>Haml and Sass are far from the only preprocessing languages available, including JavaScript preprocessors as well. Some of the other popular preprocessors including <a href="http://jade-lang.com/" rel="nofollow">Jade</a>, <a href="http://slim-lang.com/" rel="nofollow">Slim</a>, <a href="http://lesscss.org/" rel="nofollow">LESS</a>, <a href="https://learnboost.github.com/stylus/" rel="nofollow">Stylus</a>, and <a href="http://coffeescript.org/" rel="nofollow">CoffeeScript</a>.</p>
+<p>In the interest of brevity Haml and Sass were the only preprocessors covered in this lesson. They were also chosen because they are built using Ruby and fit right into Ruby on Rails applications. They’ve also got tremendous community support.</p>
+<p>When it comes to choosing which, if any, preprocessor to use it is important to consider what is best for your team and project. Projects built in Node.js may likely better benefit from Jade and Stylus. The most important aspect to consider, though, is what your team is accustomed to using. Do your research for each project and make the most educated decision.</p>
+<h2>Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#undefined">#undefined</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="http://haml.info/" rel="nofollow">Haml</a>
+— HTML Abstraction Markup Language
+</li>
+<li>
+<a href="http://sass-lang.com/" rel="nofollow">Sass</a>
+— Syntactically Awesome Stylesheets
+</li>
+<li>
+<a href="http://haml.info/docs/yardoc/file.REFERENCE.html" rel="nofollow">Haml Documentation Reference</a>
+</li>
+<li>
+<a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html" rel="nofollow">Sass Documentation Reference</a>
+</li>
+<li>
+<a href="http://sassmeister.com/" rel="nofollow">Sass Playground</a>
+via SassMeister
+</li>
+<li>
+<a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html" rel="nofollow">SassScript Function</a>
+via Sass Documentation
+</li>
+<li>
+<a href="http://sassme.arc90.com/" rel="nofollow">HSLa Color Function Visualization</a>
+via SassMe
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/preprocessors/" data-title="Preprocessors">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Preprocessors%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/preprocessors/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/preprocessors/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/preprocessors/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/" rel="prev">
+<strong>Lesson 4</strong>
+<span>Responsive Web Design</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/" rel="next">
+<strong>Lesson 6</strong>
+<span>jQuery</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Preprocessors&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Preprocessors&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Preprocessors&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Preprocessors&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Preprocessors&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Preprocessors&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Preprocessors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Preprocessors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Preprocessors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+ </li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Preprocessors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Preprocessors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Preprocessors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+ <a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Preprocessors&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Preprocessors&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Preprocessors&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Preprocessors&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/html-css/">Looking for Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/html-css/"><img alt="HTML and CSS" class="media-circle" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/html-css/">beginner focused HTML and CSS lessons</a>, compiled into a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS, working through all common components.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/html-css/">View Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/follow_button.6a44a9d26983bbb5b04ae399f9e496fe.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Preprocessors - Learn to Code Advanced HTML &amp; CSS_files/widget_iframe.6a44a9d26983bbb5b04ae399f9e496fe.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

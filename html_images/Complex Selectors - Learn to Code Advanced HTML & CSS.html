@@ -1,0 +1,2107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://learn.shayhowe.com/advanced-html-css/complex-selectors/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Selectors are one of the most important parts of CSS, and this lessons discusses selectors, old and new, and how to best put them to use inside a website." name="description">
+<meta content="css3 selectors pseudo-classes pseudo-elements nth-child before after" name="keywords">
+<title>Complex Selectors - Learn to Code Advanced HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/ga.js.download"></script><script src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/button.9a57558490548c2dde66afe19af6c010.js.download"></script></head>
+<body class="advanced-html-css advanced-html-css_complex-selectors advanced-html-css_complex-selectors_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/advanced-html-css/">
+<span>Learn to Code Advanced</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="performance-organization">
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/">
+<strong>Lesson 1</strong>
+Performance &amp; Organization
+</a>
+</li>
+<li class="detailed-css-positioning">
+<a href="https://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/">
+<strong>Lesson 2</strong>
+Detailed Positioning
+</a>
+</li>
+<li class="complex-selectors">
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/">
+<strong>Lesson 3</strong>
+Complex Selectors
+</a>
+</li>
+<li class="responsive-web-design">
+<a href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/">
+<strong>Lesson 4</strong>
+Responsive Web Design
+</a>
+</li>
+<li class="preprocessors">
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/">
+<strong>Lesson 5</strong>
+Preprocessors
+</a>
+</li>
+<li class="jquery">
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/">
+<strong>Lesson 6</strong>
+jQuery
+</a>
+</li>
+<li class="css-transforms">
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/">
+<strong>Lesson 7</strong>
+Transforms
+</a>
+</li>
+<li class="transitions-animations">
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/">
+<strong>Lesson 8</strong>
+Transitions &amp; Animations
+</a>
+</li>
+<li class="feature-support-polyfills">
+<a href="https://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/">
+<strong>Lesson 9</strong>
+Feature Support &amp; Polyfills
+</a>
+</li>
+<li class="semantics-accessibility">
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/">
+<strong>Lesson 10</strong>
+Extending Semantics &amp; Accessibility
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a> for a beginner’s guide front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 3</h6>
+<h1>Complex Selectors</h1>
+</div>
+<script src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">3</span>
+</h4>
+<h6>CSS</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#common-selectors">Common Selectors</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#child-selectors">Child Selectors</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#sibling-selectors">Sibling Selectors</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#attribute-selectors">Attribute Selectors</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#pseudo-classes">Pseudo-classes</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#pseudo-elements">Pseudo-elements</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/complex-selectors/" data-title="Complex Selectors">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Complex%20Selectors%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/complex-selectors/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/complex-selectors/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/complex-selectors/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+ </nav>
+<div class="ad-spot group">
+<script async="" id="_carbonads_js" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLCABITZ3JCWSIPKQJCWAI55QKC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/1574283207-D2iQ_logo_Carbon_rev_1_.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLCABITZ3JCWSIPKQJCWAI55QKC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">Kommander: Delivering centralized governance</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>Selectors are one of, if not, the most important parts of CSS. They shape the cascade and determine how styles are to be applied to elements on a page.</p>
+<p>Up until recently the focus of CSS never really touched on selectors. Occasionally there would be incremental updates within the selectors specification, but never any real ground breaking improvements. Fortunately, more attention has been given to selectors as of late, taking a look at how to select different types of elements and elements in different states of use.</p>
+<p>CSS3 brought new selectors, opening a whole new world of opportunities and improvements to existing practices. Here we’ll discuss <a href="http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/" rel="nofollow">selectors</a>, old and new, and how to best put them to use.</p>
+<h2 id="common-selectors">Common Selectors<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#common-selectors">#common-selectors</a></h2>
+<p>Before diving too deep into some of the more complex selectors, and those offered within CSS3, let’s take a quick look at some of the more common selectors seen today. These selectors include the type, class, and ID selectors.</p>
+<p>The <strong>type</strong> selector identifies an element based on its type, specifically how that element is declared within HTML. The <strong>class</strong> selector identifies an element based on its class attribute value, which may be reused on multiple elements as necessary to help share popular styles. Lastly, the <strong>ID</strong> selector identifies an element based on its ID attribute value, which is unique and should only be used once per page.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">h1</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nc">.tagline</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nf">#intro</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"intro"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>...<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"tagline"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Common Selectors Overview</h4>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>Example</th>
+<th>Classification</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="Example"><code>h1</code></td>
+<td data-title="Classification">Type Selector</td>
+<td data-title="Explanation">Selects an element by its type</td>
+</tr>
+<tr>
+<td data-title="Example"><code>.tagline</code></td>
+<td data-title="Classification">Class Selector</td>
+<td data-title="Explanation">Selects an element by the class attribute value, which may be reused multiple times per page</td>
+</tr>
+<tr>
+<td data-title="Example"><code>#intro</code></td>
+<td data-title="Classification">ID Selector</td>
+<td data-title="Explanation">Selects an element by the ID attribute value, which is unique and to only be used once per page</td>
+</tr>
+</tbody>
+</table>
+<h2 id="child-selectors">Child Selectors<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#child-selectors">#child-selectors</a></h2>
+<p>Child selectors provide a way to select elements that fall within one another, thus making them children of their parent element. These selections can be made two different ways, using either descendant or direct child selectors.</p>
+<h3>Descendant Selector</h3>
+<p>The most common child selector is the descendant selector, which matches every element that follows an identified ancestor. The descendant element does not have to come directly after the ancestor element inside the document tree, such as a parent-child relationship, but may fall anywhere within the ancestor element. Descendant selectors are created by spacing apart elements within a selector, creating a new level of hierarchy for each element list.</p>
+<p>The <code>article h2</code> selector is a descendant selector, only selecting <code>h2</code> elements that fall inside of an <code>article</code> element. Notice, no matter where a <code>h2</code> element lives, so long as it is within the <code>article</code> element, it will always be selected. Additionally, any <code>h2</code> element outside of the <code>article</code> element is not selected.</p>
+<p>Below, the headings on lines 3 and 5 are selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">article</span> <span class="nt">h2</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h2&gt;</span>...<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>This heading will be selected<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>This heading will be selected<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Direct Child Selector</h3>
+<p>Sometimes descendant selectors go a bit overboard, selecting more than hoped. At times only the direct children of a parent element need to be selected, not every instance of the element nested deeply inside of an ancestor. In this event the direct child selector may be used by placing a greater than sign, <code>&gt;</code>, between the parent element and child element within the selector.</p>
+<p>For example, <code>article &gt; p</code> is a direct child selector only identifying <code>p</code> elements that fall directly within an <code>article</code> element. Any <code>p</code> element placed outside of an <code>article</code> element, or nested inside of another element other than the <code>article</code> element, will not be selected.</p>
+<p>Below, the paragraph on line 3 is the only direct child of its parent article, thus selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">article</span> <span class="o">&gt;</span> <span class="nt">p</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>Child Selectors Overview</h4>
+<table class="tabular-data">
+<thead>
+<tr>
+<th width="20%">Example</th>
+<th>Classification</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="Example"><code>article h2</code></td>
+<td data-title="Classification">Descendant Selector</td>
+<td data-title="Explanation">Selects an element that resides anywhere within an identified ancestor element</td>
+</tr>
+<tr>
+<td data-title="Example"><code>article &gt; p</code></td>
+<td data-title="Classification">Direct Child Selector</td>
+<td data-title="Explanation">Selects an element that resides immediately inside an identified parent element</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sibling-selectors">Sibling Selectors<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#sibling-selectors">#sibling-selectors</a></h2>
+<p>Knowing how to <a href="https://css-tricks.com/child-and-sibling-selectors/" rel="nofollow">select children</a> of an element is largely beneficial, and quite commonly seen. However sibling elements, those elements that share a common parent, may also need to be selected. These sibling selections can be made by way of the general sibling and adjacent sibling selectors.</p>
+<h3>General Sibling Selector</h3>
+<p>The general sibling selector allow elements to be selected based on their sibling elements, those which share the same common parent. They are created by using the tilde character, <code>~</code>, between two elements within a selector. The first element identifies what the second element shall be a sibling with, and both of which must share the same parent.</p>
+<p>The <code>h2 ~ p</code> selector is a general sibling selector that looks for <code>p</code> elements that follow, and share the same parent, of any <code>h2</code> elements. In order for a <code>p</code> element to be selected it must come after any <code>h2</code> element.</p>
+<p>The paragraphs on lines 5 and 9 are selected as they come after the heading within the document tree and share the same parent as their sibling heading.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">h2</span> <span class="o">~</span> <span class="nt">p</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+ <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;section&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>...<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Adjacent Sibling Selector</h3>
+<p>Occasionally a little more control may be desired, including the ability to select a sibling element that directly follows after another sibling element, which is where the adjacent sibling element comes in. The adjacent sibling selector will only select sibling elements directly following after another sibling element. Instead of using the tilde character, as with general sibling selectors, the adjacent sibling selector uses a plus character, <code>+</code>, between the two elements within a selector. Again, the first element identifies what the second element shall directly follow after and be a sibling with, and both of which must share the same parent.</p>
+<p>Looking at the adjacent sibling selector <code>h2 + p</code> only <code>p</code> elements directly following after <code>h2</code> elements will be selected. Both of which must also share the same parent element.</p>
+<p>The paragraph on line 5 is selected as it directly follows after its sibling heading along with sharing the same parent element, thus selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">h2</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;section&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>...<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h3>Sibling Selectors Example</h3>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggle"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggle"</span><span class="nt">&gt;</span><span class="ni">&amp;#9776;</span><span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;nav&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Services<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre></td><td class="rouge-code"><pre><span class="nt">input</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">label</span><span class="o">,</span>
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">label</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span> <span class="m">9px</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">.15s</span> <span class="n">ease</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">label</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="nd">:checked</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.15</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#9799a7</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">nav</span> <span class="p">{</span>
+  <span class="nl">max-height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">.15s</span> <span class="n">ease</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nt">nav</span> <span class="p">{</span>
+  <span class="nl">max-height</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">8px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">li</span><span class="nd">:last-child</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span> <span class="m">12px</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/zCkBv(1).html" scrolling="no" frameborder="0" height="276" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_zCkBv"></iframe></div>
+</div>
+</div>
+<h4>Sibling Selectors Overview</h4>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>Example</th>
+<th>Classification</th>
+<th>Explanation</th>
+ </tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="Example"><code>h2 ~ p</code></td>
+<td data-title="Classification">General Sibling Selector</td>
+<td data-title="Explanation">Selects an element that follows anywhere after the prior element, in which both elements share the same parent</td>
+</tr>
+<tr>
+<td data-title="Example"><code>h2 + p</code></td>
+<td data-title="Classification">Adjacent Sibling Selector</td>
+<td data-title="Explanation">Selects an element that follows directly after the prior element, in which both elements share the same parent</td>
+</tr>
+</tbody>
+</table>
+<h2 id="attribute-selectors">Attribute Selectors<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#attribute-selectors">#attribute-selectors</a></h2>
+<p>Some of the common selectors looked at early may also be defined as attribute selectors, in which an element is selected based upon its class or ID value. These class and ID attribute selectors are widely used and extremely powerful but only the beginning. Other <a href="http://www.css3.info/preview/attribute-selectors/" rel="nofollow">attribute selectors</a> have emerged over the years, specifically taking a large leap forward with CSS3. Now elements can be selected based on whether an attribute is present and what its value may contain.</p>
+<h3>Attribute Present Selector</h3>
+<p>The first attribute selector identifies an element based on whether it includes an attribute or not, regardless of any actual value. To select an element based on if an attribute is present or not, include the attribute name in square brackets, <code>[]</code>, within a selector. The square brackets may or may not follow any qualifier such as an element type or class, all depending on the level of specificity desired.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">target</span><span class="o">]</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Attribute Equals Selector</h3>
+<p>To identify an element with a specific, and exact matching, attribute value the same selector from before may be used, however this time inside of the square brackets following the attribute name, include the desired matching value. Inside the square brackets should be the attribute name followed by an equals sign, <code>=</code>, quotations, <code>""</code>, and inside of the quotations should be the desired matching attribute value.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">=</span><span class="s1">"http://google.com/"</span><span class="o">]</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://google.com/"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Attribute Contains Selector</h3>
+<p>When looking to find an element based on part of an attribute value, but not an exact match, the asterisk character, <code>*</code>, may be used within the square brackets of a selector. The asterisk should fall just after the attribute name, directly before the equals sign. Doing so denotes that the value to follow only needs to appear, or be contained, within the attribute value.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s1">"login"</span><span class="o">]</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/login.php"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Attribute Begins With Selector</h3>
+<p>In addition to selecting an element based on if an attribute value contains a stated value, it is also possible to select an element based on what an attribute value begins with. Using a circumflex accent, <code>^</code>, within the square brackets of a selector between the attribute name and equals sign denotes that the attribute value should begin with the stated value.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s1">"https://"</span><span class="o">]</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://chase.com/"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Attribute Ends With Selector</h3>
+<p>Opposite of the begins with selector, there is also an ends with attribute selector. Instead of using the circumflex accent, the ends with attribute selector uses the dollar sign, <code>$</code>, within the square brackets of a selector between the attribute name and equals sign. Using the dollar sign denotes that the attribute value needs to end with the stated value.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">".pdf"</span><span class="o">]</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/docs/menu.pdf"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Attribute Spaced Selector</h3>
+<p>At times attribute values may be spaced apart, in which only one of the words needs to be matched in order to make a selection. In this event using the tilde character, <code>~</code>, within the square brackets of a selector between the attribute name and equals sign denotes an attribute value that should be whitespace-separated, with one word matching the exact stated value.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">rel</span><span class="o">~=</span><span class="s1">"tag"</span><span class="o">]</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">rel=</span><span class="s">"tag nofollow"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Attribute Hyphenated Selector</h3>
+<p>When an attribute value is hyphen-separated, rather than whitespace-separated, the vertical line character, <code>|</code>, may be used within the square brackets of a selector between the attribute name and equals sign. The vertical line denotes that the attribute value may be hyphen-separated however the hyphen-separated words must begin with the stated value.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="o">[</span><span class="nt">lang</span><span class="o">|=</span><span class="s1">"en"</span><span class="o">]</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">lang=</span><span class="s">"en-US"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h3>Attribute Selectors Example</h3>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#.pdf"</span><span class="nt">&gt;</span>PDF Document<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#.doc"</span><span class="nt">&gt;</span>Word Document<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#.jpg"</span><span class="nt">&gt;</span>Image File<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#.mp3"</span><span class="nt">&gt;</span>Audio File<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#.mp4"</span><span class="nt">&gt;</span>Video File<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre></td><td class="rouge-code"><pre><span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">background-position</span><span class="p">:</span> <span class="m">0</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="nl">background-repeat</span><span class="p">:</span> <span class="nb">no-repeat</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">".pdf"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("images/pdf.png")</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">".doc"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("images/doc.png")</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">".jpg"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("images/image.png")</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">".mp3"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("images/audio.png")</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="err">$</span><span class="o">=</span><span class="s1">".mp4"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("images/video.png")</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/FrCHn(1).html" scrolling="no" frameborder="0" height="204" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_FrCHn"></iframe></div>
+</div>
+</div>
+<h4>Attribute Selectors Overview</h4>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>Example</th>
+<th>Classification</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="Example"><code>a[target]</code></td>
+<td data-title="Classification">Attribute Present Selector</td>
+<td data-title="Explanation">Selects an element if the given attribute is present</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a[href="http://google.com/"]</code></td>
+<td data-title="Classification">Attribute Equals Selector</td>
+<td data-title="Explanation">Selects an element if the given attribute value exactly matches the value stated</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a[href*="login"]</code></td>
+<td data-title="Classification">Attribute Contains Selector</td>
+<td data-title="Explanation">Selects an element if the given attribute value contains at least once instance of the value stated</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a[href^="https://"]</code></td>
+<td data-title="Classification">Attribute Begins With Selector</td>
+<td data-title="Explanation">Selects an element if the given attribute value begins with the value stated</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a[href$=".pdf"]</code></td>
+<td data-title="Classification">Attribute Ends With Selector</td>
+<td data-title="Explanation">Selects an element if the given attribute value ends with the value stated</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a[rel~="tag"]</code></td>
+<td data-title="Classification">Attribute Spaced Selector</td>
+<td data-title="Explanation">Selects an element if the given attribute value is whitespace-separated with one word being exactly as stated</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a[lang|="en"]</code></td>
+<td data-title="Classification">Attribute Hyphenated Selector</td>
+<td data-title="Explanation">Selects an element if the given attribute value is hyphen-separated and begins with the word stated</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pseudo-classes">Pseudo-classes<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#pseudo-classes">#pseudo-classes</a></h2>
+<p><a href="http://coding.smashingmagazine.com/2011/03/30/how-to-use-css3-pseudo-classes/" rel="nofollow">Pseudo-classes</a> are similar to regular classes in HTML however they are not directly stated within the markup, instead they are dynamically populated as a result of users’ actions or the document structure. The most common pseudo-class, and one you’ve likely seen before, is <code>:hover</code>. Notice how this pseudo-class begins with the colon character, <code>:</code>, as will all other pseudo-classes.</p>
+<h3>Link Pseudo-classes</h3>
+<p>Some of the more basic pseudo-classes include two revolving around links specifically. The <code>:link</code> and <code>:visited</code> pseudo-classes define if a link has or hasn’t been visited. To style an anchor which has not been visited the <code>:link</code> pseudo-class comes into play, where the <code>:visited</code> pseudo-class styles links that a user has already visited based on their browsing history.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>User Action Pseudo-classes</h3>
+<p>Based on a users’ actions different pseudo-classes may be dynamically applied to an element, of which include the <code>:hover</code>, <code>:active</code>, and <code>:focus</code> pseudo-classes. The <code>:hover</code> pseudo-class is applied to an element when a user moves their cursor over the element, most commonly used with anchor elements. The <code>:active</code> pseudo-class is applied to an element when a user engages an element, such as clicking on an element. Lastly, the <code>:focus</code> pseudo-class is applied to an element when a user has made an element the focus point of the page, often by using the keyboard to tab from one element to another.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">a</span><span class="nd">:focus</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>User Interface State Pseudo-classes</h3>
+<p>As with the link pseudo-classes there are also some pseudo-classes generated around the user interface state of elements, particularly within form elements. These user interface element state pseudo-classes include <code>:enabled</code>, <code>:disabled</code>, <code>:checked</code>, and <code>:indeterminate</code>.</p>
+<p>The <code>:enabled</code> pseudo-class selects an input that is in the default state of enabled and available for use, where the <code>:disabled</code> pseudo-class selects an input that has the <code>disabled</code> attribute tied to it. Many browsers by default will fade out disabled inputs to inform users that the input is not available for interaction, however those styles may be adjusted as wished with the <code>:disabled</code> pseudo-class.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">input</span><span class="nd">:enabled</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">input</span><span class="nd">:disabled</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>The last two user interface element state pseudo-classes of <code>:checked</code> and <code>:indeterminate</code> revolve around checkbox and radio button input elements. The <code>:checked</code> pseudo-class selects checkboxes or radio buttons that are, as you may expect, checked. When a checkbox or radio button has neither been selected nor unselected it lives in an indeterminate state, from which the <code>:indeterminate</code> pseudo-class can be used to target these elements.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">input</span><span class="nd">:checked</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">input</span><span class="nd">:indeterminate</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Structural <abbr title="and">&amp;</abbr> Position Pseudo-classes</h3>
+<p>A handful of pseudo-classes are structural and position based, in which they are determined based off where elements reside in the document tree. These structural and position based pseudo-classes come in a few different shapes and sizes, each of which provides their own unique function. Some pseudo-classes have been around longer than others, however CSS3 brought way of an entire new set of pseudo-classes to supplement the existing ones.</p>
+<h4>:first-child, :last-child, <abbr title="and">&amp;</abbr> :only-child</h4>
+<p>The first structural and position based pseudo-classes one is likely to come across are the <code>:first-child</code>, <code>:last-child</code>, and <code>:only-child</code> pseudo-classes. The <code>:first-child</code> pseudo-class will select an element if it’s the first child within its parent, while the <code>:last-child</code> pseudo-class will select an element if it’s the last element within its parent. These pseudo-classes are prefect for selecting the first or last items in a list and so forth. Additionally, the <code>:only-child</code> will select an element if it is the only element within a parent. Alternately, the <code>:only-child</code> pseudo-class could be written as <code>:first-child:last-child</code>, however <code>:only-child</code> holds a lower specificity.</p>
+<p>Here the selector <code>li:first-child</code> identifies the first list item within a list, while the selector <code>li:last-child</code> identifies the last list item within a list, thus lines 2 and 10 are selected. The selector <code>div:only-child</code> is looking for a division which is the single child of a parent element, without any other other siblings. In this case line 4 is selected as it is the only division within the specific list item.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">li</span><span class="nd">:first-child</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">li</span><span class="nd">:last-child</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">div</span><span class="nd">:only-child</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;div&gt;</span>This div will be selected<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;div&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>:first-of-type, :last-of-type, <abbr title="and">&amp;</abbr> :only-of-type</h4>
+<p>Finding the first, last, and only children of a parent is pretty helpful, and often all that is needed. However sometimes you only want to select the first, last, or only child of a specific type of element. For example, should you only want to select the first or last paragraph within an article, or perhaps the only image within an article. Fortunately this is where the <code>:first-of-type</code>, <code>:last-of-type</code>, and <code>:only-of-type</code> pseudo-selectors come into place.</p>
+<p>The <code>:first-of-type</code> pseudo-class will select the first element of its type within a parent, while the <code>:last-of-type</code> pseudo-class will select the last element of its type within a parent. The <code>:only-of-type</code> pseudo-class will select an element if it is the only of its type within a parent.</p>
+<p>In the example below the <code>p:first-of-type</code> and <code>p:last-of-type</code> pseudo-classes select the first and last paragraphs within the article respectively, regardless if they are actually the first or last children within the article. Lines 3 and 6 are selected, reflecting these selectors. The <code>img:only-of-type</code> selector identifies the image on line 5 as it is the only image to appear within the article, thus also selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">p</span><span class="nd">:first-of-type</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">p</span><span class="nd">:last-of-type</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nt">img</span><span class="nd">:only-of-type</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>...<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"#"</span><span class="nt">&gt;</span><span class="c">&lt;!-- This image will be selected --&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h6&gt;</span>...<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Lastly there are a few structural and position based pseudo-classes that select elements based on a number or an algebraic expression. These pseudo-classes include <code>:nth-child(n)</code>, <code>:nth-last-child(n)</code>, <code>:nth-of-type(n)</code>, and <code>:nth-last-of-type(n)</code>. All of these unique pseudo-classes are prefixed with <code>nth</code> and accept a number or expression inside of the parenthesis, indicated by the character <code>n</code> argument.</p>
+<p>The number or expression that falls within the parenthesis determines exactly what element, or elements, are to be selected. Using a number outright will count individual elements from the beginning or end of the document tree and then select one element, while using an expression will count numerous elements from the beginning or end of the document tree and select them in groups or multiples.</p>
+<div class="note note-box">
+<h4>Using Pseudo-class Numbers <abbr title="and">&amp;</abbr> Expressions</h4>
+<p>As mentioned, using numbers outright within a pseudo-class will count from the beginning, or end, of the document tree and select one element accordingly. For example, the <code>li:nth-child(4)</code> selector will select the fourth list item within a list. Counting begins with the first list item and increases by one for each list item, until finally locating and selecting the fourth item. When using a number outright it must be a positive number.</p>
+<p><a href="http://reference.sitepoint.com/css/understandingnthchildexpressions" rel="nofollow">Expressions for pseudo-classes</a> fall in the format of <code><em>a</em>n</code>, <code><em>a</em>n+<em>b</em></code>, <code><em>a</em>n-<em>b</em></code>, <code>n+<em>b</em></code>, <code><em>-</em>n+<em>b</em></code>, and <code><em>-a</em>n+<em>b</em></code>. The same expression may be translated and read as <code>(a×n)±b</code>. The <code>a</code> variable stands for the multiplier in which elements will be counted in while the <code>b</code> variable stands for where the counting will begin or take place.</p>
+<p>For example, the <code>li:nth-child(3n)</code> selector will identify every third list item within a list. Using the expression this equates to <code>3×0</code>, <code>3×1</code>, <code>3×2</code>, and so forth. As you can see the results of this expression lead to the third, sixth, and every element a multiple of three being selected.</p>
+<p>Additionally, the <code>odd</code> and <code>even</code> keyword values may be used. As expected, these will select odd or even elements respectively. Should keyword values not be appealing the expression of <code>2n+1</code> would select all odd elements while the expression of <code>2n</code> would select all even elements.</p>
+<p>Using the <code>li:nth-child(4n+7)</code> selector will identify every fourth list item starting with the seventh list item. Again, using the expression this equates to <code>(4×0)+7</code>, <code>(4×1)+7</code>, <code>(4×2)+7</code>, and so forth. The results of this expression leading to the seventh, eleventh, fifteenth, and every element that is a multiple of four here on out being selected.</p>
+<p>Using the <code>n</code> argument without being prefixed by a number results in the <code>a</code> variable being interpreted as <code>1</code>. With the <code>li:nth-child(n+5)</code> selector every list item will be selected starting with the fifth list item, leaving the first four list items unselected. Within the expression this breaks down as <code>(1×0)+5</code>, <code>(1×1)+5</code>, <code>(1×2)+5</code>, and so forth.</p>
+<p>To make things a bit more complicated negative numbers may also be used. For example, the <code>li:nth-child(6n-4)</code> selector will start counting every sixth list item starting at negative four, selecting the second, eighth, and fourteenth list items and so forth. The same selector, <code>li:nth-child(6n-4)</code>, could also be written as <code>li:nth-child(6n+2)</code>, without the use of a negative <code>b</code> variable.</p>
+<p>A negative <code>a</code> variable, or a negative <code>n</code> argument, must be followed by a positive <code>b</code> variable. When preceded by a negative <code>a</code> variable or negative <code>n</code> argument the <code>b</code> variable identifies how high the counting will reach. For example, the <code>li:nth-child(-3n+12)</code> selector will select every third list item within the first twelve list items. The selector <code>li:nth-child(-n+9)</code> will select the first nine list items within a list, as the <code>n</code> argument, without any stated <code>a</code> variable, is defaulted to <code>-1</code>.</p>
+</div>
+<h4>:nth-child(n) <abbr title="and">&amp;</abbr> :nth-last-child(n)</h4>
+<p>With a general understanding of how the pseudo-class numbers and expressions work let’s take a look at the actual pseudo-classes in which these numbers and expressions may be used, the first of which being the <code>:nth-child(n)</code> and <code>:nth-last-child(n)</code> pseudo-classes. These pseudo-classes work a bit like the <code>:first-child</code> and <code>:last-child</code> pseudo-classes in that they look, and count, all of the elements within a parent and only select the element specifically identified. The <code>:nth-child(n)</code> works from the beginning of the document tree while the <code>:nth-last-child(n)</code> works from the end of the document tree.</p>
+<p>Using the <code>:nth-child(n)</code> pseudo-class, let’s look at the <code>li:nth-child(3n)</code> selector. The selector here will identify every third list item, thus lines 4 and 7 are selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">3n</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Using a different expression within the <code>:nth-child(n)</code> pseudo-class will yield a different selection. The <code>li:nth-child(2n+3)</code> selector, for example, will identify every second list item starting with the third and then onward. As a result, the list items lines 4 and 6 are selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">2n</span><span class="o">+</span><span class="nt">3</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Changing the expression again, this time with a negative value, yields new selection. Here the <code>li:nth-child(-n+4)</code> selector is identifying the top four list items, leaving the rest of the list items unselected, thus lines 2 through 5 are selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">-n</span><span class="o">+</span><span class="nt">4</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Adding a negative integer before the <code>n</code> argument changes the selection again. Here the <code>li:nth-child(-2n+5)</code> selector identifies every second list item within the first five list items starting with the first list item, thus the list items on lines 2, 4, and 6 are selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">-2n</span><span class="o">+</span><span class="nt">5</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Changing from the <code>:nth-child(n)</code> pseudo-class to the <code>:nth-last-child(n)</code> pseudo-class switches the direction of counting, with counting starting from the end of the document tree using the <code>:nth-last-child(n)</code> pseudo-class. The <code>li:nth-last-child(3n+2)</code> selector, for example, will identify every third list item starting from the second to last item in a list, moving towards the beginning of the list. Here the list items on lines 3 and 6 are selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">li</span><span class="nd">:nth-last-child</span><span class="o">(</span><span class="nt">3n</span><span class="o">+</span><span class="nt">2</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>This list item will be selected<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h4>:nth-of-type(n) <abbr title="and">&amp;</abbr> :nth-last-of-type(n)</h4>
+<p>The <code>:nth-of-type(n)</code> and <code>:nth-last-of-type(n)</code> pseudo-classes are very similar to that of the <code>:nth-child(n)</code> and <code>:nth-last-child(n)</code> pseudo-classes, however instead of counting every element within a parent the <code>:nth-of-type(n)</code> and <code>:nth-last-of-type(n)</code> pseudo-classes only count elements of their own type. For example, when counting paragraphs within an article, the <code>:nth-of-type(n)</code> and <code>:nth-last-of-type(n)</code> pseudo-classes will skip any headings, divisions, or miscellaneous elements that are not paragraphs, while the <code>:nth-child(n)</code> and <code>:nth-last-child(n)</code> would count every element, no matter its type, only selecting the ones that match the element within the stated selector. Additionally, all of the same expression possibilities used within the <code>:nth-child(n)</code> and <code>:nth-last-child(n)</code> pseudo-classes are also available within the <code>:nth-of-type(n)</code> and <code>:nth-last-of-type(n)</code> pseudo-classes.</p>
+<p>Using the <code>:nth-of-type(n)</code> pseudo-class within the <code>p:nth-of-type(3n)</code> selector we are able to identify every third paragraph within a parent, regardless of other sibling elements within the parent. Here the paragraphs on lines 5 and 9 are selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">p</span><span class="nd">:nth-of-type</span><span class="o">(</span><span class="nt">3n</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>...<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>...<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>As with the <code>:nth-child(n)</code> and <code>:nth-last-child(n)</code> pseudo-classes, the primary difference between the <code>:nth-of-type(n)</code> and <code>:nth-last-of-type(n)</code> pseudo-classes is that the <code>:nth-of-type(n)</code> pseudo-class counts elements from the beginning of the document tree and the <code>:nth-last-of-type(n)</code> pseudo-class counts elements from the end of the document tree.</p>
+<p>Using the <code>:nth-last-of-type(n)</code> pseudo-class we can write the <code>p:nth-last-of-type(2n+1)</code> selector which identifies every second paragraph from the end of a parent element starting with the last paragraph. Here the paragraphs on lines 4, 7, and 9 are selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">p</span><span class="nd">:nth-last-of-type</span><span class="o">(</span><span class="nt">2n</span><span class="o">+</span><span class="nt">1</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="rouge-code"><pre><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>...<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>...<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This paragraph will be selected<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Target Pseudo-class</h3>
+<p>The <code>:target</code> pseudo-class is used to style elements when an element’s ID attribute value matches that of the URI fragment identifier. The fragment identifier within a URI can be recognized by the hash character, <code>#</code>, and what directly follows it. The URL <code>http://example.com/index.html#hello</code> includes the fragment identifier of <code>hello</code>. When this identifier matches the ID attribute value of an element on the page, <code>&lt;section id="hello"&gt;</code> for example, that element may be identified and stylized using the <code>:target</code> pseudo-class. Fragment identifiers are most commonly seen when using <a href="https://learn.shayhowe.com/html-css/getting-to-know-html/#hyperlinks">on page links</a>, or linking to another part of the same page.</p>
+<p>Looking at the code below, if a user would visit a page with the URI fragment identifier of <code>#hello</code>, the section with that same ID attribute value would be stylized accordingly using the <code>:target</code> pseudo-class. If the URI fragment identifier changes, and matches the ID attribute value of another section, that new section may be stylized using the same selector and pseudo-class from before.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">section</span><span class="nd">:target</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"hello"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Empty Pseudo-class</h3>
+<p>The <code>:empty</code> pseudo-class allows elements that do not contain children or text nodes to be selected. Comments, processing instructions, and empty text nodes are not considered children and are not treated as such.</p>
+<p>Using the <code>div:empty</code> pseudo-class will identify divisions without any children or text nodes. Below the divisions on lines 2 and 3 are selected, as they are completely empty. Even though the second division contains a comment, it is not considered to be a child, thus leaving the division empty. The first division contains text, the fourth division contains one blank text space, and the last division contains a <code>strong</code> child element, thus they are all ruled out and are not selected.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">div</span><span class="nd">:empty</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div&gt;</span>Hello<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div&gt;</span><span class="c">&lt;!-- Coming soon --&gt;</span><span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- This div will be selected --&gt;</span>
+<span class="nt">&lt;div&gt;&lt;/div&gt;</span><span class="c">&lt;!-- This div will be selected --&gt;</span>
+<span class="nt">&lt;div&gt;</span> <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>Negation Pseudo-class</h3>
+<p>The negation pseudo-class, <code>:not(x)</code>, is a pseudo-class that takes an argument which is filtered out from the selection to be made. The <code>p:not(.intro)</code> selector uses the negation pseudo-class to identify every paragraph element without the class of <code>intro</code>. The paragraph element is identified at the beginning of the selector followed by the <code>:not(x)</code> pseudo-class. Inside of the parentheses falls the negation selector, the class of <code>.intro</code> in this case.</p>
+<p>Below, both the <code>div:not(.awesome)</code> and <code>:not(div)</code> selectors use the <code>:not(x)</code> pseudo-class. The <code>div:not(.awesome)</code> selector identifies any division without the class of <code>awesome</code>, while the <code>:not(div)</code> selector identifies any element that isn’t a division. As a result the, division on line 1 is selected, as well as the two sections on lines 3 and 4, thus they are marked bold. The only element not selected is the division with the class of <code>awesome</code>, as it falls outside of the two negation pseudo-classes.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">div</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.awesome</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+<span class="nd">:not</span><span class="o">(</span><span class="nt">div</span><span class="o">)</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div&gt;</span>This div will be selected<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"awesome"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;section&gt;</span>This section will be selected<span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"awesome"</span><span class="nt">&gt;</span>This section will be selected<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note note-box">
+<h3>Pseudo-classes Example</h3>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Number<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Player<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Position<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Height<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Weight<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>8<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Marco Belinelli<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>G<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>6-5<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>195<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>5<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Carlos Boozer<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>F<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>6-9<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>266<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    ...
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre></td><td class="rouge-code"><pre><span class="nt">table</span> <span class="p">{</span>
+  <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">separate</span><span class="p">;</span>
+  <span class="nl">border-spacing</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">th</span><span class="o">,</span>
+<span class="nt">td</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">th</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#42444e</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">tr</span><span class="nd">:first-child</span> <span class="nt">th</span><span class="nd">:first-child</span> <span class="p">{</span>
+  <span class="nl">border-top-left-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">tr</span><span class="nd">:first-child</span> <span class="nt">th</span><span class="nd">:last-child</span> <span class="p">{</span>
+  <span class="nl">border-top-right-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">td</span> <span class="p">{</span>
+  <span class="nl">border-right</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#c6c9cc</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#c6c9cc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">td</span><span class="nd">:first-child</span> <span class="p">{</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#c6c9cc</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span> <span class="nt">td</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#eaeaed</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">tr</span><span class="nd">:last-child</span> <span class="nt">td</span><span class="nd">:first-child</span> <span class="p">{</span>
+  <span class="nl">border-bottom-left-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">tr</span><span class="nd">:last-child</span> <span class="nt">td</span><span class="nd">:last-child</span> <span class="p">{</span>
+  <span class="nl">border-bottom-right-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_3" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/KikoF(1).html" scrolling="no" frameborder="0" height="600" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_KikoF"></iframe></div>
+</div>
+</div>
+<h4>Pseudo-classes Overview</h4>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>Example</th>
+<th>Classification</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="Example"><code>a:link</code></td>
+<td data-title="Classification">Link Pseudo-class</td>
+<td data-title="Explanation">Selects a link that has not been visited by a user</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a:visited</code></td>
+<td data-title="Classification">Link Pseudo-class</td>
+<td data-title="Explanation">Selects a link that has been visited by a user</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a:hover</code></td>
+<td data-title="Classification">Action Pseudo-class</td>
+<td data-title="Explanation">Selects an element when a user has hovered their cursor over it</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a:active</code></td>
+<td data-title="Classification">Action Pseudo-class</td>
+<td data-title="Explanation">Selects an element when a user has engaged it</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a:focus</code></td>
+<td data-title="Classification">Action Pseudo-class</td>
+<td data-title="Explanation">Selects an element when a user has made it their focus point</td>
+</tr>
+<tr>
+<td data-title="Example"><code>input:enabled</code></td>
+<td data-title="Classification">State Pseudo-class</td>
+<td data-title="Explanation">Selects an element in the default enabled state</td>
+</tr>
+<tr>
+<td data-title="Example"><code>input:disabled</code></td>
+<td data-title="Classification">State Pseudo-class</td>
+<td data-title="Explanation">Selects an element in the disabled state, by way of the disabled attribute</td>
+</tr>
+<tr>
+<td data-title="Example"><code>input:checked</code></td>
+<td data-title="Classification">State Pseudo-class</td>
+<td data-title="Explanation">Selects a checkbox or radio button that has been checked</td>
+</tr>
+<tr>
+<td data-title="Example"><code>input:indeterminate</code></td>
+<td data-title="Classification">State Pseudo-class</td>
+<td data-title="Explanation">Selects a checkbox or radio button that neither been checked or unchecked, leaving it in an indeterminate state</td>
+</tr>
+<tr>
+<td data-title="Example"><code>li:first-child</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that is the first within a parent</td>
+</tr>
+<tr>
+<td data-title="Example"><code>li:last-child</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that is the last within a parent</td>
+</tr>
+<tr>
+<td data-title="Example"><code>div:only-child</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that is the only element within a parent</td>
+</tr>
+<tr>
+<td data-title="Example"><code>p:first-of-type</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that is the first of its type within a parent</td>
+</tr>
+<tr>
+<td data-title="Example"><code>p:last-of-type</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that is the last of its type within a parent</td>
+</tr>
+<tr>
+<td data-title="Example"><code>img:only-of-type</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that is the only of its type within a parent</td>
+</tr>
+<tr>
+<td data-title="Example"><code>li:nth-child(2n+3)</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that matches the given number or expression, counting all elements from the beginning of the document tree</td>
+</tr>
+<tr>
+<td data-title="Example"><code>li:nth-last-child(3n+2)</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that matches the given number or expression, counting all elements from the end of the document tree</td>
+</tr>
+<tr>
+<td data-title="Example"><code>p:nth-of-type(3n)</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that matches the given number or expression, counting only elements of its type from the beginning of the document tree</td>
+</tr>
+<tr>
+<td data-title="Example"><code>p:nth-last-of-type(2n+1)</code></td>
+<td data-title="Classification">Structural Pseudo-class</td>
+<td data-title="Explanation">Selects an element that matches the given number or expression, counting only elements of its type from the end of the document tree</td>
+</tr>
+<tr>
+<td data-title="Example"><code>section:target</code></td>
+<td data-title="Classification">Target Pseudo-class</td>
+<td data-title="Explanation">Selects an element whose ID attribute value matches that of the URI fragment identifier</td>
+</tr>
+<tr>
+<td data-title="Example"><code>div:empty</code></td>
+<td data-title="Classification">Empty Pseudo-class</td>
+<td data-title="Explanation">Selects an element that does not contain any children or text nodes</td>
+</tr>
+<tr>
+<td data-title="Example"><code>div:not(.awesome)</code></td>
+<td data-title="Classification">Negation Pseudo-class</td>
+<td data-title="Explanation">Selects an element not represented by the stated argument</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pseudo-elements">Pseudo-elements<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#pseudo-elements">#pseudo-elements</a></h2>
+<p>Pseudo-elements are dynamic elements that don’t exist in the document tree, and when used within selectors these <a href="http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/" rel="nofollow">pseudo-elements</a> allow unique parts of the page to be stylized. One important point to note, only one pseudo-element may be used within a selector at a given time.</p>
+<h3>Textual Pseudo-elements</h3>
+<p>The first pseudo-elements ever released were the <code>:first-letter</code> and <code>:first-line</code> textual pseudo-elements. The <code>:first-letter</code> pseudo-element will identify the first letter of text within an element, while the <code>:first-line</code> pseudo-element will identify the first line of text within an element.</p>
+<p>In the demonstration below the first letter of the paragraph with the class of <code>alpha</code> is set in a larger font size and colored orange, as is the first line of the paragraph with the class of <code>bravo</code>. These selections are made by use of the <code>:first-letter</code> and <code>:first-line</code> textual pseudo-elements respectively.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nc">.alpha</span><span class="nd">:first-letter</span><span class="o">,</span>
+<span class="nc">.bravo</span><span class="nd">:first-line</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alpha"</span><span class="nt">&gt;</span>Lorem ipsum dolor...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"bravo"</span><span class="nt">&gt;</span>Integer eget enim...<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Textual Pseudo-elements Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_4" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/lkqtj(1).html" scrolling="no" frameborder="0" height="228" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_lkqtj"></iframe></div>
+</div>
+<h3>Generated Content Pseudo-elements</h3>
+<p>The <code>:before</code> and <code>:after</code> generated content pseudo-elements create new inline level pseudo-elements just inside the selected element. Most commonly these pseudo-elements are used in conjunction with the <code>content</code> property to add insignificant information to a page, however that is not always the case. Additional uses of these psuedo-elements may be to add user interface components to the page without having to clutter the document with unsemantic elements.</p>
+<p>The <code>:before</code> pseudo-element creates a pseudo-element before, or in front of, the selected element, while the <code>:after</code> pseudo-element creates a pseudo-element after, or behind, the selected element. These pseudo-elements appear nested within the selected element, not outside of it. Below the <code>:after</code> pseudo-element is used to display the <code>href</code> attribute value of anchor links within parentheses after the actual links. The information here is helpful, but not ultimately necessary should a browser not support these pseudo-elements.</p>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="nt">a</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#9799a7</span><span class="p">;</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">" ("</span> <span class="n">attr</span><span class="p">(</span><span class="n">href</span><span class="p">)</span> <span class="s1">")"</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">11px</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://google.com/"</span><span class="nt">&gt;</span>Search the Web<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://learn.shayhowe.com/"</span><span class="nt">&gt;</span>Learn How to Build Websites<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Generated Content Pseudo-elements Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_5" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/pekob(1).html" scrolling="no" frameborder="0" height="132" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_pekob"></iframe></div>
+</div>
+<h3>Fragment Pseudo-element</h3>
+<p>The <code>::selection</code> fragment pseudo-element identifies part of the document that has been selected, or highlighted, by a user’s actions. The selection may then be stylized, however only using the <code>color</code>, <code>background</code>, <code>background-color</code>, and <code>text-shadow</code> properties. It is worth noting, the <code>background-image</code> property is ignore. While the shorthand <code>background</code> property may be used to add a color, any images will be ignored.</p>
+<div class="note note-box">
+<h4>Single Colon (:) versus Double Colons (::)</h4>
+<p>The fragment pseudo-element was added with CSS3 and in attempt to differentiate pseudo-classes from pseudo-elements the double colons were added to pseudo-elements. Fortunately most browsers will support both values, single or double colons, for pseudo-elements however the <code>::selection</code> pseudo-element must always start with double colons.</p>
+</div>
+<p>When selecting any of the text within the demonstration below the background will appear orange and any text shadows will be removed thanks to the <code>::selection</code> fragment pseudo-element. Also note, the <code>::-moz-selection</code> Mozilla prefixed fragment pseudo-element has been added to ensure the best support for all browsers.</p>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="rouge-code"><pre><span class="nd">::-moz-selection</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nd">::selection</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Fragment Pseudo-element Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_6" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/Dltis(1).html" scrolling="no" frameborder="0" height="180" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Dltis"></iframe></div>
+</div>
+<div class="note note-box">
+<h3>Pseudo-elements Example</h3>
+<h6>HTML</h6>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"arrow"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Continue Reading<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h6>CSS</h6>
+<pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40</pre></td><td class="rouge-code"><pre><span class="nc">.arrow</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">12px</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.arrow</span><span class="nd">:before</span><span class="o">,</span>
+<span class="nc">.arrow</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="s1">""</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.arrow</span><span class="nd">:before</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">-15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.arrow</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="m">#2db34a</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">right</span><span class="p">:</span> <span class="m">-15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.arrow</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.arrow</span><span class="nd">:hover:before</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="m">#ff7b29</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.arrow</span><span class="nd">:hover:after</span> <span class="p">{</span>
+  <span class="nl">border-left</span><span class="p">:</span> <span class="m">15px</span> <span class="nb">solid</span> <span class="m">#ff7b29</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+                </code></pre>
+<h4 class="demo-title">Demo</h4>
+<div class="demo-code">
+<div class="cp_embed_wrapper"><iframe name="cp_embed_7" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/Bpgjk(1).html" scrolling="no" frameborder="0" height="114" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Bpgjk"></iframe></div>
+</div>
+</div>
+<h4>Pseudo-elements Overview</h4>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>Example</th>
+<th>Classification</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="Example"><code>.alpha:first-letter</code></td>
+<td data-title="Classification">Textual Pseudo-elements</td>
+<td data-title="Explanation">Selects the first letter of text within an element</td>
+</tr>
+<tr>
+<td data-title="Example"><code>.bravo:first-line</code></td>
+<td data-title="Classification">Textual Pseudo-elements</td>
+<td data-title="Explanation">Selects the first line of text within an element</td>
+</tr>
+<tr>
+<td data-title="Example"><code>div:before</code></td>
+<td data-title="Classification">Generated Content</td>
+<td data-title="Explanation">Creates a pseudo-element inside the selected element at the beginning</td>
+</tr>
+<tr>
+<td data-title="Example"><code>a:after</code></td>
+<td data-title="Classification">Generated Content</td>
+<td data-title="Explanation">Creates a pseudo-element inside the selected element at the end</td>
+</tr>
+<tr>
+<td data-title="Example"><code>::selection</code></td>
+<td data-title="Classification">Fragment Pseudo-element</td>
+<td data-title="Explanation">Selects the part of a document which has been selected, or highlighted, by a users’ actions</td>
+</tr>
+</tbody>
+</table>
+<div class="note note-box">
+<h4>Selector Browser Support</h4>
+<p>While these selectors provide a variety of opportunity and the ability to do some truly amazing things with CSS, they are at times plagued by poor browser support. Before doing anything too critical check the selectors you are wishing to use across your visitor’s most common browsers, and then make the judgment call as to whether they are appropriate or not.</p>
+<p>CSS3.info provides a <a href="http://tools.css3.info/selectors-test/test.html" rel="nofollow">CSS3 Selectors Test</a> tool which will inform you as to which selectors are supported by the browser in use. It’s also never a bad idea to check browser support directly from the vendor.</p>
+<p>Additionally, <a href="http://selectivizr.com/" rel="nofollow">Selectivizr</a>, a JavaScript utility, provides great support for these selectors in Internet Explorer 6-8. More support, should it be necessary, can also be provided by <a href="https://api.jquery.com/category/selectors/" rel="nofollow">jQuery selectors</a>.</p>
+</div>
+<div class="note note-box">
+<h4>Selector Speed <abbr title="and">&amp;</abbr> Performance</h4>
+<p>It is important to pay attention the speed and performance of selectors, as using too many intricate selectors can slow down the rendering of a page. Be attentive and when a selector begins to look a bit foreign think about revisiting it, and seeing if a better solution can be found.</p>
+</div>
+<h2>Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#undefined">#undefined</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="http://net.tutsplus.com/tutorials/html-css-techniques/the-30-css-selectors-you-must-memorize/" rel="nofollow">The 30 CSS Selectors you Must Memorize</a>
+via Nettuts+
+</li>
+<li>
+<a href="https://css-tricks.com/child-and-sibling-selectors/" rel="nofollow">Child and Sibling Selectors</a>
+via CSS-Tricks
+</li>
+<li>
+<a href="http://www.css3.info/preview/attribute-selectors/" rel="nofollow">CSS3 Substring Matching Attribute Selectors</a>
+via CSS3.info
+</li>
+<li>
+<a href="http://coding.smashingmagazine.com/2011/03/30/how-to-use-css3-pseudo-classes/" rel="nofollow">How To Use CSS3 Pseudo-Classes</a>
+via Smashing Magazine
+</li>
+<li>
+<a href="http://reference.sitepoint.com/css/understandingnthchildexpressions" rel="nofollow">Understanding :nth-child Pseudo-class Expressions</a>
+via SitePoint
+</li>
+<li>
+<a href="http://coding.smashingmagazine.com/2009/08/17/taming-advanced-css-selectors/" rel="nofollow">Taming Advanced CSS Selectors</a>
+via Smashing Magazine
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/complex-selectors/" data-title="Complex Selectors">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Complex%20Selectors%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/complex-selectors/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/complex-selectors/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/complex-selectors/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/" rel="prev">
+<strong>Lesson 2</strong>
+<span>Detailed Positioning</span>
+</a>
+</li>
+<li class="pagination-next">
+<a href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/" rel="next">
+<strong>Lesson 4</strong>
+<span>Responsive Web Design</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Complex Selectors&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Complex Selectors&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Complex Selectors&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Complex Selectors&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Complex Selectors&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Complex Selectors&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Complex Selectors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+ <div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Complex Selectors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Complex Selectors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Complex Selectors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Complex Selectors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+ <a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Complex Selectors&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+ <span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Complex Selectors&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/html-css/">Looking for Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/html-css/"><img alt="HTML and CSS" class="media-circle" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/html-css/">beginner focused HTML and CSS lessons</a>, compiled into a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS, working through all common components.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/html-css/">View Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/follow_button.6a44a9d26983bbb5b04ae399f9e496fe.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Complex Selectors - Learn to Code Advanced HTML &amp; CSS_files/widget_iframe.6a44a9d26983bbb5b04ae399f9e496fe.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>

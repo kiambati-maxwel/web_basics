@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://cdpn.io/shayhowe/fullembedgrid/qnzKC?type=embed&animations=run -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>CodePen - Event</title>
+<link rel="stylesheet" href="./reset.min.css">
+<style>
+  body {
+  color: #333;
+  font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+strong {
+  font-weight: 600;
+}
+.notice-warning {
+  background: linear-gradient(#ffdc72, #ffbf00);
+  border: 1px solid #f2b600;
+  border-bottom-color: #c90;
+  border-radius: 6px;
+  padding: 10px 16px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+.notice-close {
+  background: #ffdc72;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  box-shadow: inset 0 1px 2px rgba(178, 133, 0, .9), inset 0 -1px 2px rgba(255, 255, 255, .25);
+  color: #b28500;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  height: 24px;
+  float: right;
+  text-align: center;
+  transition: color .15s ease;
+  width: 24px;
+}
+.notice-close:hover {
+  color: #8c6900;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="notice-warning">
+<div class="notice-close">×</div>
+<strong>Warning!</strong> I’m about to lose my cool.
+</div>
+<script src="./stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js.download"></script>
+<script src="./jquery.min.js.download"></script>
+<script id="rendered-js">
+      $('.notice-close').on('click', function (event) {
+  $('.notice-warning').remove();
+});
+      //# sourceURL=pen.js
+    </script>
+<script src="./css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js.download"></script>
+
+
+</body></html>

@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/ -->
+<html lang="en" class=" js flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="An Advanced Guide to HTML and CSS gets straight to business with taking a deep look at semantics and accessibility." name="description">
+<meta content="html semantics accessibility HTML5 microdata wai-aria" name="keywords">
+<title>Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS</title>
+<script id="twitter-wjs" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/widgets.js.download"></script><script type="text/javascript" async="" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/ga.js.download"></script><script src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/modernizr-2.8.1.js.download"></script>
+<link href="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/fonts.css" rel="stylesheet">
+<link href="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/css" rel="stylesheet">
+<link href="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/main.css" rel="stylesheet">
+<script id="_bsa_srv-CKYDK5QJ_0" type="text/javascript" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/CKYDK5QJ.json"></script><script id="_carbonads_projs" type="text/javascript" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/CKYILKJL.json"></script><script charset="utf-8" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/button.9a57558490548c2dde66afe19af6c010.js.download"></script></head>
+<body class="advanced-html-css advanced-html-css_semantics-accessibility advanced-html-css_semantics-accessibility_index">
+<div class="wrap-macro">
+<div class="wrap-micro group">
+<aside class="aside">
+<header class="primary-header" role="banner">
+<h1 class="primary-logo">
+<a href="https://learn.shayhowe.com/advanced-html-css/">
+<span>Learn to Code Advanced</span>
+<abbr title="Hyper Text Markup Language">HTML</abbr>
+<abbr title="and">&amp;</abbr>
+<abbr title="Cascading Style Sheets">CSS</abbr>
+</a>
+</h1>
+<a class="primary-nav-btn" data-js="primary-nav-btn" href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#" rel="nofollow">Navigation</a>
+</header>
+<div class="aside-macro">
+<div class="aside-micro">
+<nav class="primary-nav" role="navigation">
+<ul>
+<li class="performance-organization">
+<a href="https://learn.shayhowe.com/advanced-html-css/performance-organization/">
+<strong>Lesson 1</strong>
+Performance &amp; Organization
+</a>
+</li>
+<li class="detailed-css-positioning">
+<a href="https://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/">
+<strong>Lesson 2</strong>
+Detailed Positioning
+</a>
+</li>
+<li class="complex-selectors">
+<a href="https://learn.shayhowe.com/advanced-html-css/complex-selectors/">
+<strong>Lesson 3</strong>
+Complex Selectors
+</a>
+</li>
+<li class="responsive-web-design">
+<a href="https://learn.shayhowe.com/advanced-html-css/responsive-web-design/">
+<strong>Lesson 4</strong>
+Responsive Web Design
+</a>
+</li>
+<li class="preprocessors">
+<a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/">
+<strong>Lesson 5</strong>
+Preprocessors
+</a>
+</li>
+<li class="jquery">
+<a href="https://learn.shayhowe.com/advanced-html-css/jquery/">
+<strong>Lesson 6</strong>
+jQuery
+</a>
+</li>
+<li class="css-transforms">
+<a href="https://learn.shayhowe.com/advanced-html-css/css-transforms/">
+<strong>Lesson 7</strong>
+Transforms
+</a>
+</li>
+<li class="transitions-animations">
+<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/">
+<strong>Lesson 8</strong>
+Transitions &amp; Animations
+</a>
+</li>
+<li class="feature-support-polyfills">
+<a href="https://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/">
+<strong>Lesson 9</strong>
+Feature Support &amp; Polyfills
+ </a>
+</li>
+<li class="semantics-accessibility">
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/">
+<strong>Lesson 10</strong>
+Extending Semantics &amp; Accessibility
+</a>
+</li>
+</ul>
+</nav>
+<div class="aside-group">
+<p>Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+<p>Checkout <a href="https://learn.shayhowe.com/html-css/">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a> for a beginner’s guide front-end design <abbr title="and">&amp;</abbr> development.</p>
+</div>
+<p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+<div class="margin-bottom">
+<a class="btn btn-alt" href="https://learn.shayhowe.com/recommendations/">Get Course Recommendations</a>
+</div>
+</div>
+</div>
+</aside>
+<section class="main" data-js="primary-nav-close">
+<div class="group">
+<article class="lesson container group" data-js="lesson">
+<div class="lesson-title">
+<h6>Lesson 10</h6>
+<h1>Extending Semantics <abbr title="and">&amp;</abbr> Accessibility</h1>
+</div>
+<script src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/monetization.js.download" type="text/javascript"></script>
+<div class="bsa-cpc"></div>
+<script>
+                (function(){
+                  if(typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init('default', 'CKYDK5QJ', 'placement:learnshayhowecom', {
+                      target: '.bsa-cpc',
+                      align: 'horizontal',
+                      disable_css: 'true'
+                    });
+                  }
+                })();
+              </script>
+<div class="clamp clamp-release">
+<div class="pop-out">
+<nav class="toc">
+<h4>
+In this Lesson
+<span class="toc-number">10</span>
+</h4>
+<h6>HTML</h6>
+<ul>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#semantic-motivation">Semantic Motivation</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#structural-semantics">Structural Semantics</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#text-level-semantics">Text Level Semantics</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#microdata">Microdata</a>
+</li>
+<li>
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#wai-aria">WAI-ARIA</a>
+</li>
+</ul>
+<h6>Share</h6>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/" data-title="Extending Semantics &amp;amp; Accessibility">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Extending%20Semantics%20%26amp%3B%20Accessibility%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</nav>
+<div class="ad-spot group">
+ <script async="" id="_carbonads_js" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/carbon.js.download" type="text/javascript"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLCA7DVZ3JCWSIPKQJCWADVKJKC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-img" target="_blank" rel="noopener sponsored"><img src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/1565375342-1551903697-production2.jpg" alt="ads via Carbon" border="0" style="max-width: 130px;"></a><a href="https://srv.carbonads.net/ads/click/x/GTND42QUCW7DVKJMCAA4YKQMCABIT5QLCA7DVZ3JCWSIPKQJCWADVKJKC6BI52QLCKSIKK3EHJNCLSIZ?segment=placement:learnshayhowecom;" class="carbon-text" target="_blank" rel="noopener sponsored">GoJS is a fast and powerful JavaScript and TypeScript diagramming library.</a></span><a href="http://carbonads.net/?utm_source=learnshayhowecom&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank" rel="noopener sponsored">ads via Carbon</a></span></div>
+</div>
+</div>
+</div>
+<p>Semantics and accessibility are naturally part of HTML by design, however they are not fully leveraged unless used accordingly. Knowing how to write semantic and accessible code properly takes an understanding of how semantics and accessibility work, and how users and machines interpret them. Writing semantic and accessible code isn’t incredibly difficult, but it can be time consuming. In the long run, however, the benefits win out.</p>
+<p>One of the more important parts to remember when writing semantic and accessible code is to do your best to leverage the standard markup language. Do your best to write the cleanest code possible, and take pride in your work. Generally speaking, don’t use a meaningless element where another element might make more semantic sense, using a <code>div</code> where a <code>h1</code> would be better fitted for example. Use semantic elements and attributes, as well as microdata and WAI-ARIA to extend the value of your code.</p>
+<p>Additionally, <strong>be an advocate for semantics and accessibility</strong>. Tell others why you’ve written certain code, and provide reasoning why certain modules of content are marked up in a specific way. Outline goals and objectives within your code, and explain how those goals and objectives are being accomplished. The practice of writing semantic and accessible code is growing, however adoption at large has not yet been achieved. Be an advocate for the code you write.</p>
+<h2 id="semantic-motivation">Semantic Motivation<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#semantic-motivation">#semantic-motivation</a></h2>
+<p>Occasionally, one may ask if semantics really make a difference. You may hear they slow down development, are poorly supported, or that they are even opinionated. While this may have some validity, you still need to retain integrity and continue to write the best code possible, for semantics provide a larger meaning in writing code.</p>
+<p>The fact of the matter is, <a href="http://www.vanseodesign.com/web-design/semantic-html/" rel="nofollow">semantics largely benefit everyone</a>. For starters, semantics provide a shared and unambiguous meaning to content. Semantics give content solid structure and value, while also favoring accessibility, providing better user interfaces and more defined information to assistive technologies. Search and globalization is more permanent with semantics, making it easier to serve content internationally and making it more search engine friendly. Should that not be enough, semantics also promote interoperability, allowing the exchange and use of information across different platforms and devices.</p>
+<p>It’s safe to say semantics are important, and here to stay. To briefly recap, semantics provide:</p>
+<ul>
+<li>Unambiguous, shared meaning within content</li>
+<li>Accessibility</li>
+<li>Search and globalization</li>
+<li>Interoperability</li>
+</ul>
+<h2 id="structural-semantics">Structural Semantics<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#structural-semantics">#structural-semantics</a></h2>
+<p>Within the beginner’s guide we discuss the use of <a href="https://learn.shayhowe.com/html-css/getting-to-know-html/">structural semantics</a>, specifically using the <code>header</code>, <code>nav</code>, <code>article</code>, <code>section</code>, <code>aside</code>, and <code>footer</code> elements. These elements are used to provide additional background context to the content within them, communicating their core meaning to web browsers and other devices. This is important, as it provides a better way to outline and structure pages, not to mention a more meaningful solution than divisions.</p>
+<h3>Hiding Content</h3>
+<p>Every now and then you may want to hide a block of content on the page, perhaps showing or hiding an element depending on a user’s state. For example, having a success message hidden from a user until they complete a desired action. Most commonly, this is accomplished with the <code>display: none;</code> CSS declaration. While this does work, it is semantically incorrect.</p>
+<p>A better option is to use the <code>hidden</code> Boolean attribute, which is a global attribute available to all elements for use. Functionally it performs the same way as the CSS declaration, but semantically it represents an element that should be hidden, or ignored, for the time being. Screen readers and other devices will recognize this, temporarily skipping it, where they may not done so with the CSS declaration.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Good --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">hidden</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Not good --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Imagine a blind user attempting to fill out a form and the first piece of content, before even filling out the form, is a success message. This is a poor user experience, and one that can easily be fixed using proper semantics.</p>
+<h2 id="text-level-semantics">Text Level Semantics<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#text-level-semantics">#text-level-semantics</a></h2>
+<p>The majority of content on the web lives within text, and we primarily browse the Internet looking for this content. Using the proper <a href="https://developers.whatwg.org/text-level-semantics.html" rel="nofollow">semantic markup</a> for text makes it easier for users to find what they need.</p>
+<h3>Bolding Text</h3>
+<p>There are a few different ways to make text bold, including multiple elements and the <a href="https://learn.shayhowe.com/html-css/working-with-typography/">font weight</a> CSS property. The two main elements used in this case include <code>strong</code> and <code>b</code>. While these two elements have the same presentation they have completely different semantic meanings.</p>
+<p>The <code>strong</code> element outlines text that has a <strong>strong importance</strong>. On the contrasting side, the <code>b</code> element identifies text that is to be <strong>stylistically offset</strong>, without importance. Generally speaking, the <code>b</code> element should be used solely as a styling hook to change the presentation of an element, where the <code>strong</code> element should be used to identify significantly important text.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Strong importance --&gt;</span>
+<span class="nt">&lt;strong&gt;</span>Caution:<span class="nt">&lt;/strong&gt;</span> Falling rocks.
+
+<span class="c">&lt;!-- Stylistically offset --&gt;</span>
+This recipe calls for <span class="nt">&lt;b&gt;</span>bacon<span class="nt">&lt;/b&gt;</span> and <span class="nt">&lt;b&gt;</span>baconnaise<span class="nt">&lt;/b&gt;</span>.
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Bolding Text Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_1" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/LJGex(1).html" scrolling="no" frameborder="0" height="156" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_LJGex"></iframe></div>
+</div>
+<h3>Italicizing Text</h3>
+<p>Italicizing text falls in line with that of bolding text, where we can use multiple elements or the <a href="https://learn.shayhowe.com/html-css/working-with-typography/">font style</a> CSS property to achieve a desired presentation. When italicizing text, the two elements most commonly used are <code>em</code> and <code>i</code>. Again, these share the same presentation, yet have completely different semantic meanings.</p>
+<p>The <code>em</code> element places a <strong>stressed emphasis</strong> on text, while the <code>i</code> element identifies text to be expressed in an <strong>alternate voice or tone</strong>. Using the <code>em</code> element really drives prominence with an added importance. On the other hand, the <code>i</code> element is primarily used within dialog or prose, offsetting text without any added emphasis or importance.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Stressed emphasis --&gt;</span>
+I <span class="nt">&lt;em&gt;</span>love<span class="nt">&lt;/em&gt;</span> Chicago!
+
+<span class="c">&lt;!-- Alternative voice or tone --&gt;</span>
+The name <span class="nt">&lt;i&gt;</span>Shay<span class="nt">&lt;/i&gt;</span> means a gift.
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Italicizing Text Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_2" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/aFGBr(1).html" scrolling="no" frameborder="0" height="156" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_aFGBr"></iframe></div>
+</div>
+<div class="note note-box">
+<h4>Using <code>i</code> for Icons</h4>
+<p>Recently there has been a small movement of front end programmers using the <code>i</code> element for including icons on a page, specifically as seen within <a href="https://twitter.github.com/bootstrap/" rel="nofollow">Bootstrap</a>. The <code>i</code> element is used as a hook, to which a class then determines which icon background image to apply to the element. Depending on how closely you wish to follow semantics this may or may not be an acceptable practices.</p>
+</div>
+<h3>Underlining Text</h3>
+<p>Continuing the pattern of having multiple elements with the same presentation, underlining text is no different. There are a couple of different elements we can use as well as the <a href="https://learn.shayhowe.com/html-css/working-with-typography/">text decoration</a> CSS property. In this case, the two primary elements used to underline text are <code>ins</code> and <code>u</code>.</p>
+<p>The <code>ins</code> element is used to identify text that has been recently <strong>added to the document</strong>, and the <code>u</code> element simply refers to an <strong>unarticulated annotation</strong>.</p>
+<p>For more semantic code, the <code>ins</code> element may be used with the <code>cite</code> and <code>datetime</code> attributes. The <code>datetime</code> attribute identifies when the content was added to the document, and the <code>cite</code> attribute provides a machine readable source providing reference for the addition, perhaps documentation or a request ticket.</p>
+<p>The <code>u</code> element is typically used to label text as a proper name, often in another language, or to point out a misspelling.</p>
+<p>Underlining text does require a bit of additional care, as it may be confused with a hyperlink. By default hyperlinks are underlined, and thus have become a standard design practice. Underlining text that is not a hyperlink can confuse users and cause quite a bit of frustration. Use underlines with caution.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Added to the document --&gt;</span>
+<span class="nt">&lt;ins</span> <span class="na">cite=</span><span class="s">"http://learn.shayhowe.com"</span> <span class="na">datetime=</span><span class="s">"2012-07-01"</span><span class="nt">&gt;</span>
+  Updated: This website now contains an advanced guide.
+<span class="nt">&lt;/ins&gt;</span>
+
+<span class="c">&lt;!-- Unarticulated annotation --&gt;</span>
+<span class="nt">&lt;u&gt;</span>Urushihara Yuuji<span class="nt">&lt;/u&gt;</span> won <span class="nt">&lt;u&gt;</span>Sasuke 27<span class="nt">&lt;/u&gt;</span>.
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Underlining Text Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_3" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/Hpfye(1).html" scrolling="no" frameborder="0" height="156" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Hpfye"></iframe></div>
+</div>
+<h3>Striking Text</h3>
+<p>Striking text follows the same pattern as before where different elements may be used, as may the <a href="https://learn.shayhowe.com/html-css/working-with-typography/">text decoration</a> CSS property. The two properties most commonly used include <code>del</code> and <code>s</code>.</p>
+<p>The <code>del</code> element is used to identify text <strong>deleted or removed from the document</strong>. As with the <code>ins</code> element, it may be used with the <code>cite</code> and <code>datetime</code> attributes. Each of which hold the identical semantic values as before, <code>cite</code> specifying a resource that explains the change and <code>datetime</code> identifying when the content was removed from the document.</p>
+<p>The <code>s</code> element identifies text that is no longer accurate or relevant.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Deleted from the document --&gt;</span>
+I am an avid cyclist, <span class="nt">&lt;del</span> <span class="na">cite=</span><span class="s">"http://shayhowe.com"</span> <span class="na">datetime=</span><span class="s">"2012-07-01"</span><span class="nt">&gt;</span>skateboarder<span class="nt">&lt;/del&gt;</span> and designer.
+
+<span class="c">&lt;!-- No longer accurate or relevant --&gt;</span>
+<span class="nt">&lt;s&gt;</span>$24.99<span class="nt">&lt;/s&gt;</span> $19.99
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Striking Text Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_4" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/IiKsh(1).html" scrolling="no" frameborder="0" height="156" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_IiKsh"></iframe></div>
+</div>
+<h3>Highlighting Text</h3>
+<p>To highlight text for reference purposes the <code>mark</code> element should be used. Added in HTML5, the <code>mark</code> element provides a clean, semantic way to identify text, specifically for reference purposes without having to use an un-semantic text level element.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Highlighted for reference purposes --&gt;</span>
+Search results for <span class="nt">&lt;mark&gt;</span>'chicago'<span class="nt">&lt;/mark&gt;</span>.
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Highlighting Text Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_5" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/iIAut(1).html" scrolling="no" frameborder="0" height="102" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_iIAut"></iframe></div>
+</div>
+<h3>Abbreviations</h3>
+<p>Abbreviations, the shortened form of a phrase, can be semantically marked up in HTML using the <code>abbr</code> element. The <code>abbr</code> element should be used along with the <code>title</code> attribute, of which includes the full value of the phrase being abbreviated. The <code>acronym</code> element was originally used to distinguish acronyms from abbreviations but has since been deprecated, and shouldn’t be used.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span>
+<span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Cascading Style Sheets"</span><span class="nt">&gt;</span>CSS<span class="nt">&lt;/abbr&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Abbreviations Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_6" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/Jtkpq(1).html" scrolling="no" frameborder="0" height="126" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Jtkpq"></iframe></div>
+</div>
+<h3>Sub <abbr title="and">&amp;</abbr> Superscripts</h3>
+<p>Subscripts and superscripts may be marked up accordingly using the <code>sub</code> and <code>sup</code> elements respectively. It is important to note that these elements should be reserved for typographical conventions, not for presentational purposes.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Subscript --&gt;</span>
+H<span class="nt">&lt;sub&gt;</span>2<span class="nt">&lt;/sub&gt;</span>O
+
+<span class="c">&lt;!-- Superscripts --&gt;</span>
+1<span class="nt">&lt;sup&gt;</span>st<span class="nt">&lt;/sup&gt;</span> Place
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Sub <abbr title="and">&amp;</abbr> Superscripts Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_7" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/Jtuyg(1).html" scrolling="no" frameborder="0" height="138" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Jtuyg"></iframe></div>
+</div>
+<h3>Meter <abbr title="and">&amp;</abbr> Progress</h3>
+<p>To gauge scale or indicate progress the <code>meter</code> and <code>progress</code> elements should be used. The <code>meter</code> element is used to measure a fixed value, one that does not change over time, while the <code>progress</code> element measures the progress of a increasing measurement.</p>
+<p>The <code>meter</code> element may be used with the <code>min</code>, <code>max</code>, <code>low</code>, <code>high</code>, <code>optimum</code>, and <code>value</code> attributes. The <code>min</code> and <code>max</code> attributes set the lower and upper bounds of the range, where the <code>value</code> attribute sets the exact measured value. The <code>low</code> and <code>high</code> attributes identify what is to be considered the lower and higher parts of the range, while the <code>optimum</code> value identifies the most favorable part of the range, of which may be in the lower or higher parts.</p>
+<p>The <code>progress</code> element indicates progress rather than a fixed measurement. It specifically represents the completion of a task, either by what is left to be completed or what has been completed thus far. There are two attributes that may be applied to the <code>progress</code> element, <code>value</code> and <code>max</code>. The <code>value</code> attributes indicates where the progress currently stands and the <code>max</code> attribute indicates what progress needs to be reached.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Meter --&gt;</span>
+<span class="nt">&lt;meter</span> <span class="na">value=</span><span class="s">"7"</span> <span class="na">max=</span><span class="s">"10"</span><span class="nt">&gt;</span>7 stars<span class="nt">&lt;/meter&gt;</span>
+<span class="nt">&lt;meter</span> <span class="na">value=</span><span class="s">"47"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"105"</span> <span class="na">low=</span><span class="s">"5"</span> <span class="na">high=</span><span class="s">"65"</span> <span class="na">optimum=</span><span class="s">"45"</span><span class="nt">&gt;</span>The car is moving at a decent average mile per hour.<span class="nt">&lt;/meter&gt;</span>
+
+<span class="c">&lt;!-- Progress --&gt;</span>
+You are <span class="nt">&lt;progress</span> <span class="na">value=</span><span class="s">"50"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>50%<span class="nt">&lt;/progress&gt;</span> complete.
+<span class="nt">&lt;progress</span> <span class="na">value=</span><span class="s">"50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>Hold tight, you<span class="ni">&amp;#8217;</span>re getting there.<span class="nt">&lt;/progress&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Meter <abbr title="and">&amp;</abbr> Progress Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_8" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/Kkulm(1).html" scrolling="no" frameborder="0" height="204" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Kkulm"></iframe></div>
+</div>
+<h3>Time <abbr title="and">&amp;</abbr> Address</h3>
+<p>Representing time and addresses in HTML can be accomplished using the <code>time</code> and <code>address</code> elements respectively. The <code>time</code> element may be used with, or without, the <code>datetime</code> attribute, depending on how the text within the element is formatted. If the content is formatted with the correct time stamp then the <code>datetime</code> attribute may be omitted. Furthermore, if the time is representing the date or time of a publication the <code>pubdate</code> Boolean attribute should be used.</p>
+<p>The <code>address</code> element may be used to hold any contact information, including a physical address as well as a website or email address. It should not include any further information than the contact information, and other content needs to be placed outside of the <code>address</code> element.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Time --&gt;</span>
+<span class="nt">&lt;time&gt;</span>2011-08-24<span class="nt">&lt;/time&gt;</span>
+<span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2011-08-24"</span> <span class="na">pubdate</span><span class="nt">&gt;</span>August 24th, 2011<span class="nt">&lt;/time&gt;</span>
+<span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"15:00"</span><span class="nt">&gt;</span>3pm<span class="nt">&lt;/time&gt;</span>
+<span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2011-08-24T15:00"</span><span class="nt">&gt;</span>August 24th, 2011 at 3pm<span class="nt">&lt;/time&gt;</span>
+
+<span class="c">&lt;!-- Address --&gt;</span>
+<span class="nt">&lt;address&gt;</span>
+  <span class="nt">&lt;strong&gt;</span>Shay Howe<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://learn.shayhowe.com"</span><span class="nt">&gt;</span>http://learn.shayhowe.com<span class="nt">&lt;/a&gt;&lt;br&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:hello@awesome.com"</span><span class="nt">&gt;</span>hello@awesome.com<span class="nt">&lt;/a&gt;&lt;br&gt;</span>
+  600 W. Chicago Ave.<span class="nt">&lt;br&gt;</span>
+  Suite 620<span class="nt">&lt;br&gt;</span>
+  Chicago, IL 60654<span class="nt">&lt;br&gt;</span>
+  USA  
+<span class="nt">&lt;/address&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Time <abbr title="and">&amp;</abbr> Address Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_9" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/cKwfm(1).html" scrolling="no" frameborder="0" height="324" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_cKwfm"></iframe></div>
+</div>
+<h3>Presenting Code</h3>
+<p>Presenting code snippets, or samples, within a page can be accomplished using either the <code>code</code> or <code>pre</code> elements, or a combination of the two. The <code>code</code> element is commonly used to represent a fragment of code and is displayed in the default monospace font. The <code>code</code> element is an inline level element and may be used within paragraphs of text, or other block and inline level elements.</p>
+<p>For large blocks of code, the <code>pre</code> element can be used in conjunction with the <code>code</code> element. The <code>pre</code> element represent preformatted text and will display text exactly as it is typed, whitespace included. Nesting the <code>code</code> element within the <code>pre</code> element semantically identifies larger samples of code, which include whitepsace, displayed in a block level manner.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Inline code samples --&gt;</span>
+Use the <span class="nt">&lt;code&gt;</span>article<span class="nt">&lt;/code&gt;</span> element.
+
+<span class="c">&lt;!-- Larger, block level code snippets --&gt;</span>
+<span class="nt">&lt;pre&gt;&lt;code&gt;</span>body {
+  color: #666;
+  font: 14px/20px Arial, sans-serif;
+}<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Presenting Code Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_10" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/ABIdh(1).html" scrolling="no" frameborder="0" height="228" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_ABIdh"></iframe></div>
+</div>
+<h3>Line <abbr title="and">&amp;</abbr> Word Breaks</h3>
+<p>Occasionally you may want to include a line break within a line of text, in which case the <code>br</code> element may be used. The <code>br</code> element does not have a closing tag, simply a beginning. In XHTML the <code>br</code> element is self closing, including a trailing forward slash, <code>&lt;br /&gt;</code>.</p>
+<p>Line breaks are not to be used for thematic grouping of content. Paragraphs or other elements are better suited for thematic grouping. Line breaks are specifically to be used where line breaks exist as part of the content, for example as within addresses and poems.</p>
+<p>In addition to line breaks, you may also specify word breaking opportunities with the <code>wbr</code> element. Using the <code>wbr</code> element in the middle of a word ensures that, should the word need to wrap two lines, it does in a legible fashion.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Line break --&gt;</span>
+600 W. Chicago Ave.<span class="nt">&lt;br&gt;</span>
+Chicago, IL 60654<span class="nt">&lt;br&gt;</span>
+USA
+
+<span class="c">&lt;!-- Word break --&gt;</span>
+http://shay<span class="nt">&lt;wbr&gt;</span>howe.com
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Line <abbr title="and">&amp;</abbr> Word Breaks Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_11" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/Guowl(1).html" scrolling="no" frameborder="0" height="204" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_Guowl"></iframe></div>
+</div>
+<h3>Side Comments</h3>
+<p>Originally the <code>small</code> element was used to render text as one font size smaller than the default, purely for presentational purposes. As we are aware, presentation and style should only live within CSS, not HTML. Within HTML5, the <code>small</code> element preserves the presentation of being displayed at a smaller font size, however it semantically means to be rendered as a side comments or small print. This often includes copyright information or legal print.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Side comments or small print --&gt;</span>
+<span class="nt">&lt;small&gt;</span><span class="ni">&amp;copy;</span> 2012 Shay Howe<span class="nt">&lt;/small&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Side Comments Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_12" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/sibuf(1).html" scrolling="no" frameborder="0" height="102" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_sibuf"></iframe></div>
+</div>
+<h3>Citations <abbr title="and">&amp;</abbr> Quotes</h3>
+<p>The beginner’s guide discusses <a href="https://learn.shayhowe.com/html-css/working-with-typography/">citations and quotes</a>, and when to use the <code>cite</code>, <code>q</code>, and <code>blockquote</code> elements accordingly. As a quick reminder, the <code>cite</code> element refers to a title of work, the <code>q</code> element identifies dialog or prose, and the <code>blockquote</code> element is used to code longer formed quotes, commonly from external sources.</p>
+<h3>Hyperlink Attributes</h3>
+<p>The beginner’s guide also outlines <a href="https://learn.shayhowe.com/html-css/getting-to-know-html/">hyperlinks</a>, and some of their different behaviors. What is not covered, however, is some of the semantic benefits to hyperlinks, specifically with the use of the <code>download</code> and <code>rel</code> attributes.</p>
+<h4>Download Attribute</h4>
+<p>The <code>download</code> attribute tells the browser to prompt a download for a file, rather than the default behavior of navigation to the file. As an example, if the hyperlink reference attribute, <code>href</code>, is pointing to an image, the browser will prompt a user to download the image instead of opening the image within the browser.</p>
+<p>The <code>download</code> attribute can serve as a Boolean attribute, downloading the file as is, or it may contain a value, of which becomes the file name once downloaded. Using a specific value here lets you name the file as you wish on your server while still providing users with a meaningful name.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="rouge-code"><pre><span class="c">&lt;!-- Boolean --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"twitter-logo.png"</span> <span class="na">download</span><span class="nt">&gt;</span>Twitter Logo<span class="nt">&lt;/a&gt;</span>
+
+<span class="c">&lt;!-- With a value --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"twitter-logo.png"</span> <span class="na">download=</span><span class="s">"Logo"</span><span class="nt">&gt;</span>Twitter Logo<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Download Attribute Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_13" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/lpsrG(1).html" scrolling="no" frameborder="0" height="126" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_lpsrG"></iframe></div>
+</div>
+<h4>Relationship Attribute</h4>
+<p>For any hyperlinks including a reference attribute, <code>href</code>, you may also include the relationship attribute, <code>rel</code>. The <code>rel</code> attribute identifies the relationship between the current document and the document being referenced. For example, when linking to a copyright statement the <code>rel</code> attribute value of <code>copyright</code> should be used.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3</pre></td><td class="rouge-code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"legal.html"</span> <span class="na">rel=</span><span class="s">"copyright"</span><span class="nt">&gt;</span>Terms of Use<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"toc.html"</span> <span class="na">rel=</span><span class="s">"contents"</span><span class="nt">&gt;</span>Table of Contents<span class="nt">&lt;/a&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>A few <a href="http://microformats.org/wiki/existing-rel-values" rel="nofollow">popular</a> <code>rel</code> attribute values include:</p>
+<ul class="list-column-3 group">
+<li>
+<code>alternate</code>
+</li>
+<li>
+<code>author</code>
+</li>
+<li>
+<code>bookmark</code>
+</li>
+<li>
+<code>help</code>
+</li>
+<li>
+<code>license</code>
+</li>
+<li>
+<code>next</code>
+</li>
+<li>
+<code>nofollow</code>
+</li>
+<li>
+<code>noreferrer</code>
+</li>
+<li>
+<code>prefetch</code>
+</li>
+<li>
+<code>prev</code>
+</li>
+<li>
+<code>search</code>
+</li>
+<li>
+<code>tag</code>
+</li>
+</ul>
+<h2 id="microdata">Microdata<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#microdata">#microdata</a></h2>
+<p><a href="https://www.w3.org/TR/microdata/" rel="nofollow">Microdata</a> is HTML extended with nested groups of name-value pairs that allow machines, including browsers and search engines, to pick up additional semantics and information for rich content. Adding microdata to your website is accomplished by using predetermined attributes and values. These attributes and values will then be interpreted, and extended, as intended. Currently, the more popular uses of microdata reside within coding contact information and calendar events, however there are <a href="https://schema.org/docs/schemas.html" rel="nofollow">encoding models</a> for products, reviews, and more.</p>
+<p>One example of microdata at work is within Google, where microdata is interpreted and used within search results to display more relevant data. Often performing a search for a business location yields the address and sub sequential contact information within the results. Chances are this information is being pulled from microdata written on an existing website.</p>
+<figure class="fig fig-row">
+<img alt="Google Microdata" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/microdata.jpg" style="margin-bottom: 6px;">
+<figcaption>
+<strong>Fig. 10</strong>
+<p>Google uses microdata to identify business locations, contact information, hours, pricing, ratings, and more.</p>
+</figcaption>
+</figure>
+<div class="note note-box">
+<h4>Microdata vs. Microformats vs. RDFa</h4>
+<p>There are actually a handful of rich, structured data standards, including <a href="https://www.w3.org/TR/microdata/" rel="nofollow">microdata</a>, <a href="http://microformats.org/wiki/Main_Page" rel="nofollow">microformats</a>, and <a href="https://www.w3.org/TR/xhtml-rdfa-primer/" rel="nofollow">RDFa</a>. All of these have their pros and cons, and all of which are still viable to practice.</p>
+<p>Microdata is the recommended format from <a href="https://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=99170" rel="nofollow">Google</a>, and other search engines, as well as part of the HTML5 specification. It uses findings from both microformats and RDFa to base it’s design around, thus looking to be a solid choice, and the one covered here. It is, however, recommended you do your research, take the pulse of the community, find what works best for your situation, and use that. Using one of these standards is substantially better than not using any. Find what will provide the best benefit for your users.</p>
+</div>
+<h3>Outlining Microdata</h3>
+<p>Microdata is identified using three main attributes, <code>itemscope</code>, <code>itemtype</code>, and <code>itemprop</code>.</p>
+<p>The <code>itemscope</code> Boolean attribute declares the scope of each microdata item. Place this attribute on the parent element where all of the microdata information pertaining to this item should reside.</p>
+<p>Once you have determined the scope, use the <code>itemtype</code> attribute to identify what microdata vocabulary should be used. Generally speaking, some of the more popular microdata item types have been outlined at <a href="https://schema.org/docs/schemas.html" rel="nofollow">Schema.org</a>. There are, however, other websites which outline additional, and different, item types. You may also write your own item types should you find the need.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"http://schema.org/Person"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Once the scope and type of the item have been determined, properties may then be set. These properties are identified by different elements which include the <code>itemprop</code> attribute. The value of this attribute determines what property is being referenced, and the content within the element itself most commonly determines the value of the property.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"http://schema.org/Person"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1</span> <span class="na">itemprop=</span><span class="s">"name"</span><span class="nt">&gt;</span>Shay Howe<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>Some elements, however, do not get their <code>itemprop</code> value from the content within the element. Instead, their value is determined from the value of another attribute on the element. The table below outlines these one-off elements and what attribute is used for their property value.</p>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>Element</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="Element"><code>&lt;meta&gt;</code></td>
+<td data-title="Value"><code>content</code> attribute</td>
+</tr>
+<tr>
+<td data-title="Element"><code>&lt;audio&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;source&gt;</code>, <code>&lt;video&gt;</code></td>
+<td data-title="Value"><code>src</code> attribute</td>
+</tr>
+<tr>
+<td data-title="Element"><code>&lt;a&gt;</code>, <code>&lt;area&gt;</code>, <code>&lt;link&gt;</code></td>
+<td data-title="Value"><code>href</code> attribute</td>
+</tr>
+<tr>
+<td data-title="Element"><code>&lt;object&gt;</code></td>
+<td data-title="Value"><code>data</code> attribute</td>
+</tr>
+<tr>
+<td data-title="Element"><code>&lt;time&gt;</code></td>
+<td data-title="Value"><code>datetime</code> attribute</td>
+</tr>
+</tbody>
+</table>
+<h3>Person Microdata</h3>
+<p>When referring to a person the <a href="https://schema.org/Person" rel="nofollow">person</a> microdata library should be used. Below is an example of what a person microdata item might look like. Please notice, the person item type is used, as is the postal address item type within it. Also, please notice the different item properties and their corresponding values.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"http://schema.org/Person"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;strong</span> <span class="na">itemprop=</span><span class="s">"name"</span><span class="nt">&gt;</span>Shay Howe<span class="nt">&lt;/strong&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"shay.jpg"</span> <span class="na">itemprop=</span><span class="s">"image"</span> <span class="na">alt=</span><span class="s">"Shay Howe"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">itemprop=</span><span class="s">"jobTitle"</span><span class="nt">&gt;</span>Designer and Front-end Developer<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.shayhowe.com"</span> <span class="na">itemprop=</span><span class="s">"url"</span><span class="nt">&gt;</span>shayhowe.com<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">itemprop=</span><span class="s">"telephone"</span><span class="nt">&gt;</span>(555) 123-4567<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:shay@awesome.com"</span> <span class="na">itemprop=</span><span class="s">"email"</span><span class="nt">&gt;</span>shay@awesome.com<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;address</span> <span class="na">itemprop=</span><span class="s">"address"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"http://schema.org/PostalAddress"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">itemprop=</span><span class="s">"streetAddress"</span><span class="nt">&gt;</span>600 W. Chicago Ave.<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">itemprop=</span><span class="s">"addressLocality"</span><span class="nt">&gt;</span>Chicago<span class="nt">&lt;/span&gt;</span>,
+    <span class="nt">&lt;abbr</span> <span class="na">itemprop=</span><span class="s">"addressRegion"</span> <span class="na">title=</span><span class="s">"Illinois"</span><span class="nt">&gt;</span>IL<span class="nt">&lt;/abbr&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">itemprop=</span><span class="s">"postalCode"</span><span class="nt">&gt;</span>60654<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/address&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Person Microdata Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_14" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/fedKy.html" scrolling="no" frameborder="0" height="372" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_fedKy"></iframe></div>
+</div>
+<p>Please keep in mind, this code is for an individual person. Should you wish to refer to an organization, a more specific <a href="https://schema.org/Organization" rel="nofollow">organization</a> microdata library should be followed.</p>
+<h3>Event Microdata</h3>
+<p>The event microdata is very similar to that of the person microdata, however it uses the <a href="https://schema.org/Event" rel="nofollow">event</a> microdata library instead. Common property similarities between the two can be identified, as can some of the nested item types.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"http://schema.org/Event"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">itemprop=</span><span class="s">"url"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">itemprop=</span><span class="s">"name"</span><span class="nt">&gt;</span>Styles Conference<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;time</span> <span class="na">itemprop=</span><span class="s">"startDate"</span> <span class="na">datetime=</span><span class="s">"2014-08-2409:00"</span><span class="nt">&gt;</span>Sunday, August 24, 2014 at 9:00 a.m.<span class="nt">&lt;/time&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">itemprop=</span><span class="s">"location"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"http://schema.org/Place"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">itemprop=</span><span class="s">"url"</span> <span class="na">href=</span><span class="s">"http://www.thechicagotheatre.com/"</span><span class="nt">&gt;</span>Chicago Theatre<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;address</span> <span class="na">itemprop=</span><span class="s">"address"</span> <span class="na">itemscope</span> <span class="na">itemtype=</span><span class="s">"http://schema.org/PostalAddress"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">itemprop=</span><span class="s">"streetAddress"</span><span class="nt">&gt;</span>175 N. State St.<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">itemprop=</span><span class="s">"addressLocality"</span><span class="nt">&gt;</span>Chicago<span class="nt">&lt;/span&gt;</span>,
+      <span class="nt">&lt;abbr</span> <span class="na">itemprop=</span><span class="s">"addressRegion"</span> <span class="na">title=</span><span class="s">"Illinois"</span><span class="nt">&gt;</span>IL<span class="nt">&lt;/abbr&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">itemprop=</span><span class="s">"postalCode"</span><span class="nt">&gt;</span>60601<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/address&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<div class="note">
+<h4 class="demo-title">Event Microdata Demo</h4>
+<div class="cp_embed_wrapper"><iframe name="cp_embed_15" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/smhyj.html" scrolling="no" frameborder="0" height="204" allowtransparency="true" allowfullscreen="true" allowpaymentrequest="true" title="CodePen Embed" class="cp_embed_iframe " style="width: 100%; overflow:hidden; display:block;" id="cp_embed_smhyj"></iframe></div>
+</div>
+<p>Microdata provides a lot of ways to further extend the content of a page. We have only touched the surface here. Further information on microdata may be found at <a href="http://diveintohtml5.info/extensibility.html" rel="nofollow">Dive Into HTML5 Microdata</a> and <a href="https://developers.whatwg.org/links.html#microdata" rel="nofollow">WHATWG Microdata</a>.</p>
+<h2 id="wai-aria">WAI-ARIA<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#wai-aria">#wai-aria</a></h2>
+<p><a href="https://www.w3.org/WAI/intro/aria" rel="nofollow">WAI-ARIA</a>, also know as Web Accessibility Initiative — Accessible Rich Internet Applications, is a specification that helps make web pages and applications more accessible to those with disabilities. Specifically, WAI-ARIA helps define roles (for what blocks of content do), states (for how blocks of content are configured), and additional properties to support assistive technologies.</p>
+<h3>Roles</h3>
+<p>Setting <a href="https://www.w3.org/TR/wai-aria/roles" rel="nofollow">WAI-ARIA roles</a> is accomplished using the <code>role</code> attribute. These roles then specify what certain elements and blocks of content do on a page.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;header</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/header&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<p>WAI-ARIA roles break down into four different categories, including abstract, widget, document structure, and landmark roles. For this lesson we will focus primarily on the document structure and landmark roles. <strong>Document structure roles</strong> define the organizational structure of content on a page, while <strong>landmark roles</strong> define the regions of a page. Specific role values for each of these categories are broken out below.</p>
+<h4>Document Structure Roles</h4>
+<ul class="list-column-3 group">
+<li>
+<code>article</code>
+</li>
+<li>
+<code>columnheader</code>
+</li>
+<li>
+<code>definition</code>
+</li>
+<li>
+<code>directory</code>
+</li>
+<li>
+<code>document</code>
+</li>
+<li>
+<code>group</code>
+</li>
+<li>
+<code>heading</code>
+</li>
+<li>
+<code>img</code>
+</li>
+<li>
+<code>list</code>
+</li>
+<li>
+<code>listitem</code>
+</li>
+<li>
+<code>math</code>
+</li>
+<li>
+<code>note</code>
+</li>
+<li>
+<code>presentation</code>
+</li>
+<li>
+<code>region</code>
+</li>
+<li>
+<code>row</code>
+</li>
+<li>
+<code>rowheader</code>
+</li>
+<li>
+<code>separator</code>
+</li>
+<li>
+<code>toolbar</code>
+</li>
+</ul>
+<h4>Landmark Roles</h4>
+ <ul class="list-column-3 group">
+<li>
+<code>application</code>
+</li>
+<li>
+<code>banner</code>
+</li>
+<li>
+<code>complementary</code>
+</li>
+<li>
+<code>contentinfo</code>
+</li>
+<li>
+<code>form</code>
+</li>
+<li>
+<code>main</code>
+</li>
+<li>
+<code>navigation</code>
+</li>
+<li>
+<code>search</code>
+</li>
+</ul>
+<p>HTML5 introduced a handful of new structural elements which commonly match up against the document structure and landmark roles. Exactly how these roles match up against specific elements may be seen below. Please notice, the <code>header</code> and <code>footer</code> elements do not have an implied role, and the acceptable roles for these elements may only be used <strong>once</strong> per page. That said, if you have multiple <code>header</code> and <code>footer</code> elements on a page the <code>banner</code> and <code>contentinfo</code> roles should be applied on the elements directly tied to the document from a top level perspective, not elements nested within other regions of the document structure.</p>
+<table class="tabular-data">
+<thead>
+<tr>
+<th>Element</th>
+<th>Implied Role</th>
+<th>Acceptable Roles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="Element"><code>article</code></td>
+<td data-title="Implied Role"><code>article</code></td>
+<td data-title="Acceptable Roles"><code>application</code>, <code>article</code>, <code>document</code>, or <code>main</code></td>
+</tr>
+<tr>
+<td data-title="Element"><code>aside</code></td>
+<td data-title="Implied Role"><code>complementary</code></td>
+<td data-title="Acceptable Roles"><code>complementary</code>, <code>note</code>, or <code>search</code></td>
+</tr>
+<tr>
+<td data-title="Element"><code>footer</code></td>
+<td data-title="Implied Role">—</td>
+<td data-title="Acceptable Roles"><code>contentinfo</code> (Only once per page)</td>
+</tr>
+<tr>
+<td data-title="Element"><code>header</code></td>
+<td data-title="Implied Role">—</td>
+<td data-title="Acceptable Roles"><code>banner</code> (Only once per page)</td>
+</tr>
+<tr>
+<td data-title="Element"><code>nav</code></td>
+<td data-title="Implied Role"><code>navigation</code></td>
+<td data-title="Acceptable Roles"><code>navigation</code></td>
+</tr>
+<tr>
+<td data-title="Element"><code>section</code></td>
+<td data-title="Implied Role"><code>region</code></td>
+<td data-title="Acceptable Roles"><code>alert</code>, <code>alertdialog</code>, <code>application</code>, <code>contentinfo</code>, <code>dialog</code>, <code>document</code>, <code>log</code>, <code>main</code>, <code>marquee</code>, <code>region</code>, <code>search</code>, or <code>status</code></td>
+</tr>
+</tbody>
+</table>
+<p>Combining the elements with their matched roles in HTML5 would look like the following code snippet.</p>
+<pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;header</span> <span class="na">role=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">role=</span><span class="s">"article"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">role=</span><span class="s">"region"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;aside</span> <span class="na">role=</span><span class="s">"complementary"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/aside&gt;</span>
+<span class="nt">&lt;footer</span> <span class="na">role=</span><span class="s">"contentinfo"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/footer&gt;</span>
+</pre></td></tr></tbody></table>
+              </code></pre>
+<h3>States <abbr title="and">&amp;</abbr> Properties</h3>
+<p>In combination with WAI-ARIA roles there are also <a href="https://www.w3.org/TR/wai-aria/states_and_properties" rel="nofollow">states and properties</a> which help inform assistive technologies how content is configured. Like roles, the states and properties are broken into four categories, including widget attributes, live region attributes, drag-and-drop attributes, and relationship attributes</p>
+<p>The <strong>widget attributes</strong> support widget roles and are specific to the user interface and where users take actions. The <strong>live region attributes</strong> may be applied to any element and are used to indicate content changes for assistive technologies, on page alerts and notifications for example. <strong>Drag-and-drop attributes</strong> supply information about drag-and-drop interface elements and provide alternate behaviors to assistive technologies. Lastly, <strong>relationship attributes</strong> outline the relationship between elements when the document structure cannot be determined.</p>
+<h2>Resources <abbr title="and">&amp;</abbr> Links<a class="lesson-anchor" data-js="lesson-anchor" href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#undefined">#undefined</a></h2>
+<ul class="list-column-2 group">
+<li>
+<a href="https://developers.whatwg.org/text-level-semantics.html" rel="nofollow">Text-Level Semantics</a>
+via WHATWG
+</li>
+<li>
+<a href="http://microformats.org/wiki/existing-rel-values" rel="nofollow">Existing rel Values</a>
+via Microformats.org
+</li>
+<li>
+<a href="https://schema.org/docs/schemas.html" rel="nofollow">Organization of Schemas</a>
+via Schema.org
+</li>
+<li>
+<a href="http://diveintohtml5.info/extensibility.html" rel="nofollow">Microdata</a>
+via Dive Into HTML5
+</li>
+<li>
+<a href="https://www.w3.org/WAI/intro/aria" rel="nofollow">WAI-ARIA Overview</a>
+via W3.org
+</li>
+<li>
+<a href="https://www.w3.org/TR/wai-aria/roles" rel="nofollow">The Roles Model</a>
+via W3.org
+</li>
+</ul>
+<ul class="share" data-js="share" data-permalink="http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/" data-title="Extending Semantics &amp;amp; Accessibility">
+<li>
+<a class="share-twitter" data-js="share-twitter" href="https://twitter.com/share?text=Extending%20Semantics%20%26amp%3B%20Accessibility%20-&amp;url=http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/&amp;via=shayhowe&amp;related=shayhowe" rel="nofollow">
+Share on Twitter
+</a>
+</li>
+<li>
+<a class="share-facebook" data-js="share-facebook" href="http://www.facebook.com/sharer.php?u=http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/" rel="nofollow">
+Share on Facebook
+</a>
+</li>
+<li>
+<a class="share-google" data-js="share-google" href="https://plus.google.com/share?url=http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/" rel="nofollow">
+Share on Google+
+</a>
+</li>
+</ul>
+</article>
+<nav class="pagination container">
+<ul>
+<li class="pagination-prev">
+<a href="https://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/" rel="prev">
+<strong>Lesson 9</strong>
+<span>Feature Support &amp; Polyfills</span>
+</a>
+</li>
+</ul>
+</nav>
+<section class="lead-promo">
+<div class="container">
+<h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+<p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of online schools, boot camps, workshops, and the alike, that can help.</p>
+<p>Select your topic of interest below and I will recommend a course I believe will provide the best learning opportunity for you.</p>
+<div class="note lead-recommended-courses">
+<div class="note-box">
+<h3>Select Your Topic of Interest:</h3>
+<form class="margin-bottom">
+<div class="form-toggles form-toggles-wide">
+<input data-toggle-control="topic" hidden="" name="interest" required="" type="radio" value="empty">
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="design-product" name="interest" required="" type="radio" value="Product &amp;amp; Design">
+<label class="form-toggle" for="design-product" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Design &amp; Product&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);">Design &amp; Product</label>
+<input data-toggle-control="topic" hidden="" id="front-end-development" name="interest" required="" type="radio" value="Front-end Development">
+<label class="form-toggle" for="front-end-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Front-end Development&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);">Front-end Development</label>
+<input data-toggle-control="topic" hidden="" id="web-development" name="interest" required="" type="radio" value="Web Development">
+<label class="form-toggle" for="web-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Web Development&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);">Web Development</label>
+</div>
+<div class="form-toggle-row">
+<input data-toggle-control="topic" hidden="" id="mobile-development" name="interest" required="" type="radio" value="Mobile Development">
+<label class="form-toggle" for="mobile-development" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Mobile Development&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);">Mobile Development</label>
+<input data-toggle-control="topic" hidden="" id="data-marketing" name="interest" required="" type="radio" value="Data &amp;amp; Marketing">
+<label class="form-toggle" for="data-marketing" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Data &amp; Marketing&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);">Data &amp; Marketing</label>
+<input data-toggle-control="topic" hidden="" id="business-operations" name="interest" required="" type="radio" value="Business &amp;amp; Operations">
+<label class="form-toggle" for="business-operations" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Course Filter&#39;, &#39;Business &amp; Operations&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);">Business &amp; Operations</label>
+</div>
+</div>
+</form>
+<h3>Your Course Recommendations:</h3>
+<div class="recommended-courses-empty" data-toggle-topic="empty" style="display: block;">
+Select a topic above to view your course recommendations.
+</div>
+<div data-toggle-topic="Business &amp;amp; Operations" hidden="">
+<p>Based on your interest in Business &amp; Operations I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Extending Semantics &amp; Accessibility&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Start a Business&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">How to Start a Business</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Write a Business Plan&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">How to Write a Business Plan</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Market Your Business&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">How to Market Your Business</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Run a Web Design Business&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">How to Run a Web Design Business</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Your Resume&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Building Your Resume</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Scrum Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Scrum Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Careers Foundations&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Careers Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SEO Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">SEO Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Copyright Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Copyright Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Build Your Business Through Blogging&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">How to Build Your Business Through Blogging</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Data &amp;amp; Marketing" hidden="">
+<p>Based on your interest in Data &amp; Marketing I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Extending Semantics &amp; Accessibility&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Big Data&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Introduction to Big Data</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Data Security&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Introduction to Data Security</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Data Science Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Data Science Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SQL Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">SQL Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Modifying Data with SQL&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Modifying Data with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Reporting with SQL&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Reporting with SQL</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Querying Relational Databases&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Querying Relational Databases</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Spreadsheet Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Spreadsheet Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Product &amp;amp; Design" hidden="">
+<p>Based on your interest in Product &amp; Design I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Extending Semantics &amp; Accessibility&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Design Foundations&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Design Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Aesthetic Foundations&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Aesthetic Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Usability Foundations&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Usability Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Typography&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Web Typography</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;UX Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">UX Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Researching User Needs&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Researching User Needs</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sketch Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Sketch Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Photoshop Foundations&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Photoshop Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Illustrator Foundations&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Illustrator Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Brand Identity Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Brand Identity Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Web Accessibility Compliance&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Web Accessibility Compliance</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Front-end Development" hidden="">
+<p>Based on your interest in Front-end Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Extending Semantics &amp; Accessibility&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;JavaScript Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">JavaScript Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented JavaScript&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Object-Oriented JavaScript</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;React Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">React Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Node.js Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Node.js Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Angular Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Angular Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;jQuery Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">jQuery Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;AJAX Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">AJAX Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;D3.js&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">D3.js</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Bootstrap Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Bootstrap Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Sass Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Sass Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Advanced Sass&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Advanced Sass</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Building Applications with React &amp;amp; Redux&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Building Applications with React &amp; Redux</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+ <li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introducing ES&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Introducing ES</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Gulp Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Gulp Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;npm Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">npm Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;SVG Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">SVG Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;WordPress Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">WordPress Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Drupal Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Drupal Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Front-End Web Optimization Workflow&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Front-End Web Optimization Workflow</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Mobile Development" hidden="">
+<p>Based on your interest in Mobile Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Extending Semantics &amp; Accessibility&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;iOS Design Patterns&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">iOS Design Patterns</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Objective-C Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Swift Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Swift Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Kotlin &amp;amp; Anko&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Kotlin &amp; Anko</a>
+<div class="recommended-course-details">Advanced</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Java Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Java Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Object-Oriented Objective-C&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Object-Oriented Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Objective-C for Swift Developers&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Objective-C for Swift Developers</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple iPhone App with Objective-C&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Build a Simple iPhone App with Objective-C</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Simple Android App&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Build a Simple Android App</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+<div data-toggle-topic="Web Development" hidden="">
+<p>Based on your interest in Web Development I recommend checking out the following <a href="https://treehouse.7eer.net/c/388403/263461/3944" rel="nofollow" target="_blank" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Treehouse Courses&#39;, &#39;Extending Semantics &amp; Accessibility&#39;]);">Treehouse courses</a>:</p>
+<ul class="lead-list-cols group">
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Git Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Git Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Console Foundations&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Console Foundations</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;HTTP Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">HTTP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;REST API Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">REST API Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Functional Programming&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Introduction to Functional Programming</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Ruby Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby Gems&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Ruby Gems</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Ruby on Rails 5 Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Ruby on Rails 5 Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Build a Rails API&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Build a Rails API</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Python Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Python Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Django Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Django Basics</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;C# Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">C# Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Go Language Overview&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Go Language Overview</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">PHP Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;PHP Standards &amp;amp; Best Practices&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">PHP Standards &amp; Best Practices</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;Introduction to Scala&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">Introduction to Scala</a>
+<div class="recommended-course-details">Intermediate</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;ASP.NET MVC Basics&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">ASP.NET MVC Basics</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+<li>
+<a class="recommended-course-title" href="https://treehouse.7eer.net/c/388403/294890/3944" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Treehouse Course Select&#39;, &#39;How to Make a Video Game&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow" target="_blank">How to Make a Video Game</a>
+<div class="recommended-course-details">Beginner</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container">
+<div class="promo-book">
+<h2>
+<a href="https://learn.shayhowe.com/advanced-html-css/semantics-accessibility/#">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+</h2>
+<a class="promo-img promo-book-img" data-js="promo-book-img" href="https://learn.shayhowe.com/advanced-html-css/"><img alt="HTML and CSS" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/book-sm.png"></a>
+<p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner’s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+<div class="promo-btn">
+<a class="btn btn-cta" href="https://click.linksynergy.com/link?id=0UVRLqz5qts&amp;offerid=145238.2038547&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Peachpit&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow">Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+</div>
+<p class="promo-links">
+Also available at
+<span>
+<a href="https://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Amazon&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow">Amazon</a>
+and
+<a href="http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;Purchase&#39;, &#39;Barnes &amp; Noble&#39;, &#39;Extending Semantics &amp;amp; Accessibility&#39;]);" rel="nofollow">Barnes &amp; Noble</a>
+</span>
+</p>
+</div>
+</section>
+<section class="container">
+<div class="note">
+<div class="promo note-box note-stack">
+<h3>
+<a href="https://learn.shayhowe.com/html-css/">Looking for Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+</h3>
+<a class="promo-img promo-course-img" href="https://learn.shayhowe.com/html-css/"><img alt="HTML and CSS" class="media-circle" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/code.jpg" style="margin-bottom: 1px;"></a>
+<p>Checkout these <a href="https://learn.shayhowe.com/html-css/">beginner focused HTML and CSS lessons</a>, compiled into a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS, working through all common components.</p>
+<a class="btn btn-alt" href="https://learn.shayhowe.com/html-css/">View Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+</div>
+<div class="newsletter note-box group">
+<h3>Join the Newsletter</h3>
+<p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter—spam free.</p>
+<form action="https://shayhowe.us4.list-manage.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524" class="newsletter-form" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<div class="input-group">
+<input class="input-control" name="EMAIL" placeholder="Email address" required="" type="email">
+<div class="input-group-btn">
+<button class="btn btn-alt" name="subscribe">Get Updates</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<script async="" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/ei.js.download"></script>
+</div>
+<footer class="primary-footer">
+<div class="clamp">
+<small>© Shay Howe</small>
+<div class="enjoy-cta">
+Enjoy these lessons?
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 28px;" title="Twitter Follow Button" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/follow_button.6a44a9d26983bbb5b04ae399f9e496fe.en.html" data-screen-name="shayhowe"></iframe>
+</div>
+</div>
+</footer>
+</section>
+</div>
+</div>
+<script src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/jquery.min.js.download"></script>
+<script>
+      window.jQuery || document.write('<script src="/assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+<script src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/main.js.download" type="text/javascript"></script>
+<script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+<script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Extending Semantics &amp; Accessibility - Learn to Code Advanced HTML &amp; CSS_files/widget_iframe.6a44a9d26983bbb5b04ae399f9e496fe.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>
