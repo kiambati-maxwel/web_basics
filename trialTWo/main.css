@@ -68,6 +68,23 @@ table {
   }
 /*
   ========================================
+  Clear fix
+  ========================================
+*/
+.group ::after, 
+.group ::before{
+  content: "";
+  display: table;
+}
+.group ::after{
+  clear: both;
+}
+.group{
+  clear: both;
+  zoom: 1;
+}
+/*
+  ========================================
   Typography
   ========================================
 */
@@ -76,4 +93,42 @@ h1, h3, h4, h5, p {
     margin-bottom: 22px;
   }
     
+/*
+  ========================================
+  buttons
+  ===b=====================================
+*/
 
+.btn{
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+.btn-alt{
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
+} 
+/*
+  ========================================
+  Home
+  ========================================
+*/
+.hero{
+  padding: 22px 80px 66px 80px;
+  
+}
+
+/*
+  ========================================
+  plimary header
+  ========================================
+*/
+.logo{
+  float: left;
+  border: 4px solid rgb(20, 20, 51) ;
+  padding: 20px 0px 40px 0;
+}
+
+nav > a{
+  display: inline;
+}
