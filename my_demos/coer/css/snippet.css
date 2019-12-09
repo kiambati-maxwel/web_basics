@@ -57,7 +57,7 @@ table {
 }
 
 .container, .grid {
-  width: 960px;
+  width: 80%;
   margin: 0 auto;
 }
 .container{
