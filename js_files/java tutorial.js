@@ -3,13 +3,12 @@
 // alert("error")
 
 // console.error("stop it")
-let x = 100;
-x = 50.44;
-console.log(x);
+let = 200 ;
+
+
 
 const age = 33;
 
-console.log(age)
 
 //=========== dta types
 const bool = true;
@@ -73,7 +72,7 @@ console.log(`${person.firstName} ${person.lastName}`)
   
 person.hobies.push("dancing");
 console.log(person.hobies)
-
+// ===================== desturing
 const {firstName, lastName, career: { proffesion }} = person;
 
 console.log(proffesion);
@@ -134,7 +133,7 @@ tado.forEach(function(tado){
 
  console.log(mapping);
 
-//  ======= filter
+//  ======= filter ====== higher oder function ==
 const mappi = tado.filter(function(tado){
     return tado.isCompleted === true;
 }).map(function(tado){
@@ -152,6 +151,7 @@ console.log("yes!!")
 
 const ternar = 10;
 
+const x=10;
 const color = x > 10 ? console.log("red") : "blue";
 
 // ====== switch 

@@ -1,0 +1,165 @@
+/* =========== reset ========== */
+body{
+    margin:  0 auto;
+    padding: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAFAFA;
+}
+
+
+
+/*=============== grid ========== */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container, .block{
+    margin: 0 auto;
+    width: 90%;
+    /* border: black 1px solid; */
+}
+
+.aside{
+    width: 10%;
+}
+.hero{
+    padding: 22px;
+    
+}
+.items{
+    margin: 0 auto;
+    display: inline-block;
+    width: 35%;
+    border: #000000 1px solid;
+    border-radius: 5%;
+    height: 15em;
+}
+.block-items{
+    margin: 0 auto;
+    padding: 22px;
+    /* border: blue 1px solid; */
+}
+.grid{
+    /* display: inline-block */
+    float: right;
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.cls{
+    clear: both;
+}
+
+/* ============ aside ============ */
+.aside{
+    position: fixed;
+    top: 100px;
+    float: left;
+    height: 70%;
+    border-right:#2997FF 1px solid;
+    /* border: solid greenyellow ; */
+}
+.icon{
+    margin-bottom: 5%;
+    border: solid black 1px;
+    border-radius: 25% 75%;
+    padding: 10%;
+    margin-right: 5%;
+}
+/* .explore{
+    margin-bottom: 80px;
+} */
+
+
+/*=============== header ======= */
+.primary-header{
+    position: fixed ;
+    left: 80px;
+    padding-top: 22px;
+    padding-bottom: 11px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAFAFA;
+}
+.nav-header{
+    /* position: fixed; */
+    float: right;
+    padding: 25px;
+    margin-right: 10px;
+    
+  }
+  
+  .nav-header a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+        
+  }
+  /* ============ logo ============ */
+  .logo{
+    /* border: solid #000000 3px; */
+    border-radius: 100%;
+    float: left;
+    padding: 5px 15px 5px 15px;
+    color: #000000;
+    margin: 0;
+    margin-top:5px;
+    font-size: 22px;
+  }
+  #blue{
+    color: #2997FF;
+    font-size: 22px;
+    
+  }
+
+  /* ============== hero ======== */
+  .hero{
+      text-align: center;
+      padding: 100px 33px 66px 33px;
+  }
+  .hero h2{
+      font-weight: lighter;
+  }
+ /* -========= content body ============== */
+ .items{
+    margin-left: 7em;
+    margin-bottom: 3em;
+    padding-left: 22px;
+    background-color: #000000;
+    color: #2997FF;
+    
+ }
+ .items h2{
+     font-weight: lighter;
+ }
+
+
+  /* ========= footer ============ */
+.primary-footer small{
+    float: left;
+    padding-top: 22px;
+    padding-left: 90px;
+    font-size: x-small;
+    font-size: 12px;
+  }
+  .nav-footer{
+      float: right;
+      padding: 25px;
+    
+  }
+  .nav-footer a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #000000;
+    font-size: small;
+  }
+  .primary-footer{
+      padding-top: 33px;
+      padding-bottom: 88px;
+  }

@@ -1,51 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>web.dev</title>
+    <link rel="stylesheet" href="/web.dev.css">
 </head>
+
 <body>
     <!--============== header ================-->
-    <header>
-        <a href=""><h1>coerLAB <span>>></span></h1></a>
-        <nav>
-            <a href="#">Home</a>
+    <header class="container primary-header">
+        <a href="/index.html">
+            <p class="logo">coerLAB<span id="blue">>></span></p>
+        </a>
+        
+        <nav class="nav nav-header">
+            <a href="#" class="hm">Home</a>
             <a href="#">isdeaHUB</a>
             <a href="#">resources</a>
             <a href="#">updates</a>
             <a href="#">journey</a>
             <a href="#">openProjects</a>
-            <a href="#">learningmodels</a> 
+            <a href="#">learningmodels</a>
         </nav>
     </header>
+     <!-- =========== cls ====== -->
+ <div class="cls"></div>
 
-    <!-- ================== hero ============== -->
-    <section>
-        <h2>wwelcome to web design team</h2>
-        <p>aim to create an amazing foundation  in web world by solving problems and learning through models </p>
-        <video src="#">video</video>
-    </section>
+    <div class="block">
 
-    <!-- =========== body =========== -->
-    <section>
-        <div>
-            <section>
-                <h2>open projects</h2>
+        <!-- ================= aside-nav =========== -->
+        <aside class="aside nav-aside">
+            <section class="icon explore">
+                <h4>Explore</h4>
             </section>
-            <section>
-                <h2>learning models</h2>
+            <section class="icon updates">
+                <h4>Updates</h4>
             </section>
-            <section>resources</section>
-
-        </div>
-    </section>
-
-    <!-- ============= footer ============= -->
- 
-    <footer>
+            <section class="icon ideabox">
+                <h4>idaBox</h4>
+            </section>
+            <section class="icon connect">
+                <h4>connect</h4>
+            </section>
+             
+        </aside>
         
+        <div class="grid">
+            <!-- ================== hero ============== -->
+            <section class="hero">
+                <h2>welcome to web design team</h2>
+                <p> Create an amazing foundation in web world by solving problems and learning through models.
+                </p>
+                <p>get the introductio</p>
+                <!-- <video src="#">video</video> -->
+            </section>
+
+
+            <!-- =========== grid  =========== -->
+            <section class="content-body">
+                <div class="block-items">
+                    <section class="items l-models">
+                        <h2>learning models</h2>
+                    </section>
+                    <section class="items o-projects">
+                        <h2>open projects</h2>
+                    </section>
+                    <section class="items resources">
+                        <h2>Resources</h2>
+                    </section>
+                    <section class="items d-stories">
+                        <h2>Stories</h2>
+                </section>
+        </div>
+    </div>
+ <!-- =========== cls ====== -->
+ <div class="cls"></div>
+    <!-- ============= footer ============= -->
+
+    <footer class="container primary-footer">
+        <small>Copyright &copy; 2017 c&#x153;urLABS</small>
+        <nav class="nav nav-footer">
+            <a href="#">Home</a>
+            <a href="#">IOT</a>
+            <a href="#">Machine.L</a>
+            <a href="#">(REST)APIs</a>
+        </nav>
+
     </footer>
 </body>
+
 </html>
