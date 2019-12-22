@@ -1,0 +1,55 @@
+.box-set {
+    background: #eaeaed;
+    margin-top: 100px;
+  }
+  .box {
+  
+    text-align: center;
+    height: 4em;
+    background: #2db34a;
+    float: left;
+    margin: 1.858736059%;
+    width: 29.615861214%;
+    /* ====== over flow auto=====  */
+   
+  }
+
+  /* ------------ clear fix --------- */
+
+  .box-set:before,
+  .box-set:after{
+      content: "";
+      display: table;
+  }
+  .box-set:after{
+      clear: both;
+  }
+  .box-set{
+      zoom: 1;
+  }
+
+  /* ============ fixed header ======== */
+  header{
+      background: lime;
+      color: #000;
+      padding: 2px;
+      text-align: center;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+  }
+/* =============== clear fix group class===== */
+
+.group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group{
+    zoom: 1;
+}
+  
