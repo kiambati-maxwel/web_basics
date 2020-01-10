@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  letter-spacing: 0.1em;
+  /* position: relative; */
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ================ grid = & =  box-sizing ============ */
+*,
+*:before,
+*:after{
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.body{
+  margin: 0 auto;
+}
+.container, .intro, .hero {
+  float: right;
+  width: 84%;
+  margin: 5px;
+  padding: 0.5em;
+}
+
+aside{
+  float: left;
+  width: 15%;
+  height: 1000px;
+  background-color: rgb(39, 39, 68);
+  position: fixed;
+}
+
+.intro{
+  height: auto; 
+  box-sizing: border-box; 
+  line-height: 2em;
+
+  }
+.intro video{
+  width: 40.6%;
+  float: right;
+  padding: 1em;
+}
+.intro-2 video{
+  float: left;
+}
+
+.hero{
+ padding: 0 22px 0 33px;
+}
+
+/* ============ typography ========= */
+
+h1,h2,h3,h4,h5,p {
+  margin-top: 33px;
+}
+/* =============== clear-fix ======== */
+.group:before,
+.group:after{
+  content: "";
+  display: table;
+}
+.group:after{
+  clear: both;
+}
+.group{
+  clear: both;
+  *zoom: 1;
+}
+/* =========== header ================== */
+
+.nav{
+  float: right;
+  padding-top: 1.8em;
+}
+.nav li{
+  display: inline-block;
+}
+.nav a{
+  text-decoration: none;
+  padding-right: .5em;
+  letter-spacing: 1px;
+}
+
+/* ============== hero ========= */
+.hero{
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+/* ========== intro ============= */
+
+.intro> h2{
+  text-align: center;
+}
+ 
+/* ================ aside ========= */
+
+
+#logo{
+  text-align: center;
+  letter-spacing: 1px;
+  
+}
+#logo a{
+  text-decoration: none;
+  font-family: monospace;
+  font-size: xx-large;
+  color: white;
+  border: white 1px solid;
+  padding: 10px;
+  border-radius: 25%;
+}
+
+/* ========== iframe ============= */
+figure {
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  position: relative;
+  width: 100%;
+}
+iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+/* =========== footer ============= */
+.empty{
+height: 100px;
+}
+footer{
+  
+  border: solid black 1px;
+  height: 200px;
+}
+.primary-footer small{
+  
+  border: solid black 1px;
+}
+
+@media(max-width: 800px){
+  aside{
+    display: none;
+    width: 0;
+    height: 0;  
+  }
+  .nav-header{
+    padding: 0;
+    margin: 0;
+    float: none;
+
+  }
+  .hero{
+    padding: 2em;
+    float: none;
+  }
+}
+@viewport{
+  width: device-width;
+  zoom: 1;
+}

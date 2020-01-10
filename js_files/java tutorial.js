@@ -127,9 +127,7 @@ tado.forEach(function(tado){
 });
 
 // ========= map
- const mapping = tado.map(function(tado){
-     return tado.text
- });
+ const mapping = tado.map((tado) => tado.text);
 
  console.log(mapping);
 
@@ -243,4 +241,33 @@ const developer1 = new developer ("maxwel", "bot", 56483, 1-5-2001)
 
 console.log(developer1.getFName());
 console.log(developer1.getBDate());
+
+// ============ es6 return object
+
+const myObjectLiteral = (name, age, gender) => ({name, age, gender});
+
+
+// ============= use strict 
+
+"use strict";
+
+// =========== const array mutation object.freec()
+
+function freezeobj(){
+    "use strict";
+    const mathCircleHas = {
+        PI: 3.14
+    };
+
+    Object.freeze(mathCircleHas);
+
+    try{
+        mathCircleHas.PI = 100;
+    }catch( ex ){
+        console.log(ex)
+    }
+        return mathCircleHas.PI;
+    }
+
+    console.log(freezeobj());
 

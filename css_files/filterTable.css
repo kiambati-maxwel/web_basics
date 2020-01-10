@@ -1,0 +1,70 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 2em;
+    font-size: medium;
+}
+h1{
+    text-align: center;
+}
+#filterInput{
+    margin-left: 40%;
+    padding: 5px;
+}
+
+/* ========= grid =========== */
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    border: black 1px solid;
+    margin: auto;
+    /* text-align: center; */
+    background-color: honeydew;
+}
+
+/* ======== clear fix ================== */
+.group:before,
+.group:after{
+    content: "";
+    display: table;
+}
+.group:after{
+    clear: both;
+}
+.group{
+    clear: both;
+    *zoom: 1;
+}
+
+/* ============= clear-fix two ======== */
+.row:after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+/* ============= box-sizing two ======= */
+*{
+    box-sizing: border-box;
+}
+
+/*=========== list =============== */
+.list{
+    list-style: none;
+    margin-top: 1em;
+}
+/* ========== collection ======= */
+.collection a{
+    text-decoration: none;
+    color: rgb(5, 72, 218);
+    letter-spacing: 1px;
+}
+.collection li{
+    border-bottom: rgb(167, 166, 166) solid 1px;
+    max-width: 200px;
+}

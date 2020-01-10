@@ -27,7 +27,7 @@
 // const formB = document.querySelector(".btn");
 
 // formB.addEventListener('mouseout', (event) => {
-    // event.preventDefault()
+    // event.preventDefau]lt()
     // console.log(event.target.className)
     // document.querySelector(".global-form").style.background = "#ccc" ;
 
@@ -58,3 +58,4 @@ function onSubmit (e){
        
     }
 }
+

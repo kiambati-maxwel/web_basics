@@ -163,3 +163,22 @@ body{
       padding-top: 33px;
       padding-bottom: 88px;
   }
+
+  /* ============ responsive ==== */
+
+  @media(max-width: 600px){
+
+    .aside{
+        display: none;
+        width: 0;
+        height: 0;
+        border: black solid 1px;
+
+    }
+    .items{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+}

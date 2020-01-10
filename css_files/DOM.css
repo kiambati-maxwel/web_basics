@@ -1,0 +1,22 @@
+.container{
+    margin-top: 0;
+    border: black 1px solid;
+    padding: 2em;
+    box-shadow: black;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+.list-item{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: .5px solid black;
+    padding: 8px;
+    margin-bottom: 7px;
+    
+
+}
