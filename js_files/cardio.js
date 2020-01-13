@@ -78,4 +78,10 @@ function seekDestroy(arr, ...rest){
 console.log(seekDestroy([3,10,6,4,'yes', 'bana'],10,6, ));
 
 
+// ====== return statement 
+function test (){
+    
+};
+
+console.log(test());
 
