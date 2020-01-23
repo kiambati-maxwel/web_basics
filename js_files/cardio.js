@@ -85,3 +85,58 @@ function test (){
 
 console.log(test());
 
+// ===== loop through an array of arrays and return an array with the sum of the inner arrays
+
+const number  = [
+    [1, 2 , 4 ],
+    [5, 6, 1, 2],
+    [3, 7, 1, 4, 6, 4]
+];
+
+//  === expected results --> [5, 14, 25]
+
+function numbers (numbers){
+    let sums = [];
+    let s = 0;
+    for (let i = 0; i<numbers.length; i++){        
+        for(let j = 0; j<numbers[i].length; j++){
+            s += numbers[i][j];
+        }
+        sums.push(s);
+    }
+    return sums;
+}
+
+console.log(numbers(number))
+console.log(number[1].length);
+
+//  === a function rangeSum(number) that adds up the rangeOf numbers beginning from zero AND should take both +ve and -ve intengers
+
+
+
+
+
+
+
+// ==== return an array with the average in the following 
+
+var st = [
+    { 
+      name: "Mary", 
+      age: 10, 
+      grades: [90, 88, 95]
+    }, 
+    {
+      name: "Joseph", 
+      age: 11, 
+      grades: [80, 100, 90, 96]
+    }
+  ];
+
+   function avg (students){
+      students.forEach(element => {
+          console.log(st.age);
+      });
+  }
+
+  avg(st);
