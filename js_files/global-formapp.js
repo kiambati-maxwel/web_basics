@@ -38,18 +38,19 @@ const inputname = document.querySelector("#name");
 const email = document.querySelector("#email");
 const msg = document.querySelector(".msg");
 const userList = document.querySelector("#users");
+const textArea = document.querySelector("textarea");
 
 myform.addEventListener("submit", onSubmit);
 
 function onSubmit (e){
     e.preventDefault();
     
-    if(inputname.value === "" || email.value === ""){
+    if(inputname.value === "" || email.value === "" || textArea.value === ""){
         msg.classList.add("error");
         msg.innerHTML = "please enter all fields";setTimeout(() => msg.remove(), 4000);
     }else{
         const li = document.createElement("li");
-        li.appendChild(document.createTextNode(`${inputname.value} : ${email.value}`));
+        li.appendChild(document.createTextNode(`${inputname.value} : ${email.value} : ${textArea.value}` ));
 
         userList.appendChild(li);
 

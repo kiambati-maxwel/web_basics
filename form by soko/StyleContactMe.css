@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+/* ============= reset ============ */
 *{
 	margin: 0;
 	padding: 0;
@@ -7,15 +8,17 @@
 	font-family: 'Roboto', sans-serif;
 }
 body{
-	background: url('bg.jpg') no-repeat top center;
-	background-size: cover;
-	height: 100vh;
+	background-color: rgb(101, 101, 255);
+	/* background: url('bg.jpg') no-repeat top center; */
+	/* background-size: cover; */
+	/* height: 100vh; */
 }
 .wrapper{
+	/* border: black solid 1px; */
 	position: absolute;
 	top:50%;
 	transform: translateY(-50%);
-	width: 100%;
+	width: 100%; 
 	padding:0 20px;
 }
 .contact-form{

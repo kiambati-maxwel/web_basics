@@ -140,3 +140,35 @@ var st = [
   }
 
   avg(st);
+
+//  SORT BY HEIGHT 
+// some people are standing in a row in a park. There are trees between them which connot be moved. Your task to rearrange the people by their heights in a not-descending order without moving the trees.
+// ex.
+//a = [-1, 150, 190, 170, -1, -1, 160, 100]
+// sortByHeight(a) == [-1, 150, 160, 170, -1, -1, 180, 190]
+
+function sortByHeight(a){
+    const arr1 = []; //store position
+    const arr2 = []; //store values not = to -1
+
+    a.forEach((val, i) => val === -1 ? arr1.push(i) : arr2.push(val) // ternary operator
+
+        // if(val === -1){
+        //     arr1.push(i);
+        // }else{
+        //     arr2.push(val);
+        // }
+    );
+
+    const sortArr = arr2.sort((a,b) => a-b);// sort from highest to lowest {b-a will sort from highest to lowest}
+
+
+    arr1.forEach((val,  i/* index*/) => sortArr.splice(arr1[i], 0, -1));
+
+    return sortArr
+
+}
+const a = [-1, 150, 190, 170, -1, -1, 160, 100];
+
+console.log(sortByHeight(a));
+
