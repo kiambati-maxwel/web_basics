@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetchAPI</title>
+    <link rel="stylesheet" href="../fetchApi.js">
+</head>
+
+<body>
+    <button id="get-text">get-text</button>
+    <button id="get-users"></button>
+
+    <div id="output"></div>
+
+
+
+
+    <script>
+        document.getElementById('get-text').addEventListener('click', getText);
+        document.getElementById('get-users').addEventListener('click', getUsers);
+        // function getText(){
+        //     fetch('sample.txt')
+        //     .then(function(res){
+        //         return(res.text());
+        //     })
+        //     .then(function(data){
+        //        console.log(data);
+        //     });
+        // }
+        function getText() {
+            fetch('sample.txt').then((res) => res.text())
+                .then((data) => {
+                    document.getElementById('output').innerHTML = data;
+                 }).catch((err) => console.log(err)); 
+        };
+
+        function getUsers(){
+             fetch('users.json').then((res) => res.json()).then((data) => {
+                 let output = '<h2>Users</h2>';
+                 data.forEach((user) => {
+                     output += `
+                     <ul>
+                     <li>
+                     </ul>
+                     `
+                 })
+             });
+        }
+    </script>
+</body>
+
+</html>

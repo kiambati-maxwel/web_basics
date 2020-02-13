@@ -34,6 +34,11 @@
 }
 
 /* ----- header ------- */
+#blue{
+  color: #65488C;
+  font-size: 30px;
+  font-weight: bolder;
+}
 .primary-header {
     border: 1px solid gray;
     padding: 20px;
@@ -44,6 +49,9 @@ header h1 {
     text-align: center;
     padding-bottom: 10px;
     color: white;
+}
+header a{
+    text-decoration: none;
 }
 
 .nav {
