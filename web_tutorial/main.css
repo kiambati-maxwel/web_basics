@@ -1,0 +1,159 @@
+/* ====reset=== */
+*{
+    margin: 0;
+}
+
+/*===== grid ====== */
+*,
+:before,
+:after{
+-webkit-box-sizing: border-box;
+   -mox-box-sizing: border-box;
+        box-sizing: border-box;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+/* -------- clear-fix -------- */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/* ----- header ------- */
+.primary-header{
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+header h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.nav{
+    letter-spacing: .3rem;
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.nav a{
+    text-decoration: none;
+}
+
+.nav-header{
+    text-align: center;
+    
+}
+
+/* -------  hero ------*/
+.bg-image {
+    border: solid 1px blueviolet;
+    /* The image used */
+    background-image: url("./apple-1868496_960_720.webp");
+  
+    /* Add the blur effect */
+    filter: opacity(0.6);
+    /* -webkit-filter: blur(8px); */
+  
+    /* Full height */
+    height: 90%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.hero{
+    border: solid 1px black;
+    /* padding: 50px; */
+    /* background-image: url(https://cdn.pixabay.com/photo/2016/11/29/08/41/apple-1868496_960_720.jpg); */
+    /* background-repeat: repeat-x; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    /* background-size: 100% 100%; */
+    height: 400px;
+    /* position: relative; */
+   
+}
+.hero-child{
+    border: solid 1px gray;
+    padding: 50px;
+    line-height: 40px;
+    position: absolute;
+    top: 200px;
+}
+.hero-child div{
+    border: solid 1px black;
+    float: left;
+    /* width: 100px; */
+    margin-left: 15%;
+    
+}
+button{
+    position: absolute;
+    float: right;
+    margin-right: 25%;
+    margin-top: 5%;
+}
+
+/* -------body --------- */
+.bod{
+    padding: 70px 0 50px 0;
+}
+
+.bod-content{
+    /* padding-top: 60px; */
+    border: solid 1px rgb(173, 173, 173);
+    border-radius: 2%;
+    width: 60%;
+    float: left;
+    height: 350px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+.bod-content p{
+    line-height: 2rem;
+}
+.bod-content h3{
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+aside{
+    width: 40%;
+    float: right;
+}
+aside img{
+    border-radius: 0 0 2% 0;
+}
+
+/* ------ footer -------- */
+
+footer nav{
+    padding: 20px;
+    line-height: 2rem;
+    width: 40%;
+}
+ .nav-footer-b a, .nav-footer-a a{
+display: block;
+
+}
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+}
+.foot{
+    text-align: center;
+}

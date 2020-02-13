@@ -12,6 +12,8 @@ function myfunction(a1, a2){ //this is a function
 }
 console.log(myfunction(4, 3))
 
+console.log(myfunction(4, 3))
+
 console.log(person.first_name  + " " +person.second_name+" "+person.DOB)
 
 
