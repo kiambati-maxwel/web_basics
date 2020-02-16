@@ -10,7 +10,8 @@
 
 <body>
     <button id="get-text">get-text</button>
-    <button id="get-users"></button>
+    <button id="get-users">get-JSON<button>
+    <button id="get-posts">get API data</button>
 
     <div id="output"></div>
 
@@ -20,6 +21,7 @@
     <script>
         document.getElementById('get-text').addEventListener('click', getText);
         document.getElementById('get-users').addEventListener('click', getUsers);
+        document.getElementById('get-posts').addEventListener('click', getPosts);  
         // function getText(){
         //     fetch('sample.txt')
         //     .then(function(res){
@@ -39,13 +41,34 @@
         function getUsers(){
              fetch('users.json').then((res) => res.json()).then((data) => {
                  let output = '<h2>Users</h2>';
+                 console.log(data);
                  data.forEach((user) => {
                      output += `
                      <ul>
-                     <li>
+                     <li>ID : ${user.id}</li>
+                     <li>Name : ${user.name}</li>
+                     <li>Email : ${user.email}</li>  
                      </ul>
-                     `
-                 })
+                     ` 
+                 });
+                 document.getElementById('output').innerHTML = output;
+             });
+        }
+
+        function getposts(){
+             fetch('url....').then((res) => res.json()).then((data) => {
+                 let output = '<h2>Users</h2>';
+                 console.log(data);
+                 data.forEach((user) => {
+                     output += `
+                     <ul>
+                     <li>ID : ${user.id}</li>
+                     <li>Name : ${user.name}</li>
+                     <li>Email : ${user.email}</li>  
+                     </ul>
+                     ` 
+                 });
+                 document.getElementById('output').innerHTML = output;
              });
         }
     </script>

@@ -61,6 +61,73 @@ table {
   box-sizing: border-box;
 }
 
-.container,{
-  width
+.container {
+  width: 95%;
+  margin: auto;
 }
+
+/* ------header------- */
+
+.nav-alt{
+  float: right;
+  padding: 25px;
+  /* border: #000000 solid 1px; */
+  
+}
+.nav-alt a{
+  text-decoration: none;
+  padding-right: 15px;
+  color: #000000;
+  font-size: small;
+}
+/*------------ logo -------*/
+.logo{
+  margin-top: 12px;
+  border: solid #000000 3px;
+  border-radius: 100%;
+  float: left;
+  padding: 5px 15px 5px 15px;
+  color: #000000;
+  
+}
+#blue{
+  color: #2997FF;
+  font-size: 22px;
+  
+}
+/* --------- clear-fix-------- */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/* --------- body-content float --------------*/
+section{
+  margin: auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  float: left;
+  width: 48%;
+  border: solid 1px black;
+  border-radius: 5%;
+  height: 10rem;
+}
+/* -------- body-content flex ------ */
+/* section{
+  border-radius: 2%;
+  border: solid 1px black;
+}
+
+.flex-container{
+  display: flex;
+  
+} */
