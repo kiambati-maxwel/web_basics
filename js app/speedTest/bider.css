@@ -1,0 +1,134 @@
+/* --- reset --- */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* --- grid --- */
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+/* --- header --- */
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(34, 34, 34);
+}
+
+/* --- grid --- */
+.grid{
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+.grid>p{
+    padding: 20px;
+}
+.intro{
+    color: green;
+}
+
+.word{
+    padding: 0 0 10px 0;
+    letter-spacing: 3px;
+}
+
+/* --- input --- */
+.form-control{
+    height: 27px;
+    width: 100%;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: x-large;
+
+}
+/* --- score --- */
+.your-score-container{
+    width: 60%;
+    margin: 0 auto;
+}
+.your-score{
+    padding: 20px;
+}
+.your-score span{
+    color: green;
+}
+
+/* -- message --- */
+#message{
+    padding: 10px;
+    height: 1.5rem;
+    color: red;
+    list-style: 2px;
+}
+
+/* --- instructions --- */
+.instructions{
+    margin-top: 30px;
+    padding: 10px 10px 20px 10px;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: rgb(15, 29, 24);
+
+}
+.instructions h5{
+    color: green;
+    padding-bottom: 20px;
+}
+
+/* --- atmedia --- */
+@media screen and (max-width:800px){
+    .grid{
+        width: 90%;
+    }
+    .container{
+        width: 100%;
+    }
+    .your-sc
+    ore-container{
+        width: 90%;
+    }
+    .form-control{
+        width: 60%;
+    }
+}
+hr{
+    width: 13%;
+    position: absolute;
+    top: 61%;
+    z-index: 1;
+    left: 45%;
+}
+.progress{
+    display: inline;
+    position: absolute;
+    top: 63.5%;
+    left: 30%;
+    z-index: 2;
+}
+.progress input{
+    background: rgb(103, 103, 250);
+    margin: 0 25px 0 25px;
+    height: 30px;
+    width: 30px;
+    color: green;
+}
+.progress span{
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+}
+.progress .a{
+    font-size: 40px;
+    color: green;
+}

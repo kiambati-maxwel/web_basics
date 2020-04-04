@@ -172,3 +172,5 @@ const a = [-1, 150, 190, 170, -1, -1, 160, 100];
 
 console.log(sortByHeight(a));
 
+console.log(window);
+console.log(navigator.appVersion);

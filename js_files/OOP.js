@@ -9,7 +9,6 @@ const book = {
 }
 
 console.log(book.description());
-
 console.log(Object.values(book));
 console.log(Object.keys(book));
 
@@ -41,8 +40,8 @@ function  magazine (name, author, publisher, year){
 magazine.prototype = Object.create(books.prototype);
 
 const mag = new magazine('thebbart', 'marn rmond','longn', 2020);
-magazine.prototype.constructor = magazine
-console.log(mag.getSummary())
+magazine.prototype.constructor = magazine;
+console.log(mag.getSummary());
 
 
 // ========== class objects === 

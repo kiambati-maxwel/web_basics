@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+
+    <style>
+       .cube-container {
+  height: 200px;
+  perspective: 300;
+  position: relative;
+  width: 200px;
+}
+.cube {  
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-100px);
+  transform-style: preserve-3d;
+  width: 100%;
+}
+.side {
+  background: rgba(45, 179, 74, .3);
+  border: 2px solid #2db34a;
+  height: 196px;
+  position: absolute;
+  width: 196px;
+}
+.front {
+  transform: translateZ(100px);
+}
+.back {
+  transform: rotateX(180deg) translateZ(100px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="cube-container">
+        <div class="cube">
+          <figure class="side front">1</figure>
+          <figure class="side back">2</figure>
+          <figure class="side left">3</figure>
+          <figure class="side right">4</figure>
+          <figure class="side top">5</figure>
+          <figure class="side bottom">6</figure>
+        </div>
+      </div>
+      
+</body>
+
+</html>

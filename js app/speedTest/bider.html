@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bider</title>
+    <link rel="stylesheet" href="./bider.css">
+</head>
+<body>
+    <header>
+        <h1>wordBider</h1>
+    </header>
+    <div class="container">
+        <div class="grid">
+            <p class="lead">Type The given Word in <span class="intro" id="seconds">5</span> seconds:</p>
+        <h2 class="word" id="current-word">hello</h2>
+        <input type="text" class="form-control" placeholder="start typing ..." id="word-input" autofocus>
+        <h4 id="message"></h4>
+
+        <!-- time and score -->
+        <div class="your-score-container">
+            <div class="your-score">
+                <h3>Time left : <span id="time">0</span></h3>
+            </div>
+            <div class="your-score">
+                <h3>Score : <span id="score">0</span></h3>
+            </div>
+        </didiv>
+    </div>
+     
+    <divc class="container">
+        <div class="grid">
+            <form class="progress ">
+                
+                <span class="a">level</span>
+                <input type="radio" name="lv2" id="level-1" checked>
+                <span>easy</span>
+                <input type="radio" name="lv2" id="level-2">
+                <span>medium</span>
+                <input type="radio" name="lv2" id="level-3">
+                <span>hard</span>
+            </form>
+            <!-- <hr> -->
+            <div class="instructions">
+                <h6>instructions</h6>
+                <p>Type each word in the given amount of seconds
+                     to score. To play again, just type
+                     the current word, your score will reset automatically</p>
+            </div>
+            <script src="./wordBider.js"></script>
+        </div>
+    </div>
+</body>
+</html>

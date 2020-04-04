@@ -2,19 +2,87 @@
   License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,31 +90,51 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* ============= body ========= */
-body{
+body {
   background: #FAFAFA;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -61,26 +149,30 @@ body{
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-       
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
-.container, .grid{
+
+.container,
+.grid {
   margin: 0 auto;
   width: 80%;
 }
-.container{
+
+.container {
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.sec-1{
+.sec-1 {
   padding: 0 15px 0 15px;
   width: 30.3%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
+
 /*
   ========================================
   Clearfix
@@ -92,55 +184,66 @@ body{
   content: "";
   display: table;
 }
+
 .group:after {
   clear: both;
 }
+
 .group {
   clear: both;
   *zoom: 1;
 }
 
 /* ================== typography ========== */
-h1, h2, h3, h4, p{
+h1,
+h2,
+h3,
+h4,
+p {
   margin-top: 22px;
 }
 
 /*=============== header ======= */
 
-.nav-alt{
+.nav-alt {
   float: right;
   padding: 25px;
-  
+
 }
-.nav-alt a{
+
+.nav-alt a {
   text-decoration: none;
   padding-right: 15px;
   color: #000000;
   font-size: small;
 }
+
 /* ============ logo ============ */
-.logo{
+.logo {
   /* border: solid #000000 3px; */
   border-radius: 100%;
   float: left;
   padding: 5px 15px 5px 15px;
   color: #000000;
-  
+
 }
-#blue{
+
+#blue {
   color: #2997FF;
   font-size: 22px;
-  
+
 }
+
 /* ================ hero ========= */
 
-.hero{
+.hero {
   padding: 33px 80px 77px 80px;
   text-align: center;
   letter-spacing: .5px;
   line-height: 44px;
   /* border: #000000 solid 1px; */
 }
+
 /* ================ button =========== */
 
 .btn {
@@ -148,58 +251,66 @@ h1, h2, h3, h4, p{
   display: inline-block;
   margin: 0;
   cursor: pointer;
-  color:#FAFAFA;
+  color: #FAFAFA;
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;
   background: #FAFAFA;
 
 }
+
 .btn-alt {
-  border: 1px solid #000000 ;
+  border: 1px solid #000000;
   padding: 10px 30px;
   color: #FAFAFA;
 }
-.btn-alt:hover{
+
+.btn-alt:hover {
   background: #fff;
-   
+
 }
-.btn-alt a{
+
+.btn-alt a {
   color: #000000;
   text-decoration: none;
 }
-.btn-alt a:hover{
+
+.btn-alt a:hover {
   color: #000000;
   font-size: 15px;
 
 }
+
 /* ================ row ========== */
-.sec-1{
+.sec-1 {
   letter-spacing: .6px;
   line-height: 28px;
-  color:#7B827A;
+  color: #7B827A;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-.row{
+
+.row {
   background-color: #000000;
   padding-top: 44px;
   padding-bottom: 55px;
 }
-.sec-1 a{
+
+.sec-1 a {
   text-decoration: none;
   letter-spacing: .6px;
   color: #2997FF;
 }
 
 /* ========= footer ============ */
-.primary-footer small{
+.primary-footer small {
   float: left;
   padding-top: 33px;
   font-size: x-small;
 }
-@media(max-width: 860px){
-  .sec-1{
+
+@media(max-width: 860px) {
+  .sec-1 {
     display: block;
     width: auto;
   }
