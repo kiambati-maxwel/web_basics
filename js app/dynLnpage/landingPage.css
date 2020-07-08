@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-body{
+body, .container{
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
